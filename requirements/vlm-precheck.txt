@@ -1,0 +1,5 @@
+# Install torch separately from the official CUDA 11.8 index first.
+# Tested versions of all transitive packages are recorded in the Windows lock.
+transformers==4.48.3
+numpy==2.5.4
+pillow==13.0.0

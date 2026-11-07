@@ -1,0 +1,948 @@
+{
+  "checked_at": "2026-11-05T15:40:16+08:00",
+  "revision": "0271408f71bcd9afff69e4e7d324cae912461ebd",
+  "scope": "Development records and offline CPU processor boundary only",
+  "status": "passed",
+  "source_inventory_status": "passed",
+  "records": 30,
+  "image_groups": 20,
+  "group_size_distribution": {
+    "1": 14,
+    "2": 3,
+    "3": 2,
+    "4": 1
+  },
+  "images_fully_decoded": 20,
+  "image_formats": {
+    "JPEG": 8,
+    "TIFF": 7,
+    "PNG": 5
+  },
+  "image_modes": {
+    "RGB": 8,
+    "L": 12
+  },
+  "assets": {
+    "0001320.jpg": {
+      "archive": "data/raw/sarlang/0271408f71bc/Examples.zip",
+      "member": "Examples/images/0001320.jpg",
+      "sha256": "5279f3762f436f7fd86326979e16ec998da571b4cc89a90dd6ed07313aad8185",
+      "format": "JPEG",
+      "mode": "RGB",
+      "size": [
+        512,
+        512
+      ],
+      "dtype": "uint8",
+      "range": [
+        0,
+        255
+      ],
+      "pixel_decoding": "passed",
+      "model_conversion": "PIL convert RGB in memory"
+    },
+    "0012296.jpg": {
+      "archive": "data/raw/sarlang/0271408f71bc/Examples.zip",
+      "member": "Examples/images/0012296.jpg",
+      "sha256": "3019b26ca46fdeca2be2a61f9be1201516e00be274f415f8316a4012bfaa1acc",
+      "format": "JPEG",
+      "mode": "RGB",
+      "size": [
+        512,
+        512
+      ],
+      "dtype": "uint8",
+      "range": [
+        0,
+        255
+      ],
+      "pixel_decoding": "passed",
+      "model_conversion": "PIL convert RGB in memory"
+    },
+    "0016526.jpg": {
+      "archive": "data/raw/sarlang/0271408f71bc/Examples.zip",
+      "member": "Examples/images/0016526.jpg",
+      "sha256": "ff5904c36e17168c5901f07684f82e6d4b5979d2e9102ed5c37b7d3e797b4b88",
+      "format": "JPEG",
+      "mode": "RGB",
+      "size": [
+        256,
+        256
+      ],
+      "dtype": "uint8",
+      "range": [
+        0,
+        255
+      ],
+      "pixel_decoding": "passed",
+      "model_conversion": "PIL convert RGB in memory"
+    },
+    "0031548.jpg": {
+      "archive": "data/raw/sarlang/0271408f71bc/Examples.zip",
+      "member": "Examples/images/0031548.jpg",
+      "sha256": "7b207d0f19ea9793c59dba1c6c1e8338a07d204042a1d872aff9630cea338f02",
+      "format": "JPEG",
+      "mode": "RGB",
+      "size": [
+        256,
+        256
+      ],
+      "dtype": "uint8",
+      "range": [
+        14,
+        255
+      ],
+      "pixel_decoding": "passed",
+      "model_conversion": "PIL convert RGB in memory"
+    },
+    "0069243.jpg": {
+      "archive": "data/raw/sarlang/0271408f71bc/Examples.zip",
+      "member": "Examples/images/0069243.jpg",
+      "sha256": "b297c123e9b77ca0584b3d214fd1cb15df1883289105d7a6c33072e1abe445cb",
+      "format": "JPEG",
+      "mode": "RGB",
+      "size": [
+        512,
+        512
+      ],
+      "dtype": "uint8",
+      "range": [
+        0,
+        255
+      ],
+      "pixel_decoding": "passed",
+      "model_conversion": "PIL convert RGB in memory"
+    },
+    "0081429.jpg": {
+      "archive": "data/raw/sarlang/0271408f71bc/Examples.zip",
+      "member": "Examples/images/0081429.jpg",
+      "sha256": "4e0e92ffa614e9c32b299181389bc2f98b304e8282111a32952672c672e8b61d",
+      "format": "JPEG",
+      "mode": "RGB",
+      "size": [
+        256,
+        256
+      ],
+      "dtype": "uint8",
+      "range": [
+        0,
+        255
+      ],
+      "pixel_decoding": "passed",
+      "model_conversion": "PIL convert RGB in memory"
+    },
+    "0096469.jpg": {
+      "archive": "data/raw/sarlang/0271408f71bc/Examples.zip",
+      "member": "Examples/images/0096469.jpg",
+      "sha256": "7d86a3110ebc086c8383a297a0b19a7b9fcbd34774bdd74e96206c84aae103a4",
+      "format": "JPEG",
+      "mode": "RGB",
+      "size": [
+        512,
+        512
+      ],
+      "dtype": "uint8",
+      "range": [
+        0,
+        255
+      ],
+      "pixel_decoding": "passed",
+      "model_conversion": "PIL convert RGB in memory"
+    },
+    "0101536.jpg": {
+      "archive": "data/raw/sarlang/0271408f71bc/Examples.zip",
+      "member": "Examples/images/0101536.jpg",
+      "sha256": "73b4bc6d748df8e36e0d851497eb9a9e363a5394a1c1b565f4132ffb2e4ff612",
+      "format": "JPEG",
+      "mode": "RGB",
+      "size": [
+        512,
+        512
+      ],
+      "dtype": "uint8",
+      "range": [
+        0,
+        255
+      ],
+      "pixel_decoding": "passed",
+      "model_conversion": "PIL convert RGB in memory"
+    },
+    "France_Haute-Garonne_CNES_324.png": {
+      "archive": "data/raw/sarlang/0271408f71bc/Examples.zip",
+      "member": "Examples/images/France_Haute-Garonne_CNES_324.png",
+      "sha256": "9e8ae5b46a90d7a1876cba0e0792756f5f2f330999a522678e9c230e631f5e34",
+      "format": "TIFF",
+      "mode": "L",
+      "size": [
+        1024,
+        1024
+      ],
+      "dtype": "uint8",
+      "range": [
+        0,
+        255
+      ],
+      "pixel_decoding": "passed",
+      "model_conversion": "PIL convert RGB in memory"
+    },
+    "France_Haute-Garonne_Toulouse_118.png": {
+      "archive": "data/raw/sarlang/0271408f71bc/Examples.zip",
+      "member": "Examples/images/France_Haute-Garonne_Toulouse_118.png",
+      "sha256": "156ae43740cbe70dcc4ddda98f98cb74ca0934a15eaabdabe510e65ed00e853b",
+      "format": "TIFF",
+      "mode": "L",
+      "size": [
+        1024,
+        1024
+      ],
+      "dtype": "uint8",
+      "range": [
+        0,
+        255
+      ],
+      "pixel_decoding": "passed",
+      "model_conversion": "PIL convert RGB in memory"
+    },
+    "GF2_Barcelona_41.4145_2.2087.png": {
+      "archive": "data/raw/sarlang/0271408f71bc/Examples.zip",
+      "member": "Examples/images/GF2_Barcelona_41.4145_2.2087.png",
+      "sha256": "3deb94c139878e2da5feaf3b5461ab3ffcd81086638047600a13e056fcd6d621",
+      "format": "PNG",
+      "mode": "L",
+      "size": [
+        512,
+        512
+      ],
+      "dtype": "uint8",
+      "range": [
+        0,
+        255
+      ],
+      "pixel_decoding": "passed",
+      "model_conversion": "PIL convert RGB in memory"
+    },
+    "Japan_Tokyo_Haneda_37.png": {
+      "archive": "data/raw/sarlang/0271408f71bc/Examples.zip",
+      "member": "Examples/images/Japan_Tokyo_Haneda_37.png",
+      "sha256": "9bfa0cb1223be65ca7d20a176a76f23819191e12abf077091017511879dda85a",
+      "format": "TIFF",
+      "mode": "L",
+      "size": [
+        1024,
+        1024
+      ],
+      "dtype": "uint8",
+      "range": [
+        0,
+        255
+      ],
+      "pixel_decoding": "passed",
+      "model_conversion": "PIL convert RGB in memory"
+    },
+    "Japan_Tokyo_Shinjuku_v1_23.png": {
+      "archive": "data/raw/sarlang/0271408f71bc/Examples.zip",
+      "member": "Examples/images/Japan_Tokyo_Shinjuku_v1_23.png",
+      "sha256": "f87be62ee5527396eeaa998d4fc7f69505a6bfe6d95f629078dd278211b79aa3",
+      "format": "TIFF",
+      "mode": "L",
+      "size": [
+        1024,
+        1024
+      ],
+      "dtype": "uint8",
+      "range": [
+        0,
+        255
+      ],
+      "pixel_decoding": "passed",
+      "model_conversion": "PIL convert RGB in memory"
+    },
+    "Japan_Tokyo_Shinjuku_v1_6.png": {
+      "archive": "data/raw/sarlang/0271408f71bc/Examples.zip",
+      "member": "Examples/images/Japan_Tokyo_Shinjuku_v1_6.png",
+      "sha256": "d7fb57d4244c45e28ce181b1fc674ce24dc77aa2302972b7b187eaa676a29551",
+      "format": "TIFF",
+      "mode": "L",
+      "size": [
+        1024,
+        1024
+      ],
+      "dtype": "uint8",
+      "range": [
+        0,
+        255
+      ],
+      "pixel_decoding": "passed",
+      "model_conversion": "PIL convert RGB in memory"
+    },
+    "Japan_Tokyo_Shinjuku_v2_14.png": {
+      "archive": "data/raw/sarlang/0271408f71bc/Examples.zip",
+      "member": "Examples/images/Japan_Tokyo_Shinjuku_v2_14.png",
+      "sha256": "78aae9d1571122d2445b4f7adf26de4e212e668d553cfd8127f7e628f0856ab6",
+      "format": "TIFF",
+      "mode": "L",
+      "size": [
+        1024,
+        1024
+      ],
+      "dtype": "uint8",
+      "range": [
+        0,
+        255
+      ],
+      "pixel_decoding": "passed",
+      "model_conversion": "PIL convert RGB in memory"
+    },
+    "P_0208.png": {
+      "archive": "data/raw/sarlang/0271408f71bc/Examples.zip",
+      "member": "Examples/images/P_0208.png",
+      "sha256": "762efaffbf2416405288dafa0729b0b5bf841b5c6be594523e77489f37cfb8ea",
+      "format": "PNG",
+      "mode": "L",
+      "size": [
+        512,
+        512
+      ],
+      "dtype": "uint8",
+      "range": [
+        0,
+        255
+      ],
+      "pixel_decoding": "passed",
+      "model_conversion": "PIL convert RGB in memory"
+    },
+    "P_0218.png": {
+      "archive": "data/raw/sarlang/0271408f71bc/Examples.zip",
+      "member": "Examples/images/P_0218.png",
+      "sha256": "ab781feda822d811a62a96b22e1743f94bc0f736d2c65172426becee406b8c75",
+      "format": "PNG",
+      "mode": "L",
+      "size": [
+        512,
+        512
+      ],
+      "dtype": "uint8",
+      "range": [
+        0,
+        255
+      ],
+      "pixel_decoding": "passed",
+      "model_conversion": "PIL convert RGB in memory"
+    },
+    "P_0618.png": {
+      "archive": "data/raw/sarlang/0271408f71bc/Examples.zip",
+      "member": "Examples/images/P_0618.png",
+      "sha256": "5dd29dfeebaa15521f52dd316dd5055d7f35e470b12b5dfd135093688684def0",
+      "format": "PNG",
+      "mode": "L",
+      "size": [
+        512,
+        512
+      ],
+      "dtype": "uint8",
+      "range": [
+        0,
+        255
+      ],
+      "pixel_decoding": "passed",
+      "model_conversion": "PIL convert RGB in memory"
+    },
+    "P_0636.png": {
+      "archive": "data/raw/sarlang/0271408f71bc/Examples.zip",
+      "member": "Examples/images/P_0636.png",
+      "sha256": "1fcca6544503b61a279945c12736bb0eaacb687196c9f9def985a91b5e912032",
+      "format": "PNG",
+      "mode": "L",
+      "size": [
+        512,
+        512
+      ],
+      "dtype": "uint8",
+      "range": [
+        0,
+        255
+      ],
+      "pixel_decoding": "passed",
+      "model_conversion": "PIL convert RGB in memory"
+    },
+    "USA_California_Chico_8.png": {
+      "archive": "data/raw/sarlang/0271408f71bc/Examples.zip",
+      "member": "Examples/images/USA_California_Chico_8.png",
+      "sha256": "c94ebe952f1b99f5c63e5d2ee86d6a708f1864a7ccb302fc2d353b6aacf8e6b0",
+      "format": "TIFF",
+      "mode": "L",
+      "size": [
+        1024,
+        1024
+      ],
+      "dtype": "uint8",
+      "range": [
+        0,
+        255
+      ],
+      "pixel_decoding": "passed",
+      "model_conversion": "PIL convert RGB in memory"
+    }
+  },
+  "task_mapping_status": {
+    "exact_author_task_match": 17,
+    "unresolved": 13
+  },
+  "author_tasks_among_unambiguous_matches": {
+    "object identification": 4,
+    "object classification": 6,
+    "instance counting": 1,
+    "others": 4,
+    "region referring": 2
+  },
+  "application_matching_rule": "Exact image basename + whitespace-normalized question and answer; no stem-only or semantic guesses",
+  "processor_check": {
+    "status": "passed",
+    "records_checked": 30,
+    "checks": [
+      {
+        "sample_id": "sarlang-demo-001",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 81,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-002",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 83,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-003",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 81,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-004",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 83,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-005",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 84,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-006",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 85,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-007",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 84,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-008",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 85,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-009",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 81,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-010",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 81,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-011",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 81,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-012",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 84,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-013",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 82,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-014",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 82,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-015",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 81,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-016",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 82,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-017",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 81,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-018",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 84,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-019",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 82,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-020",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 83,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-021",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 88,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-022",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 84,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-023",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 84,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-024",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 84,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-025",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 84,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-026",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 110,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-027",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 111,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-028",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 100,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-029",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 99,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sarlang-demo-030",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 84,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      }
+    ],
+    "model_weight_loaded": false,
+    "model_inference_run": false,
+    "metadata_mutation_leaves_all_model_input_tensors_identical": true,
+    "all_shared_image_groups_have_identical_processed_pixels": true,
+    "input_keys": [
+      "attention_mask",
+      "input_ids",
+      "pixel_attention_mask",
+      "pixel_values"
+    ],
+    "gradient_scope": "No gradient computed; PIL/NumPy conversion remains outside autograd"
+  },
+  "outputs": {
+    "records.jsonl": {
+      "path": "data/processed/sarlang_pilot/0271408f71bc/records.jsonl",
+      "sha256": "c3debec57ecce0d4fd80f6208b6bba68d867f146924846534acaf62118a8e9dd"
+    },
+    "evaluation_side.jsonl": {
+      "path": "data/processed/sarlang_pilot/0271408f71bc/evaluation_side.jsonl",
+      "sha256": "46975e95b0159f5c1f064389c80f76b9aee5bc8a8a448a9282280f3f76746e2e"
+    },
+    "image_groups.jsonl": {
+      "path": "data/processed/sarlang_pilot/0271408f71bc/image_groups.jsonl",
+      "sha256": "e06c3171d841ac53bfa1c4969afd7ab19a1cdac5ccb4810bd13e07c67477d3f8"
+    }
+  },
+  "formal_split_created": false,
+  "domain_accuracy_evaluated": false,
+  "limits": [
+    "Demo images mix author train/test and do not establish a held-out benchmark.",
+    "Exact file bytes identify shared images, not independent original scenes.",
+    "Author application classification does not establish a common fixed label taxonomy or single-label task.",
+    "No annotation correctness, domain model competence, gradient, training or attack result is claimed."
+  ]
+}

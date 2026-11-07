@@ -1,0 +1,385 @@
+{
+  "checked_at": "2026-11-05T14:49:35+08:00",
+  "scope": "Read-only observed groups; no experimental split or model evaluation created",
+  "sample": {
+    "files": 1345,
+    "classes": {
+      "2s1": {
+        "files": 174,
+        "serial_tokens": [
+          "b01"
+        ],
+        "collection_tokens": [
+          "A"
+        ],
+        "elevations_degrees_from_filename": [
+          15,
+          16,
+          17
+        ],
+        "azimuth_degrees_from_filename": [
+          10.22,
+          79.22
+        ],
+        "ten_degree_bin_counts_for_audit_only": {
+          "10": 30,
+          "20": 28,
+          "30": 29,
+          "40": 25,
+          "50": 26,
+          "60": 16,
+          "70": 20
+        }
+      },
+      "bmp2": {
+        "files": 107,
+        "serial_tokens": [
+          "9563"
+        ],
+        "collection_tokens": [
+          "A"
+        ],
+        "elevations_degrees_from_filename": [
+          16,
+          17
+        ],
+        "azimuth_degrees_from_filename": [
+          12.49,
+          79.49
+        ],
+        "ten_degree_bin_counts_for_audit_only": {
+          "10": 11,
+          "20": 13,
+          "30": 18,
+          "40": 17,
+          "50": 16,
+          "60": 17,
+          "70": 15
+        }
+      },
+      "btr70": {
+        "files": 92,
+        "serial_tokens": [
+          "c71"
+        ],
+        "collection_tokens": [
+          "A"
+        ],
+        "elevations_degrees_from_filename": [
+          16,
+          17
+        ],
+        "azimuth_degrees_from_filename": [
+          11.0,
+          79.0
+        ],
+        "ten_degree_bin_counts_for_audit_only": {
+          "10": 15,
+          "20": 16,
+          "30": 15,
+          "40": 12,
+          "50": 10,
+          "60": 15,
+          "70": 9
+        }
+      },
+      "m1": {
+        "files": 129,
+        "serial_tokens": [
+          "0ap00n"
+        ],
+        "collection_tokens": [
+          "A"
+        ],
+        "elevations_degrees_from_filename": [
+          14,
+          16,
+          17
+        ],
+        "azimuth_degrees_from_filename": [
+          10.18,
+          79.18
+        ],
+        "ten_degree_bin_counts_for_audit_only": {
+          "10": 27,
+          "20": 23,
+          "30": 27,
+          "40": 16,
+          "50": 13,
+          "60": 11,
+          "70": 12
+        }
+      },
+      "m2": {
+        "files": 128,
+        "serial_tokens": [
+          "mv02gx"
+        ],
+        "collection_tokens": [
+          "A"
+        ],
+        "elevations_degrees_from_filename": [
+          14,
+          16,
+          17
+        ],
+        "azimuth_degrees_from_filename": [
+          10.91,
+          79.91
+        ],
+        "ten_degree_bin_counts_for_audit_only": {
+          "10": 28,
+          "20": 23,
+          "30": 24,
+          "40": 16,
+          "50": 12,
+          "60": 11,
+          "70": 14
+        }
+      },
+      "m35": {
+        "files": 129,
+        "serial_tokens": [
+          "t839"
+        ],
+        "collection_tokens": [
+          "A"
+        ],
+        "elevations_degrees_from_filename": [
+          14,
+          16,
+          17
+        ],
+        "azimuth_degrees_from_filename": [
+          10.62,
+          79.62
+        ],
+        "ten_degree_bin_counts_for_audit_only": {
+          "10": 29,
+          "20": 22,
+          "30": 26,
+          "40": 15,
+          "50": 13,
+          "60": 10,
+          "70": 14
+        }
+      },
+      "m548": {
+        "files": 128,
+        "serial_tokens": [
+          "c245hab"
+        ],
+        "collection_tokens": [
+          "A"
+        ],
+        "elevations_degrees_from_filename": [
+          14,
+          16,
+          17
+        ],
+        "azimuth_degrees_from_filename": [
+          10.63,
+          79.63
+        ],
+        "ten_degree_bin_counts_for_audit_only": {
+          "10": 28,
+          "20": 23,
+          "30": 24,
+          "40": 16,
+          "50": 12,
+          "60": 11,
+          "70": 14
+        }
+      },
+      "m60": {
+        "files": 176,
+        "serial_tokens": [
+          "3336"
+        ],
+        "collection_tokens": [
+          "A"
+        ],
+        "elevations_degrees_from_filename": [
+          15,
+          16,
+          17
+        ],
+        "azimuth_degrees_from_filename": [
+          10.74,
+          79.74
+        ],
+        "ten_degree_bin_counts_for_audit_only": {
+          "10": 30,
+          "20": 29,
+          "30": 29,
+          "40": 26,
+          "50": 26,
+          "60": 21,
+          "70": 15
+        }
+      },
+      "t72": {
+        "files": 108,
+        "serial_tokens": [
+          "812"
+        ],
+        "collection_tokens": [
+          "A"
+        ],
+        "elevations_degrees_from_filename": [
+          16,
+          17
+        ],
+        "azimuth_degrees_from_filename": [
+          11.77,
+          79.77
+        ],
+        "ten_degree_bin_counts_for_audit_only": {
+          "10": 12,
+          "20": 14,
+          "30": 17,
+          "40": 18,
+          "50": 16,
+          "60": 17,
+          "70": 14
+        }
+      },
+      "zsu23": {
+        "files": 174,
+        "serial_tokens": [
+          "d08"
+        ],
+        "collection_tokens": [
+          "A"
+        ],
+        "elevations_degrees_from_filename": [
+          15,
+          16,
+          17
+        ],
+        "azimuth_degrees_from_filename": [
+          10.99,
+          79.99
+        ],
+        "ten_degree_bin_counts_for_audit_only": {
+          "10": 30,
+          "20": 28,
+          "30": 29,
+          "40": 25,
+          "50": 26,
+          "60": 17,
+          "70": 19
+        }
+      }
+    },
+    "unique_content_hashes": 1345,
+    "duplicate_content_groups": [],
+    "class_count": 10,
+    "uniform_guess_reference": 0.1,
+    "majority_class_reference": 0.1308550185873606,
+    "each_class_has_one_serial_token": true,
+    "limits": [
+      "Filename tokens are observed metadata, not a verified physical-instance inventory.",
+      "No per-class unseen-serial train/test evaluation is possible with this selected batch.",
+      "Nearby angles and repeated elevations require grouped/blocked design; bins above are an audit only.",
+      "Ten fine classes are not silently mapped to SARChat six coarse categories."
+    ]
+  },
+  "hrrp": {
+    "full_metadata_rows": 8688,
+    "full_metadata_original_groups": 543,
+    "metadata_sha256": "7192929a8b2e83f4a78ae2d2474979fd6b89e8e05d6c9574bc341eea95109516",
+    "existing_metadata_splits": {
+      "train": {
+        "angle_min": 0,
+        "angle_max": 100,
+        "angle_count": 101,
+        "rows": 4848,
+        "original_groups": 303
+      },
+      "validation": {
+        "angle_min": 101,
+        "angle_max": 140,
+        "angle_count": 40,
+        "rows": 1920,
+        "original_groups": 120
+      },
+      "test": {
+        "angle_min": 141,
+        "angle_max": 180,
+        "angle_count": 40,
+        "rows": 1920,
+        "original_groups": 120
+      }
+    },
+    "local_files": 144,
+    "local_original_groups": 9,
+    "local_unique_content_hashes": 134,
+    "local_groups": [
+      {
+        "label": "cone",
+        "theta": 50,
+        "files": 16,
+        "split": "train"
+      },
+      {
+        "label": "cone",
+        "theta": 121,
+        "files": 16,
+        "split": "validation"
+      },
+      {
+        "label": "cone",
+        "theta": 161,
+        "files": 16,
+        "split": "test"
+      },
+      {
+        "label": "cylinder",
+        "theta": 50,
+        "files": 16,
+        "split": "train"
+      },
+      {
+        "label": "cylinder",
+        "theta": 121,
+        "files": 16,
+        "split": "validation"
+      },
+      {
+        "label": "cylinder",
+        "theta": 161,
+        "files": 16,
+        "split": "test"
+      },
+      {
+        "label": "mix",
+        "theta": 50,
+        "files": 16,
+        "split": "train"
+      },
+      {
+        "label": "mix",
+        "theta": 121,
+        "files": 16,
+        "split": "validation"
+      },
+      {
+        "label": "mix",
+        "theta": 161,
+        "files": 16,
+        "split": "test"
+      }
+    ],
+    "local_original_aug0_files": 9,
+    "local_same_content_cross_split": false,
+    "uniform_guess_reference": 0.3333333333333333,
+    "limits": [
+      "Local files are a format subset: one original angle per class per split, not a formal benchmark.",
+      "Original group means label/theta in this simulation, not an independent physical target.",
+      "Existing metadata has adjacent split boundaries 100/101 and 140/141 degrees, without an angle guard band.",
+      "No new split, model input, preprocessing, or train/test reassignment was created."
+    ]
+  },
+  "status": "passed"
+}

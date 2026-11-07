@@ -1,0 +1,245 @@
+{
+  "checked_at": "2026-11-05T11:09:50+08:00",
+  "timezone": "Asia/Shanghai (UTC+08:00)",
+  "scope": "Read-only stdlib recheck of the four selected pinned resource directories, including partial-file checks limited to those directories; no model execution or upstream scripts",
+  "resource_directories": [
+    "data/raw/sample/1bae4156afcb",
+    "data/raw/hrrp_pc/a1ab400c91f3",
+    "models/SmolVLM-256M-Instruct/7e3e67edbbed",
+    "third_party/torchattacks/936e86d6387e"
+  ],
+  "status": "passed",
+  "manifest_entries": 1599,
+  "unique_paths": 1599,
+  "resources": {
+    "HRRP_PC_metadata": {
+      "files": 2,
+      "bytes": 655149
+    },
+    "HRRP_PC_format_subset": {
+      "files": 144,
+      "bytes": 1480402
+    },
+    "SAMPLE_qpm_real": {
+      "files": 1347,
+      "bytes": 17616829
+    },
+    "SmolVLM_interface_precheck_only": {
+      "files": 13,
+      "bytes": 517903046
+    },
+    "Torchattacks_v3.5.1_source": {
+      "files": 93,
+      "bytes": 749306
+    }
+  },
+  "total_resource_bytes": 538404732,
+  "errors": [],
+  "unexpected_in_resource_directories": [],
+  "missing_from_resource_directories": [],
+  "unexpected_partial_files": [],
+  "png": {
+    "files": 1345,
+    "format": "128x128/8bit/grayscale/noninterlaced",
+    "checks": "chunk bounds, CRCs, complete zlib stream, decompressed size, all rows unfiltered",
+    "classes": {
+      "2s1": 174,
+      "bmp2": 107,
+      "btr70": 92,
+      "m1": 129,
+      "m2": 128,
+      "m35": 129,
+      "m548": 128,
+      "m60": 176,
+      "t72": 108,
+      "zsu23": 174
+    },
+    "decoded_pixels": 22036480,
+    "row_filters": {
+      "1": 1791,
+      "3": 165253,
+      "4": 4499,
+      "2": 617
+    },
+    "minimum": 0,
+    "maximum": 255
+  },
+  "hrrp_csv": {
+    "files": 144,
+    "shape_per_file": [
+      512,
+      1
+    ],
+    "finite_values": 73728,
+    "minimum": -0.3610100692209503,
+    "maximum": 1.1766659012188254,
+    "files_within_unit_interval": 49,
+    "files_outside_unit_interval": 95
+  },
+  "hrrp_metadata": {
+    "metadata_rows": 8688,
+    "metadata_unique_filenames": 8688,
+    "selected_groups": [
+      {
+        "label": "cone",
+        "theta": "121",
+        "split": "validation",
+        "files": 16
+      },
+      {
+        "label": "cone",
+        "theta": "161",
+        "split": "test",
+        "files": 16
+      },
+      {
+        "label": "cone",
+        "theta": "50",
+        "split": "train",
+        "files": 16
+      },
+      {
+        "label": "cylinder",
+        "theta": "121",
+        "split": "validation",
+        "files": 16
+      },
+      {
+        "label": "cylinder",
+        "theta": "161",
+        "split": "test",
+        "files": 16
+      },
+      {
+        "label": "cylinder",
+        "theta": "50",
+        "split": "train",
+        "files": 16
+      },
+      {
+        "label": "mix",
+        "theta": "121",
+        "split": "validation",
+        "files": 16
+      },
+      {
+        "label": "mix",
+        "theta": "161",
+        "split": "test",
+        "files": 16
+      },
+      {
+        "label": "mix",
+        "theta": "50",
+        "split": "train",
+        "files": 16
+      }
+    ],
+    "groups_crossing_split": 0,
+    "identical_contents_crossing_split": 0,
+    "unique_selected_contents": 134,
+    "duplicate_selected_content_count": 10,
+    "duplicate_content_groups": [
+      {
+        "sha256": "2de5f49499c2431207b15e50277e67509e903f568912e80409f9910061fb25d7",
+        "split": "train",
+        "files": [
+          "hrrp_cylinder_50_0.csv",
+          "hrrp_cylinder_50_7.csv"
+        ]
+      },
+      {
+        "sha256": "418bc0e5b637f07e4f105446b30f64e4d2a48d0c116b056d2f74ec253132d250",
+        "split": "test",
+        "files": [
+          "hrrp_mix_161_0.csv",
+          "hrrp_mix_161_6.csv",
+          "hrrp_mix_161_7.csv"
+        ]
+      },
+      {
+        "sha256": "4a9bac99e1e01ef3d4442e14b2747586bf3f818e8b1f44e97c1482eac9c11f99",
+        "split": "validation",
+        "files": [
+          "hrrp_cone_121_0.csv",
+          "hrrp_cone_121_7.csv"
+        ]
+      },
+      {
+        "sha256": "71f7f9063c43982eb5236e59fcdbb885fe822ba8ca82149460c4115991c0ea5c",
+        "split": "validation",
+        "files": [
+          "hrrp_cylinder_121_0.csv",
+          "hrrp_cylinder_121_7.csv"
+        ]
+      },
+      {
+        "sha256": "73bfafb6821bf7fb24007e9b3ec23f44cbb188360c061644995be8350200f455",
+        "split": "test",
+        "files": [
+          "hrrp_cylinder_161_0.csv",
+          "hrrp_cylinder_161_7.csv"
+        ]
+      },
+      {
+        "sha256": "ce62e3da02f62d770923c08959ebb5b7e01394b45852f569172c11c4928271f4",
+        "split": "validation",
+        "files": [
+          "hrrp_mix_121_0.csv",
+          "hrrp_mix_121_7.csv"
+        ]
+      },
+      {
+        "sha256": "d76d1e491ee3beb8c56fad069fc756f85a9ecfc7869e6ede8fbf1638f2d1bcbc",
+        "split": "train",
+        "files": [
+          "hrrp_mix_50_0.csv",
+          "hrrp_mix_50_7.csv"
+        ]
+      },
+      {
+        "sha256": "dffc3edfa990232fc5fae3296451a2fb27905d4bb0dec6a2f24b48f6c8e532fc",
+        "split": "test",
+        "files": [
+          "hrrp_cone_161_0.csv",
+          "hrrp_cone_161_7.csv"
+        ]
+      },
+      {
+        "sha256": "e294aa3d5450fcfa005e72e17b0a099c9b5c5c29761135e6657e99bed4c5b078",
+        "split": "train",
+        "files": [
+          "hrrp_cone_50_0.csv",
+          "hrrp_cone_50_7.csv"
+        ]
+      }
+    ],
+    "scope": "Selected format subset only; not independent observations or a formal benchmark"
+  },
+  "safetensors": {
+    "tensor_entries": 471,
+    "dtypes": {
+      "BF16": 471
+    },
+    "total_elements": 256484928,
+    "data_payload_bytes": 512969856,
+    "contiguous_offsets_and_shapes_match_size": true,
+    "config_checked_shapes": {
+      "lm_head.weight": [
+        49280,
+        576
+      ],
+      "model.text_model.embed_tokens.weight": [
+        49280,
+        576
+      ],
+      "model.vision_model.embeddings.patch_embedding.weight": [
+        768,
+        3,
+        16,
+        16
+      ]
+    },
+    "scope": "Storage structure only; execution dtype, model correctness, and domain capability untested"
+  }
+}

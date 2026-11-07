@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-05",
+  "scope": "Bounded SARLANG pilot only; separate from original 1599 resource inventory",
+  "dataset": "YiminJimmy/SARLANG-1M",
+  "revision": "0271408f71bcd9afff69e4e7d324cae912461ebd",
+  "license": "No explicit data/annotation license field verified; no redistribution permission inferred",
+  "files": [
+    {
+      "path": "data/raw/sarlang/0271408f71bc/README.md",
+      "source_url": "https://huggingface.co/datasets/YiminJimmy/SARLANG-1M/resolve/0271408f71bcd9afff69e4e7d324cae912461ebd/README.md",
+      "revision": "0271408f71bcd9afff69e4e7d324cae912461ebd",
+      "bytes": 3708,
+      "sha256": "ba125ae20b038b663e8fb5b80857c9cf8ef8c3af8c04eeab3e99dca35c8f14cc",
+      "upstream_sha256": null,
+      "status": "downloaded_text_no_upstream_hash_available"
+    },
+    {
+      "path": "data/raw/sarlang/0271408f71bc/Examples.zip",
+      "source_url": "https://huggingface.co/datasets/YiminJimmy/SARLANG-1M/resolve/0271408f71bcd9afff69e4e7d324cae912461ebd/Examples.zip",
+      "revision": "0271408f71bcd9afff69e4e7d324cae912461ebd",
+      "bytes": 7577582,
+      "sha256": "f9862dd39281488d1fdb584fdf494152d5e90b0a45a13c64ec01b643a9e35b5c",
+      "upstream_sha256": "f9862dd39281488d1fdb584fdf494152d5e90b0a45a13c64ec01b643a9e35b5c",
+      "status": "downloaded_verified"
+    },
+    {
+      "path": "data/raw/sarlang/0271408f71bc/Text.zip",
+      "source_url": "https://huggingface.co/datasets/YiminJimmy/SARLANG-1M/resolve/0271408f71bcd9afff69e4e7d324cae912461ebd/Text.zip",
+      "revision": "0271408f71bcd9afff69e4e7d324cae912461ebd",
+      "bytes": 17074606,
+      "sha256": "1447e79768d192341726ca2529e7dd94314ae9155f8e593637e2a3cebc2d4062",
+      "upstream_sha256": "1447e79768d192341726ca2529e7dd94314ae9155f8e593637e2a3cebc2d4062",
+      "status": "downloaded_verified"
+    }
+  ],
+  "total_bytes": 24655896,
+  "status": "passed"
+}

@@ -1,0 +1,30 @@
+{
+  "screen_id": "sar_clean_development_screen_v0",
+  "stage": "Exploratory clean development capability screen, not a formal test or attack",
+  "task_protocol": "experiments/protocols/sar_single_category_v0.json",
+  "sampling": {
+    "author_split": "train only",
+    "per_class": 10,
+    "total": 60,
+    "deterministic_key": "sha256(seed + newline + dataset_revision + newline + label + newline + exact_image_basename)",
+    "seed": "sar-clean-development-20261105-v0",
+    "exclude": "All Examples image basenames and same stems; no resampling based on model responses",
+    "image_acquisition_failure": "Record it and stop the complete screen; any replacement needs an explicit new sampling-plan version before model output"
+  },
+  "image_group_scope": "Exact image bytes; original scene independence remains unresolved",
+  "prompt": "Use the fixed model_question from the task protocol for every sample",
+  "answer_parser": "Strip outer whitespace and lowercase the entire response; exact full-label match only",
+  "generation": {"do_sample": false, "max_new_tokens": 12},
+  "development_gate": {
+    "all_six_classes_have_at_least": 10,
+    "minimum_valid_answer_fraction": 0.95,
+    "minimum_accuracy": 0.6,
+    "minimum_per_class_recall": 0.5,
+    "purpose": "Engineering screening threshold chosen before model output; not a universal standard or a formal statistical guarantee"
+  },
+  "denominator": "All 60 planned samples; missing, invalid and failed outputs are reported and are not silently dropped",
+  "constant_reference": {"label": "ship", "chosen_from": "Author train annotations", "balanced_fraction": "10/60"},
+  "report": ["raw outputs", "sample-level status", "accuracy", "per-class support and recall", "confusion including invalid/missing", "valid-answer coverage", "latency and GPU memory", "gate decisions"],
+  "formal_test": "Not selected, not queried, and not used for prompt/model selection",
+  "research_limits": ["Only a small functional development check", "Model pretraining exposure unresolved", "Different image hashes do not prove independent scenes", "A passing screen does not complete SAR/HRRP multimodal research or real closed-source transfer"]
+}

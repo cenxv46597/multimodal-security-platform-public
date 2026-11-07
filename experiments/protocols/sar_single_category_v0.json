@@ -1,0 +1,44 @@
+{
+  "task_id": "sar_single_category_v0",
+  "status": "defined_for_development_only",
+  "description": "Single-category annotation classification derived from SARLANG SARVQA1; not a single-instance or predominant-category claim",
+  "research_role": "First SAR image+text classification subtask; final HRRP, domain text, generative tasks and real closed-source transfer goals remain",
+  "dataset": "YiminJimmy/SARLANG-1M",
+  "revision": "0271408f71bcd9afff69e4e7d324cae912461ebd",
+  "source_members": [
+    "Text/VQA/train/SARVQA1_train.csv",
+    "Text/VQA/test/SARVQA1_test.csv"
+  ],
+  "labels": ["ship", "aircraft", "car", "tank", "bridge", "harbor"],
+  "source_selection": {
+    "Application": "object classification",
+    "Question_after_outer_whitespace_trim": "What is the object visible in the image?",
+    "Answer_after_outer_whitespace_trim": "Exactly one label in the fixed vocabulary, without semantic or substring guessing",
+    "multilabel_rows": "Excluded from this explicitly derived task; retained in original archives for separate study"
+  },
+  "model_question": "What target category is shown in this SAR image? Choose exactly one of: ship, aircraft, car, tank, bridge, harbor. Respond with only the lowercase label.",
+  "model_inputs": ["image content", "fixed model_question"],
+  "evaluation_only": ["sample_id", "image_group_id", "source annotations", "reference label", "author split"],
+  "answer_rule": {
+    "planned_parser": "Strip outer whitespace and lowercase the entire response; accept only if the entire remaining response equals one allowed label",
+    "no_substring_or_fuzzy_recovery": true,
+    "parser_implementation": "Not yet implemented or tested on model output"
+  },
+  "planned_metrics": {
+    "accuracy": "Correct accepted label divided by all planned samples; failures/invalid/missing responses are not silently dropped",
+    "per_class": "Support and recall for every label, plus confusion, parse coverage and error counts",
+    "macro_recall": "Six-class macro recall only when every class has evaluable support; otherwise mark incomplete coverage",
+    "majority_reference": "Select the constant label using training annotations only, then report its fraction on each declared sample set; never choose it using experiment test labels"
+  },
+  "constant_label_reference": {
+    "label": "ship",
+    "selection_source": "Largest category in author training annotations selected by the fixed v0 rule",
+    "status": "Label-distribution arithmetic reference, not a model inference result"
+  },
+  "formal_split": null,
+  "author_split_policy": "Preserve provenance; do not treat demonstration images or author test filenames as a sealed experiment test set",
+  "scene_independence": "Unresolved; exact image-byte hashes only bind identical image files",
+  "normal_capability_pass_threshold": null,
+  "readiness": "Need matching image bytes across all six classes, source/scene grouping, model access and a predeclared capability threshold before formal evaluation",
+  "not_evaluated": ["normal domain competence", "attack", "transfer", "HRRP competence", "closed-source target competence"]
+}

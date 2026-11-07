@@ -1,0 +1,190 @@
+{
+  "checked_at": "2026-11-05T16:17:42+08:00",
+  "task_id": "sar_single_category_v0",
+  "status": "passed_annotation_and_local_link_checks_only",
+  "protocol_path": "experiments/protocols/sar_single_category_v0.json",
+  "protocol_sha256": "8115c82b6164f5f50de4d6d3dd478467a9b8d78c7718b8035bbfd8fa7e801f59",
+  "source_statistics": {
+    "Text/VQA/train/SARVQA1_train.csv": {
+      "classification_rows": 94493,
+      "eligible_annotation_rows": 93495,
+      "excluded_question_template": 998,
+      "question_templates": {
+        "What is the object visible in the image?": 93495,
+        "What are the categories in the picture?": 998
+      },
+      "eligible_unique_image_names": 93495,
+      "eligible_label_counts": {
+        "ship": 60792,
+        "aircraft": 14863,
+        "car": 837,
+        "tank": 1395,
+        "bridge": 14483,
+        "harbor": 1125
+      },
+      "eligible_largest_class_fraction_descriptive": 0.650216589122413
+    },
+    "Text/VQA/test/SARVQA1_test.csv": {
+      "classification_rows": 10492,
+      "eligible_annotation_rows": 10402,
+      "excluded_question_template": 90,
+      "question_templates": {
+        "What is the object visible in the image?": 10402,
+        "What are the categories in the picture?": 90
+      },
+      "eligible_unique_image_names": 10402,
+      "eligible_label_counts": {
+        "ship": 6419,
+        "aircraft": 1972,
+        "car": 104,
+        "tank": 92,
+        "bridge": 1685,
+        "harbor": 130
+      },
+      "eligible_largest_class_fraction_descriptive": 0.617092866756393
+    }
+  },
+  "local_candidate_count": 5,
+  "local_label_counts": {
+    "ship": 4,
+    "aircraft": 1
+  },
+  "local_missing_labels": [
+    "car",
+    "tank",
+    "bridge",
+    "harbor"
+  ],
+  "local_author_split_counts": {
+    "test": 4,
+    "train": 1
+  },
+  "local_largest_class_fraction_descriptive": 0.8,
+  "constant_label_reference": {
+    "label": "ship",
+    "selection_source": "Text/VQA/train/SARVQA1_train.csv",
+    "scope": "Annotation-label arithmetic reference; not a model run",
+    "source_annotation_fractions": {
+      "Text/VQA/train/SARVQA1_train.csv": 0.650216589122413,
+      "Text/VQA/test/SARVQA1_test.csv": 0.617092866756393
+    },
+    "local_correct_count": 4,
+    "local_total": 5,
+    "local_fraction": 0.8
+  },
+  "local_candidates": {
+    "path": "data/processed/sar_single_category_v0/local_candidates.jsonl",
+    "sha256": "4ced786674175c218de43793ca9dc95873b742df6036ab92b1cc9705e016483f"
+  },
+  "processor_check": {
+    "status": "passed",
+    "records_checked": 5,
+    "checks": [
+      {
+        "sample_id": "sar-single-category-local-5279f3762f436f7f",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 109,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sar-single-category-local-3019b26ca46fdeca",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 109,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sar-single-category-local-b297c123e9b77ca0",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 109,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sar-single-category-local-7d86a3110ebc086c",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 109,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      },
+      {
+        "sample_id": "sar-single-category-local-73b4bc6d748df8e3",
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_attention_mask",
+          "pixel_values"
+        ],
+        "text_and_image_token_length": 109,
+        "pixel_shape": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ]
+      }
+    ],
+    "model_weight_loaded": false,
+    "model_inference_run": false,
+    "metadata_mutation_leaves_all_model_input_tensors_identical": true,
+    "all_shared_image_groups_have_identical_processed_pixels": true,
+    "input_keys": [
+      "attention_mask",
+      "input_ids",
+      "pixel_attention_mask",
+      "pixel_values"
+    ],
+    "gradient_scope": "No gradient computed; PIL/NumPy conversion remains outside autograd"
+  },
+  "formal_split_created": false,
+  "normal_accuracy_evaluated": false,
+  "normal_capability_pass_threshold_frozen": false,
+  "limits": [
+    "Annotation counts are not counts of locally acquired images.",
+    "Author single-category annotations do not prove a single physical instance or predominant class.",
+    "Exact basename pairing is not a full upstream image provenance audit.",
+    "Tiny local candidates mix author train/test and cannot represent a held-out six-class benchmark."
+  ]
+}

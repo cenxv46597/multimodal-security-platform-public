@@ -1,0 +1,30 @@
+# Local and generated resources
+/data/raw/
+/data/processed/
+/models/
+/third_party/
+/outputs/
+/runs/
+/.work/
+/.cache/
+**/__pycache__/
+*.py[cod]
+.venv/
+.venv-*/
+venv/
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+
+# Local private research notes and machine-specific diagnostics
+/docs/
+/NEXT_CHAT_HANDOFF.md
+/PROJECT_STATUS.md
+/resources/manifests/attempt_failures_hrrp_initial.json
+/resources/manifests/vlm_precheck_summary_20261105.json
+
+# Keep unused evaluation candidates and labels local until study design is finalized.
+/experiments/protocols/sar_heldout_candidates_*.json
+/resources/manifests/sar_heldout_*.json

@@ -1,0 +1,19 @@
+{
+  "revision": "1bae4156afcba7ad9c9f2eb743ed20675ed14fb1",
+  "classes": {
+    "2s1": 174,
+    "bmp2": 107,
+    "btr70": 92,
+    "m1": 129,
+    "m2": 128,
+    "m35": 129,
+    "m548": 128,
+    "m60": 176,
+    "t72": 108,
+    "zsu23": 174
+  },
+  "png_headers": {
+    "128x128/depth=8/color_type=0": 1345
+  },
+  "scope": "All selected files hash verified; PNG headers inspected; no split, decoding or model evaluation"
+}

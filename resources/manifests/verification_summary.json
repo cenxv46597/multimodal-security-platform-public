@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-05",
+  "scope": "Local hashes and file formats only, no model execution",
+  "resources": {
+    "HRRP_PC_metadata": {
+      "files": 2,
+      "bytes": 655149,
+      "revision": "a1ab400c91f3c3304fc856404c6b66be9ab6b493"
+    },
+    "HRRP_PC_format_subset": {
+      "files": 144,
+      "bytes": 1480402,
+      "revision": "a1ab400c91f3c3304fc856404c6b66be9ab6b493"
+    },
+    "SAMPLE_qpm_real": {
+      "files": 1347,
+      "bytes": 17616829,
+      "revision": "1bae4156afcba7ad9c9f2eb743ed20675ed14fb1"
+    },
+    "SmolVLM_interface_precheck_only": {
+      "files": 13,
+      "bytes": 517903046,
+      "revision": "7e3e67edbbed1bf9888184d9df282b700a323964"
+    },
+    "Torchattacks_v3.5.1_source": {
+      "files": 93,
+      "bytes": 749306,
+      "revision": "936e86d6387ef5ca57e4114d83745cdf199b46cf"
+    }
+  },
+  "errors": [],
+  "sample_format": {
+    "revision": "1bae4156afcba7ad9c9f2eb743ed20675ed14fb1",
+    "classes": {
+      "2s1": 174,
+      "bmp2": 107,
+      "btr70": 92,
+      "m1": 129,
+      "m2": 128,
+      "m35": 129,
+      "m548": 128,
+      "m60": 176,
+      "t72": 108,
+      "zsu23": 174
+    },
+    "png_headers": {
+      "128x128/depth=8/color_type=0": 1345
+    },
+    "scope": "All selected files hash verified; PNG headers inspected; no split, decoding or model evaluation"
+  },
+  "hrrp_format": {
+    "files": 144,
+    "shape_per_file": [
+      512,
+      1
+    ],
+    "all_finite": true,
+    "minimum": -0.3610100692209503,
+    "maximum": 1.1766659012188254,
+    "files_within_unit_interval": 49,
+    "note": "No physical unit, signal meaning, or reuse license inferred"
+  },
+  "model_format": {
+    "tensor_entries": 471,
+    "dtype_counts": {
+      "BF16": 471
+    },
+    "header_and_payload_size_consistent": true,
+    "execution": "not loaded or run; SAR/HRRP capability untested"
+  },
+  "unexpected_partial_files": [],
+  "school_original_hashes": {
+    "docs/任务书.docx": "2e1d46b4821465eda102f7f6ffccb05c7a08729d2bd7a0e6f26953d2fcfbf6ed",
+    "docs/开题报告.docx": "feb8033e73fb030b9c79eec2c263b3afdd49000afd786479891ecb95ea1aa9b4"
+  },
+  "total_files": 1599,
+  "total_resource_bytes": 538404732,
+  "status": "passed"
+}

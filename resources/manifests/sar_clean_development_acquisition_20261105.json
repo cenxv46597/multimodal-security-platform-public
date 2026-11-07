@@ -1,0 +1,5511 @@
+{
+  "started_at": "2026-11-05T16:38:49+08:00",
+  "scope": "Fixed 60-image exploratory development acquisition only",
+  "status": "passed",
+  "source_plan": "resources/manifests/sar_clean_development_plan_20261105.json",
+  "source_plan_sha256": "06ae2acd87d3a4f9634b3b5375b3c23765038a9cae4ea4100a8da331bb51e58c",
+  "official_file_map": {
+    "source_plan": "resources/manifests/sar_clean_development_plan_20261105.json",
+    "source_plan_sha256": "06ae2acd87d3a4f9634b3b5375b3c23765038a9cae4ea4100a8da331bb51e58c",
+    "dataset_version": 1,
+    "storage_version_id": 11694364,
+    "count": 60,
+    "label_counts": {
+      "ship": 10,
+      "aircraft": 10,
+      "car": 10,
+      "tank": 10,
+      "bridge": 10,
+      "harbor": 10
+    },
+    "kaggle_directory_counts": {
+      "train": 60
+    },
+    "total_uncompressed_image_bytes": 6179226,
+    "selected": [
+      {
+        "sample_id": "sar-clean-dev-00006a35a023a5a7840e",
+        "image_name": "0062686.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "ship",
+        "name": "SARDet_100K/JPEGImages/train/0062686.jpg",
+        "crc32": "6947a0cc",
+        "compressed_bytes": 19775,
+        "uncompressed_bytes": 20476,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 3579504927,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0062686.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-00008019fe5ea978ebbb",
+        "image_name": "0019653.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "ship",
+        "name": "SARDet_100K/JPEGImages/train/0019653.jpg",
+        "crc32": "71ee8478",
+        "compressed_bytes": 15109,
+        "uncompressed_bytes": 16123,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 1646740308,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0019653.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-0001a38a3bc93366aeb2",
+        "image_name": "0113528.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "ship",
+        "name": "SARDet_100K/JPEGImages/train/0113528.jpg",
+        "crc32": "a84869d6",
+        "compressed_bytes": 36415,
+        "uncompressed_bytes": 39825,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 5856816706,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0113528.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-0001f4f7dd6ba0be9f03",
+        "image_name": "0064287.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "ship",
+        "name": "SARDet_100K/JPEGImages/train/0064287.jpg",
+        "crc32": "867f7d8b",
+        "compressed_bytes": 55521,
+        "uncompressed_bytes": 59205,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 3651499610,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0064287.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-000219f859247d7503ce",
+        "image_name": "0076968.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "ship",
+        "name": "SARDet_100K/JPEGImages/train/0076968.jpg",
+        "crc32": "c9fd52a3",
+        "compressed_bytes": 3610,
+        "uncompressed_bytes": 4699,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 4223682456,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0076968.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-00046bfc8d46806a5baf",
+        "image_name": "0001335.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "ship",
+        "name": "SARDet_100K/JPEGImages/train/0001335.jpg",
+        "crc32": "9b147fdf",
+        "compressed_bytes": 56904,
+        "uncompressed_bytes": 61035,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 807450395,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0001335.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-00078212963618d64c35",
+        "image_name": "0102894.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "ship",
+        "name": "SARDet_100K/JPEGImages/train/0102894.jpg",
+        "crc32": "e8a281f7",
+        "compressed_bytes": 35247,
+        "uncompressed_bytes": 35485,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 5382954342,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0102894.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-000805883e5e0d2ea0c7",
+        "image_name": "0045167.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "ship",
+        "name": "SARDet_100K/JPEGImages/train/0045167.jpg",
+        "crc32": "ef3298c3",
+        "compressed_bytes": 1999,
+        "uncompressed_bytes": 2496,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 2785737000,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0045167.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-0008542a81a22150f411",
+        "image_name": "0041130.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "ship",
+        "name": "SARDet_100K/JPEGImages/train/0041130.jpg",
+        "crc32": "87f0e607",
+        "compressed_bytes": 3208,
+        "uncompressed_bytes": 3497,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 2600306645,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0041130.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-00086ea8c8c8ead714d6",
+        "image_name": "0084544.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "ship",
+        "name": "SARDet_100K/JPEGImages/train/0084544.jpg",
+        "crc32": "a9281189",
+        "compressed_bytes": 40878,
+        "uncompressed_bytes": 43791,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 4567055905,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0084544.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-00000ccdd3a45c85416b",
+        "image_name": "0029824.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "aircraft",
+        "name": "SARDet_100K/JPEGImages/train/0029824.jpg",
+        "crc32": "f1a96d6c",
+        "compressed_bytes": 85787,
+        "uncompressed_bytes": 85922,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 2096000525,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0029824.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-00015d6b8afad37fefb2",
+        "image_name": "0027938.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "aircraft",
+        "name": "SARDet_100K/JPEGImages/train/0027938.jpg",
+        "crc32": "c48af8b5",
+        "compressed_bytes": 43526,
+        "uncompressed_bytes": 46527,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 2012953862,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0027938.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-00049486156330fff439",
+        "image_name": "0098679.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "aircraft",
+        "name": "SARDet_100K/JPEGImages/train/0098679.jpg",
+        "crc32": "2155270d",
+        "compressed_bytes": 78153,
+        "uncompressed_bytes": 78297,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 5193995085,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0098679.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-000f9e08db183deebee6",
+        "image_name": "0066508.bmp",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "aircraft",
+        "name": "SARDet_100K/JPEGImages/train/0066508.bmp",
+        "crc32": "2ade59b0",
+        "compressed_bytes": 56964,
+        "uncompressed_bytes": 150582,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 3751315758,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0066508.bmp?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-0020271d4474b84d13ca",
+        "image_name": "0016634.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "aircraft",
+        "name": "SARDet_100K/JPEGImages/train/0016634.jpg",
+        "crc32": "402b9e47",
+        "compressed_bytes": 104979,
+        "uncompressed_bytes": 105110,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 1505228534,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0016634.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-0028b06549b40f7dabe6",
+        "image_name": "0101221.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "aircraft",
+        "name": "SARDet_100K/JPEGImages/train/0101221.jpg",
+        "crc32": "805151ec",
+        "compressed_bytes": 118165,
+        "uncompressed_bytes": 118317,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 5308678287,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0101221.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-002fef136977c803719c",
+        "image_name": "0062691.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "aircraft",
+        "name": "SARDet_100K/JPEGImages/train/0062691.jpg",
+        "crc32": "7a6205ba",
+        "compressed_bytes": 123994,
+        "uncompressed_bytes": 124183,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 3579568703,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0062691.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-0034bad2b0bb239ab109",
+        "image_name": "0084536.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "aircraft",
+        "name": "SARDet_100K/JPEGImages/train/0084536.jpg",
+        "crc32": "2c682a5e",
+        "compressed_bytes": 100340,
+        "uncompressed_bytes": 100476,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 4566580404,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0084536.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-0035496b504a7208a55e",
+        "image_name": "0068883.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "aircraft",
+        "name": "SARDet_100K/JPEGImages/train/0068883.jpg",
+        "crc32": "86551267",
+        "compressed_bytes": 104655,
+        "uncompressed_bytes": 104825,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 3858684736,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0068883.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-00362f962b23c1782dc9",
+        "image_name": "0025119.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "aircraft",
+        "name": "SARDet_100K/JPEGImages/train/0025119.jpg",
+        "crc32": "f8373f16",
+        "compressed_bytes": 97160,
+        "uncompressed_bytes": 97294,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 1889407591,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0025119.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-0003e0474ed7895dd4f0",
+        "image_name": "0036958.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "car",
+        "name": "SARDet_100K/JPEGImages/train/0036958.jpg",
+        "crc32": "784caab7",
+        "compressed_bytes": 198508,
+        "uncompressed_bytes": 198729,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 2417143413,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0036958.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-0007020a10cde9d470e9",
+        "image_name": "0016051.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "car",
+        "name": "SARDet_100K/JPEGImages/train/0016051.jpg",
+        "crc32": "405f116d",
+        "compressed_bytes": 223955,
+        "uncompressed_bytes": 224785,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 1479512205,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0016051.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-006e12a4c14464f8c20b",
+        "image_name": "0060957.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "car",
+        "name": "SARDet_100K/JPEGImages/train/0060957.jpg",
+        "crc32": "11b33091",
+        "compressed_bytes": 226223,
+        "uncompressed_bytes": 227160,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 3501895085,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0060957.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-00e828b42a56952f4ca1",
+        "image_name": "0048950.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "car",
+        "name": "SARDet_100K/JPEGImages/train/0048950.jpg",
+        "crc32": "a19a0123",
+        "compressed_bytes": 135677,
+        "uncompressed_bytes": 135676,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 2953798157,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0048950.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-0114039b7344b87a7f7a",
+        "image_name": "0034615.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "car",
+        "name": "SARDet_100K/JPEGImages/train/0034615.jpg",
+        "crc32": "2a261c0e",
+        "compressed_bytes": 159699,
+        "uncompressed_bytes": 159677,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 2313175820,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0034615.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-0211abfaaa7e5942f6d1",
+        "image_name": "0075263.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "car",
+        "name": "SARDet_100K/JPEGImages/train/0075263.jpg",
+        "crc32": "3f3705ab",
+        "compressed_bytes": 173827,
+        "uncompressed_bytes": 174011,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 4148860655,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0075263.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-026d6090c375b621a987",
+        "image_name": "0080762.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "car",
+        "name": "SARDet_100K/JPEGImages/train/0080762.jpg",
+        "crc32": "7148f04e",
+        "compressed_bytes": 177719,
+        "uncompressed_bytes": 177691,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 4394125519,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0080762.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-02fd912285002f28d1df",
+        "image_name": "0009664.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "car",
+        "name": "SARDet_100K/JPEGImages/train/0009664.jpg",
+        "crc32": "79b2dd83",
+        "compressed_bytes": 172839,
+        "uncompressed_bytes": 172836,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 1190779703,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0009664.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-03345c7bb341909ea86a",
+        "image_name": "0113551.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "car",
+        "name": "SARDet_100K/JPEGImages/train/0113551.jpg",
+        "crc32": "cb0fa5f8",
+        "compressed_bytes": 151708,
+        "uncompressed_bytes": 151700,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 5857869216,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0113551.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-037cab57042aea82fc14",
+        "image_name": "0042253.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "car",
+        "name": "SARDet_100K/JPEGImages/train/0042253.jpg",
+        "crc32": "5ba980a9",
+        "compressed_bytes": 95020,
+        "uncompressed_bytes": 105383,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 2652371497,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0042253.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-0002a5eda9a4ed625fa1",
+        "image_name": "0051688.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "tank",
+        "name": "SARDet_100K/JPEGImages/train/0051688.jpg",
+        "crc32": "bae6954f",
+        "compressed_bytes": 24405,
+        "uncompressed_bytes": 24886,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 3077889622,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0051688.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-0045ba7887d5b747362e",
+        "image_name": "0038370.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "tank",
+        "name": "SARDet_100K/JPEGImages/train/0038370.jpg",
+        "crc32": "7507a6e4",
+        "compressed_bytes": 19994,
+        "uncompressed_bytes": 20469,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 2481284010,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0038370.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-0056e7bbe2d9a6bacc28",
+        "image_name": "0017006.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "tank",
+        "name": "SARDet_100K/JPEGImages/train/0017006.jpg",
+        "crc32": "ddb29367",
+        "compressed_bytes": 26300,
+        "uncompressed_bytes": 27771,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 1521271921,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0017006.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-007714838caeac70e7f8",
+        "image_name": "0070658.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "tank",
+        "name": "SARDet_100K/JPEGImages/train/0070658.jpg",
+        "crc32": "23995f84",
+        "compressed_bytes": 39741,
+        "uncompressed_bytes": 42026,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 3941962819,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0070658.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-0088dde66de5d803f3c4",
+        "image_name": "0047321.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "tank",
+        "name": "SARDet_100K/JPEGImages/train/0047321.jpg",
+        "crc32": "6ad2174d",
+        "compressed_bytes": 31051,
+        "uncompressed_bytes": 32880,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 2882741800,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0047321.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-00d038dd3f32e6d5fe83",
+        "image_name": "0001303.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "tank",
+        "name": "SARDet_100K/JPEGImages/train/0001303.jpg",
+        "crc32": "ba3bce91",
+        "compressed_bytes": 51104,
+        "uncompressed_bytes": 54597,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 806302851,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0001303.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-00d9504f24b91f0f4ca6",
+        "image_name": "0034937.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "tank",
+        "name": "SARDet_100K/JPEGImages/train/0034937.jpg",
+        "crc32": "f864c11c",
+        "compressed_bytes": 14129,
+        "uncompressed_bytes": 14811,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 2328940199,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0034937.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-00dfbfe69267b8d5f47c",
+        "image_name": "0056874.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "tank",
+        "name": "SARDet_100K/JPEGImages/train/0056874.jpg",
+        "crc32": "dc5e65fe",
+        "compressed_bytes": 22679,
+        "uncompressed_bytes": 22968,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 3314322423,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0056874.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-00ef702d49ad8fdd5a83",
+        "image_name": "0027316.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "tank",
+        "name": "SARDet_100K/JPEGImages/train/0027316.jpg",
+        "crc32": "e4501aec",
+        "compressed_bytes": 35923,
+        "uncompressed_bytes": 36400,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 1987831963,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0027316.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-00fd2bd70ac7129fe09e",
+        "image_name": "0026869.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "tank",
+        "name": "SARDet_100K/JPEGImages/train/0026869.jpg",
+        "crc32": "d7dc1092",
+        "compressed_bytes": 38953,
+        "uncompressed_bytes": 41370,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 1967092506,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0026869.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-000a7fee06f3b5156d69",
+        "image_name": "0040488.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "bridge",
+        "name": "SARDet_100K/JPEGImages/train/0040488.jpg",
+        "crc32": "359ea860",
+        "compressed_bytes": 13329,
+        "uncompressed_bytes": 13927,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 2573523974,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0040488.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-000c050845e2d4093738",
+        "image_name": "0072428.png",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "bridge",
+        "name": "SARDet_100K/JPEGImages/train/0072428.png",
+        "crc32": "b6037df9",
+        "compressed_bytes": 159281,
+        "uncompressed_bytes": 180885,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 4021224279,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0072428.png?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-0013e0c98caa8820134a",
+        "image_name": "0064338.png",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "bridge",
+        "name": "SARDet_100K/JPEGImages/train/0064338.png",
+        "crc32": "fb21fdb7",
+        "compressed_bytes": 159053,
+        "uncompressed_bytes": 180967,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 3653759539,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0064338.png?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-00148c3e1fab9ce638fb",
+        "image_name": "0089013.png",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "bridge",
+        "name": "SARDet_100K/JPEGImages/train/0089013.png",
+        "crc32": "b4b98681",
+        "compressed_bytes": 131127,
+        "uncompressed_bytes": 153103,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 4763203857,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0089013.png?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-001bb599af3c74888278",
+        "image_name": "0019970.png",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "bridge",
+        "name": "SARDet_100K/JPEGImages/train/0019970.png",
+        "crc32": "87f9bb91",
+        "compressed_bytes": 98919,
+        "uncompressed_bytes": 112872,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 1660910697,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0019970.png?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-00265009f17775b18186",
+        "image_name": "0009738.png",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "bridge",
+        "name": "SARDet_100K/JPEGImages/train/0009738.png",
+        "crc32": "65e6f473",
+        "compressed_bytes": 124418,
+        "uncompressed_bytes": 144824,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 1194617117,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0009738.png?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-002f21b057a87a237100",
+        "image_name": "0093691.png",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "bridge",
+        "name": "SARDet_100K/JPEGImages/train/0093691.png",
+        "crc32": "5cd1b568",
+        "compressed_bytes": 126716,
+        "uncompressed_bytes": 148423,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 4973190426,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0093691.png?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-00348142304ffdb92647",
+        "image_name": "0032726.png",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "bridge",
+        "name": "SARDet_100K/JPEGImages/train/0032726.png",
+        "crc32": "7b429f7e",
+        "compressed_bytes": 131441,
+        "uncompressed_bytes": 150877,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 2227265371,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0032726.png?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-0036b1f0ee7ebdecdfe5",
+        "image_name": "0037040.jpg",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "bridge",
+        "name": "SARDet_100K/JPEGImages/train/0037040.jpg",
+        "crc32": "0e3bf9b0",
+        "compressed_bytes": 47067,
+        "uncompressed_bytes": 50928,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 2422412828,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0037040.jpg?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-0036c45a7b4ccd1f1b32",
+        "image_name": "0059646.png",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "bridge",
+        "name": "SARDet_100K/JPEGImages/train/0059646.png",
+        "crc32": "660223e9",
+        "compressed_bytes": 124686,
+        "uncompressed_bytes": 145171,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 3440826269,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0059646.png?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-000724bbfb6ee3dd1adb",
+        "image_name": "0114452.png",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "harbor",
+        "name": "SARDet_100K/JPEGImages/train/0114452.png",
+        "crc32": "527202df",
+        "compressed_bytes": 114412,
+        "uncompressed_bytes": 133660,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 5897591111,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0114452.png?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-00295df793a89d35ad24",
+        "image_name": "0107786.png",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "harbor",
+        "name": "SARDet_100K/JPEGImages/train/0107786.png",
+        "crc32": "77748798",
+        "compressed_bytes": 93834,
+        "uncompressed_bytes": 111179,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 5606093351,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0107786.png?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-005928d8efb26474c4b1",
+        "image_name": "0049662.png",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "harbor",
+        "name": "SARDet_100K/JPEGImages/train/0049662.png",
+        "crc32": "661037e0",
+        "compressed_bytes": 133507,
+        "uncompressed_bytes": 157508,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 2987123433,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0049662.png?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-00a916ceb59e51386f10",
+        "image_name": "0065076.png",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "harbor",
+        "name": "SARDet_100K/JPEGImages/train/0065076.png",
+        "crc32": "751cba88",
+        "compressed_bytes": 157632,
+        "uncompressed_bytes": 179526,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 3687280792,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0065076.png?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-00b73f8b96706e76aad7",
+        "image_name": "0015835.png",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "harbor",
+        "name": "SARDet_100K/JPEGImages/train/0015835.png",
+        "crc32": "546590d3",
+        "compressed_bytes": 153649,
+        "uncompressed_bytes": 173993,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 1471085127,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0015835.png?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-00f07e467b4ec806091a",
+        "image_name": "0106752.png",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "harbor",
+        "name": "SARDet_100K/JPEGImages/train/0106752.png",
+        "crc32": "bd965193",
+        "compressed_bytes": 104399,
+        "uncompressed_bytes": 121269,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 5559025721,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0106752.png?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-00f7bf9921de2cda9d40",
+        "image_name": "0022442.png",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "harbor",
+        "name": "SARDet_100K/JPEGImages/train/0022442.png",
+        "crc32": "d75da057",
+        "compressed_bytes": 140359,
+        "uncompressed_bytes": 159006,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 1772760412,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0022442.png?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-0189d40539bf248c2d11",
+        "image_name": "0054189.png",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "harbor",
+        "name": "SARDet_100K/JPEGImages/train/0054189.png",
+        "crc32": "0688e443",
+        "compressed_bytes": 144654,
+        "uncompressed_bytes": 165656,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 3191662129,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0054189.png?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-01a1be9fb8ef93bbdc78",
+        "image_name": "0089940.png",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "harbor",
+        "name": "SARDet_100K/JPEGImages/train/0089940.png",
+        "crc32": "42146600",
+        "compressed_bytes": 158655,
+        "uncompressed_bytes": 180103,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 4806679882,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0089940.png?datasetVersionNumber=1"
+      },
+      {
+        "sample_id": "sar-clean-dev-01e04c876562b1601ca0",
+        "image_name": "0019476.png",
+        "sarvqa_author_split": "train",
+        "kaggle_image_directory": "train",
+        "reference_answer": "harbor",
+        "name": "SARDet_100K/JPEGImages/train/0019476.png",
+        "crc32": "ff6f715b",
+        "compressed_bytes": 151299,
+        "uncompressed_bytes": 171358,
+        "compression_method": 8,
+        "general_flags": 2048,
+        "local_header_offset": 1638807144,
+        "download_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0019476.png?datasetVersionNumber=1"
+      }
+    ]
+  },
+  "official_coco_validation": {
+    "scope": "Bounded compressed official train annotation member; no new sampling or image/model inference",
+    "dataset_version": 1,
+    "storage_version_id": 11694364,
+    "member": {
+      "name": "SARDet_100K/Annotations/train.json",
+      "crc32": "2dfdad18",
+      "compressed_bytes": 3591682,
+      "uncompressed_bytes": 36628448,
+      "compression_method": 8,
+      "general_flags": 2048,
+      "local_header_offset": 0
+    },
+    "status": "passed",
+    "source_plan_sha256": "06ae2acd87d3a4f9634b3b5375b3c23765038a9cae4ea4100a8da331bb51e58c",
+    "compressed_data_offset": 84,
+    "compressed_bytes": 3591682,
+    "uncompressed_bytes": 36628448,
+    "compressed_sha256": "b24fd50861b23df66e25c72696265715774901d4a0879220578ac977963eea82",
+    "uncompressed_sha256": "5fd26a7431a70a9126ae14ffefce3c1d775244f9b6b0c9b444dc3edbc7a6f863",
+    "crc32": "2dfdad18",
+    "crc32_passed": true,
+    "deflate_length_passed": true,
+    "total_images": 94493,
+    "total_annotations": 198747,
+    "categories": {
+      "0": "ship",
+      "1": "aircraft",
+      "2": "car",
+      "3": "tank",
+      "4": "bridge",
+      "5": "harbor"
+    },
+    "top_level_keys": [
+      "annotations",
+      "categories",
+      "images"
+    ],
+    "image_field_names": [
+      "file_name",
+      "height",
+      "id",
+      "width"
+    ],
+    "annotation_field_names": [
+      "area",
+      "bbox",
+      "category_id",
+      "id",
+      "ignore",
+      "image_id",
+      "iscrowd",
+      "segmentation"
+    ],
+    "original_scene_lineage": "No lineage inferred from generic COCO ids/file names; inspect image_field_names for actual supplied keys",
+    "selected_checks": [
+      {
+        "sample_id": "sar-clean-dev-00006a35a023a5a7840e",
+        "image_name": "0062686.jpg",
+        "coco_image_id": 7808,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00008019fe5ea978ebbb",
+        "image_name": "0019653.jpg",
+        "coco_image_id": 28658,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0001a38a3bc93366aeb2",
+        "image_name": "0113528.jpg",
+        "coco_image_id": 20735,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0001f4f7dd6ba0be9f03",
+        "image_name": "0064287.jpg",
+        "coco_image_id": 21945,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-000219f859247d7503ce",
+        "image_name": "0076968.jpg",
+        "coco_image_id": 7506,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00046bfc8d46806a5baf",
+        "image_name": "0001335.jpg",
+        "coco_image_id": 18766,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00078212963618d64c35",
+        "image_name": "0102894.jpg",
+        "coco_image_id": 78335,
+        "width": 500,
+        "height": 330,
+        "annotation_count": 4,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-000805883e5e0d2ea0c7",
+        "image_name": "0045167.jpg",
+        "coco_image_id": 71339,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0008542a81a22150f411",
+        "image_name": "0041130.jpg",
+        "coco_image_id": 63911,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00086ea8c8c8ead714d6",
+        "image_name": "0084544.jpg",
+        "coco_image_id": 15284,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 2,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00000ccdd3a45c85416b",
+        "image_name": "0029824.jpg",
+        "coco_image_id": 43324,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 4,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00015d6b8afad37fefb2",
+        "image_name": "0027938.jpg",
+        "coco_image_id": 43689,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 1,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00049486156330fff439",
+        "image_name": "0098679.jpg",
+        "coco_image_id": 41252,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 1,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-000f9e08db183deebee6",
+        "image_name": "0066508.bmp",
+        "coco_image_id": 31837,
+        "width": 224,
+        "height": 224,
+        "annotation_count": 6,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0020271d4474b84d13ca",
+        "image_name": "0016634.jpg",
+        "coco_image_id": 37785,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 2,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0028b06549b40f7dabe6",
+        "image_name": "0101221.jpg",
+        "coco_image_id": 41398,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 1,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-002fef136977c803719c",
+        "image_name": "0062691.jpg",
+        "coco_image_id": 33627,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 4,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0034bad2b0bb239ab109",
+        "image_name": "0084536.jpg",
+        "coco_image_id": 34388,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 1,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0035496b504a7208a55e",
+        "image_name": "0068883.jpg",
+        "coco_image_id": 38674,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 2,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00362f962b23c1782dc9",
+        "image_name": "0025119.jpg",
+        "coco_image_id": 36989,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 1,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0003e0474ed7895dd4f0",
+        "image_name": "0036958.jpg",
+        "coco_image_id": 93963,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 6,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0007020a10cde9d470e9",
+        "image_name": "0016051.jpg",
+        "coco_image_id": 93689,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 21,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-006e12a4c14464f8c20b",
+        "image_name": "0060957.jpg",
+        "coco_image_id": 94115,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 5,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00e828b42a56952f4ca1",
+        "image_name": "0048950.jpg",
+        "coco_image_id": 93945,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 6,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0114039b7344b87a7f7a",
+        "image_name": "0034615.jpg",
+        "coco_image_id": 94148,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 6,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0211abfaaa7e5942f6d1",
+        "image_name": "0075263.jpg",
+        "coco_image_id": 93862,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 6,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-026d6090c375b621a987",
+        "image_name": "0080762.jpg",
+        "coco_image_id": 94029,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 7,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-02fd912285002f28d1df",
+        "image_name": "0009664.jpg",
+        "coco_image_id": 93844,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 19,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-03345c7bb341909ea86a",
+        "image_name": "0113551.jpg",
+        "coco_image_id": 93662,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 5,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-037cab57042aea82fc14",
+        "image_name": "0042253.jpg",
+        "coco_image_id": 94266,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 16,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0002a5eda9a4ed625fa1",
+        "image_name": "0051688.jpg",
+        "coco_image_id": 26694,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 12,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0045ba7887d5b747362e",
+        "image_name": "0038370.jpg",
+        "coco_image_id": 27492,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 6,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0056e7bbe2d9a6bacc28",
+        "image_name": "0017006.jpg",
+        "coco_image_id": 24395,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-007714838caeac70e7f8",
+        "image_name": "0070658.jpg",
+        "coco_image_id": 9591,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 7,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0088dde66de5d803f3c4",
+        "image_name": "0047321.jpg",
+        "coco_image_id": 23627,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 5,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00d038dd3f32e6d5fe83",
+        "image_name": "0001303.jpg",
+        "coco_image_id": 10958,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 13,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00d9504f24b91f0f4ca6",
+        "image_name": "0034937.jpg",
+        "coco_image_id": 27499,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 4,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00dfbfe69267b8d5f47c",
+        "image_name": "0056874.jpg",
+        "coco_image_id": 27377,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 3,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00ef702d49ad8fdd5a83",
+        "image_name": "0027316.jpg",
+        "coco_image_id": 5102,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 2,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00fd2bd70ac7129fe09e",
+        "image_name": "0026869.jpg",
+        "coco_image_id": 18432,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 3,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-000a7fee06f3b5156d69",
+        "image_name": "0040488.jpg",
+        "coco_image_id": 26841,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-000c050845e2d4093738",
+        "image_name": "0072428.png",
+        "coco_image_id": 78996,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0013e0c98caa8820134a",
+        "image_name": "0064338.png",
+        "coco_image_id": 79849,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00148c3e1fab9ce638fb",
+        "image_name": "0089013.png",
+        "coco_image_id": 86657,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 2,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-001bb599af3c74888278",
+        "image_name": "0019970.png",
+        "coco_image_id": 85298,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00265009f17775b18186",
+        "image_name": "0009738.png",
+        "coco_image_id": 82018,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-002f21b057a87a237100",
+        "image_name": "0093691.png",
+        "coco_image_id": 89728,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00348142304ffdb92647",
+        "image_name": "0032726.png",
+        "coco_image_id": 92945,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 3,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0036b1f0ee7ebdecdfe5",
+        "image_name": "0037040.jpg",
+        "coco_image_id": 17252,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0036c45a7b4ccd1f1b32",
+        "image_name": "0059646.png",
+        "coco_image_id": 82579,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-000724bbfb6ee3dd1adb",
+        "image_name": "0114452.png",
+        "coco_image_id": 86686,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 3,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00295df793a89d35ad24",
+        "image_name": "0107786.png",
+        "coco_image_id": 86776,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 2,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-005928d8efb26474c4b1",
+        "image_name": "0049662.png",
+        "coco_image_id": 85349,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 2,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00a916ceb59e51386f10",
+        "image_name": "0065076.png",
+        "coco_image_id": 87158,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00b73f8b96706e76aad7",
+        "image_name": "0015835.png",
+        "coco_image_id": 86561,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 5,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00f07e467b4ec806091a",
+        "image_name": "0106752.png",
+        "coco_image_id": 85552,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 2,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00f7bf9921de2cda9d40",
+        "image_name": "0022442.png",
+        "coco_image_id": 85320,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 5,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0189d40539bf248c2d11",
+        "image_name": "0054189.png",
+        "coco_image_id": 87060,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 2,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-01a1be9fb8ef93bbdc78",
+        "image_name": "0089940.png",
+        "coco_image_id": 85948,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-01e04c876562b1601ca0",
+        "image_name": "0019476.png",
+        "coco_image_id": 87015,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 3,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      }
+    ],
+    "problems": []
+  },
+  "coco_evidence_sha256": "168532451daa9576fcb423e404dda5f21b250cdecf24bea88033c019f74e9e8a",
+  "license": {
+    "author_repository": "CC-BY-NC-4.0",
+    "kaggle_metadata": "MIT",
+    "note": "Conflicting fields retained; MIT does not automatically override author or constituent-source terms. No redistribution performed."
+  },
+  "files": [
+    {
+      "sample_id": "sar-clean-dev-00006a35a023a5a7840e",
+      "image_name": "0062686.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0062686.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 20476,
+      "official_zip_crc32": "6947a0cc",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 20476,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0062686.jpg",
+          "content_range": "bytes 0-20475/20476",
+          "etag": "\"e7fb40f7f8f256200b437319e8f42c8e\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0062686.jpg",
+      "bytes": 20476,
+      "sha256": "94d55c8d4dc2efb920cc94e14a44a94db6ebb4014105f608d3392a74fd75af26",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-00006a35a023a5a7840e",
+        "image_name": "0062686.jpg",
+        "coco_image_id": 7808,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-00008019fe5ea978ebbb",
+      "image_name": "0019653.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0019653.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 16123,
+      "official_zip_crc32": "71ee8478",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 16123,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0019653.jpg",
+          "content_range": "bytes 0-16122/16123",
+          "etag": "\"f865fcc6fab15dc86505b78128852719\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0019653.jpg",
+      "bytes": 16123,
+      "sha256": "6c083d99eb857fd63c92633482aef96947486479d1eec2f7d312e5b27782dfb9",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-00008019fe5ea978ebbb",
+        "image_name": "0019653.jpg",
+        "coco_image_id": 28658,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-0001a38a3bc93366aeb2",
+      "image_name": "0113528.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0113528.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 39825,
+      "official_zip_crc32": "a84869d6",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 39825,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0113528.jpg",
+          "content_range": "bytes 0-39824/39825",
+          "etag": "\"ab6a01445954f2a7efcfde09fc235011\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0113528.jpg",
+      "bytes": 39825,
+      "sha256": "4e75fee7d9bba529ee917dfea15b2ab1aa1e4ce0417bd55962ddb22944eefc39",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          19,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-0001a38a3bc93366aeb2",
+        "image_name": "0113528.jpg",
+        "coco_image_id": 20735,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-0001f4f7dd6ba0be9f03",
+      "image_name": "0064287.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0064287.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 59205,
+      "official_zip_crc32": "867f7d8b",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 59205,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0064287.jpg",
+          "content_range": "bytes 0-59204/59205",
+          "etag": "\"6d88d00b8a8b1f804a93e2d420f45b94\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0064287.jpg",
+      "bytes": 59205,
+      "sha256": "5feb8ecea742360c75ec24213900fb01058878a4bad38d636e7a3b05ddd4440f",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-0001f4f7dd6ba0be9f03",
+        "image_name": "0064287.jpg",
+        "coco_image_id": 21945,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-000219f859247d7503ce",
+      "image_name": "0076968.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0076968.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 4699,
+      "official_zip_crc32": "c9fd52a3",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 4699,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0076968.jpg",
+          "content_range": "bytes 0-4698/4699",
+          "etag": "\"88907f8f7b9762e9b63757a0db8f3d0b\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0076968.jpg",
+      "bytes": 4699,
+      "sha256": "7558fe6199f8b33856cd5053c1d69c009267a2d0f958e20b92ffe5684d6463ba",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-000219f859247d7503ce",
+        "image_name": "0076968.jpg",
+        "coco_image_id": 7506,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-00046bfc8d46806a5baf",
+      "image_name": "0001335.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0001335.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 61035,
+      "official_zip_crc32": "9b147fdf",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 61035,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0001335.jpg",
+          "content_range": "bytes 0-61034/61035",
+          "etag": "\"e0508954e84016790a373d666b9d7641\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0001335.jpg",
+      "bytes": 61035,
+      "sha256": "ff4d2ecc001c88b6be0a33a9e27a3f1e2831f44f5c6f53aab4e06af9a9825efe",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-00046bfc8d46806a5baf",
+        "image_name": "0001335.jpg",
+        "coco_image_id": 18766,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-00078212963618d64c35",
+      "image_name": "0102894.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0102894.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 35485,
+      "official_zip_crc32": "e8a281f7",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 35485,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0102894.jpg",
+          "content_range": "bytes 0-35484/35485",
+          "etag": "\"bf4fbfa545ef6d94d5da53143f85bc29\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0102894.jpg",
+      "bytes": 35485,
+      "sha256": "679f53488700a4264a2f04c73b9f0d283def5169ecda113ef762beb72c2f3d67",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          500,
+          330
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-00078212963618d64c35",
+        "image_name": "0102894.jpg",
+        "coco_image_id": 78335,
+        "width": 500,
+        "height": 330,
+        "annotation_count": 4,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-000805883e5e0d2ea0c7",
+      "image_name": "0045167.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0045167.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 2496,
+      "official_zip_crc32": "ef3298c3",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 2496,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0045167.jpg",
+          "content_range": "bytes 0-2495/2496",
+          "etag": "\"737a329985c19d00f97680d4b8e7f834\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0045167.jpg",
+      "bytes": 2496,
+      "sha256": "bb420e84f910ecc8ef10b520256e371c8972168b17c28c685ca80ead4cbe190f",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-000805883e5e0d2ea0c7",
+        "image_name": "0045167.jpg",
+        "coco_image_id": 71339,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-0008542a81a22150f411",
+      "image_name": "0041130.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0041130.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 3497,
+      "official_zip_crc32": "87f0e607",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 3497,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0041130.jpg",
+          "content_range": "bytes 0-3496/3497",
+          "etag": "\"3d2d0f3533b46577edaa66427f98c816\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0041130.jpg",
+      "bytes": 3497,
+      "sha256": "32e5cdb126e0097ebd429eccf59ff3fff92e72a8be65764a4d31a32914ccd2a6",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-0008542a81a22150f411",
+        "image_name": "0041130.jpg",
+        "coco_image_id": 63911,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-00086ea8c8c8ead714d6",
+      "image_name": "0084544.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0084544.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 43791,
+      "official_zip_crc32": "a9281189",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 43791,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0084544.jpg",
+          "content_range": "bytes 0-43790/43791",
+          "etag": "\"01bbafbb08283174352597073a4222f3\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0084544.jpg",
+      "bytes": 43791,
+      "sha256": "87d745b74a888aa88dd59aaa4f573129a5adcb7350f2685b79e846b3fbb1645f",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-00086ea8c8c8ead714d6",
+        "image_name": "0084544.jpg",
+        "coco_image_id": 15284,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 2,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-00000ccdd3a45c85416b",
+      "image_name": "0029824.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0029824.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 85922,
+      "official_zip_crc32": "f1a96d6c",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 85922,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0029824.jpg",
+          "content_range": "bytes 0-85921/85922",
+          "etag": "\"9b563b2bb508ba2b3249fea151320c20\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0029824.jpg",
+      "bytes": 85922,
+      "sha256": "c3c5e70f4c4da8283e75ee00e8e2115db638498aa5fcff7fd18bcfba434c9f89",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-00000ccdd3a45c85416b",
+        "image_name": "0029824.jpg",
+        "coco_image_id": 43324,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 4,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-00015d6b8afad37fefb2",
+      "image_name": "0027938.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0027938.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 46527,
+      "official_zip_crc32": "c48af8b5",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 46527,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0027938.jpg",
+          "content_range": "bytes 0-46526/46527",
+          "etag": "\"50a4ebb68ea8439bcea2f7ee4c365f93\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0027938.jpg",
+      "bytes": 46527,
+      "sha256": "d319832f6cf2ca1f40f3349bf7ffbbdd852e473d2fb552a8dd51169ed1cda675",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          150
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-00015d6b8afad37fefb2",
+        "image_name": "0027938.jpg",
+        "coco_image_id": 43689,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 1,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-00049486156330fff439",
+      "image_name": "0098679.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0098679.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 78297,
+      "official_zip_crc32": "2155270d",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 78297,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0098679.jpg",
+          "content_range": "bytes 0-78296/78297",
+          "etag": "\"8e44627c19b50b12d100763eca1c43e6\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0098679.jpg",
+      "bytes": 78297,
+      "sha256": "12b9c452d50d016f1d5acdbf5d5305e6705a406abd8cfe611607a2f21b5d03e2",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-00049486156330fff439",
+        "image_name": "0098679.jpg",
+        "coco_image_id": 41252,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 1,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-000f9e08db183deebee6",
+      "image_name": "0066508.bmp",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0066508.bmp?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 150582,
+      "official_zip_crc32": "2ade59b0",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 150582,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0066508.bmp",
+          "content_range": "bytes 0-150581/150582",
+          "etag": "\"c277520d4a2520cfbe8073a3f11ab8cf\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0066508.bmp",
+      "bytes": 150582,
+      "sha256": "35a3487e263aec70d72d2c1f159f6b9fd497d62bef36cd17d9475b0143827569",
+      "image": {
+        "format": "BMP",
+        "mode": "RGB",
+        "size": [
+          224,
+          224
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-000f9e08db183deebee6",
+        "image_name": "0066508.bmp",
+        "coco_image_id": 31837,
+        "width": 224,
+        "height": 224,
+        "annotation_count": 6,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-0020271d4474b84d13ca",
+      "image_name": "0016634.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0016634.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 105110,
+      "official_zip_crc32": "402b9e47",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 105110,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0016634.jpg",
+          "content_range": "bytes 0-105109/105110",
+          "etag": "\"f4e07bbcb80f413aacc5f74fe58d6630\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0016634.jpg",
+      "bytes": 105110,
+      "sha256": "b2bdc0fea67a7ec2f93f0360ae6f0544701467ce2055d3ecc972213571edf0f5",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-0020271d4474b84d13ca",
+        "image_name": "0016634.jpg",
+        "coco_image_id": 37785,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 2,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-0028b06549b40f7dabe6",
+      "image_name": "0101221.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0101221.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 118317,
+      "official_zip_crc32": "805151ec",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 118317,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0101221.jpg",
+          "content_range": "bytes 0-118316/118317",
+          "etag": "\"f2690b0014bcaf9ffbc65a9ff5490217\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0101221.jpg",
+      "bytes": 118317,
+      "sha256": "5e5936eb6fdc9718916ea9a2ab495bc97b5ec04ca7055cf0170c63352a2703fd",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-0028b06549b40f7dabe6",
+        "image_name": "0101221.jpg",
+        "coco_image_id": 41398,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 1,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-002fef136977c803719c",
+      "image_name": "0062691.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0062691.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 124183,
+      "official_zip_crc32": "7a6205ba",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 124183,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0062691.jpg",
+          "content_range": "bytes 0-124182/124183",
+          "etag": "\"8cf8ce0479affdc9e4a4bd914b2903b0\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0062691.jpg",
+      "bytes": 124183,
+      "sha256": "a719126999df56ad386784bef76cc24b362165eda3fa6384e52c885a0c4eacf7",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-002fef136977c803719c",
+        "image_name": "0062691.jpg",
+        "coco_image_id": 33627,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 4,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-0034bad2b0bb239ab109",
+      "image_name": "0084536.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0084536.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 100476,
+      "official_zip_crc32": "2c682a5e",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 100476,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0084536.jpg",
+          "content_range": "bytes 0-100475/100476",
+          "etag": "\"efbfebc661d8d45bcd1fd10cae73216a\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0084536.jpg",
+      "bytes": 100476,
+      "sha256": "4aa64392a18531f2d834e49475980b8e10f6d90922d2ff4da9ac1dc0c1c0288e",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-0034bad2b0bb239ab109",
+        "image_name": "0084536.jpg",
+        "coco_image_id": 34388,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 1,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-0035496b504a7208a55e",
+      "image_name": "0068883.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0068883.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 104825,
+      "official_zip_crc32": "86551267",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 104825,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0068883.jpg",
+          "content_range": "bytes 0-104824/104825",
+          "etag": "\"1f874c50236a54fe20307096e2c9736a\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0068883.jpg",
+      "bytes": 104825,
+      "sha256": "17ba5d5017983e4c0b54b7698f4288ee29300222c72155ff0b6a155b757c987a",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-0035496b504a7208a55e",
+        "image_name": "0068883.jpg",
+        "coco_image_id": 38674,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 2,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-00362f962b23c1782dc9",
+      "image_name": "0025119.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0025119.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 97294,
+      "official_zip_crc32": "f8373f16",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 97294,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0025119.jpg",
+          "content_range": "bytes 0-97293/97294",
+          "etag": "\"2af2d407d716485b182364e9b42bf0c1\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0025119.jpg",
+      "bytes": 97294,
+      "sha256": "451af99276bb6c94a241025fffc9ec47aae0465c0963f5fa5d0aa3338fde3ec3",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-00362f962b23c1782dc9",
+        "image_name": "0025119.jpg",
+        "coco_image_id": 36989,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 1,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-0003e0474ed7895dd4f0",
+      "image_name": "0036958.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0036958.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 198729,
+      "official_zip_crc32": "784caab7",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 198729,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0036958.jpg",
+          "content_range": "bytes 0-198728/198729",
+          "etag": "\"1e134fd7f35f7965939e086aacfd2b24\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0036958.jpg",
+      "bytes": 198729,
+      "sha256": "fb2bfde1934f674adbbf4c035ec2f539ce092fbdb912a4a335ba9275ddff20f1",
+      "image": {
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-0003e0474ed7895dd4f0",
+        "image_name": "0036958.jpg",
+        "coco_image_id": 93963,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 6,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-0007020a10cde9d470e9",
+      "image_name": "0016051.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0016051.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 224785,
+      "official_zip_crc32": "405f116d",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 224785,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0016051.jpg",
+          "content_range": "bytes 0-224784/224785",
+          "etag": "\"c1d4b266e8aa9b127e5314e6beb8096f\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0016051.jpg",
+      "bytes": 224785,
+      "sha256": "0818e27573a8c5f8035742adbd349827d460592b8c0503f3c893285b6f29dc10",
+      "image": {
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-0007020a10cde9d470e9",
+        "image_name": "0016051.jpg",
+        "coco_image_id": 93689,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 21,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-006e12a4c14464f8c20b",
+      "image_name": "0060957.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0060957.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 227160,
+      "official_zip_crc32": "11b33091",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 227160,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0060957.jpg",
+          "content_range": "bytes 0-227159/227160",
+          "etag": "\"f6c436c9508aefe482b0fc90666315f4\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0060957.jpg",
+      "bytes": 227160,
+      "sha256": "636130e08e1b58de8d62841bcbb7ffa3c1d45bbde110ed295a704d4ce683dcb6",
+      "image": {
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-006e12a4c14464f8c20b",
+        "image_name": "0060957.jpg",
+        "coco_image_id": 94115,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 5,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-00e828b42a56952f4ca1",
+      "image_name": "0048950.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0048950.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 135676,
+      "official_zip_crc32": "a19a0123",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 135676,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0048950.jpg",
+          "content_range": "bytes 0-135675/135676",
+          "etag": "\"e226d4cfd2c93d1949d067d3e22f7e25\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0048950.jpg",
+      "bytes": 135676,
+      "sha256": "c2b8cef0e2fafa02fcdc9069f9ee56ff0ceb047fc197e0c62abd63cb2eb4fe40",
+      "image": {
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-00e828b42a56952f4ca1",
+        "image_name": "0048950.jpg",
+        "coco_image_id": 93945,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 6,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-0114039b7344b87a7f7a",
+      "image_name": "0034615.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0034615.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 159677,
+      "official_zip_crc32": "2a261c0e",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 159677,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0034615.jpg",
+          "content_range": "bytes 0-159676/159677",
+          "etag": "\"769b60940f08efcd929b86c5d2b35718\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0034615.jpg",
+      "bytes": 159677,
+      "sha256": "4ccb22354659782410743b861257cea165a426fa475730246f6f4847e22befbe",
+      "image": {
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-0114039b7344b87a7f7a",
+        "image_name": "0034615.jpg",
+        "coco_image_id": 94148,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 6,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-0211abfaaa7e5942f6d1",
+      "image_name": "0075263.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0075263.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 174011,
+      "official_zip_crc32": "3f3705ab",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 174011,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0075263.jpg",
+          "content_range": "bytes 0-174010/174011",
+          "etag": "\"15417ba6e37649a6943a07061ff8bce5\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0075263.jpg",
+      "bytes": 174011,
+      "sha256": "e54e63f726c288067baf8a3bf8c33acd86de74695be59f2c06f096c9dab01d94",
+      "image": {
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-0211abfaaa7e5942f6d1",
+        "image_name": "0075263.jpg",
+        "coco_image_id": 93862,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 6,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-026d6090c375b621a987",
+      "image_name": "0080762.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0080762.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 177691,
+      "official_zip_crc32": "7148f04e",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 177691,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0080762.jpg",
+          "content_range": "bytes 0-177690/177691",
+          "etag": "\"66ca96d3d1cad1dfc94b46ed23c32324\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0080762.jpg",
+      "bytes": 177691,
+      "sha256": "448fe277a6748c207ce1455390f763cfbe3638205a0fe1ef7f3164958a3b5bf3",
+      "image": {
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-026d6090c375b621a987",
+        "image_name": "0080762.jpg",
+        "coco_image_id": 94029,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 7,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-02fd912285002f28d1df",
+      "image_name": "0009664.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0009664.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 172836,
+      "official_zip_crc32": "79b2dd83",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 172836,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0009664.jpg",
+          "content_range": "bytes 0-172835/172836",
+          "etag": "\"173e5821bc07c38585945d6dffca35a2\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0009664.jpg",
+      "bytes": 172836,
+      "sha256": "ae6b974e451515f126b0cab273ec36306258115c59463f54776e7f85c7519618",
+      "image": {
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-02fd912285002f28d1df",
+        "image_name": "0009664.jpg",
+        "coco_image_id": 93844,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 19,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-03345c7bb341909ea86a",
+      "image_name": "0113551.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0113551.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 151700,
+      "official_zip_crc32": "cb0fa5f8",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 151700,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0113551.jpg",
+          "content_range": "bytes 0-151699/151700",
+          "etag": "\"e9ae845ebf4da0cab869d7599e854c5c\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0113551.jpg",
+      "bytes": 151700,
+      "sha256": "1837d5d5c37f68da70c16f9efeb75e7fd28b7a497492c817549d2b45ac7da422",
+      "image": {
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-03345c7bb341909ea86a",
+        "image_name": "0113551.jpg",
+        "coco_image_id": 93662,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 5,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-037cab57042aea82fc14",
+      "image_name": "0042253.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0042253.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 105383,
+      "official_zip_crc32": "5ba980a9",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 105383,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0042253.jpg",
+          "content_range": "bytes 0-105382/105383",
+          "etag": "\"ebc98b97732eb4abb40373ad2611e909\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0042253.jpg",
+      "bytes": 105383,
+      "sha256": "f442719923abb1291e293ce7d8d5dc4f956e9007129aad8ae45d2dcfb27a06f0",
+      "image": {
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-037cab57042aea82fc14",
+        "image_name": "0042253.jpg",
+        "coco_image_id": 94266,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 16,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-0002a5eda9a4ed625fa1",
+      "image_name": "0051688.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0051688.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 24886,
+      "official_zip_crc32": "bae6954f",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 24886,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0051688.jpg",
+          "content_range": "bytes 0-24885/24886",
+          "etag": "\"8224301056a7d14761e11c93bcc6479c\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0051688.jpg",
+      "bytes": 24886,
+      "sha256": "f85bb6cb88792a4efbb25031c5c42c5733ba4cd0269c3b0a6a2b64dbe239384b",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-0002a5eda9a4ed625fa1",
+        "image_name": "0051688.jpg",
+        "coco_image_id": 26694,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 12,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-0045ba7887d5b747362e",
+      "image_name": "0038370.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0038370.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 20469,
+      "official_zip_crc32": "7507a6e4",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 20469,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0038370.jpg",
+          "content_range": "bytes 0-20468/20469",
+          "etag": "\"6517f9a7c07ee45e7a97614484074021\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0038370.jpg",
+      "bytes": 20469,
+      "sha256": "a23d7a0a1643f798c1c39bcfa9a25efb5471438e5cce7f0ae711991797f1cd31",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-0045ba7887d5b747362e",
+        "image_name": "0038370.jpg",
+        "coco_image_id": 27492,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 6,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-0056e7bbe2d9a6bacc28",
+      "image_name": "0017006.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0017006.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 27771,
+      "official_zip_crc32": "ddb29367",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 27771,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0017006.jpg",
+          "content_range": "bytes 0-27770/27771",
+          "etag": "\"119678b969f63eb5448585047eb7aa4c\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0017006.jpg",
+      "bytes": 27771,
+      "sha256": "8ec4a68a7f86f912bb1aabbf3550078dd43f7947a87d9fe87ae0f6f1f764bc6e",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-0056e7bbe2d9a6bacc28",
+        "image_name": "0017006.jpg",
+        "coco_image_id": 24395,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-007714838caeac70e7f8",
+      "image_name": "0070658.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0070658.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 42026,
+      "official_zip_crc32": "23995f84",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 42026,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0070658.jpg",
+          "content_range": "bytes 0-42025/42026",
+          "etag": "\"b59a2972f932b061ebade556867d983f\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0070658.jpg",
+      "bytes": 42026,
+      "sha256": "6cdf8b63922fd7d67838b9e2c214de7743a2bcb74d009b40cbf2d29cdfb391fa",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-007714838caeac70e7f8",
+        "image_name": "0070658.jpg",
+        "coco_image_id": 9591,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 7,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-0088dde66de5d803f3c4",
+      "image_name": "0047321.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0047321.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 32880,
+      "official_zip_crc32": "6ad2174d",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 32880,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0047321.jpg",
+          "content_range": "bytes 0-32879/32880",
+          "etag": "\"b7a6fdd1a511894ede813cb8d8ef71e4\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0047321.jpg",
+      "bytes": 32880,
+      "sha256": "3ed12b6992a3efd95d3afd1f147fa7b9ba7e10dc39b723b35df558d9e2d4fc1f",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-0088dde66de5d803f3c4",
+        "image_name": "0047321.jpg",
+        "coco_image_id": 23627,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 5,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-00d038dd3f32e6d5fe83",
+      "image_name": "0001303.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0001303.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 54597,
+      "official_zip_crc32": "ba3bce91",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 54597,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0001303.jpg",
+          "content_range": "bytes 0-54596/54597",
+          "etag": "\"27c04b36c4c693d9451177912e84569b\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0001303.jpg",
+      "bytes": 54597,
+      "sha256": "53844da68efe44f85975250bd9e5d05741c2217e07fccd3293c2aa95452bcca0",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-00d038dd3f32e6d5fe83",
+        "image_name": "0001303.jpg",
+        "coco_image_id": 10958,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 13,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-00d9504f24b91f0f4ca6",
+      "image_name": "0034937.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0034937.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 14811,
+      "official_zip_crc32": "f864c11c",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 14811,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0034937.jpg",
+          "content_range": "bytes 0-14810/14811",
+          "etag": "\"2a1237d356b028019d6323dbe125e6b5\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0034937.jpg",
+      "bytes": 14811,
+      "sha256": "06b339185b0c4cc0f1319b34b739eb638555e6e48f5ba554a00428eb9c9322a1",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-00d9504f24b91f0f4ca6",
+        "image_name": "0034937.jpg",
+        "coco_image_id": 27499,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 4,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-00dfbfe69267b8d5f47c",
+      "image_name": "0056874.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0056874.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 22968,
+      "official_zip_crc32": "dc5e65fe",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 22968,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0056874.jpg",
+          "content_range": "bytes 0-22967/22968",
+          "etag": "\"044362f7c74cc45d980331cfc9c11559\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0056874.jpg",
+      "bytes": 22968,
+      "sha256": "a515052db5b58cc2ff7a54fb143377e685e648fe6511f340d27cd4ccd3eb3eeb",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-00dfbfe69267b8d5f47c",
+        "image_name": "0056874.jpg",
+        "coco_image_id": 27377,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 3,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-00ef702d49ad8fdd5a83",
+      "image_name": "0027316.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0027316.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 36400,
+      "official_zip_crc32": "e4501aec",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 36400,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0027316.jpg",
+          "content_range": "bytes 0-36399/36400",
+          "etag": "\"2b1d890011558c4c92ada5b9db1c577b\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0027316.jpg",
+      "bytes": 36400,
+      "sha256": "cc66ea43eb15cdf8b67c21ec758604cee6b972b6277232f9c3f14854987804c5",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-00ef702d49ad8fdd5a83",
+        "image_name": "0027316.jpg",
+        "coco_image_id": 5102,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 2,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-00fd2bd70ac7129fe09e",
+      "image_name": "0026869.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0026869.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 41370,
+      "official_zip_crc32": "d7dc1092",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 41370,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0026869.jpg",
+          "content_range": "bytes 0-41369/41370",
+          "etag": "\"18962c1630a2f70c38533fba156d03da\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0026869.jpg",
+      "bytes": 41370,
+      "sha256": "ed9a92004843232300126f4d4c3bfc29aa28a90ffed6ca0091e192e5f2e97d95",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-00fd2bd70ac7129fe09e",
+        "image_name": "0026869.jpg",
+        "coco_image_id": 18432,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 3,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-000a7fee06f3b5156d69",
+      "image_name": "0040488.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0040488.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 13927,
+      "official_zip_crc32": "359ea860",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 13927,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0040488.jpg",
+          "content_range": "bytes 0-13926/13927",
+          "etag": "\"7a870900607cee671aee356f7cc39f24\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0040488.jpg",
+      "bytes": 13927,
+      "sha256": "c4a871f078d156cb69e55851f169e04e47961621e45e8a430a96d69b8708e1d2",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          249
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-000a7fee06f3b5156d69",
+        "image_name": "0040488.jpg",
+        "coco_image_id": 26841,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-000c050845e2d4093738",
+      "image_name": "0072428.png",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0072428.png?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 180885,
+      "official_zip_crc32": "b6037df9",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 180885,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0072428.png",
+          "content_range": "bytes 0-180884/180885",
+          "etag": "\"670db9ee921a3dadeb625a53c2a38aef\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0072428.png",
+      "bytes": 180885,
+      "sha256": "a8cbc7e9b15b8083cc76f68eb9b9313ab97a00a50084797f58e04f8b0b9d5c74",
+      "image": {
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-000c050845e2d4093738",
+        "image_name": "0072428.png",
+        "coco_image_id": 78996,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-0013e0c98caa8820134a",
+      "image_name": "0064338.png",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0064338.png?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 180967,
+      "official_zip_crc32": "fb21fdb7",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 180967,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0064338.png",
+          "content_range": "bytes 0-180966/180967",
+          "etag": "\"7527cfaa3ea996cf79bbff93e7edba98\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0064338.png",
+      "bytes": 180967,
+      "sha256": "de88ab9e78bcd2494c3ff62539c3dfb04866984a28b1dd1524c2439dbab1eb98",
+      "image": {
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-0013e0c98caa8820134a",
+        "image_name": "0064338.png",
+        "coco_image_id": 79849,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-00148c3e1fab9ce638fb",
+      "image_name": "0089013.png",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0089013.png?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 153103,
+      "official_zip_crc32": "b4b98681",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 153103,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0089013.png",
+          "content_range": "bytes 0-153102/153103",
+          "etag": "\"ceb277104ae7ec0e57909ccf86dfd22c\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0089013.png",
+      "bytes": 153103,
+      "sha256": "c5bd2b3f3a773dd25d5fe1e2778ef73ff317c845ee08abf7b3b806084b3f94a4",
+      "image": {
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-00148c3e1fab9ce638fb",
+        "image_name": "0089013.png",
+        "coco_image_id": 86657,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 2,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-001bb599af3c74888278",
+      "image_name": "0019970.png",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0019970.png?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 112872,
+      "official_zip_crc32": "87f9bb91",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 112872,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0019970.png",
+          "content_range": "bytes 0-112871/112872",
+          "etag": "\"67955b79c44eb4b64c52e126f550bc33\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0019970.png",
+      "bytes": 112872,
+      "sha256": "bd8478a5f6127130e02a018ef7861c8a84c042cb2c4e3e1fa615e9a8a217e3e3",
+      "image": {
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-001bb599af3c74888278",
+        "image_name": "0019970.png",
+        "coco_image_id": 85298,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-00265009f17775b18186",
+      "image_name": "0009738.png",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0009738.png?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 144824,
+      "official_zip_crc32": "65e6f473",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 144824,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0009738.png",
+          "content_range": "bytes 0-144823/144824",
+          "etag": "\"07191dc3faeb5cecec990f65ebc25eb5\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0009738.png",
+      "bytes": 144824,
+      "sha256": "890cb6a168e5359070f811364896f6204ccd498b8687390a39ad2253a4aae223",
+      "image": {
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-00265009f17775b18186",
+        "image_name": "0009738.png",
+        "coco_image_id": 82018,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-002f21b057a87a237100",
+      "image_name": "0093691.png",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0093691.png?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 148423,
+      "official_zip_crc32": "5cd1b568",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 148423,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0093691.png",
+          "content_range": "bytes 0-148422/148423",
+          "etag": "\"fb5e14c7941140f82ee484536c2ffb33\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0093691.png",
+      "bytes": 148423,
+      "sha256": "81aa3f205db80b58a63c8ec88a7759972e6cd247f742b03c0e712e5d312f3275",
+      "image": {
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          249
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-002f21b057a87a237100",
+        "image_name": "0093691.png",
+        "coco_image_id": 89728,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-00348142304ffdb92647",
+      "image_name": "0032726.png",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0032726.png?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 150877,
+      "official_zip_crc32": "7b429f7e",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 150877,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0032726.png",
+          "content_range": "bytes 0-150876/150877",
+          "etag": "\"e2a0a823b5a087bcf2064631d3282768\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0032726.png",
+      "bytes": 150877,
+      "sha256": "88bc90c60dd620707ee7e91f8c3d14d16db74d98e2a64cbc5004c78e7a48a156",
+      "image": {
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-00348142304ffdb92647",
+        "image_name": "0032726.png",
+        "coco_image_id": 92945,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 3,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-0036b1f0ee7ebdecdfe5",
+      "image_name": "0037040.jpg",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0037040.jpg?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 50928,
+      "official_zip_crc32": "0e3bf9b0",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 50928,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0037040.jpg",
+          "content_range": "bytes 0-50927/50928",
+          "etag": "\"1c953416f36bf60e3c92caba1ebef06d\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0037040.jpg",
+      "bytes": 50928,
+      "sha256": "921260d14ce09f94a09ec2cb19ca7d3638cffe3f6e2a2e33acd4d326119e757e",
+      "image": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-0036b1f0ee7ebdecdfe5",
+        "image_name": "0037040.jpg",
+        "coco_image_id": 17252,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-0036c45a7b4ccd1f1b32",
+      "image_name": "0059646.png",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0059646.png?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 145171,
+      "official_zip_crc32": "660223e9",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 145171,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0059646.png",
+          "content_range": "bytes 0-145170/145171",
+          "etag": "\"16ce025235283cf70ebb4b4ab5cf2acd\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0059646.png",
+      "bytes": 145171,
+      "sha256": "03ecd25d0b792f89d722037f67d267e47da6775a292099c075cb1dfbf7dd91fe",
+      "image": {
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-0036c45a7b4ccd1f1b32",
+        "image_name": "0059646.png",
+        "coco_image_id": 82579,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-000724bbfb6ee3dd1adb",
+      "image_name": "0114452.png",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0114452.png?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 133660,
+      "official_zip_crc32": "527202df",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 133660,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0114452.png",
+          "content_range": "bytes 0-133659/133660",
+          "etag": "\"6585ce38c4f06aef4805b3aec3da6356\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0114452.png",
+      "bytes": 133660,
+      "sha256": "5b7cf14d3933eca0a88c991b15c25324d95640bf12ce078af2f3d27b670f3017",
+      "image": {
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-000724bbfb6ee3dd1adb",
+        "image_name": "0114452.png",
+        "coco_image_id": 86686,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 3,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-00295df793a89d35ad24",
+      "image_name": "0107786.png",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0107786.png?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 111179,
+      "official_zip_crc32": "77748798",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 111179,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0107786.png",
+          "content_range": "bytes 0-111178/111179",
+          "etag": "\"9913f62b6ff51d9a9fced1a5ad33ec81\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0107786.png",
+      "bytes": 111179,
+      "sha256": "eec053a4c0da0f6ddc068baeef866de85e6853641f431428ae04652c706d2703",
+      "image": {
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-00295df793a89d35ad24",
+        "image_name": "0107786.png",
+        "coco_image_id": 86776,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 2,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-005928d8efb26474c4b1",
+      "image_name": "0049662.png",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0049662.png?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 157508,
+      "official_zip_crc32": "661037e0",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 157508,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0049662.png",
+          "content_range": "bytes 0-157507/157508",
+          "etag": "\"b53d6b514fa99e7b6f4e9b2695cee65c\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0049662.png",
+      "bytes": 157508,
+      "sha256": "02300cb7a2eafcb37d27627284d462c0f565bfbdccd76d1807836f652f748efd",
+      "image": {
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-005928d8efb26474c4b1",
+        "image_name": "0049662.png",
+        "coco_image_id": 85349,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 2,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-00a916ceb59e51386f10",
+      "image_name": "0065076.png",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0065076.png?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 179526,
+      "official_zip_crc32": "751cba88",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 179526,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0065076.png",
+          "content_range": "bytes 0-179525/179526",
+          "etag": "\"c6fe3763bb9d2a44d2b6a4e9fe3217fd\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0065076.png",
+      "bytes": 179526,
+      "sha256": "7ec76e16af6da64abf2b37882dd275338ec34819ec36d7feb2189a24df506ff5",
+      "image": {
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          254
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-00a916ceb59e51386f10",
+        "image_name": "0065076.png",
+        "coco_image_id": 87158,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-00b73f8b96706e76aad7",
+      "image_name": "0015835.png",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0015835.png?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 173993,
+      "official_zip_crc32": "546590d3",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 173993,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0015835.png",
+          "content_range": "bytes 0-173992/173993",
+          "etag": "\"31073b44032e54935e182ff968350429\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0015835.png",
+      "bytes": 173993,
+      "sha256": "993f1c24e87d58977c6a2fb24e4eda44833bfe6d6600858693694f2e35d0e4af",
+      "image": {
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-00b73f8b96706e76aad7",
+        "image_name": "0015835.png",
+        "coco_image_id": 86561,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 5,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-00f07e467b4ec806091a",
+      "image_name": "0106752.png",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0106752.png?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 121269,
+      "official_zip_crc32": "bd965193",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 121269,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0106752.png",
+          "content_range": "bytes 0-121268/121269",
+          "etag": "\"0d5bd8a8dbe890c8c04a2759c79e6739\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0106752.png",
+      "bytes": 121269,
+      "sha256": "316fdd5d42fe0297dadb1d1f36ed45dfd7a13a1faf02f5708abfae6892df6cdc",
+      "image": {
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          205
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-00f07e467b4ec806091a",
+        "image_name": "0106752.png",
+        "coco_image_id": 85552,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 2,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-00f7bf9921de2cda9d40",
+      "image_name": "0022442.png",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0022442.png?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 159006,
+      "official_zip_crc32": "d75da057",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 159006,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0022442.png",
+          "content_range": "bytes 0-159005/159006",
+          "etag": "\"24c45462052cc099e2b82507fca88471\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0022442.png",
+      "bytes": 159006,
+      "sha256": "13e3245cc1c004115e2bead6cfc2133f2db3c39df29963f5152999388b40cefb",
+      "image": {
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-00f7bf9921de2cda9d40",
+        "image_name": "0022442.png",
+        "coco_image_id": 85320,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 5,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-0189d40539bf248c2d11",
+      "image_name": "0054189.png",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0054189.png?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 165656,
+      "official_zip_crc32": "0688e443",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 165656,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0054189.png",
+          "content_range": "bytes 0-165655/165656",
+          "etag": "\"c6ca99f242d6a37621ac1f7296537092\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0054189.png",
+      "bytes": 165656,
+      "sha256": "bc8f53ed0a6923303e901a4d68d8f20beaf1836d520ce2b4ba57c4330c5d7bd1",
+      "image": {
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-0189d40539bf248c2d11",
+        "image_name": "0054189.png",
+        "coco_image_id": 87060,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 2,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-01a1be9fb8ef93bbdc78",
+      "image_name": "0089940.png",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0089940.png?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 180103,
+      "official_zip_crc32": "42146600",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 180103,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0089940.png",
+          "content_range": "bytes 0-180102/180103",
+          "etag": "\"4541fab8004538b02e730a9443612129\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0089940.png",
+      "bytes": 180103,
+      "sha256": "2696673c381143e19322082832d7925c0d9b84ae7414a5fc65e56b73c86c34db",
+      "image": {
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-01a1be9fb8ef93bbdc78",
+        "image_name": "0089940.png",
+        "coco_image_id": 85948,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      }
+    },
+    {
+      "sample_id": "sar-clean-dev-01e04c876562b1601ca0",
+      "image_name": "0019476.png",
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/greatbird/sardet-100k/SARDet_100K%2FJPEGImages%2Ftrain%2F0019476.png?datasetVersionNumber=1",
+      "dataset_version": 1,
+      "storage_dataset_id": 7339941,
+      "storage_version_id": 11694364,
+      "sarvqa_author_split": "train",
+      "kaggle_image_directory": "train",
+      "official_bytes": 171358,
+      "official_zip_crc32": "ff6f715b",
+      "sha256_provenance": "Local SHA256 of acquired bytes; not an official upstream SHA256",
+      "attempts": [
+        {
+          "number": 1,
+          "body_bytes": 171358,
+          "status": 206,
+          "final_host": "storage.googleapis.com:443",
+          "final_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0019476.png",
+          "content_range": "bytes 0-171357/171358",
+          "etag": "\"720b04be8aaacd6c413f1a8d26398810\""
+        }
+      ],
+      "status": "passed",
+      "file": "data/raw/sardet_clean_dev/kaggle-v1/train/0019476.png",
+      "bytes": 171358,
+      "sha256": "768ba7fcc88257ed1c6416f29e90fe4c70b50e309a61cd25e5db15c3c99cf11a",
+      "image": {
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8",
+        "range": [
+          0,
+          255
+        ],
+        "all_finite": true,
+        "full_pixel_decode": "passed"
+      },
+      "coco": {
+        "sample_id": "sar-clean-dev-01e04c876562b1601ca0",
+        "image_name": "0019476.png",
+        "coco_image_id": 87015,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 3,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      }
+    }
+  ],
+  "network_response_body_budget": 18537678,
+  "formal_split_created": false,
+  "model_inference_run": false,
+  "completed_at": "2026-11-05T16:39:24+08:00",
+  "network_response_body_bytes": 6179226,
+  "passed_files": 60,
+  "selected_files": 60,
+  "total_verified_image_bytes": 6179226,
+  "exact_file_duplicate_groups": [],
+  "scene_independence": "Unresolved: COCO images only provide filename/id/width/height, without original-scene lineage",
+  "derived_records_written": true,
+  "records": {
+    "path": "data/processed/sar_clean_development_v0/records.jsonl",
+    "count": 60,
+    "sha256": "a35b5cb4e635d89d192a731e0d6357b838de407c1d65c6ba52b955b42829b9b6"
+  }
+}

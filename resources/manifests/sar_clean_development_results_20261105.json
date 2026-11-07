@@ -1,0 +1,4273 @@
+{
+  "updated_at": "2026-11-05T17:03:54+08:00",
+  "scope": "Small balanced clean development capability screen; no formal test, training, attack or real closed-source calls",
+  "status": "completed_gate_failed",
+  "plan": "resources/manifests/sar_clean_development_plan_20261105.json",
+  "plan_sha256": "06ae2acd87d3a4f9634b3b5375b3c23765038a9cae4ea4100a8da331bb51e58c",
+  "screen_protocol": {
+    "screen_id": "sar_clean_development_screen_v0",
+    "stage": "Exploratory clean development capability screen, not a formal test or attack",
+    "task_protocol": "experiments/protocols/sar_single_category_v0.json",
+    "sampling": {
+      "author_split": "train only",
+      "per_class": 10,
+      "total": 60,
+      "deterministic_key": "sha256(seed + newline + dataset_revision + newline + label + newline + exact_image_basename)",
+      "seed": "sar-clean-development-20261105-v0",
+      "exclude": "All Examples image basenames and same stems; no resampling based on model responses",
+      "image_acquisition_failure": "Record it and stop the complete screen; any replacement needs an explicit new sampling-plan version before model output"
+    },
+    "image_group_scope": "Exact image bytes; original scene independence remains unresolved",
+    "prompt": "Use the fixed model_question from the task protocol for every sample",
+    "answer_parser": "Strip outer whitespace and lowercase the entire response; exact full-label match only",
+    "generation": {
+      "do_sample": false,
+      "max_new_tokens": 12
+    },
+    "development_gate": {
+      "all_six_classes_have_at_least": 10,
+      "minimum_valid_answer_fraction": 0.95,
+      "minimum_accuracy": 0.6,
+      "minimum_per_class_recall": 0.5,
+      "purpose": "Engineering screening threshold chosen before model output; not a universal standard or a formal statistical guarantee"
+    },
+    "denominator": "All 60 planned samples; missing, invalid and failed outputs are reported and are not silently dropped",
+    "constant_reference": {
+      "label": "ship",
+      "chosen_from": "Author train annotations",
+      "balanced_fraction": "10/60"
+    },
+    "report": [
+      "raw outputs",
+      "sample-level status",
+      "accuracy",
+      "per-class support and recall",
+      "confusion including invalid/missing",
+      "valid-answer coverage",
+      "latency and GPU memory",
+      "gate decisions"
+    ],
+    "formal_test": "Not selected, not queried, and not used for prompt/model selection",
+    "research_limits": [
+      "Only a small functional development check",
+      "Model pretraining exposure unresolved",
+      "Different image hashes do not prove independent scenes",
+      "A passing screen does not complete SAR/HRRP multimodal research or real closed-source transfer"
+    ]
+  },
+  "dataset_acquisition": {
+    "status": "passed",
+    "records": {
+      "path": "data/processed/sar_clean_development_v0/records.jsonl",
+      "count": 60,
+      "sha256": "a35b5cb4e635d89d192a731e0d6357b838de407c1d65c6ba52b955b42829b9b6"
+    },
+    "passed_files": 60,
+    "total_verified_image_bytes": 6179226,
+    "scene_independence": "Unresolved: COCO images only provide filename/id/width/height, without original-scene lineage",
+    "license": {
+      "author_repository": "CC-BY-NC-4.0",
+      "kaggle_metadata": "MIT",
+      "note": "Conflicting fields retained; MIT does not automatically override author or constituent-source terms. No redistribution performed."
+    }
+  },
+  "coco_source_validation": {
+    "scope": "Bounded compressed official train annotation member; no new sampling or image/model inference",
+    "dataset_version": 1,
+    "storage_version_id": 11694364,
+    "member": {
+      "name": "SARDet_100K/Annotations/train.json",
+      "crc32": "2dfdad18",
+      "compressed_bytes": 3591682,
+      "uncompressed_bytes": 36628448,
+      "compression_method": 8,
+      "general_flags": 2048,
+      "local_header_offset": 0
+    },
+    "status": "passed",
+    "source_plan_sha256": "06ae2acd87d3a4f9634b3b5375b3c23765038a9cae4ea4100a8da331bb51e58c",
+    "compressed_data_offset": 84,
+    "compressed_bytes": 3591682,
+    "uncompressed_bytes": 36628448,
+    "compressed_sha256": "b24fd50861b23df66e25c72696265715774901d4a0879220578ac977963eea82",
+    "uncompressed_sha256": "5fd26a7431a70a9126ae14ffefce3c1d775244f9b6b0c9b444dc3edbc7a6f863",
+    "crc32": "2dfdad18",
+    "crc32_passed": true,
+    "deflate_length_passed": true,
+    "total_images": 94493,
+    "total_annotations": 198747,
+    "categories": {
+      "0": "ship",
+      "1": "aircraft",
+      "2": "car",
+      "3": "tank",
+      "4": "bridge",
+      "5": "harbor"
+    },
+    "top_level_keys": [
+      "annotations",
+      "categories",
+      "images"
+    ],
+    "image_field_names": [
+      "file_name",
+      "height",
+      "id",
+      "width"
+    ],
+    "annotation_field_names": [
+      "area",
+      "bbox",
+      "category_id",
+      "id",
+      "ignore",
+      "image_id",
+      "iscrowd",
+      "segmentation"
+    ],
+    "original_scene_lineage": "No lineage inferred from generic COCO ids/file names; inspect image_field_names for actual supplied keys",
+    "selected_checks": [
+      {
+        "sample_id": "sar-clean-dev-00006a35a023a5a7840e",
+        "image_name": "0062686.jpg",
+        "coco_image_id": 7808,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00008019fe5ea978ebbb",
+        "image_name": "0019653.jpg",
+        "coco_image_id": 28658,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0001a38a3bc93366aeb2",
+        "image_name": "0113528.jpg",
+        "coco_image_id": 20735,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0001f4f7dd6ba0be9f03",
+        "image_name": "0064287.jpg",
+        "coco_image_id": 21945,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-000219f859247d7503ce",
+        "image_name": "0076968.jpg",
+        "coco_image_id": 7506,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00046bfc8d46806a5baf",
+        "image_name": "0001335.jpg",
+        "coco_image_id": 18766,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00078212963618d64c35",
+        "image_name": "0102894.jpg",
+        "coco_image_id": 78335,
+        "width": 500,
+        "height": 330,
+        "annotation_count": 4,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-000805883e5e0d2ea0c7",
+        "image_name": "0045167.jpg",
+        "coco_image_id": 71339,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0008542a81a22150f411",
+        "image_name": "0041130.jpg",
+        "coco_image_id": 63911,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00086ea8c8c8ead714d6",
+        "image_name": "0084544.jpg",
+        "coco_image_id": 15284,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 2,
+        "category_ids": [
+          0
+        ],
+        "category_names": [
+          "ship"
+        ],
+        "sarvqa_reference": "ship",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00000ccdd3a45c85416b",
+        "image_name": "0029824.jpg",
+        "coco_image_id": 43324,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 4,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00015d6b8afad37fefb2",
+        "image_name": "0027938.jpg",
+        "coco_image_id": 43689,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 1,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00049486156330fff439",
+        "image_name": "0098679.jpg",
+        "coco_image_id": 41252,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 1,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-000f9e08db183deebee6",
+        "image_name": "0066508.bmp",
+        "coco_image_id": 31837,
+        "width": 224,
+        "height": 224,
+        "annotation_count": 6,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0020271d4474b84d13ca",
+        "image_name": "0016634.jpg",
+        "coco_image_id": 37785,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 2,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0028b06549b40f7dabe6",
+        "image_name": "0101221.jpg",
+        "coco_image_id": 41398,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 1,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-002fef136977c803719c",
+        "image_name": "0062691.jpg",
+        "coco_image_id": 33627,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 4,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0034bad2b0bb239ab109",
+        "image_name": "0084536.jpg",
+        "coco_image_id": 34388,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 1,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0035496b504a7208a55e",
+        "image_name": "0068883.jpg",
+        "coco_image_id": 38674,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 2,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00362f962b23c1782dc9",
+        "image_name": "0025119.jpg",
+        "coco_image_id": 36989,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 1,
+        "category_ids": [
+          1
+        ],
+        "category_names": [
+          "aircraft"
+        ],
+        "sarvqa_reference": "aircraft",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0003e0474ed7895dd4f0",
+        "image_name": "0036958.jpg",
+        "coco_image_id": 93963,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 6,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0007020a10cde9d470e9",
+        "image_name": "0016051.jpg",
+        "coco_image_id": 93689,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 21,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-006e12a4c14464f8c20b",
+        "image_name": "0060957.jpg",
+        "coco_image_id": 94115,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 5,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00e828b42a56952f4ca1",
+        "image_name": "0048950.jpg",
+        "coco_image_id": 93945,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 6,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0114039b7344b87a7f7a",
+        "image_name": "0034615.jpg",
+        "coco_image_id": 94148,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 6,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0211abfaaa7e5942f6d1",
+        "image_name": "0075263.jpg",
+        "coco_image_id": 93862,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 6,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-026d6090c375b621a987",
+        "image_name": "0080762.jpg",
+        "coco_image_id": 94029,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 7,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-02fd912285002f28d1df",
+        "image_name": "0009664.jpg",
+        "coco_image_id": 93844,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 19,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-03345c7bb341909ea86a",
+        "image_name": "0113551.jpg",
+        "coco_image_id": 93662,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 5,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-037cab57042aea82fc14",
+        "image_name": "0042253.jpg",
+        "coco_image_id": 94266,
+        "width": 512,
+        "height": 512,
+        "annotation_count": 16,
+        "category_ids": [
+          2
+        ],
+        "category_names": [
+          "car"
+        ],
+        "sarvqa_reference": "car",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0002a5eda9a4ed625fa1",
+        "image_name": "0051688.jpg",
+        "coco_image_id": 26694,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 12,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0045ba7887d5b747362e",
+        "image_name": "0038370.jpg",
+        "coco_image_id": 27492,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 6,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0056e7bbe2d9a6bacc28",
+        "image_name": "0017006.jpg",
+        "coco_image_id": 24395,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-007714838caeac70e7f8",
+        "image_name": "0070658.jpg",
+        "coco_image_id": 9591,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 7,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0088dde66de5d803f3c4",
+        "image_name": "0047321.jpg",
+        "coco_image_id": 23627,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 5,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00d038dd3f32e6d5fe83",
+        "image_name": "0001303.jpg",
+        "coco_image_id": 10958,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 13,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00d9504f24b91f0f4ca6",
+        "image_name": "0034937.jpg",
+        "coco_image_id": 27499,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 4,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00dfbfe69267b8d5f47c",
+        "image_name": "0056874.jpg",
+        "coco_image_id": 27377,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 3,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00ef702d49ad8fdd5a83",
+        "image_name": "0027316.jpg",
+        "coco_image_id": 5102,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 2,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00fd2bd70ac7129fe09e",
+        "image_name": "0026869.jpg",
+        "coco_image_id": 18432,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 3,
+        "category_ids": [
+          3
+        ],
+        "category_names": [
+          "tank"
+        ],
+        "sarvqa_reference": "tank",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-000a7fee06f3b5156d69",
+        "image_name": "0040488.jpg",
+        "coco_image_id": 26841,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-000c050845e2d4093738",
+        "image_name": "0072428.png",
+        "coco_image_id": 78996,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0013e0c98caa8820134a",
+        "image_name": "0064338.png",
+        "coco_image_id": 79849,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00148c3e1fab9ce638fb",
+        "image_name": "0089013.png",
+        "coco_image_id": 86657,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 2,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-001bb599af3c74888278",
+        "image_name": "0019970.png",
+        "coco_image_id": 85298,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00265009f17775b18186",
+        "image_name": "0009738.png",
+        "coco_image_id": 82018,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-002f21b057a87a237100",
+        "image_name": "0093691.png",
+        "coco_image_id": 89728,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00348142304ffdb92647",
+        "image_name": "0032726.png",
+        "coco_image_id": 92945,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 3,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0036b1f0ee7ebdecdfe5",
+        "image_name": "0037040.jpg",
+        "coco_image_id": 17252,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0036c45a7b4ccd1f1b32",
+        "image_name": "0059646.png",
+        "coco_image_id": 82579,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          4
+        ],
+        "category_names": [
+          "bridge"
+        ],
+        "sarvqa_reference": "bridge",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-000724bbfb6ee3dd1adb",
+        "image_name": "0114452.png",
+        "coco_image_id": 86686,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 3,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00295df793a89d35ad24",
+        "image_name": "0107786.png",
+        "coco_image_id": 86776,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 2,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-005928d8efb26474c4b1",
+        "image_name": "0049662.png",
+        "coco_image_id": 85349,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 2,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00a916ceb59e51386f10",
+        "image_name": "0065076.png",
+        "coco_image_id": 87158,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00b73f8b96706e76aad7",
+        "image_name": "0015835.png",
+        "coco_image_id": 86561,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 5,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00f07e467b4ec806091a",
+        "image_name": "0106752.png",
+        "coco_image_id": 85552,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 2,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-00f7bf9921de2cda9d40",
+        "image_name": "0022442.png",
+        "coco_image_id": 85320,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 5,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-0189d40539bf248c2d11",
+        "image_name": "0054189.png",
+        "coco_image_id": 87060,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 2,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-01a1be9fb8ef93bbdc78",
+        "image_name": "0089940.png",
+        "coco_image_id": 85948,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 1,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      },
+      {
+        "sample_id": "sar-clean-dev-01e04c876562b1601ca0",
+        "image_name": "0019476.png",
+        "coco_image_id": 87015,
+        "width": 256,
+        "height": 256,
+        "annotation_count": 3,
+        "category_ids": [
+          5
+        ],
+        "category_names": [
+          "harbor"
+        ],
+        "sarvqa_reference": "harbor",
+        "all_annotation_categories_match_single_reference": true
+      }
+    ],
+    "problems": []
+  },
+  "model_inventory": "resources/manifests/llava_interface_resource_inventory_20261105.json",
+  "model_inventory_sha256": "f0f2ada5a511d03c03556c3f48d287f85cca546b30b30b2aca2d75a14279af7b",
+  "compatibility": {
+    "llava-processor-cpu": {
+      "started_at": "2026-11-05T16:45:04+08:00",
+      "model_id": "llava-hf/llava-interleave-qwen-0.5b-hf",
+      "revision": "1090956dd1c79bc93ae98dcf395590369435ec91",
+      "phase": "processor",
+      "device": "cpu",
+      "dtype": "float32",
+      "status": "passed",
+      "scope": "Local offline compatibility/development only; no formal test, training or attack",
+      "environment": {
+        "python": "3.13.7",
+        "versions": {
+          "torch": "2.6.0+cu118",
+          "transformers": "4.48.3",
+          "numpy": "2.5.4",
+          "pillow": "13.0.0",
+          "safetensors": "0.8.0"
+        },
+        "cuda_runtime": "11.8",
+        "cpu_threads": 4,
+        "gpu": "NVIDIA GeForce GTX 1060 with Max-Q Design",
+        "compute_capability": [
+          6,
+          1
+        ],
+        "compiled_architectures": [
+          "sm_37",
+          "sm_50",
+          "sm_60",
+          "sm_61",
+          "sm_70",
+          "sm_75",
+          "sm_80",
+          "sm_86",
+          "sm_90",
+          "compute_37"
+        ]
+      },
+      "probe": {
+        "sample_id": "sar-clean-dev-00006a35a023a5a7840e",
+        "input_shapes": {
+          "input_ids": [
+            1,
+            772
+          ],
+          "attention_mask": [
+            1,
+            772
+          ],
+          "pixel_values": [
+            1,
+            3,
+            384,
+            384
+          ]
+        },
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_values"
+        ],
+        "image_tokens": 729,
+        "ground_truth_or_source_id_in_model_message": false
+      },
+      "total_seconds": 9.65026110000008
+    },
+    "llava-forward-cpu-fp32": {
+      "started_at": "2026-11-05T16:45:15+08:00",
+      "model_id": "llava-hf/llava-interleave-qwen-0.5b-hf",
+      "revision": "1090956dd1c79bc93ae98dcf395590369435ec91",
+      "phase": "forward",
+      "device": "cpu",
+      "dtype": "float32",
+      "status": "passed",
+      "scope": "Local offline compatibility/development only; no formal test, training or attack",
+      "environment": {
+        "python": "3.13.7",
+        "versions": {
+          "torch": "2.6.0+cu118",
+          "transformers": "4.48.3",
+          "numpy": "2.5.4",
+          "pillow": "13.0.0",
+          "safetensors": "0.8.0"
+        },
+        "cuda_runtime": "11.8",
+        "cpu_threads": 4,
+        "gpu": "NVIDIA GeForce GTX 1060 with Max-Q Design",
+        "compute_capability": [
+          6,
+          1
+        ],
+        "compiled_architectures": [
+          "sm_37",
+          "sm_50",
+          "sm_60",
+          "sm_61",
+          "sm_70",
+          "sm_75",
+          "sm_80",
+          "sm_86",
+          "sm_90",
+          "compute_37"
+        ]
+      },
+      "probe": {
+        "sample_id": "sar-clean-dev-00006a35a023a5a7840e",
+        "input_shapes": {
+          "input_ids": [
+            1,
+            772
+          ],
+          "attention_mask": [
+            1,
+            772
+          ],
+          "pixel_values": [
+            1,
+            3,
+            384,
+            384
+          ]
+        },
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_values"
+        ],
+        "image_tokens": 729,
+        "ground_truth_or_source_id_in_model_message": false
+      },
+      "model_load": {
+        "seconds": 2.3828920999999355,
+        "parameters": 864031264,
+        "trainable_parameters": 0,
+        "dtype": "torch.float32",
+        "attention": {
+          "root": "eager",
+          "text": "eager",
+          "vision": "eager"
+        },
+        "checkpoint_loading_info": {
+          "missing_keys": [],
+          "unexpected_keys": [],
+          "mismatched_keys": [],
+          "error_msgs": []
+        }
+      },
+      "forward": {
+        "seconds": 13.951080700000148,
+        "last_token_logits_finite": true,
+        "logits_shape": [
+          1,
+          1,
+          152000
+        ],
+        "answer": "ship",
+        "generated_tokens": 2,
+        "domain_capability_scored": false
+      },
+      "total_seconds": 25.60018510000009
+    },
+    "llava-forward-cuda-fp32": {
+      "started_at": "2026-11-05T16:47:59+08:00",
+      "model_id": "llava-hf/llava-interleave-qwen-0.5b-hf",
+      "revision": "1090956dd1c79bc93ae98dcf395590369435ec91",
+      "phase": "forward",
+      "device": "cuda",
+      "dtype": "float32",
+      "status": "passed",
+      "scope": "Local offline compatibility/development only; no formal test, training or attack",
+      "environment": {
+        "python": "3.13.7",
+        "versions": {
+          "torch": "2.6.0+cu118",
+          "transformers": "4.48.3",
+          "numpy": "2.5.4",
+          "pillow": "13.0.0",
+          "safetensors": "0.8.0"
+        },
+        "cuda_runtime": "11.8",
+        "cpu_threads": 4,
+        "gpu": "NVIDIA GeForce GTX 1060 with Max-Q Design",
+        "compute_capability": [
+          6,
+          1
+        ],
+        "compiled_architectures": [
+          "sm_37",
+          "sm_50",
+          "sm_60",
+          "sm_61",
+          "sm_70",
+          "sm_75",
+          "sm_80",
+          "sm_86",
+          "sm_90",
+          "compute_37"
+        ]
+      },
+      "probe": {
+        "sample_id": "sar-clean-dev-00006a35a023a5a7840e",
+        "input_shapes": {
+          "input_ids": [
+            1,
+            772
+          ],
+          "attention_mask": [
+            1,
+            772
+          ],
+          "pixel_values": [
+            1,
+            3,
+            384,
+            384
+          ]
+        },
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_values"
+        ],
+        "image_tokens": 729,
+        "ground_truth_or_source_id_in_model_message": false
+      },
+      "model_load": {
+        "seconds": 2.904594999999972,
+        "parameters": 864031264,
+        "trainable_parameters": 0,
+        "dtype": "torch.float32",
+        "attention": {
+          "root": "eager",
+          "text": "eager",
+          "vision": "eager"
+        },
+        "checkpoint_loading_info": {
+          "missing_keys": [],
+          "unexpected_keys": [],
+          "mismatched_keys": [],
+          "error_msgs": []
+        },
+        "peak_allocated_mib": 3397.10400390625,
+        "peak_reserved_mib": 3460.0,
+        "memory_scope": "PyTorch allocator including resident model, not whole-device usage"
+      },
+      "forward": {
+        "seconds": 2.007384799999727,
+        "last_token_logits_finite": true,
+        "logits_shape": [
+          1,
+          1,
+          152000
+        ],
+        "answer": "ship",
+        "generated_tokens": 2,
+        "domain_capability_scored": false,
+        "peak_allocated_mib": 3644.64013671875,
+        "peak_reserved_mib": 3750.0,
+        "memory_scope": "PyTorch allocator including resident model, not whole-device usage"
+      },
+      "total_seconds": 14.719723000000158
+    },
+    "llava-gradient-cuda-fp32": {
+      "started_at": "2026-11-05T16:48:15+08:00",
+      "model_id": "llava-hf/llava-interleave-qwen-0.5b-hf",
+      "revision": "1090956dd1c79bc93ae98dcf395590369435ec91",
+      "phase": "gradient",
+      "device": "cuda",
+      "dtype": "float32",
+      "status": "passed",
+      "scope": "Local offline compatibility/development only; no formal test, training or attack",
+      "environment": {
+        "python": "3.13.7",
+        "versions": {
+          "torch": "2.6.0+cu118",
+          "transformers": "4.48.3",
+          "numpy": "2.5.4",
+          "pillow": "13.0.0",
+          "safetensors": "0.8.0"
+        },
+        "cuda_runtime": "11.8",
+        "cpu_threads": 4,
+        "gpu": "NVIDIA GeForce GTX 1060 with Max-Q Design",
+        "compute_capability": [
+          6,
+          1
+        ],
+        "compiled_architectures": [
+          "sm_37",
+          "sm_50",
+          "sm_60",
+          "sm_61",
+          "sm_70",
+          "sm_75",
+          "sm_80",
+          "sm_86",
+          "sm_90",
+          "compute_37"
+        ]
+      },
+      "probe": {
+        "sample_id": "sar-clean-dev-00006a35a023a5a7840e",
+        "input_shapes": {
+          "input_ids": [
+            1,
+            772
+          ],
+          "attention_mask": [
+            1,
+            772
+          ],
+          "pixel_values": [
+            1,
+            3,
+            384,
+            384
+          ]
+        },
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_values"
+        ],
+        "image_tokens": 729,
+        "ground_truth_or_source_id_in_model_message": false
+      },
+      "model_load": {
+        "seconds": 2.6902290999996694,
+        "parameters": 864031264,
+        "trainable_parameters": 0,
+        "dtype": "torch.float32",
+        "attention": {
+          "root": "eager",
+          "text": "eager",
+          "vision": "eager"
+        },
+        "checkpoint_loading_info": {
+          "missing_keys": [],
+          "unexpected_keys": [],
+          "mismatched_keys": [],
+          "error_msgs": []
+        },
+        "peak_allocated_mib": 3397.10400390625,
+        "peak_reserved_mib": 3460.0,
+        "memory_scope": "PyTorch allocator including resident model, not whole-device usage"
+      },
+      "input_gradient": {
+        "seconds": 5.702714399999877,
+        "diagnostic_continuation": " object",
+        "is_reference_answer": false,
+        "loss": 21.507780075073242,
+        "target_tokens": [
+          [
+            1633
+          ]
+        ],
+        "gradient_finite": true,
+        "nonzero_elements": 428652,
+        "elements": 442368,
+        "gradient_l2": 14.48534107208252,
+        "gradient_abs_max": 0.7964342832565308,
+        "model_parameters_with_grad": 0,
+        "weights_updated": false,
+        "gradient_domain": "Preprocessed normalized RGB pixels; not raw SAR pixels",
+        "num_logits_to_keep": 2,
+        "perturbation_generated": false,
+        "peak_allocated_mib": 6921.38427734375,
+        "peak_reserved_mib": 7208.0,
+        "memory_scope": "PyTorch allocator including resident model, not whole-device usage"
+      },
+      "total_seconds": 17.911255500000152
+    },
+    "llava-forward-cuda-fp16": {
+      "started_at": "2026-11-05T16:51:28+08:00",
+      "model_id": "llava-hf/llava-interleave-qwen-0.5b-hf",
+      "revision": "1090956dd1c79bc93ae98dcf395590369435ec91",
+      "phase": "forward",
+      "device": "cuda",
+      "dtype": "float16",
+      "status": "passed",
+      "scope": "Local offline compatibility/development only; no formal test, training or attack",
+      "environment": {
+        "python": "3.13.7",
+        "versions": {
+          "torch": "2.6.0+cu118",
+          "transformers": "4.48.3",
+          "numpy": "2.5.4",
+          "pillow": "13.0.0",
+          "safetensors": "0.8.0"
+        },
+        "cuda_runtime": "11.8",
+        "cpu_threads": 4,
+        "gpu": "NVIDIA GeForce GTX 1060 with Max-Q Design",
+        "compute_capability": [
+          6,
+          1
+        ],
+        "compiled_architectures": [
+          "sm_37",
+          "sm_50",
+          "sm_60",
+          "sm_61",
+          "sm_70",
+          "sm_75",
+          "sm_80",
+          "sm_86",
+          "sm_90",
+          "compute_37"
+        ],
+        "physical_gpu_memory_mib": 6143.875
+      },
+      "probe": {
+        "sample_id": "sar-clean-dev-00006a35a023a5a7840e",
+        "input_shapes": {
+          "input_ids": [
+            1,
+            772
+          ],
+          "attention_mask": [
+            1,
+            772
+          ],
+          "pixel_values": [
+            1,
+            3,
+            384,
+            384
+          ]
+        },
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_values"
+        ],
+        "image_tokens": 729,
+        "ground_truth_or_source_id_in_model_message": false
+      },
+      "model_load": {
+        "seconds": 2.3602820000000975,
+        "parameters": 864031264,
+        "trainable_parameters": 0,
+        "dtype": "torch.float16",
+        "attention": {
+          "root": "eager",
+          "text": "eager",
+          "vision": "eager"
+        },
+        "checkpoint_loading_info": {
+          "missing_keys": [],
+          "unexpected_keys": [],
+          "mismatched_keys": [],
+          "error_msgs": []
+        },
+        "peak_allocated_mib": 1679.50634765625,
+        "peak_reserved_mib": 1722.0,
+        "memory_scope": "PyTorch allocator including resident model, not whole-device usage"
+      },
+      "forward": {
+        "seconds": 1.8224248999999872,
+        "last_token_logits_finite": true,
+        "logits_shape": [
+          1,
+          1,
+          152000
+        ],
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "domain_capability_scored": false,
+        "peak_allocated_mib": 1843.1015625,
+        "peak_reserved_mib": 1920.0,
+        "memory_scope": "PyTorch allocator including resident model, not whole-device usage"
+      },
+      "total_seconds": 14.097668999999769
+    },
+    "llava-gradient-cuda-fp16": {
+      "started_at": "2026-11-05T16:51:43+08:00",
+      "model_id": "llava-hf/llava-interleave-qwen-0.5b-hf",
+      "revision": "1090956dd1c79bc93ae98dcf395590369435ec91",
+      "phase": "gradient",
+      "device": "cuda",
+      "dtype": "float16",
+      "status": "passed",
+      "scope": "Local offline compatibility/development only; no formal test, training or attack",
+      "environment": {
+        "python": "3.13.7",
+        "versions": {
+          "torch": "2.6.0+cu118",
+          "transformers": "4.48.3",
+          "numpy": "2.5.4",
+          "pillow": "13.0.0",
+          "safetensors": "0.8.0"
+        },
+        "cuda_runtime": "11.8",
+        "cpu_threads": 4,
+        "gpu": "NVIDIA GeForce GTX 1060 with Max-Q Design",
+        "compute_capability": [
+          6,
+          1
+        ],
+        "compiled_architectures": [
+          "sm_37",
+          "sm_50",
+          "sm_60",
+          "sm_61",
+          "sm_70",
+          "sm_75",
+          "sm_80",
+          "sm_86",
+          "sm_90",
+          "compute_37"
+        ],
+        "physical_gpu_memory_mib": 6143.875
+      },
+      "probe": {
+        "sample_id": "sar-clean-dev-00006a35a023a5a7840e",
+        "input_shapes": {
+          "input_ids": [
+            1,
+            772
+          ],
+          "attention_mask": [
+            1,
+            772
+          ],
+          "pixel_values": [
+            1,
+            3,
+            384,
+            384
+          ]
+        },
+        "input_keys": [
+          "attention_mask",
+          "input_ids",
+          "pixel_values"
+        ],
+        "image_tokens": 729,
+        "ground_truth_or_source_id_in_model_message": false
+      },
+      "model_load": {
+        "seconds": 2.3178625000000466,
+        "parameters": 864031264,
+        "trainable_parameters": 0,
+        "dtype": "torch.float16",
+        "attention": {
+          "root": "eager",
+          "text": "eager",
+          "vision": "eager"
+        },
+        "checkpoint_loading_info": {
+          "missing_keys": [],
+          "unexpected_keys": [],
+          "mismatched_keys": [],
+          "error_msgs": []
+        },
+        "peak_allocated_mib": 1679.50634765625,
+        "peak_reserved_mib": 1722.0,
+        "memory_scope": "PyTorch allocator including resident model, not whole-device usage"
+      },
+      "input_gradient": {
+        "seconds": 1.7363783999999214,
+        "diagnostic_continuation": " object",
+        "is_reference_answer": false,
+        "loss": 21.5015811920166,
+        "target_tokens": [
+          [
+            1633
+          ]
+        ],
+        "gradient_finite": true,
+        "nonzero_elements": 428648,
+        "elements": 442368,
+        "gradient_l2": 13.476512908935547,
+        "gradient_abs_max": 0.845703125,
+        "model_parameters_with_grad": 0,
+        "weights_updated": false,
+        "gradient_domain": "Preprocessed normalized RGB pixels; not raw SAR pixels",
+        "num_logits_to_keep": 2,
+        "perturbation_generated": false,
+        "peak_allocated_mib": 5277.3603515625,
+        "peak_reserved_mib": 5408.0,
+        "memory_scope": "PyTorch allocator including resident model, not whole-device usage"
+      },
+      "total_seconds": 13.397466599999916
+    }
+  },
+  "resource_observation": {
+    "physical_gpu_mib": 6143.875,
+    "fp32_gradient_peak_allocated_mib": 6921.38427734375,
+    "fp16_gradient_peak_allocated_mib": 5277.3603515625,
+    "fp32_allocator_peak_exceeds_physical_gpu": true,
+    "fp16_allocator_peak_within_physical_gpu": true,
+    "note": "Allocator values include resident model, not full-device residency or measured shared-memory use. FP16 finite gradients do not establish full precision equivalence or raw-SAR gradients."
+  },
+  "primary_model_run": {
+    "started_at": "2026-11-05T16:53:35+08:00",
+    "model_id": "llava-hf/llava-interleave-qwen-0.5b-hf",
+    "revision": "1090956dd1c79bc93ae98dcf395590369435ec91",
+    "phase": "screen",
+    "device": "cuda",
+    "dtype": "float16",
+    "status": "completed",
+    "scope": "Local offline compatibility/development only; no formal test, training or attack",
+    "environment": {
+      "python": "3.13.7",
+      "versions": {
+        "torch": "2.6.0+cu118",
+        "transformers": "4.48.3",
+        "numpy": "2.5.4",
+        "pillow": "13.0.0",
+        "safetensors": "0.8.0"
+      },
+      "cuda_runtime": "11.8",
+      "cpu_threads": 4,
+      "gpu": "NVIDIA GeForce GTX 1060 with Max-Q Design",
+      "compute_capability": [
+        6,
+        1
+      ],
+      "compiled_architectures": [
+        "sm_37",
+        "sm_50",
+        "sm_60",
+        "sm_61",
+        "sm_70",
+        "sm_75",
+        "sm_80",
+        "sm_86",
+        "sm_90",
+        "compute_37"
+      ],
+      "physical_gpu_memory_mib": 6143.875
+    },
+    "probe": {
+      "sample_id": "sar-clean-dev-00006a35a023a5a7840e",
+      "input_shapes": {
+        "input_ids": [
+          1,
+          772
+        ],
+        "attention_mask": [
+          1,
+          772
+        ],
+        "pixel_values": [
+          1,
+          3,
+          384,
+          384
+        ]
+      },
+      "input_keys": [
+        "attention_mask",
+        "input_ids",
+        "pixel_values"
+      ],
+      "image_tokens": 729,
+      "ground_truth_or_source_id_in_model_message": false
+    },
+    "model_load": {
+      "seconds": 2.2531589999998687,
+      "parameters": 864031264,
+      "trainable_parameters": 0,
+      "dtype": "torch.float16",
+      "attention": {
+        "root": "eager",
+        "text": "eager",
+        "vision": "eager"
+      },
+      "checkpoint_loading_info": {
+        "missing_keys": [],
+        "unexpected_keys": [],
+        "mismatched_keys": [],
+        "error_msgs": []
+      },
+      "peak_allocated_mib": 1679.50634765625,
+      "peak_reserved_mib": 1722.0,
+      "memory_scope": "PyTorch allocator including resident model, not whole-device usage"
+    },
+    "predictions": [
+      {
+        "sample_id": "sar-clean-dev-00006a35a023a5a7840e",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 1.1097576000001936,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1920.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00008019fe5ea978ebbb",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6587945000001127,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0001a38a3bc93366aeb2",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6624879000000874,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0001f4f7dd6ba0be9f03",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6653524000003017,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-000219f859247d7503ce",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6625522000003912,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00046bfc8d46806a5baf",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6660828999997648,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00078212963618d64c35",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6633965000000899,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-000805883e5e0d2ea0c7",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6575213999999505,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0008542a81a22150f411",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6611941000001025,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00086ea8c8c8ead714d6",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6570201999998062,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00000ccdd3a45c85416b",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6610666999999921,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00015d6b8afad37fefb2",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6665834999998879,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00049486156330fff439",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6657368999999562,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-000f9e08db183deebee6",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.660097400000268,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0020271d4474b84d13ca",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6658500000003187,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0028b06549b40f7dabe6",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6691417999995792,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-002fef136977c803719c",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6633528000002116,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0034bad2b0bb239ab109",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6724568999998155,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0035496b504a7208a55e",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6716748000003463,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00362f962b23c1782dc9",
+        "status": "ok",
+        "answer": "car",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6864780000000792,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0003e0474ed7895dd4f0",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6694469999997636,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0007020a10cde9d470e9",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6675222000003487,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-006e12a4c14464f8c20b",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6709382000003643,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00e828b42a56952f4ca1",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6685106999998425,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0114039b7344b87a7f7a",
+        "status": "ok",
+        "answer": "car",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6724886000001788,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0211abfaaa7e5942f6d1",
+        "status": "ok",
+        "answer": "car",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6729697999999189,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-026d6090c375b621a987",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6668263000001389,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-02fd912285002f28d1df",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6727135000000999,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-03345c7bb341909ea86a",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6708730999998807,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-037cab57042aea82fc14",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6702138000000559,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0002a5eda9a4ed625fa1",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.665467599999829,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0045ba7887d5b747362e",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6706605999997919,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0056e7bbe2d9a6bacc28",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6668565999998464,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-007714838caeac70e7f8",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6664405000001352,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0088dde66de5d803f3c4",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6675276000000849,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00d038dd3f32e6d5fe83",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6660597999998572,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00d9504f24b91f0f4ca6",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6653889999997773,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00dfbfe69267b8d5f47c",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6692219000001387,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00ef702d49ad8fdd5a83",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6673688000000766,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00fd2bd70ac7129fe09e",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6755428000001302,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-000a7fee06f3b5156d69",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6655246000000261,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-000c050845e2d4093738",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6701705000000402,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0013e0c98caa8820134a",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6682338999999047,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00148c3e1fab9ce638fb",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6676857000002201,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-001bb599af3c74888278",
+        "status": "ok",
+        "answer": "car",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6748153999997157,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00265009f17775b18186",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6745813000002272,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-002f21b057a87a237100",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6692011999998613,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00348142304ffdb92647",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6697174000000814,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0036b1f0ee7ebdecdfe5",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6686952000000019,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0036c45a7b4ccd1f1b32",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6692806999999448,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-000724bbfb6ee3dd1adb",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6704287000002296,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00295df793a89d35ad24",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6708319999997912,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-005928d8efb26474c4b1",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6692020999998931,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00a916ceb59e51386f10",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6769844000000376,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00b73f8b96706e76aad7",
+        "status": "ok",
+        "answer": "car",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6695927999999185,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00f07e467b4ec806091a",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6704712000000654,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00f7bf9921de2cda9d40",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6727912999999717,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0189d40539bf248c2d11",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.670741899999939,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-01a1be9fb8ef93bbdc78",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6709172000000763,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      },
+      {
+        "sample_id": "sar-clean-dev-01e04c876562b1601ca0",
+        "status": "ok",
+        "answer": "ship",
+        "generated_tokens": 2,
+        "generation_logits_finite": true,
+        "seconds_including_preprocessing": 0.6707575000000361,
+        "peak_allocated_mib": 1843.9580078125,
+        "peak_reserved_mib": 1922.0
+      }
+    ],
+    "evaluation": {
+      "scope": "Exploratory development screen, not a formal test",
+      "planned_samples": 60,
+      "correct": 12,
+      "accuracy": 0.2,
+      "valid_answer_fraction": 1.0,
+      "status_counts": {
+        "valid": 60
+      },
+      "per_class": {
+        "ship": {
+          "support": 10,
+          "correct": 10,
+          "recall": 1.0
+        },
+        "aircraft": {
+          "support": 10,
+          "correct": 0,
+          "recall": 0.0
+        },
+        "car": {
+          "support": 10,
+          "correct": 2,
+          "recall": 0.2
+        },
+        "tank": {
+          "support": 10,
+          "correct": 0,
+          "recall": 0.0
+        },
+        "bridge": {
+          "support": 10,
+          "correct": 0,
+          "recall": 0.0
+        },
+        "harbor": {
+          "support": 10,
+          "correct": 0,
+          "recall": 0.0
+        }
+      },
+      "six_class_macro_recall": 0.19999999999999998,
+      "confusion": {
+        "ship": {
+          "ship": 10,
+          "aircraft": 0,
+          "car": 0,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "aircraft": {
+          "ship": 9,
+          "aircraft": 0,
+          "car": 1,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "car": {
+          "ship": 8,
+          "aircraft": 0,
+          "car": 2,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "tank": {
+          "ship": 10,
+          "aircraft": 0,
+          "car": 0,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "bridge": {
+          "ship": 9,
+          "aircraft": 0,
+          "car": 1,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "harbor": {
+          "ship": 9,
+          "aircraft": 0,
+          "car": 1,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        }
+      },
+      "gate": {
+        "criteria": {
+          "complete_planned_size": true,
+          "complete_prediction_accounting": true,
+          "class_support": true,
+          "valid_answer_fraction": true,
+          "accuracy": false,
+          "per_class_recall": false
+        },
+        "passed": false
+      },
+      "sample_results": [
+        {
+          "sample_id": "sar-clean-dev-00006a35a023a5a7840e",
+          "reference": "ship",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": true
+        },
+        {
+          "sample_id": "sar-clean-dev-00008019fe5ea978ebbb",
+          "reference": "ship",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": true
+        },
+        {
+          "sample_id": "sar-clean-dev-0001a38a3bc93366aeb2",
+          "reference": "ship",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": true
+        },
+        {
+          "sample_id": "sar-clean-dev-0001f4f7dd6ba0be9f03",
+          "reference": "ship",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": true
+        },
+        {
+          "sample_id": "sar-clean-dev-000219f859247d7503ce",
+          "reference": "ship",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": true
+        },
+        {
+          "sample_id": "sar-clean-dev-00046bfc8d46806a5baf",
+          "reference": "ship",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": true
+        },
+        {
+          "sample_id": "sar-clean-dev-00078212963618d64c35",
+          "reference": "ship",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": true
+        },
+        {
+          "sample_id": "sar-clean-dev-000805883e5e0d2ea0c7",
+          "reference": "ship",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": true
+        },
+        {
+          "sample_id": "sar-clean-dev-0008542a81a22150f411",
+          "reference": "ship",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": true
+        },
+        {
+          "sample_id": "sar-clean-dev-00086ea8c8c8ead714d6",
+          "reference": "ship",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": true
+        },
+        {
+          "sample_id": "sar-clean-dev-00000ccdd3a45c85416b",
+          "reference": "aircraft",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00015d6b8afad37fefb2",
+          "reference": "aircraft",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00049486156330fff439",
+          "reference": "aircraft",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-000f9e08db183deebee6",
+          "reference": "aircraft",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0020271d4474b84d13ca",
+          "reference": "aircraft",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0028b06549b40f7dabe6",
+          "reference": "aircraft",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-002fef136977c803719c",
+          "reference": "aircraft",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0034bad2b0bb239ab109",
+          "reference": "aircraft",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0035496b504a7208a55e",
+          "reference": "aircraft",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00362f962b23c1782dc9",
+          "reference": "aircraft",
+          "parsed_label": "car",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0003e0474ed7895dd4f0",
+          "reference": "car",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0007020a10cde9d470e9",
+          "reference": "car",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-006e12a4c14464f8c20b",
+          "reference": "car",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00e828b42a56952f4ca1",
+          "reference": "car",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0114039b7344b87a7f7a",
+          "reference": "car",
+          "parsed_label": "car",
+          "status": "valid",
+          "correct": true
+        },
+        {
+          "sample_id": "sar-clean-dev-0211abfaaa7e5942f6d1",
+          "reference": "car",
+          "parsed_label": "car",
+          "status": "valid",
+          "correct": true
+        },
+        {
+          "sample_id": "sar-clean-dev-026d6090c375b621a987",
+          "reference": "car",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-02fd912285002f28d1df",
+          "reference": "car",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-03345c7bb341909ea86a",
+          "reference": "car",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-037cab57042aea82fc14",
+          "reference": "car",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0002a5eda9a4ed625fa1",
+          "reference": "tank",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0045ba7887d5b747362e",
+          "reference": "tank",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0056e7bbe2d9a6bacc28",
+          "reference": "tank",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-007714838caeac70e7f8",
+          "reference": "tank",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0088dde66de5d803f3c4",
+          "reference": "tank",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00d038dd3f32e6d5fe83",
+          "reference": "tank",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00d9504f24b91f0f4ca6",
+          "reference": "tank",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00dfbfe69267b8d5f47c",
+          "reference": "tank",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00ef702d49ad8fdd5a83",
+          "reference": "tank",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00fd2bd70ac7129fe09e",
+          "reference": "tank",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-000a7fee06f3b5156d69",
+          "reference": "bridge",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-000c050845e2d4093738",
+          "reference": "bridge",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0013e0c98caa8820134a",
+          "reference": "bridge",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00148c3e1fab9ce638fb",
+          "reference": "bridge",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-001bb599af3c74888278",
+          "reference": "bridge",
+          "parsed_label": "car",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00265009f17775b18186",
+          "reference": "bridge",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-002f21b057a87a237100",
+          "reference": "bridge",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00348142304ffdb92647",
+          "reference": "bridge",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0036b1f0ee7ebdecdfe5",
+          "reference": "bridge",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0036c45a7b4ccd1f1b32",
+          "reference": "bridge",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-000724bbfb6ee3dd1adb",
+          "reference": "harbor",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00295df793a89d35ad24",
+          "reference": "harbor",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-005928d8efb26474c4b1",
+          "reference": "harbor",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00a916ceb59e51386f10",
+          "reference": "harbor",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00b73f8b96706e76aad7",
+          "reference": "harbor",
+          "parsed_label": "car",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00f07e467b4ec806091a",
+          "reference": "harbor",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00f7bf9921de2cda9d40",
+          "reference": "harbor",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0189d40539bf248c2d11",
+          "reference": "harbor",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-01a1be9fb8ef93bbdc78",
+          "reference": "harbor",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-01e04c876562b1601ca0",
+          "reference": "harbor",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        }
+      ],
+      "denominator_rule": "All planned samples including missing, invalid and failed responses"
+    },
+    "development_gate_passed": false,
+    "total_seconds": 52.33788050000021
+  },
+  "diagnostic_smol_run": {
+    "started_at": "2026-11-05T16:42:26+08:00",
+    "model_id": "HuggingFaceTB/SmolVLM-256M-Instruct",
+    "revision": "7e3e67edbbed1bf9888184d9df282b700a323964",
+    "phase": "screen",
+    "device": "cuda",
+    "dtype": "float32",
+    "status": "completed",
+    "scope": "Local offline compatibility/development only; no formal test, training or attack",
+    "environment": {
+      "python": "3.13.7",
+      "versions": {
+        "torch": "2.6.0+cu118",
+        "transformers": "4.48.3",
+        "numpy": "2.5.4",
+        "pillow": "13.0.0",
+        "safetensors": "0.8.0"
+      },
+      "cuda_runtime": "11.8",
+      "cpu_threads": 4,
+      "gpu": "NVIDIA GeForce GTX 1060 with Max-Q Design",
+      "compute_capability": [
+        6,
+        1
+      ],
+      "compiled_architectures": [
+        "sm_37",
+        "sm_50",
+        "sm_60",
+        "sm_61",
+        "sm_70",
+        "sm_75",
+        "sm_80",
+        "sm_86",
+        "sm_90",
+        "compute_37"
+      ]
+    },
+    "probe": {
+      "sample_id": "sar-clean-dev-00006a35a023a5a7840e",
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          1,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          1,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          109
+        ],
+        "attention_mask": [
+          1,
+          109
+        ]
+      },
+      "input_keys": [
+        "attention_mask",
+        "input_ids",
+        "pixel_attention_mask",
+        "pixel_values"
+      ],
+      "image_tokens": 64,
+      "ground_truth_or_source_id_in_model_message": false
+    },
+    "model_load": {
+      "seconds": 45.99145829999998,
+      "parameters": 256484928,
+      "trainable_parameters": 0,
+      "dtype": "torch.float32",
+      "attention": {
+        "root": "eager",
+        "text": "eager",
+        "vision": "eager"
+      },
+      "checkpoint_loading_info": {
+        "missing_keys": [],
+        "unexpected_keys": [],
+        "mismatched_keys": [],
+        "error_msgs": []
+      },
+      "peak_allocated_mib": 1008.2421875,
+      "peak_reserved_mib": 1020.0,
+      "memory_scope": "PyTorch allocator including resident model, not whole-device usage"
+    },
+    "predictions": [
+      {
+        "sample_id": "sar-clean-dev-00006a35a023a5a7840e",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 7.71828000000005,
+        "peak_allocated_mib": 1142.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00008019fe5ea978ebbb",
+        "status": "ok",
+        "answer": " aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.4131514000000607,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0001a38a3bc93366aeb2",
+        "status": "ok",
+        "answer": " aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.4309115999999449,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0001f4f7dd6ba0be9f03",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.40224629999966055,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-000219f859247d7503ce",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.38665850000006685,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00046bfc8d46806a5baf",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.37397030000011,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00078212963618d64c35",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.37782990000005157,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-000805883e5e0d2ea0c7",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.3817690999999286,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0008542a81a22150f411",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.3817361000001256,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00086ea8c8c8ead714d6",
+        "status": "ok",
+        "answer": " aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.39169760000004317,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00000ccdd3a45c85416b",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.389352499999859,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00015d6b8afad37fefb2",
+        "status": "ok",
+        "answer": " aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.3848192000000381,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00049486156330fff439",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.39617720000023837,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-000f9e08db183deebee6",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.38988770000014483,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0020271d4474b84d13ca",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.3856670000000122,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0028b06549b40f7dabe6",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.3960138999996161,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-002fef136977c803719c",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.40482220000012603,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0034bad2b0bb239ab109",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.3839026000000558,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0035496b504a7208a55e",
+        "status": "ok",
+        "answer": " aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.38229160000037155,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00362f962b23c1782dc9",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.383102400000098,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0003e0474ed7895dd4f0",
+        "status": "ok",
+        "answer": " aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.39013699999986784,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0007020a10cde9d470e9",
+        "status": "ok",
+        "answer": " aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.3837834999999359,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-006e12a4c14464f8c20b",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.3909653000000617,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00e828b42a56952f4ca1",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.38356300000032206,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0114039b7344b87a7f7a",
+        "status": "ok",
+        "answer": " aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.38037450000001627,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0211abfaaa7e5942f6d1",
+        "status": "ok",
+        "answer": " aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.37361490000012054,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-026d6090c375b621a987",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.3794521999998324,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-02fd912285002f28d1df",
+        "status": "ok",
+        "answer": " ship",
+        "generated_tokens": 2,
+        "seconds_including_preprocessing": 0.3154739999999947,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-03345c7bb341909ea86a",
+        "status": "ok",
+        "answer": " aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.4130003999998735,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-037cab57042aea82fc14",
+        "status": "ok",
+        "answer": " aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.43514579999964553,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0002a5eda9a4ed625fa1",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.4583192999998573,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0045ba7887d5b747362e",
+        "status": "ok",
+        "answer": " aircraft",
+        "generated_tokens": 2,
+        "seconds_including_preprocessing": 0.32192890000033003,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0056e7bbe2d9a6bacc28",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.4311896999997771,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-007714838caeac70e7f8",
+        "status": "ok",
+        "answer": " Aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.4214210999998613,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0088dde66de5d803f3c4",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.39272840000012366,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00d038dd3f32e6d5fe83",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.4656003999998575,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00d9504f24b91f0f4ca6",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.4172519000003376,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00dfbfe69267b8d5f47c",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.41416239999989557,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00ef702d49ad8fdd5a83",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.4015439999998307,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00fd2bd70ac7129fe09e",
+        "status": "ok",
+        "answer": " aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.3885653000002094,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-000a7fee06f3b5156d69",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.41632290000006833,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-000c050845e2d4093738",
+        "status": "ok",
+        "answer": " aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.3949955000002774,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0013e0c98caa8820134a",
+        "status": "ok",
+        "answer": " aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.3937965999998596,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00148c3e1fab9ce638fb",
+        "status": "ok",
+        "answer": " aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.41206970000030196,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-001bb599af3c74888278",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.39321079999990616,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00265009f17775b18186",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.4261977000001025,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-002f21b057a87a237100",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.43357319999995525,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00348142304ffdb92647",
+        "status": "ok",
+        "answer": " aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.4949746000002051,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0036b1f0ee7ebdecdfe5",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.4768933999998808,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0036c45a7b4ccd1f1b32",
+        "status": "ok",
+        "answer": " aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.4175091000001885,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-000724bbfb6ee3dd1adb",
+        "status": "ok",
+        "answer": " aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.41202190000012706,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00295df793a89d35ad24",
+        "status": "ok",
+        "answer": " aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.3983054999998785,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-005928d8efb26474c4b1",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.412262699999701,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00a916ceb59e51386f10",
+        "status": "ok",
+        "answer": " aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.3915796000001137,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00b73f8b96706e76aad7",
+        "status": "ok",
+        "answer": " aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.3817055999998047,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00f07e467b4ec806091a",
+        "status": "ok",
+        "answer": " aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.3928782999996656,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-00f7bf9921de2cda9d40",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.37778290000005654,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-0189d40539bf248c2d11",
+        "status": "ok",
+        "answer": " ship.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.3796777000002294,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-01a1be9fb8ef93bbdc78",
+        "status": "ok",
+        "answer": " aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.377370400000018,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      },
+      {
+        "sample_id": "sar-clean-dev-01e04c876562b1601ca0",
+        "status": "ok",
+        "answer": " aircraft.",
+        "generated_tokens": 3,
+        "seconds_including_preprocessing": 0.3780345000000125,
+        "peak_allocated_mib": 1141.583984375,
+        "peak_reserved_mib": 1162.0
+      }
+    ],
+    "evaluation": {
+      "scope": "Exploratory development screen, not a formal test",
+      "planned_samples": 60,
+      "correct": 0,
+      "accuracy": 0.0,
+      "valid_answer_fraction": 0.03333333333333333,
+      "status_counts": {
+        "invalid_answer": 58,
+        "valid": 2
+      },
+      "per_class": {
+        "ship": {
+          "support": 10,
+          "correct": 0,
+          "recall": 0.0
+        },
+        "aircraft": {
+          "support": 10,
+          "correct": 0,
+          "recall": 0.0
+        },
+        "car": {
+          "support": 10,
+          "correct": 0,
+          "recall": 0.0
+        },
+        "tank": {
+          "support": 10,
+          "correct": 0,
+          "recall": 0.0
+        },
+        "bridge": {
+          "support": 10,
+          "correct": 0,
+          "recall": 0.0
+        },
+        "harbor": {
+          "support": 10,
+          "correct": 0,
+          "recall": 0.0
+        }
+      },
+      "six_class_macro_recall": 0.0,
+      "confusion": {
+        "ship": {
+          "ship": 0,
+          "aircraft": 0,
+          "car": 0,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 10
+        },
+        "aircraft": {
+          "ship": 0,
+          "aircraft": 0,
+          "car": 0,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 10
+        },
+        "car": {
+          "ship": 1,
+          "aircraft": 0,
+          "car": 0,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 9
+        },
+        "tank": {
+          "ship": 0,
+          "aircraft": 1,
+          "car": 0,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 9
+        },
+        "bridge": {
+          "ship": 0,
+          "aircraft": 0,
+          "car": 0,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 10
+        },
+        "harbor": {
+          "ship": 0,
+          "aircraft": 0,
+          "car": 0,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 10
+        }
+      },
+      "gate": {
+        "criteria": {
+          "complete_planned_size": true,
+          "class_support": true,
+          "valid_answer_fraction": false,
+          "accuracy": false,
+          "per_class_recall": false
+        },
+        "passed": false
+      },
+      "sample_results": [
+        {
+          "sample_id": "sar-clean-dev-00006a35a023a5a7840e",
+          "reference": "ship",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00008019fe5ea978ebbb",
+          "reference": "ship",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0001a38a3bc93366aeb2",
+          "reference": "ship",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0001f4f7dd6ba0be9f03",
+          "reference": "ship",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-000219f859247d7503ce",
+          "reference": "ship",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00046bfc8d46806a5baf",
+          "reference": "ship",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00078212963618d64c35",
+          "reference": "ship",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-000805883e5e0d2ea0c7",
+          "reference": "ship",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0008542a81a22150f411",
+          "reference": "ship",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00086ea8c8c8ead714d6",
+          "reference": "ship",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00000ccdd3a45c85416b",
+          "reference": "aircraft",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00015d6b8afad37fefb2",
+          "reference": "aircraft",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00049486156330fff439",
+          "reference": "aircraft",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-000f9e08db183deebee6",
+          "reference": "aircraft",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0020271d4474b84d13ca",
+          "reference": "aircraft",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0028b06549b40f7dabe6",
+          "reference": "aircraft",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-002fef136977c803719c",
+          "reference": "aircraft",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0034bad2b0bb239ab109",
+          "reference": "aircraft",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0035496b504a7208a55e",
+          "reference": "aircraft",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00362f962b23c1782dc9",
+          "reference": "aircraft",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0003e0474ed7895dd4f0",
+          "reference": "car",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0007020a10cde9d470e9",
+          "reference": "car",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-006e12a4c14464f8c20b",
+          "reference": "car",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00e828b42a56952f4ca1",
+          "reference": "car",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0114039b7344b87a7f7a",
+          "reference": "car",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0211abfaaa7e5942f6d1",
+          "reference": "car",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-026d6090c375b621a987",
+          "reference": "car",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-02fd912285002f28d1df",
+          "reference": "car",
+          "parsed_label": "ship",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-03345c7bb341909ea86a",
+          "reference": "car",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-037cab57042aea82fc14",
+          "reference": "car",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0002a5eda9a4ed625fa1",
+          "reference": "tank",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0045ba7887d5b747362e",
+          "reference": "tank",
+          "parsed_label": "aircraft",
+          "status": "valid",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0056e7bbe2d9a6bacc28",
+          "reference": "tank",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-007714838caeac70e7f8",
+          "reference": "tank",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0088dde66de5d803f3c4",
+          "reference": "tank",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00d038dd3f32e6d5fe83",
+          "reference": "tank",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00d9504f24b91f0f4ca6",
+          "reference": "tank",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00dfbfe69267b8d5f47c",
+          "reference": "tank",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00ef702d49ad8fdd5a83",
+          "reference": "tank",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00fd2bd70ac7129fe09e",
+          "reference": "tank",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-000a7fee06f3b5156d69",
+          "reference": "bridge",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-000c050845e2d4093738",
+          "reference": "bridge",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0013e0c98caa8820134a",
+          "reference": "bridge",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00148c3e1fab9ce638fb",
+          "reference": "bridge",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-001bb599af3c74888278",
+          "reference": "bridge",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00265009f17775b18186",
+          "reference": "bridge",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-002f21b057a87a237100",
+          "reference": "bridge",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00348142304ffdb92647",
+          "reference": "bridge",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0036b1f0ee7ebdecdfe5",
+          "reference": "bridge",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0036c45a7b4ccd1f1b32",
+          "reference": "bridge",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-000724bbfb6ee3dd1adb",
+          "reference": "harbor",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00295df793a89d35ad24",
+          "reference": "harbor",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-005928d8efb26474c4b1",
+          "reference": "harbor",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00a916ceb59e51386f10",
+          "reference": "harbor",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00b73f8b96706e76aad7",
+          "reference": "harbor",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00f07e467b4ec806091a",
+          "reference": "harbor",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-00f7bf9921de2cda9d40",
+          "reference": "harbor",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-0189d40539bf248c2d11",
+          "reference": "harbor",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-01a1be9fb8ef93bbdc78",
+          "reference": "harbor",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        },
+        {
+          "sample_id": "sar-clean-dev-01e04c876562b1601ca0",
+          "reference": "harbor",
+          "parsed_label": null,
+          "status": "invalid_answer",
+          "correct": false
+        }
+      ],
+      "denominator_rule": "All planned samples including missing, invalid and failed responses"
+    },
+    "development_gate_passed": false,
+    "total_seconds": 96.67372969999997
+  },
+  "interpretation": {
+    "llava": "Valid formatting in all 60 calls but only12/60 correct, ship10/10 and car2/10 with four other classes0/10; not an eligible SAR proxy under this protocol.",
+    "smol": "Strict0/60 includes58 format-invalid answers ending in a period; cannot interpret as pure visual recognition0%. Original outputs preserved; primary parser not revised.",
+    "research": "Applies to these checkpoint/representation/prompt/dtype settings and small development data only. Final SAR/HRRP/domain-text and real closed-source transfer goals remain."
+  },
+  "independent_results_audit": {
+    "scope": "Independent read-only frozen60 data and results audit; no model/network",
+    "data_checks": {
+      "record_count_60": true,
+      "unique_ids": true,
+      "ids_equal_plan": true,
+      "plan_hash_matches_acquisition": true,
+      "task_protocol_unchanged": true,
+      "screen_protocol_unchanged": true,
+      "records_hash_matches_acquisition": true,
+      "all_author_train": true,
+      "all_kaggle_train": true,
+      "no_formal_split": true,
+      "fixed_question": true,
+      "frozen_record_fields_preserved": true,
+      "all_asset_sha256_match": true,
+      "class_counts_10_each": true
+    },
+    "all_data_checks_passed": true,
+    "runs": {
+      "llava-screen-fp16.json": {
+        "model_id": "llava-hf/llava-interleave-qwen-0.5b-hf",
+        "revision": "1090956dd1c79bc93ae98dcf395590369435ec91",
+        "dtype": "float16",
+        "run_status": "completed",
+        "frozen_ids_checked": true,
+        "planned_denominator": 60,
+        "correct": 12,
+        "accuracy": 0.2,
+        "valid_answer_fraction": 1.0,
+        "status_counts": {
+          "valid": 60
+        },
+        "per_class": {
+          "ship": {
+            "support": 10,
+            "correct": 10,
+            "recall": 1.0
+          },
+          "aircraft": {
+            "support": 10,
+            "correct": 0,
+            "recall": 0.0
+          },
+          "car": {
+            "support": 10,
+            "correct": 2,
+            "recall": 0.2
+          },
+          "tank": {
+            "support": 10,
+            "correct": 0,
+            "recall": 0.0
+          },
+          "bridge": {
+            "support": 10,
+            "correct": 0,
+            "recall": 0.0
+          },
+          "harbor": {
+            "support": 10,
+            "correct": 0,
+            "recall": 0.0
+          }
+        },
+        "six_class_macro_recall": 0.19999999999999998,
+        "raw_answer_counts": {
+          "ship": 55,
+          "car": 5
+        },
+        "gate": {
+          "criteria": {
+            "complete_planned_size": true,
+            "class_support": true,
+            "valid_answer_fraction": true,
+            "accuracy": false,
+            "per_class_recall": false,
+            "complete_prediction_accounting": true
+          },
+          "passed": false
+        },
+        "reported_metric_issues": [],
+        "terminal_period_only_diagnostic": {
+          "count": 0,
+          "label_counts": {},
+          "reference_matches_in_period_only_rows": 0,
+          "scope": "Post-hoc formatting description, not a replacement primary score, new parser version or pure visual competence estimate"
+        },
+        "generation_logits_finite_reporting": true
+      },
+      "smol-screen-fp32.json": {
+        "model_id": "HuggingFaceTB/SmolVLM-256M-Instruct",
+        "revision": "7e3e67edbbed1bf9888184d9df282b700a323964",
+        "dtype": "float32",
+        "run_status": "completed",
+        "frozen_ids_checked": true,
+        "planned_denominator": 60,
+        "correct": 0,
+        "accuracy": 0.0,
+        "valid_answer_fraction": 0.03333333333333333,
+        "status_counts": {
+          "invalid_answer": 58,
+          "valid": 2
+        },
+        "per_class": {
+          "ship": {
+            "support": 10,
+            "correct": 0,
+            "recall": 0.0
+          },
+          "aircraft": {
+            "support": 10,
+            "correct": 0,
+            "recall": 0.0
+          },
+          "car": {
+            "support": 10,
+            "correct": 0,
+            "recall": 0.0
+          },
+          "tank": {
+            "support": 10,
+            "correct": 0,
+            "recall": 0.0
+          },
+          "bridge": {
+            "support": 10,
+            "correct": 0,
+            "recall": 0.0
+          },
+          "harbor": {
+            "support": 10,
+            "correct": 0,
+            "recall": 0.0
+          }
+        },
+        "six_class_macro_recall": 0.0,
+        "raw_answer_counts": {
+          " ship.": 33,
+          " aircraft.": 24,
+          " ship": 1,
+          " aircraft": 1,
+          " Aircraft.": 1
+        },
+        "gate": {
+          "criteria": {
+            "complete_planned_size": true,
+            "class_support": true,
+            "valid_answer_fraction": false,
+            "accuracy": false,
+            "per_class_recall": false
+          },
+          "passed": false
+        },
+        "reported_metric_issues": [],
+        "terminal_period_only_diagnostic": {
+          "count": 58,
+          "label_counts": {
+            "ship": 33,
+            "aircraft": 25
+          },
+          "reference_matches_in_period_only_rows": 9,
+          "scope": "Post-hoc formatting description, not a replacement primary score, new parser version or pure visual competence estimate"
+        },
+        "generation_logits_finite_reporting": "Not instrumented in this earlier run"
+      }
+    },
+    "status": "passed",
+    "schema_note": "LLaVA report additionally records complete_prediction_accounting criterion; both reports contain60 unique matched IDs. This instrumentation difference does not change scores."
+  },
+  "verification": {
+    "research_scoring_unit_tests": "7 passed",
+    "formal_test_queried": false,
+    "model_weights_updated": false,
+    "attack_generated": false,
+    "paid_API_called": false
+  },
+  "current_source_sha256_at_summary_time": {
+    "scripts/plan_sar_clean_development.py": "70ec50326079e0901c18b3898db0b6336d7b2f32ab0d329f0b4b9600e28f1048",
+    "scripts/acquire_sar_clean_development.py": "cb391415761b7e86aaa57e8778b28afbdb16ee1ab15f7fa4085053e9784a2b7a",
+    "scripts/evaluate_sar_clean_screen.py": "79e7571b91aa6f120ebd7e9c60d137f95a4346971a3fd58c385bf514e41ff75c",
+    "scripts/run_vlm_clean_screen.py": "754743cb97f69bf6934b7e61413000c08f818b55e2412279d665c594ead1cac9",
+    "tests/test_clean_screen_scoring.py": "3d3dada5e5b2aff12bbd52c61c4b2e03bff1951e7efba2f67b014688a995fe3f"
+  }
+}

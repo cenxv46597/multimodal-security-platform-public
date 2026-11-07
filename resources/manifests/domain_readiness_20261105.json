@@ -1,0 +1,2699 @@
+{
+  "checked_at": "2026-11-05T14:49:36+08:00",
+  "timezone": "Asia/Shanghai",
+  "scope": "Domain resources and source-group audit; teaching ongoing; no formal split or model evaluation",
+  "state": "resource_checks_completed_evaluation_not_started",
+  "group_audit": {
+    "checked_at": "2026-11-05T14:49:35+08:00",
+    "scope": "Read-only observed groups; no experimental split or model evaluation created",
+    "sample": {
+      "files": 1345,
+      "classes": {
+        "2s1": {
+          "files": 174,
+          "serial_tokens": [
+            "b01"
+          ],
+          "collection_tokens": [
+            "A"
+          ],
+          "elevations_degrees_from_filename": [
+            15,
+            16,
+            17
+          ],
+          "azimuth_degrees_from_filename": [
+            10.22,
+            79.22
+          ],
+          "ten_degree_bin_counts_for_audit_only": {
+            "10": 30,
+            "20": 28,
+            "30": 29,
+            "40": 25,
+            "50": 26,
+            "60": 16,
+            "70": 20
+          }
+        },
+        "bmp2": {
+          "files": 107,
+          "serial_tokens": [
+            "9563"
+          ],
+          "collection_tokens": [
+            "A"
+          ],
+          "elevations_degrees_from_filename": [
+            16,
+            17
+          ],
+          "azimuth_degrees_from_filename": [
+            12.49,
+            79.49
+          ],
+          "ten_degree_bin_counts_for_audit_only": {
+            "10": 11,
+            "20": 13,
+            "30": 18,
+            "40": 17,
+            "50": 16,
+            "60": 17,
+            "70": 15
+          }
+        },
+        "btr70": {
+          "files": 92,
+          "serial_tokens": [
+            "c71"
+          ],
+          "collection_tokens": [
+            "A"
+          ],
+          "elevations_degrees_from_filename": [
+            16,
+            17
+          ],
+          "azimuth_degrees_from_filename": [
+            11.0,
+            79.0
+          ],
+          "ten_degree_bin_counts_for_audit_only": {
+            "10": 15,
+            "20": 16,
+            "30": 15,
+            "40": 12,
+            "50": 10,
+            "60": 15,
+            "70": 9
+          }
+        },
+        "m1": {
+          "files": 129,
+          "serial_tokens": [
+            "0ap00n"
+          ],
+          "collection_tokens": [
+            "A"
+          ],
+          "elevations_degrees_from_filename": [
+            14,
+            16,
+            17
+          ],
+          "azimuth_degrees_from_filename": [
+            10.18,
+            79.18
+          ],
+          "ten_degree_bin_counts_for_audit_only": {
+            "10": 27,
+            "20": 23,
+            "30": 27,
+            "40": 16,
+            "50": 13,
+            "60": 11,
+            "70": 12
+          }
+        },
+        "m2": {
+          "files": 128,
+          "serial_tokens": [
+            "mv02gx"
+          ],
+          "collection_tokens": [
+            "A"
+          ],
+          "elevations_degrees_from_filename": [
+            14,
+            16,
+            17
+          ],
+          "azimuth_degrees_from_filename": [
+            10.91,
+            79.91
+          ],
+          "ten_degree_bin_counts_for_audit_only": {
+            "10": 28,
+            "20": 23,
+            "30": 24,
+            "40": 16,
+            "50": 12,
+            "60": 11,
+            "70": 14
+          }
+        },
+        "m35": {
+          "files": 129,
+          "serial_tokens": [
+            "t839"
+          ],
+          "collection_tokens": [
+            "A"
+          ],
+          "elevations_degrees_from_filename": [
+            14,
+            16,
+            17
+          ],
+          "azimuth_degrees_from_filename": [
+            10.62,
+            79.62
+          ],
+          "ten_degree_bin_counts_for_audit_only": {
+            "10": 29,
+            "20": 22,
+            "30": 26,
+            "40": 15,
+            "50": 13,
+            "60": 10,
+            "70": 14
+          }
+        },
+        "m548": {
+          "files": 128,
+          "serial_tokens": [
+            "c245hab"
+          ],
+          "collection_tokens": [
+            "A"
+          ],
+          "elevations_degrees_from_filename": [
+            14,
+            16,
+            17
+          ],
+          "azimuth_degrees_from_filename": [
+            10.63,
+            79.63
+          ],
+          "ten_degree_bin_counts_for_audit_only": {
+            "10": 28,
+            "20": 23,
+            "30": 24,
+            "40": 16,
+            "50": 12,
+            "60": 11,
+            "70": 14
+          }
+        },
+        "m60": {
+          "files": 176,
+          "serial_tokens": [
+            "3336"
+          ],
+          "collection_tokens": [
+            "A"
+          ],
+          "elevations_degrees_from_filename": [
+            15,
+            16,
+            17
+          ],
+          "azimuth_degrees_from_filename": [
+            10.74,
+            79.74
+          ],
+          "ten_degree_bin_counts_for_audit_only": {
+            "10": 30,
+            "20": 29,
+            "30": 29,
+            "40": 26,
+            "50": 26,
+            "60": 21,
+            "70": 15
+          }
+        },
+        "t72": {
+          "files": 108,
+          "serial_tokens": [
+            "812"
+          ],
+          "collection_tokens": [
+            "A"
+          ],
+          "elevations_degrees_from_filename": [
+            16,
+            17
+          ],
+          "azimuth_degrees_from_filename": [
+            11.77,
+            79.77
+          ],
+          "ten_degree_bin_counts_for_audit_only": {
+            "10": 12,
+            "20": 14,
+            "30": 17,
+            "40": 18,
+            "50": 16,
+            "60": 17,
+            "70": 14
+          }
+        },
+        "zsu23": {
+          "files": 174,
+          "serial_tokens": [
+            "d08"
+          ],
+          "collection_tokens": [
+            "A"
+          ],
+          "elevations_degrees_from_filename": [
+            15,
+            16,
+            17
+          ],
+          "azimuth_degrees_from_filename": [
+            10.99,
+            79.99
+          ],
+          "ten_degree_bin_counts_for_audit_only": {
+            "10": 30,
+            "20": 28,
+            "30": 29,
+            "40": 25,
+            "50": 26,
+            "60": 17,
+            "70": 19
+          }
+        }
+      },
+      "unique_content_hashes": 1345,
+      "duplicate_content_groups": [],
+      "class_count": 10,
+      "uniform_guess_reference": 0.1,
+      "majority_class_reference": 0.1308550185873606,
+      "each_class_has_one_serial_token": true,
+      "limits": [
+        "Filename tokens are observed metadata, not a verified physical-instance inventory.",
+        "No per-class unseen-serial train/test evaluation is possible with this selected batch.",
+        "Nearby angles and repeated elevations require grouped/blocked design; bins above are an audit only.",
+        "Ten fine classes are not silently mapped to SARChat six coarse categories."
+      ]
+    },
+    "hrrp": {
+      "full_metadata_rows": 8688,
+      "full_metadata_original_groups": 543,
+      "metadata_sha256": "7192929a8b2e83f4a78ae2d2474979fd6b89e8e05d6c9574bc341eea95109516",
+      "existing_metadata_splits": {
+        "train": {
+          "angle_min": 0,
+          "angle_max": 100,
+          "angle_count": 101,
+          "rows": 4848,
+          "original_groups": 303
+        },
+        "validation": {
+          "angle_min": 101,
+          "angle_max": 140,
+          "angle_count": 40,
+          "rows": 1920,
+          "original_groups": 120
+        },
+        "test": {
+          "angle_min": 141,
+          "angle_max": 180,
+          "angle_count": 40,
+          "rows": 1920,
+          "original_groups": 120
+        }
+      },
+      "local_files": 144,
+      "local_original_groups": 9,
+      "local_unique_content_hashes": 134,
+      "local_groups": [
+        {
+          "label": "cone",
+          "theta": 50,
+          "files": 16,
+          "split": "train"
+        },
+        {
+          "label": "cone",
+          "theta": 121,
+          "files": 16,
+          "split": "validation"
+        },
+        {
+          "label": "cone",
+          "theta": 161,
+          "files": 16,
+          "split": "test"
+        },
+        {
+          "label": "cylinder",
+          "theta": 50,
+          "files": 16,
+          "split": "train"
+        },
+        {
+          "label": "cylinder",
+          "theta": 121,
+          "files": 16,
+          "split": "validation"
+        },
+        {
+          "label": "cylinder",
+          "theta": 161,
+          "files": 16,
+          "split": "test"
+        },
+        {
+          "label": "mix",
+          "theta": 50,
+          "files": 16,
+          "split": "train"
+        },
+        {
+          "label": "mix",
+          "theta": 121,
+          "files": 16,
+          "split": "validation"
+        },
+        {
+          "label": "mix",
+          "theta": 161,
+          "files": 16,
+          "split": "test"
+        }
+      ],
+      "local_original_aug0_files": 9,
+      "local_same_content_cross_split": false,
+      "uniform_guess_reference": 0.3333333333333333,
+      "limits": [
+        "Local files are a format subset: one original angle per class per split, not a formal benchmark.",
+        "Original group means label/theta in this simulation, not an independent physical target.",
+        "Existing metadata has adjacent split boundaries 100/101 and 140/141 degrees, without an angle guard band.",
+        "No new split, model input, preprocessing, or train/test reassignment was created."
+      ]
+    },
+    "status": "passed"
+  },
+  "sarchat": {
+    "repository": "https://github.com/JimmyMa99/SARChat",
+    "revision": "3dc44c1ac4b6f23db831e52e15ecdc180e3e0860",
+    "anonymous_metadata_status": 200,
+    "anonymous_file_revision_config_status": 404,
+    "public_base_model_same_files_endpoint_status": 200,
+    "failure_cause": "not established; neither automatic access nor login success inferred",
+    "release_announcement": "https://github.com/JimmyMa99/SARChat/issues/1#issuecomment-4888809065",
+    "dataset_issue": "https://github.com/JimmyMa99/SARChat/issues/4",
+    "classification": "May contain multiple targets/categories; not assumed single-label classification",
+    "training_image_exposure": "unresolved; SARDet validation is not assumed unseen by checkpoint",
+    "local_weights": false
+  },
+  "hrrp_sources": {
+    "date": "2026-11-05",
+    "timezone": "Asia/Shanghai",
+    "scope": "Read-only HRRP source/definition audit; no new data batch, training, or attack",
+    "repository": {
+      "url": "https://github.com/zzo-zhao/HRRP-PC-Paired-Dataset",
+      "latest_commit": "a1ab400c91f3c3304fc856404c6b66be9ab6b493",
+      "root_entries": [
+        "ReadMe.md",
+        "hrrp",
+        "metadata.csv",
+        "pointclouds"
+      ],
+      "github_license_field": null,
+      "releases": [],
+      "readme_requests_citation": true,
+      "no_standalone_data_or_code_license_found_in_inspected_root": true,
+      "no_training_code_or_checkpoint_found_in_inspected_root_or_releases": true
+    },
+    "sources": [
+      {
+        "url": "https://www.mdpi.com/2072-4292/18/6/868",
+        "access": "Direct article and XML/PDF routes failed or 429 in web tool. Formal article search index returned section 3.1.2 and 3.1.3. Not a full formal-paper read.",
+        "facts": {
+          "publication_date": "2026-03-11",
+          "simulator": "Altair FEKO 2023.1",
+          "initial_environment": "free space, no background noise or multipath",
+          "frequency_GHz": [
+            4,
+            8
+          ],
+          "center_GHz": 6,
+          "step_MHz": 50,
+          "original_frequency_points": 81,
+          "ifft_length_after_zero_padding": 512,
+          "theoretical_range_resolution_m": 0.0375,
+          "unambiguous_range_m": 3,
+          "angles_degrees": "0..180 inclusive, step 1",
+          "raw_groups": 543,
+          "normalization_claim": "Min-Max before training",
+          "augmentation_count": 15,
+          "expanded_pairs": 8688
+        }
+      },
+      {
+        "url": "https://www.preprints.org/manuscript/202601.0785",
+        "version": "v1, posted 2026-01-12",
+        "access": "Full author preprint HTML read, Appendix A and data statement checked",
+        "article_license": "CC BY 4.0 for article; not treated as automatic external-repository dataset/code license",
+        "augmentation_map": {
+          "0": "Original inferred from 543 x (original + 15) and metadata aug0; generator code unavailable",
+          "1": "HRRP Gaussian sigma .01",
+          "2": "HRRP Gaussian sigma .03",
+          "3": "HRRP Gaussian sigma .05",
+          "4": "HRRP Gaussian sigma .1",
+          "5": "HRRP amplitude scale .9..1.1",
+          "6": "HRRP zero-padded linear shift",
+          "7": "HRRP no operation; only point cloud rotation",
+          "8": "HRRP Gaussian sigma .01 + linear shift",
+          "9": "HRRP Gaussian sigma .03 + linear shift",
+          "10": "HRRP Gaussian sigma .05 + linear shift",
+          "11": "HRRP Gaussian sigma .1 + linear shift",
+          "12": "HRRP amplitude scale .9..1.1 + shift; PC jitter .01 + rotation",
+          "13": "HRRP amplitude scale .9..1.1 + shift; PC jitter .03 + rotation",
+          "14": "HRRP amplitude scale .9..1.1 + shift; PC jitter .05 + rotation",
+          "15": "HRRP amplitude scale .9..1.1 + shift; PC jitter .1 + rotation"
+        }
+      }
+    ],
+    "local_evidence": "local_augmentation_audit.json",
+    "local_findings": [
+      "All 9 local aug0 files have min 0, max 1.",
+      "All 9 aug7 files are byte-identical to same-group aug0.",
+      "mix/theta161 aug6 also equals aug0; zero/equivalent shift is a hypothesis, not a confirmed generator choice.",
+      "All 72 noise-augmented files in ids1-4,8-11 are outside [0,1]; other 23 outside files are scaling variants.",
+      "Values support base normalization followed by augmentation without final clipping as a hypothesis only."
+    ],
+    "unresolved": [
+      "Exact CSV quantity (amplitude/power/real component), physical unit, polarization",
+      "Distance zero, fftshift, Fourier normalization, window, alignment and padding convention",
+      "Min-Max scope and exact transform/augmentation order or random seeds",
+      "Explicit repository data/code reuse and redistribution license",
+      "Trained checkpoint and reproducible generator/training implementation"
+    ],
+    "recommendations": [
+      "Keep distance-cell index 0..511 and CSV numeric value with unit unconfirmed in first plots.",
+      "Do not equate zero-padded sample spacing with physical range resolution.",
+      "9 raw groups/144 versions cannot support credible formal classification evaluation.",
+      "Raw 1D baseline proves its own synthetic-signal task ability only; curve VLM must independently pass clean classification.",
+      "A small follow-up candidate is all 543 original aug0 profiles rather than all 8688 variants, after task and provenance/terms review; not downloaded in this audit."
+    ]
+  },
+  "hrrp_local_augmentation_audit": {
+    "scope": "Read-only existing 144 CSV augmentation consistency audit; no training, clipping or changes to raw data",
+    "by_augmentation": {
+      "0": {
+        "files": 9,
+        "outside_unit": 0,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "1": {
+        "files": 9,
+        "outside_unit": 9,
+        "minimum": -0.02814544020998102,
+        "maximum": 1.0162247014660841
+      },
+      "2": {
+        "files": 9,
+        "outside_unit": 9,
+        "minimum": -0.09137427542983885,
+        "maximum": 1.058660812496965
+      },
+      "3": {
+        "files": 9,
+        "outside_unit": 9,
+        "minimum": -0.1460628383900391,
+        "maximum": 1.0689809885820634
+      },
+      "4": {
+        "files": 9,
+        "outside_unit": 9,
+        "minimum": -0.3610100692209503,
+        "maximum": 1.1766659012188254
+      },
+      "5": {
+        "files": 9,
+        "outside_unit": 2,
+        "minimum": 0.0,
+        "maximum": 1.0533640900862946
+      },
+      "6": {
+        "files": 9,
+        "outside_unit": 0,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "7": {
+        "files": 9,
+        "outside_unit": 0,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "8": {
+        "files": 9,
+        "outside_unit": 9,
+        "minimum": -0.020645020575293,
+        "maximum": 1.012008386058112
+      },
+      "9": {
+        "files": 9,
+        "outside_unit": 9,
+        "minimum": -0.09390717615838919,
+        "maximum": 1.0279478959793587
+      },
+      "10": {
+        "files": 9,
+        "outside_unit": 9,
+        "minimum": -0.1628142121003223,
+        "maximum": 1.0796287755583696
+      },
+      "11": {
+        "files": 9,
+        "outside_unit": 9,
+        "minimum": -0.3181125532207324,
+        "maximum": 1.0897052963629146
+      },
+      "12": {
+        "files": 9,
+        "outside_unit": 8,
+        "minimum": 0.0,
+        "maximum": 1.0965782722451543
+      },
+      "13": {
+        "files": 9,
+        "outside_unit": 5,
+        "minimum": 0.0,
+        "maximum": 1.0583503329009651
+      },
+      "14": {
+        "files": 9,
+        "outside_unit": 3,
+        "minimum": 0.0,
+        "maximum": 1.0822633669256674
+      },
+      "15": {
+        "files": 9,
+        "outside_unit": 5,
+        "minimum": 0.0,
+        "maximum": 1.0960487800818965
+      }
+    },
+    "groups": [
+      {
+        "label": "cone",
+        "theta": "121",
+        "aug0_min": 0.0,
+        "aug0_max": 1.0,
+        "equal_to_aug0": [
+          "7"
+        ],
+        "byte_identical_to_aug0": [
+          "7"
+        ]
+      },
+      {
+        "label": "cone",
+        "theta": "161",
+        "aug0_min": 0.0,
+        "aug0_max": 1.0,
+        "equal_to_aug0": [
+          "7"
+        ],
+        "byte_identical_to_aug0": [
+          "7"
+        ]
+      },
+      {
+        "label": "cone",
+        "theta": "50",
+        "aug0_min": 0.0,
+        "aug0_max": 1.0,
+        "equal_to_aug0": [
+          "7"
+        ],
+        "byte_identical_to_aug0": [
+          "7"
+        ]
+      },
+      {
+        "label": "cylinder",
+        "theta": "121",
+        "aug0_min": 0.0,
+        "aug0_max": 1.0,
+        "equal_to_aug0": [
+          "7"
+        ],
+        "byte_identical_to_aug0": [
+          "7"
+        ]
+      },
+      {
+        "label": "cylinder",
+        "theta": "161",
+        "aug0_min": 0.0,
+        "aug0_max": 1.0,
+        "equal_to_aug0": [
+          "7"
+        ],
+        "byte_identical_to_aug0": [
+          "7"
+        ]
+      },
+      {
+        "label": "cylinder",
+        "theta": "50",
+        "aug0_min": 0.0,
+        "aug0_max": 1.0,
+        "equal_to_aug0": [
+          "7"
+        ],
+        "byte_identical_to_aug0": [
+          "7"
+        ]
+      },
+      {
+        "label": "mix",
+        "theta": "121",
+        "aug0_min": 0.0,
+        "aug0_max": 1.0,
+        "equal_to_aug0": [
+          "7"
+        ],
+        "byte_identical_to_aug0": [
+          "7"
+        ]
+      },
+      {
+        "label": "mix",
+        "theta": "161",
+        "aug0_min": 0.0,
+        "aug0_max": 1.0,
+        "equal_to_aug0": [
+          "6",
+          "7"
+        ],
+        "byte_identical_to_aug0": [
+          "6",
+          "7"
+        ]
+      },
+      {
+        "label": "mix",
+        "theta": "50",
+        "aug0_min": 0.0,
+        "aug0_max": 1.0,
+        "equal_to_aug0": [
+          "7"
+        ],
+        "byte_identical_to_aug0": [
+          "7"
+        ]
+      }
+    ]
+  },
+  "alternative_resource_findings": {
+    "checked_at": "2026-11-05T14:36:22.432778+08:00",
+    "scope": "Read-only public text and metadata; no model/image downloads, installation, authentication, or inference",
+    "candidates": [
+      {
+        "name": "SatQuery-Satellite-VLM-1B",
+        "url": "https://huggingface.co/raja0007/satquery-satellite-vlm",
+        "revision": "67c434c09d70c9880204cf966aa51e22d777d578",
+        "state": "Real public LoRA; low-evidence exploratory candidate, not selected proxy",
+        "adapter": {
+          "file": "adapter_model.safetensors",
+          "bytes": 40428048,
+          "sha256": "cee8d23c36d7186a528b316c917e5c341225037d64af3c641ea2adb41aa8d918",
+          "license_card": "apache-2.0",
+          "r": 16,
+          "alpha": 32,
+          "peft_version_in_config": "0.21.0"
+        },
+        "base": {
+          "id": "OpenGVLab/InternVL3_5-1B-Instruct",
+          "revision": "5648fa26ff23acaba53588936d9f1dfaf305f522",
+          "weight_bytes": 2121876280,
+          "weight_sha256": "4e4666a35fc7a8672ef834b767ebc1a877d6ab277f88b139f3462ee44831bf16",
+          "custom_code": true,
+          "license_card": "apache-2.0"
+        },
+        "task_and_input": "Model card claims Sentinel-1 SAR + Sentinel-2 optical land cover/environment VQA; script supports explicit SAR modality but merely loads supplied image with PIL convert RGB then ImageNet normalization. Original S1 band calibration/rendering and training preprocessing not released in inspected adapter files. Not a SAMPLE vehicle fine-class model.",
+        "training_evaluation_limits": [
+          "Self-reported 16000 image pairs / 80000 VQA; no author dataset repositories returned by HF API",
+          "Claims official held-out 2000 pairs, but EM table is 24/50 and no exact selected training/evaluation IDs released in inspected files",
+          "BF16 NF4 CUDA default is unsuitable as-is for Pascal; full base + custom code + PEFT environment and image-input gradient require fresh checks"
+        ],
+        "dataset": {
+          "id": "BIFOLD-BigEarthNetv2-0/BigEarthNet.txt",
+          "revision": "def1f5f0fa37c03f27b2d7404fb05023d6870c75",
+          "license_card": "cdla-permissive-1.0",
+          "parquet_bytes": 466819745,
+          "scope": "Actual multi-sensor S1 SAR/S2 optical image names, LULC captions/VQA/region questions; fields include s1_name and split=train/validation/test/bench. README says 1082 paired-image manually verified benchmark. Underlying S1/S2 image bytes separately supplied by BigEarthNet v2.0; not downloaded. Mapping to SatQuery 2000-pair held-out set unresolved."
+        },
+        "small_texts_for_next_review": [
+          {
+            "file": "README.md",
+            "bytes": 6671
+          },
+          {
+            "file": "adapter_config.json",
+            "bytes": 1239
+          },
+          {
+            "file": "inference.py",
+            "bytes": 12918
+          },
+          {
+            "file": "base/config.json",
+            "bytes": 5721
+          }
+        ],
+        "next_step": "Only inspect pinned base code/config and data rendering/split protocol after teaching; do not download adapter/base merely because files exist."
+      },
+      {
+        "name": "SAR-GPT from SAR-TEXT",
+        "url": "https://github.com/YiguoHe/SAR-TEXT",
+        "paper": "https://arxiv.org/html/2507.18743v3",
+        "state": "True instruction/generative SAR model with author share links, but weight contents/revision/hash not verified",
+        "model_share": "https://pan.baidu.com/s/1fEOdJ_cQTmjto4oH6YAPew?pwd=aqjy",
+        "vqa_share": "https://pan.baidu.com/s/14mAP2t2SJ5NhYMQYkje1lg?pwd=1qqj",
+        "share_response": "Both GET 200 redirect to Baidu share/init, which does not prove listed model or data contents are downloadable",
+        "base": "TinyGPT-V, based on Phi-2 2.7B. Upstream says default 16-bit inference roughly 8GB, optional 8-bit below 8GB; no 6GB input-gradient result.",
+        "evidence": "Paper section4.5 identifies fine-tuned SAR-GPT and SAR-VQA exploratory test subsets of 100 HRSID +100 OSdataset256 image-text pairs. Authors explicitly state limited-scale exploratory evaluation.",
+        "licensing": "SAR-TEXT repo LICENSE.txt Apache-2.0; upstream TinyGPT-V code BSD-3-Clause. Share checkpoint/data scope and component base terms still require exact files and notices."
+      }
+    ],
+    "data_only_progress": {
+      "id": "YiminJimmy/SARLANG-1M",
+      "url": "https://huggingface.co/datasets/YiminJimmy/SARLANG-1M",
+      "revision": "0271408f71bcd9afff69e4e7d324cae912461ebd",
+      "public": true,
+      "gated": false,
+      "files": [
+        {
+          "file": "Examples.zip",
+          "bytes": 7577582,
+          "sha256": "f9862dd39281488d1fdb584fdf494152d5e90b0a45a13c64ec01b643a9e35b5c"
+        },
+        {
+          "file": "Text.zip",
+          "bytes": 17074606,
+          "sha256": "1447e79768d192341726ca2529e7dd94314ae9155f8e593637e2a3cebc2d4062"
+        },
+        {
+          "file": "SARimages_preprocessed.zip",
+          "bytes": 6792425151
+        },
+        {
+          "file": "SARimages_original.zip",
+          "bytes": 31032051440
+        }
+      ],
+      "tasks": "Official repo defines object classification as predominant category and separates SARVQA1 SARDet6 classes from SARVQA2 SpaceNet6/DFC2023/OpenEarthMap SAR; supplied text has train/test references but image grouping and train exposure still need audit.",
+      "limits": "Metadata lists no license card; upstream image licenses and annotation terms must be checked. Inspected GitHub repo provides evaluation scripts/data resources, not a verified domain-model checkpoint. Examples.zip contents not inspected; cannot call it formal held-out paired test data."
+    }
+  },
+  "learning": {
+    "source_group_split": "After two clarifications, student correctly identified A3 as sharing source information with training A1/A2; independent grouping implementation not yet assessed",
+    "formal_split_created": false,
+    "clean_domain_evaluation_run": false,
+    "attack_success_denominator_understanding": "question pending"
+  },
+  "not_performed": [
+    "training",
+    "attacks",
+    "paid_API_calls",
+    "formal_split",
+    "domain_model_selection",
+    "weight_download"
+  ],
+  "sarlang_inventory": {
+    "date": "2026-11-05",
+    "scope": "Bounded SARLANG pilot only; separate from original 1599 resource inventory",
+    "dataset": "YiminJimmy/SARLANG-1M",
+    "revision": "0271408f71bcd9afff69e4e7d324cae912461ebd",
+    "license": "No explicit data/annotation license field verified; no redistribution permission inferred",
+    "files": [
+      {
+        "path": "data/raw/sarlang/0271408f71bc/README.md",
+        "source_url": "https://huggingface.co/datasets/YiminJimmy/SARLANG-1M/resolve/0271408f71bcd9afff69e4e7d324cae912461ebd/README.md",
+        "revision": "0271408f71bcd9afff69e4e7d324cae912461ebd",
+        "bytes": 3708,
+        "sha256": "ba125ae20b038b663e8fb5b80857c9cf8ef8c3af8c04eeab3e99dca35c8f14cc",
+        "upstream_sha256": null,
+        "status": "downloaded_text_no_upstream_hash_available"
+      },
+      {
+        "path": "data/raw/sarlang/0271408f71bc/Examples.zip",
+        "source_url": "https://huggingface.co/datasets/YiminJimmy/SARLANG-1M/resolve/0271408f71bcd9afff69e4e7d324cae912461ebd/Examples.zip",
+        "revision": "0271408f71bcd9afff69e4e7d324cae912461ebd",
+        "bytes": 7577582,
+        "sha256": "f9862dd39281488d1fdb584fdf494152d5e90b0a45a13c64ec01b643a9e35b5c",
+        "upstream_sha256": "f9862dd39281488d1fdb584fdf494152d5e90b0a45a13c64ec01b643a9e35b5c",
+        "status": "downloaded_verified"
+      },
+      {
+        "path": "data/raw/sarlang/0271408f71bc/Text.zip",
+        "source_url": "https://huggingface.co/datasets/YiminJimmy/SARLANG-1M/resolve/0271408f71bcd9afff69e4e7d324cae912461ebd/Text.zip",
+        "revision": "0271408f71bcd9afff69e4e7d324cae912461ebd",
+        "bytes": 17074606,
+        "sha256": "1447e79768d192341726ca2529e7dd94314ae9155f8e593637e2a3cebc2d4062",
+        "upstream_sha256": "1447e79768d192341726ca2529e7dd94314ae9155f8e593637e2a3cebc2d4062",
+        "status": "downloaded_verified"
+      }
+    ],
+    "total_bytes": 24655896,
+    "status": "passed"
+  },
+  "sarlang_format": {
+    "checked_at": "2026-11-05T14:43:25+08:00",
+    "timezone": "Asia/Shanghai",
+    "revision": "0271408f71bcd9afff69e4e7d324cae912461ebd",
+    "scope": "ZIP and annotation format/provenance pilot only; no extraction, code execution, split creation, inference, training or attack",
+    "license": "Not established for data/annotations or upstream imagery; no redistribution permission inferred",
+    "archives": {
+      "Examples.zip": {
+        "path": "data/raw/sarlang/0271408f71bc/Examples.zip",
+        "entries": 23,
+        "files": 21,
+        "directories": 2,
+        "uncompressed_bytes": 9072912,
+        "duplicate_member_paths": [],
+        "unsafe_member_paths": [],
+        "first_crc_error": null,
+        "crc_status": "passed",
+        "members": [
+          {
+            "path": "Examples/",
+            "bytes": 0,
+            "compressed_bytes": 0,
+            "crc32": "00000000"
+          },
+          {
+            "path": "Examples/images/",
+            "bytes": 0,
+            "compressed_bytes": 0,
+            "crc32": "00000000"
+          },
+          {
+            "path": "Examples/images/0001320.jpg",
+            "bytes": 160390,
+            "compressed_bytes": 147529,
+            "crc32": "0dc56873"
+          },
+          {
+            "path": "Examples/images/0012296.jpg",
+            "bytes": 215447,
+            "compressed_bytes": 200970,
+            "crc32": "7f775ec1"
+          },
+          {
+            "path": "Examples/images/0016526.jpg",
+            "bytes": 26667,
+            "compressed_bytes": 26429,
+            "crc32": "e29c681e"
+          },
+          {
+            "path": "Examples/images/0031548.jpg",
+            "bytes": 13282,
+            "compressed_bytes": 13122,
+            "crc32": "fd7485a2"
+          },
+          {
+            "path": "Examples/images/0069243.jpg",
+            "bytes": 154323,
+            "compressed_bytes": 138372,
+            "crc32": "a8080ad8"
+          },
+          {
+            "path": "Examples/images/0081429.jpg",
+            "bytes": 26688,
+            "compressed_bytes": 26453,
+            "crc32": "5ce6b423"
+          },
+          {
+            "path": "Examples/images/0096469.jpg",
+            "bytes": 133305,
+            "compressed_bytes": 132960,
+            "crc32": "31a1609f"
+          },
+          {
+            "path": "Examples/images/0101536.jpg",
+            "bytes": 154980,
+            "compressed_bytes": 138860,
+            "crc32": "289a6ea9"
+          },
+          {
+            "path": "Examples/images/France_Haute-Garonne_CNES_324.png",
+            "bytes": 1049706,
+            "compressed_bytes": 769144,
+            "crc32": "153c4575"
+          },
+          {
+            "path": "Examples/images/France_Haute-Garonne_Toulouse_118.png",
+            "bytes": 1049706,
+            "compressed_bytes": 924953,
+            "crc32": "57dc6596"
+          },
+          {
+            "path": "Examples/images/GF2_Barcelona_41.4145_2.2087.png",
+            "bytes": 169440,
+            "compressed_bytes": 169529,
+            "crc32": "6a44dbb3"
+          },
+          {
+            "path": "Examples/images/Japan_Tokyo_Haneda_37.png",
+            "bytes": 1049704,
+            "compressed_bytes": 727504,
+            "crc32": "11687eac"
+          },
+          {
+            "path": "Examples/images/Japan_Tokyo_Shinjuku_v1_23.png",
+            "bytes": 1049704,
+            "compressed_bytes": 909597,
+            "crc32": "f629496c"
+          },
+          {
+            "path": "Examples/images/Japan_Tokyo_Shinjuku_v1_6.png",
+            "bytes": 1049704,
+            "compressed_bytes": 813205,
+            "crc32": "e683af9c"
+          },
+          {
+            "path": "Examples/images/Japan_Tokyo_Shinjuku_v2_14.png",
+            "bytes": 1049704,
+            "compressed_bytes": 929675,
+            "crc32": "7c6b7083"
+          },
+          {
+            "path": "Examples/images/P_0208.png",
+            "bytes": 166961,
+            "compressed_bytes": 167075,
+            "crc32": "a8127d43"
+          },
+          {
+            "path": "Examples/images/P_0218.png",
+            "bytes": 171567,
+            "compressed_bytes": 171656,
+            "crc32": "1c6984d0"
+          },
+          {
+            "path": "Examples/images/P_0618.png",
+            "bytes": 159410,
+            "compressed_bytes": 159462,
+            "crc32": "5149b6cd"
+          },
+          {
+            "path": "Examples/images/P_0636.png",
+            "bytes": 161544,
+            "compressed_bytes": 161601,
+            "crc32": "8d8fdfd7"
+          },
+          {
+            "path": "Examples/images/USA_California_Chico_8.png",
+            "bytes": 1049702,
+            "compressed_bytes": 843572,
+            "crc32": "d22627b7"
+          },
+          {
+            "path": "Examples/SARVQA_text.json",
+            "bytes": 10978,
+            "compressed_bytes": 1040,
+            "crc32": "5a6f0498"
+          }
+        ]
+      },
+      "Text.zip": {
+        "path": "data/raw/sarlang/0271408f71bc/Text.zip",
+        "entries": 21,
+        "files": 14,
+        "directories": 7,
+        "uncompressed_bytes": 563996767,
+        "duplicate_member_paths": [],
+        "unsafe_member_paths": [],
+        "first_crc_error": null,
+        "crc_status": "passed",
+        "members": [
+          {
+            "path": "Text/",
+            "bytes": 0,
+            "compressed_bytes": 0,
+            "crc32": "00000000"
+          },
+          {
+            "path": "Text/Caption/",
+            "bytes": 0,
+            "compressed_bytes": 0,
+            "crc32": "00000000"
+          },
+          {
+            "path": "Text/Caption/test/",
+            "bytes": 0,
+            "compressed_bytes": 0,
+            "crc32": "00000000"
+          },
+          {
+            "path": "Text/Caption/test/Caption_test.csv",
+            "bytes": 1166432,
+            "compressed_bytes": 124697,
+            "crc32": "75300680"
+          },
+          {
+            "path": "Text/Caption/test/Caption_test.json",
+            "bytes": 3015952,
+            "compressed_bytes": 145528,
+            "crc32": "ea4df1d4"
+          },
+          {
+            "path": "Text/Caption/test/Caption_test1.csv",
+            "bytes": 1244960,
+            "compressed_bytes": 84699,
+            "crc32": "cb97ec78"
+          },
+          {
+            "path": "Text/Caption/test/Caption_test1.json",
+            "bytes": 3491084,
+            "compressed_bytes": 101868,
+            "crc32": "4f3b836c"
+          },
+          {
+            "path": "Text/Caption/train/",
+            "bytes": 0,
+            "compressed_bytes": 0,
+            "crc32": "00000000"
+          },
+          {
+            "path": "Text/Caption/train/Caption_train.csv",
+            "bytes": 5642681,
+            "compressed_bytes": 450868,
+            "crc32": "da1b9318"
+          },
+          {
+            "path": "Text/Caption/train/Caption_train.json",
+            "bytes": 15212218,
+            "compressed_bytes": 533895,
+            "crc32": "2bb46add"
+          },
+          {
+            "path": "Text/VQA/",
+            "bytes": 0,
+            "compressed_bytes": 0,
+            "crc32": "00000000"
+          },
+          {
+            "path": "Text/VQA/test/",
+            "bytes": 0,
+            "compressed_bytes": 0,
+            "crc32": "00000000"
+          },
+          {
+            "path": "Text/VQA/test/SARVQA1_test.csv",
+            "bytes": 8675563,
+            "compressed_bytes": 626180,
+            "crc32": "cf4b7fa2"
+          },
+          {
+            "path": "Text/VQA/test/SARVQA1_test.json",
+            "bytes": 40564767,
+            "compressed_bytes": 772688,
+            "crc32": "b989c3a9"
+          },
+          {
+            "path": "Text/VQA/test/SARVQA2_test.csv",
+            "bytes": 2574372,
+            "compressed_bytes": 288903,
+            "crc32": "e9df59fb"
+          },
+          {
+            "path": "Text/VQA/test/SARVQA2_test.json",
+            "bytes": 10240933,
+            "compressed_bytes": 377515,
+            "crc32": "9a340b27"
+          },
+          {
+            "path": "Text/VQA/train/",
+            "bytes": 0,
+            "compressed_bytes": 0,
+            "crc32": "00000000"
+          },
+          {
+            "path": "Text/VQA/train/SARVQA1_train.csv",
+            "bytes": 77898953,
+            "compressed_bytes": 5420909,
+            "crc32": "52c9019e"
+          },
+          {
+            "path": "Text/VQA/train/SARVQA1_train.json",
+            "bytes": 364685156,
+            "compressed_bytes": 6640213,
+            "crc32": "96d0266c"
+          },
+          {
+            "path": "Text/VQA/train/SARVQA2_train.csv",
+            "bytes": 5964775,
+            "compressed_bytes": 649336,
+            "crc32": "569ab648"
+          },
+          {
+            "path": "Text/VQA/train/SARVQA2_train.json",
+            "bytes": 23618921,
+            "compressed_bytes": 853173,
+            "crc32": "3f9b7dbd"
+          }
+        ]
+      }
+    },
+    "examples": {
+      "annotation_records": 30,
+      "image_files": 20,
+      "unique_referenced_images": 20,
+      "missing_image_references": [],
+      "top_level_key_schemas": {
+        "images,messages": 30
+      },
+      "message_role_sequences": {
+        "user,assistant": 30
+      },
+      "image_reference_prefixes": {
+        "/uge_mnt/home": 30
+      },
+      "records_per_image": {
+        "0001320.jpg": 1,
+        "0012296.jpg": 1,
+        "0016526.jpg": 1,
+        "0031548.jpg": 1,
+        "0069243.jpg": 1,
+        "0081429.jpg": 4,
+        "0096469.jpg": 1,
+        "0101536.jpg": 1,
+        "France_Haute-Garonne_CNES_324.png": 1,
+        "France_Haute-Garonne_Toulouse_118.png": 3,
+        "GF2_Barcelona_41.4145_2.2087.png": 1,
+        "Japan_Tokyo_Haneda_37.png": 1,
+        "Japan_Tokyo_Shinjuku_v1_23.png": 2,
+        "Japan_Tokyo_Shinjuku_v1_6.png": 3,
+        "Japan_Tokyo_Shinjuku_v2_14.png": 2,
+        "P_0208.png": 1,
+        "P_0218.png": 1,
+        "P_0618.png": 1,
+        "P_0636.png": 1,
+        "USA_California_Chico_8.png": 2
+      },
+      "image_headers": {
+        "0001320.jpg": {
+          "zip_member": "Examples/images/0001320.jpg",
+          "format": "JPEG",
+          "width": 512,
+          "height": 512,
+          "bit_depth": 8,
+          "channels": 3
+        },
+        "0012296.jpg": {
+          "zip_member": "Examples/images/0012296.jpg",
+          "format": "JPEG",
+          "width": 512,
+          "height": 512,
+          "bit_depth": 8,
+          "channels": 3
+        },
+        "0016526.jpg": {
+          "zip_member": "Examples/images/0016526.jpg",
+          "format": "JPEG",
+          "width": 256,
+          "height": 256,
+          "bit_depth": 8,
+          "channels": 3
+        },
+        "0031548.jpg": {
+          "zip_member": "Examples/images/0031548.jpg",
+          "format": "JPEG",
+          "width": 256,
+          "height": 256,
+          "bit_depth": 8,
+          "channels": 3
+        },
+        "0069243.jpg": {
+          "zip_member": "Examples/images/0069243.jpg",
+          "format": "JPEG",
+          "width": 512,
+          "height": 512,
+          "bit_depth": 8,
+          "channels": 3
+        },
+        "0081429.jpg": {
+          "zip_member": "Examples/images/0081429.jpg",
+          "format": "JPEG",
+          "width": 256,
+          "height": 256,
+          "bit_depth": 8,
+          "channels": 3
+        },
+        "0096469.jpg": {
+          "zip_member": "Examples/images/0096469.jpg",
+          "format": "JPEG",
+          "width": 512,
+          "height": 512,
+          "bit_depth": 8,
+          "channels": 3
+        },
+        "0101536.jpg": {
+          "zip_member": "Examples/images/0101536.jpg",
+          "format": "JPEG",
+          "width": 512,
+          "height": 512,
+          "bit_depth": 8,
+          "channels": 3
+        },
+        "France_Haute-Garonne_CNES_324.png": {
+          "zip_member": "Examples/images/France_Haute-Garonne_CNES_324.png",
+          "format": "TIFF",
+          "width": 1024,
+          "height": 1024,
+          "bit_depth": 8,
+          "channels": 1,
+          "tiff_compression": 1,
+          "tiff_photometric": 1,
+          "tiff_sample_format": 1
+        },
+        "France_Haute-Garonne_Toulouse_118.png": {
+          "zip_member": "Examples/images/France_Haute-Garonne_Toulouse_118.png",
+          "format": "TIFF",
+          "width": 1024,
+          "height": 1024,
+          "bit_depth": 8,
+          "channels": 1,
+          "tiff_compression": 1,
+          "tiff_photometric": 1,
+          "tiff_sample_format": 1
+        },
+        "GF2_Barcelona_41.4145_2.2087.png": {
+          "zip_member": "Examples/images/GF2_Barcelona_41.4145_2.2087.png",
+          "format": "PNG",
+          "width": 512,
+          "height": 512,
+          "bit_depth": 8,
+          "png_color_type": 0
+        },
+        "Japan_Tokyo_Haneda_37.png": {
+          "zip_member": "Examples/images/Japan_Tokyo_Haneda_37.png",
+          "format": "TIFF",
+          "width": 1024,
+          "height": 1024,
+          "bit_depth": 8,
+          "channels": 1,
+          "tiff_compression": 1,
+          "tiff_photometric": 1,
+          "tiff_sample_format": 1
+        },
+        "Japan_Tokyo_Shinjuku_v1_23.png": {
+          "zip_member": "Examples/images/Japan_Tokyo_Shinjuku_v1_23.png",
+          "format": "TIFF",
+          "width": 1024,
+          "height": 1024,
+          "bit_depth": 8,
+          "channels": 1,
+          "tiff_compression": 1,
+          "tiff_photometric": 1,
+          "tiff_sample_format": 1
+        },
+        "Japan_Tokyo_Shinjuku_v1_6.png": {
+          "zip_member": "Examples/images/Japan_Tokyo_Shinjuku_v1_6.png",
+          "format": "TIFF",
+          "width": 1024,
+          "height": 1024,
+          "bit_depth": 8,
+          "channels": 1,
+          "tiff_compression": 1,
+          "tiff_photometric": 1,
+          "tiff_sample_format": 1
+        },
+        "Japan_Tokyo_Shinjuku_v2_14.png": {
+          "zip_member": "Examples/images/Japan_Tokyo_Shinjuku_v2_14.png",
+          "format": "TIFF",
+          "width": 1024,
+          "height": 1024,
+          "bit_depth": 8,
+          "channels": 1,
+          "tiff_compression": 1,
+          "tiff_photometric": 1,
+          "tiff_sample_format": 1
+        },
+        "P_0208.png": {
+          "zip_member": "Examples/images/P_0208.png",
+          "format": "PNG",
+          "width": 512,
+          "height": 512,
+          "bit_depth": 8,
+          "png_color_type": 0
+        },
+        "P_0218.png": {
+          "zip_member": "Examples/images/P_0218.png",
+          "format": "PNG",
+          "width": 512,
+          "height": 512,
+          "bit_depth": 8,
+          "png_color_type": 0
+        },
+        "P_0618.png": {
+          "zip_member": "Examples/images/P_0618.png",
+          "format": "PNG",
+          "width": 512,
+          "height": 512,
+          "bit_depth": 8,
+          "png_color_type": 0
+        },
+        "P_0636.png": {
+          "zip_member": "Examples/images/P_0636.png",
+          "format": "PNG",
+          "width": 512,
+          "height": 512,
+          "bit_depth": 8,
+          "png_color_type": 0
+        },
+        "USA_California_Chico_8.png": {
+          "zip_member": "Examples/images/USA_California_Chico_8.png",
+          "format": "TIFF",
+          "width": 1024,
+          "height": 1024,
+          "bit_depth": 8,
+          "channels": 1,
+          "tiff_compression": 1,
+          "tiff_photometric": 1,
+          "tiff_sample_format": 1
+        }
+      },
+      "image_validation_scope": "ZIP CRC and PNG/JPEG/TIFF dimensions/header only; no complete image pixel decoding or SAR acquisition verification",
+      "detected_format_counts": {
+        "JPEG": 8,
+        "TIFF": 7,
+        "PNG": 5
+      },
+      "extension_content_mismatches": [
+        "France_Haute-Garonne_CNES_324.png",
+        "France_Haute-Garonne_Toulouse_118.png",
+        "Japan_Tokyo_Haneda_37.png",
+        "Japan_Tokyo_Shinjuku_v1_23.png",
+        "Japan_Tokyo_Shinjuku_v1_6.png",
+        "Japan_Tokyo_Shinjuku_v2_14.png",
+        "USA_California_Chico_8.png"
+      ],
+      "designation": "Examples/demonstration package; no formal held-out designation verified"
+    },
+    "annotation_files": {
+      "Text/Caption/test/Caption_test.csv": {
+        "records": 6190,
+        "fields_raw": [
+          "Image Name",
+          " Prompt",
+          " Caption",
+          " Caption Type"
+        ],
+        "fields_trimmed": [
+          "Image Name",
+          "Prompt",
+          "Caption",
+          "Caption Type"
+        ],
+        "invalid_column_count_rows": 0,
+        "unique_image_names": 3688,
+        "task_or_caption_labels": {
+          "complex caption": 6190
+        },
+        "example_exact_basename_names": [
+          "France_Haute-Garonne_CNES_324.png",
+          "France_Haute-Garonne_Toulouse_118.png",
+          "GF2_Barcelona_41.4145_2.2087.png",
+          "Japan_Tokyo_Haneda_37.png",
+          "Japan_Tokyo_Shinjuku_v1_23.png",
+          "Japan_Tokyo_Shinjuku_v2_14.png",
+          "P_0208.png",
+          "P_0218.png",
+          "P_0618.png",
+          "P_0636.png",
+          "USA_California_Chico_8.png"
+        ],
+        "example_stem_matches_including_extension_mismatch": [
+          "France_Haute-Garonne_CNES_324.png",
+          "France_Haute-Garonne_Toulouse_118.png",
+          "GF2_Barcelona_41.4145_2.2087.png",
+          "Japan_Tokyo_Haneda_37.png",
+          "Japan_Tokyo_Shinjuku_v1_23.png",
+          "Japan_Tokyo_Shinjuku_v2_14.png",
+          "P_0208.png",
+          "P_0218.png",
+          "P_0618.png",
+          "P_0636.png",
+          "USA_California_Chico_8.png"
+        ],
+        "example_exact_basename_annotation_rows": 16,
+        "example_stem_match_annotation_rows": 16,
+        "json_representation": {
+          "member": "Text/Caption/test/Caption_test.json",
+          "records": 6190,
+          "top_level_key_schemas": {
+            "images,messages": 6190
+          },
+          "message_role_sequences": {
+            "user,assistant": 6190
+          },
+          "invalid_two_message_sequences": 0,
+          "image_reference_prefixes": {
+            "/your_path/SARimages": 6190
+          },
+          "same_record_count_as_csv": true,
+          "same_image_reference_multiset_as_csv": true,
+          "task_label_field": "Absent; task/caption-type labels are supplied in CSV, not top-level JSON keys"
+        }
+      },
+      "Text/Caption/test/Caption_test1.csv": {
+        "records": 7492,
+        "fields_raw": [
+          "Image Name",
+          " Prompt",
+          " Caption",
+          " Caption Type"
+        ],
+        "fields_trimmed": [
+          "Image Name",
+          "Prompt",
+          "Caption",
+          "Caption Type"
+        ],
+        "invalid_column_count_rows": 0,
+        "unique_image_names": 3873,
+        "task_or_caption_labels": {
+          "concise caption": 7492
+        },
+        "example_exact_basename_names": [
+          "France_Haute-Garonne_CNES_324.png",
+          "France_Haute-Garonne_Toulouse_118.png",
+          "GF2_Barcelona_41.4145_2.2087.png",
+          "Japan_Tokyo_Haneda_37.png",
+          "Japan_Tokyo_Shinjuku_v1_23.png",
+          "Japan_Tokyo_Shinjuku_v1_6.png",
+          "Japan_Tokyo_Shinjuku_v2_14.png",
+          "P_0208.png",
+          "P_0218.png",
+          "P_0618.png",
+          "P_0636.png",
+          "USA_California_Chico_8.png"
+        ],
+        "example_stem_matches_including_extension_mismatch": [
+          "France_Haute-Garonne_CNES_324.png",
+          "France_Haute-Garonne_Toulouse_118.png",
+          "GF2_Barcelona_41.4145_2.2087.png",
+          "Japan_Tokyo_Haneda_37.png",
+          "Japan_Tokyo_Shinjuku_v1_23.png",
+          "Japan_Tokyo_Shinjuku_v1_6.png",
+          "Japan_Tokyo_Shinjuku_v2_14.png",
+          "P_0208.png",
+          "P_0218.png",
+          "P_0618.png",
+          "P_0636.png",
+          "USA_California_Chico_8.png"
+        ],
+        "example_exact_basename_annotation_rows": 24,
+        "example_stem_match_annotation_rows": 24,
+        "json_representation": {
+          "member": "Text/Caption/test/Caption_test1.json",
+          "records": 7492,
+          "top_level_key_schemas": {
+            "images,messages": 7492
+          },
+          "message_role_sequences": {
+            "user,assistant": 7492
+          },
+          "invalid_two_message_sequences": 0,
+          "image_reference_prefixes": {
+            "/your_path/SARimages": 7492
+          },
+          "same_record_count_as_csv": true,
+          "same_image_reference_multiset_as_csv": true,
+          "task_label_field": "Absent; task/caption-type labels are supplied in CSV, not top-level JSON keys"
+        }
+      },
+      "Text/Caption/train/Caption_train.csv": {
+        "records": 31968,
+        "fields_raw": [
+          "Image Name",
+          " Prompt",
+          " Caption",
+          " Caption Type"
+        ],
+        "fields_trimmed": [
+          "Image Name",
+          "Prompt",
+          "Caption",
+          "Caption Type"
+        ],
+        "invalid_column_count_rows": 0,
+        "unique_image_names": 9191,
+        "task_or_caption_labels": {
+          "complex caption": 14481,
+          "concise caption": 17487
+        },
+        "example_exact_basename_names": [],
+        "example_stem_matches_including_extension_mismatch": [],
+        "example_exact_basename_annotation_rows": 0,
+        "example_stem_match_annotation_rows": 0,
+        "json_representation": {
+          "member": "Text/Caption/train/Caption_train.json",
+          "records": 31968,
+          "top_level_key_schemas": {
+            "images,messages": 31968
+          },
+          "message_role_sequences": {
+            "user,assistant": 31968
+          },
+          "invalid_two_message_sequences": 0,
+          "image_reference_prefixes": {
+            "/your_path/SARimages": 31968
+          },
+          "same_record_count_as_csv": true,
+          "same_image_reference_multiset_as_csv": true,
+          "task_label_field": "Absent; task/caption-type labels are supplied in CSV, not top-level JSON keys"
+        }
+      },
+      "Text/VQA/test/SARVQA1_test.csv": {
+        "records": 99522,
+        "fields_raw": [
+          "Image Name",
+          "Question",
+          "Answer",
+          "Application"
+        ],
+        "fields_trimmed": [
+          "Image Name",
+          "Question",
+          "Answer",
+          "Application"
+        ],
+        "invalid_column_count_rows": 0,
+        "unique_image_names": 10492,
+        "task_or_caption_labels": {
+          "object identification": 45157,
+          "object classification": 10492,
+          "instance counting": 10585,
+          "object positioning": 10585,
+          "region referring": 22703
+        },
+        "example_exact_basename_names": [
+          "0001320.jpg",
+          "0012296.jpg",
+          "0069243.jpg",
+          "0101536.jpg"
+        ],
+        "example_stem_matches_including_extension_mismatch": [
+          "0001320.jpg",
+          "0012296.jpg",
+          "0031548.png",
+          "0069243.jpg",
+          "0101536.jpg"
+        ],
+        "example_exact_basename_annotation_rows": 40,
+        "example_stem_match_annotation_rows": 49,
+        "classification_answer_profile": {
+          "unique_raw_answers": 18,
+          "top_10_raw_answers": {
+            "ship": 6419,
+            "aircraft": 1972,
+            "bridge": 1685,
+            "harbor": 130,
+            "car": 104,
+            "tank": 92,
+            "tank, bridge": 27,
+            "harbor, bridge": 15,
+            "ship, tank": 8,
+            "tank, ship": 8
+          },
+          "number_of_distinct_six_class_names_matched_in_answer": {
+            "1": 10402,
+            "2": 87,
+            "3": 3
+          },
+          "note": "Descriptive string audit, not a finalized answer parser or accuracy metric; SARVQA2 uses a broader answer vocabulary"
+        },
+        "json_representation": {
+          "member": "Text/VQA/test/SARVQA1_test.json",
+          "records": 99522,
+          "top_level_key_schemas": {
+            "images,messages": 99522
+          },
+          "message_role_sequences": {
+            "user,assistant": 99522
+          },
+          "invalid_two_message_sequences": 0,
+          "image_reference_prefixes": {
+            "/your_path/SARimages": 99522
+          },
+          "same_record_count_as_csv": true,
+          "same_image_reference_multiset_as_csv": true,
+          "task_label_field": "Absent; task/caption-type labels are supplied in CSV, not top-level JSON keys"
+        }
+      },
+      "Text/VQA/test/SARVQA2_test.csv": {
+        "records": 25733,
+        "fields_raw": [
+          "Image Name",
+          " Question",
+          " Answer",
+          " Application"
+        ],
+        "fields_trimmed": [
+          "Image Name",
+          "Question",
+          "Answer",
+          "Application"
+        ],
+        "invalid_column_count_rows": 0,
+        "unique_image_names": 3992,
+        "task_or_caption_labels": {
+          "object classification": 8439,
+          "others": 5911,
+          "object identification": 8273,
+          "instance counting": 3089,
+          "object positioning": 21
+        },
+        "example_exact_basename_names": [
+          "France_Haute-Garonne_CNES_324.png",
+          "France_Haute-Garonne_Toulouse_118.png",
+          "GF2_Barcelona_41.4145_2.2087.png",
+          "Japan_Tokyo_Haneda_37.png",
+          "Japan_Tokyo_Shinjuku_v1_23.png",
+          "Japan_Tokyo_Shinjuku_v1_6.png",
+          "Japan_Tokyo_Shinjuku_v2_14.png",
+          "P_0208.png",
+          "P_0218.png",
+          "P_0618.png",
+          "P_0636.png",
+          "USA_California_Chico_8.png"
+        ],
+        "example_stem_matches_including_extension_mismatch": [
+          "France_Haute-Garonne_CNES_324.png",
+          "France_Haute-Garonne_Toulouse_118.png",
+          "GF2_Barcelona_41.4145_2.2087.png",
+          "Japan_Tokyo_Haneda_37.png",
+          "Japan_Tokyo_Shinjuku_v1_23.png",
+          "Japan_Tokyo_Shinjuku_v1_6.png",
+          "Japan_Tokyo_Shinjuku_v2_14.png",
+          "P_0208.png",
+          "P_0218.png",
+          "P_0618.png",
+          "P_0636.png",
+          "USA_California_Chico_8.png"
+        ],
+        "example_exact_basename_annotation_rows": 91,
+        "example_stem_match_annotation_rows": 91,
+        "classification_answer_profile": {
+          "unique_raw_answers": 1237,
+          "top_10_raw_answers": {
+            "Trees": 633,
+            "Buildings": 514,
+            "Urban": 437,
+            "Residential": 353,
+            "Industrial": 282,
+            "Road": 188,
+            "Vegetation": 145,
+            "Highway": 143,
+            "Forest": 141,
+            "River": 128
+          },
+          "number_of_distinct_six_class_names_matched_in_answer": {
+            "0": 8250,
+            "1": 189
+          },
+          "note": "Descriptive string audit, not a finalized answer parser or accuracy metric; SARVQA2 uses a broader answer vocabulary"
+        },
+        "json_representation": {
+          "member": "Text/VQA/test/SARVQA2_test.json",
+          "records": 25733,
+          "top_level_key_schemas": {
+            "images,messages": 25733
+          },
+          "message_role_sequences": {
+            "user,assistant": 25733
+          },
+          "invalid_two_message_sequences": 0,
+          "image_reference_prefixes": {
+            "/your_path/SARimages": 25733
+          },
+          "same_record_count_as_csv": true,
+          "same_image_reference_multiset_as_csv": true,
+          "task_label_field": "Absent; task/caption-type labels are supplied in CSV, not top-level JSON keys"
+        }
+      },
+      "Text/VQA/train/SARVQA1_train.csv": {
+        "records": 896077,
+        "fields_raw": [
+          "Image Name",
+          "Question",
+          "Answer",
+          "Application"
+        ],
+        "fields_trimmed": [
+          "Image Name",
+          "Question",
+          "Answer",
+          "Application"
+        ],
+        "invalid_column_count_rows": 0,
+        "unique_image_names": 94493,
+        "task_or_caption_labels": {
+          "object identification": 411811,
+          "object classification": 94493,
+          "instance counting": 95513,
+          "object positioning": 95513,
+          "region referring": 198747
+        },
+        "example_exact_basename_names": [
+          "0096469.jpg"
+        ],
+        "example_stem_matches_including_extension_mismatch": [
+          "0016526.png",
+          "0081429.png",
+          "0096469.jpg"
+        ],
+        "example_exact_basename_annotation_rows": 8,
+        "example_stem_match_annotation_rows": 39,
+        "classification_answer_profile": {
+          "unique_raw_answers": 21,
+          "top_10_raw_answers": {
+            "ship": 60792,
+            "aircraft": 14863,
+            "bridge": 14483,
+            "tank": 1395,
+            "harbor": 1125,
+            "car": 837,
+            "tank, bridge": 246,
+            "tank, ship": 179,
+            "bridge, ship": 118,
+            "ship, bridge": 106
+          },
+          "number_of_distinct_six_class_names_matched_in_answer": {
+            "1": 93495,
+            "2": 976,
+            "3": 22
+          },
+          "note": "Descriptive string audit, not a finalized answer parser or accuracy metric; SARVQA2 uses a broader answer vocabulary"
+        },
+        "json_representation": {
+          "member": "Text/VQA/train/SARVQA1_train.json",
+          "records": 896077,
+          "top_level_key_schemas": {
+            "images,messages": 896077
+          },
+          "message_role_sequences": {
+            "user,assistant": 896077
+          },
+          "invalid_two_message_sequences": 0,
+          "image_reference_prefixes": {
+            "/your_path/SARimages": 896077
+          },
+          "same_record_count_as_csv": true,
+          "same_image_reference_multiset_as_csv": true,
+          "task_label_field": "Absent; task/caption-type labels are supplied in CSV, not top-level JSON keys"
+        }
+      },
+      "Text/VQA/train/SARVQA2_train.csv": {
+        "records": 59295,
+        "fields_raw": [
+          "Image Name",
+          " Question",
+          " Answer",
+          " Application"
+        ],
+        "fields_trimmed": [
+          "Image Name",
+          "Question",
+          "Answer",
+          "Application"
+        ],
+        "invalid_column_count_rows": 0,
+        "unique_image_names": 9216,
+        "task_or_caption_labels": {
+          "object classification": 19101,
+          "object identification": 19379,
+          "instance counting": 8195,
+          "others": 12568,
+          "object positioning": 52
+        },
+        "example_exact_basename_names": [],
+        "example_stem_matches_including_extension_mismatch": [],
+        "example_exact_basename_annotation_rows": 0,
+        "example_stem_match_annotation_rows": 0,
+        "classification_answer_profile": {
+          "unique_raw_answers": 2075,
+          "top_10_raw_answers": {
+            "Trees": 1413,
+            "Buildings": 1219,
+            "Urban": 1030,
+            "Residential": 848,
+            "Industrial": 576,
+            "Road": 408,
+            "Forest": 395,
+            "River": 312,
+            "Parking lot": 312,
+            "Highway": 304
+          },
+          "number_of_distinct_six_class_names_matched_in_answer": {
+            "1": 381,
+            "0": 18720
+          },
+          "note": "Descriptive string audit, not a finalized answer parser or accuracy metric; SARVQA2 uses a broader answer vocabulary"
+        },
+        "json_representation": {
+          "member": "Text/VQA/train/SARVQA2_train.json",
+          "records": 59295,
+          "top_level_key_schemas": {
+            "images,messages": 59295
+          },
+          "message_role_sequences": {
+            "user,assistant": 59295
+          },
+          "invalid_two_message_sequences": 0,
+          "image_reference_prefixes": {
+            "/your_path/SARimages": 59295
+          },
+          "same_record_count_as_csv": true,
+          "same_image_reference_multiset_as_csv": true,
+          "task_label_field": "Absent; task/caption-type labels are supplied in CSV, not top-level JSON keys"
+        }
+      }
+    },
+    "annotation_record_total_counting_csv_once": 1126277,
+    "provided_split_filename_audit": {
+      "scope": "Existing author train/test directory names only; no new split was created. Filename equality cannot rule out shared scene/tile/nearby observations or model training exposure.",
+      "train_unique_basenames": 103826,
+      "test_unique_basenames": 14490,
+      "same_basename_train_test": 0,
+      "first_20_overlap_names": [],
+      "pairwise": [
+        {
+          "train_member": "Text/Caption/train/Caption_train.csv",
+          "test_member": "Text/Caption/test/Caption_test.csv",
+          "same_basename_count": 0,
+          "first_10_names": []
+        },
+        {
+          "train_member": "Text/Caption/train/Caption_train.csv",
+          "test_member": "Text/Caption/test/Caption_test1.csv",
+          "same_basename_count": 0,
+          "first_10_names": []
+        },
+        {
+          "train_member": "Text/Caption/train/Caption_train.csv",
+          "test_member": "Text/VQA/test/SARVQA1_test.csv",
+          "same_basename_count": 0,
+          "first_10_names": []
+        },
+        {
+          "train_member": "Text/Caption/train/Caption_train.csv",
+          "test_member": "Text/VQA/test/SARVQA2_test.csv",
+          "same_basename_count": 0,
+          "first_10_names": []
+        },
+        {
+          "train_member": "Text/VQA/train/SARVQA1_train.csv",
+          "test_member": "Text/Caption/test/Caption_test.csv",
+          "same_basename_count": 0,
+          "first_10_names": []
+        },
+        {
+          "train_member": "Text/VQA/train/SARVQA1_train.csv",
+          "test_member": "Text/Caption/test/Caption_test1.csv",
+          "same_basename_count": 0,
+          "first_10_names": []
+        },
+        {
+          "train_member": "Text/VQA/train/SARVQA1_train.csv",
+          "test_member": "Text/VQA/test/SARVQA1_test.csv",
+          "same_basename_count": 0,
+          "first_10_names": []
+        },
+        {
+          "train_member": "Text/VQA/train/SARVQA1_train.csv",
+          "test_member": "Text/VQA/test/SARVQA2_test.csv",
+          "same_basename_count": 0,
+          "first_10_names": []
+        },
+        {
+          "train_member": "Text/VQA/train/SARVQA2_train.csv",
+          "test_member": "Text/Caption/test/Caption_test.csv",
+          "same_basename_count": 0,
+          "first_10_names": []
+        },
+        {
+          "train_member": "Text/VQA/train/SARVQA2_train.csv",
+          "test_member": "Text/Caption/test/Caption_test1.csv",
+          "same_basename_count": 0,
+          "first_10_names": []
+        },
+        {
+          "train_member": "Text/VQA/train/SARVQA2_train.csv",
+          "test_member": "Text/VQA/test/SARVQA1_test.csv",
+          "same_basename_count": 0,
+          "first_10_names": []
+        },
+        {
+          "train_member": "Text/VQA/train/SARVQA2_train.csv",
+          "test_member": "Text/VQA/test/SARVQA2_test.csv",
+          "same_basename_count": 0,
+          "first_10_names": []
+        }
+      ],
+      "stem_normalization": "Remove only the final filename extension; retain every source/geographic/numeric prefix, original case, and leading zero. No semantic source regrouping or new split.",
+      "train_unique_stems": 103826,
+      "test_unique_stems": 14490,
+      "same_stem_train_test_candidate_count": 0,
+      "first_50_same_stem_candidates": [],
+      "stem_pairwise": [
+        {
+          "train_member": "Text/Caption/train/Caption_train.csv",
+          "test_member": "Text/Caption/test/Caption_test.csv",
+          "same_stem_candidate_count": 0,
+          "first_20_stems": []
+        },
+        {
+          "train_member": "Text/Caption/train/Caption_train.csv",
+          "test_member": "Text/Caption/test/Caption_test1.csv",
+          "same_stem_candidate_count": 0,
+          "first_20_stems": []
+        },
+        {
+          "train_member": "Text/Caption/train/Caption_train.csv",
+          "test_member": "Text/VQA/test/SARVQA1_test.csv",
+          "same_stem_candidate_count": 0,
+          "first_20_stems": []
+        },
+        {
+          "train_member": "Text/Caption/train/Caption_train.csv",
+          "test_member": "Text/VQA/test/SARVQA2_test.csv",
+          "same_stem_candidate_count": 0,
+          "first_20_stems": []
+        },
+        {
+          "train_member": "Text/VQA/train/SARVQA1_train.csv",
+          "test_member": "Text/Caption/test/Caption_test.csv",
+          "same_stem_candidate_count": 0,
+          "first_20_stems": []
+        },
+        {
+          "train_member": "Text/VQA/train/SARVQA1_train.csv",
+          "test_member": "Text/Caption/test/Caption_test1.csv",
+          "same_stem_candidate_count": 0,
+          "first_20_stems": []
+        },
+        {
+          "train_member": "Text/VQA/train/SARVQA1_train.csv",
+          "test_member": "Text/VQA/test/SARVQA1_test.csv",
+          "same_stem_candidate_count": 0,
+          "first_20_stems": []
+        },
+        {
+          "train_member": "Text/VQA/train/SARVQA1_train.csv",
+          "test_member": "Text/VQA/test/SARVQA2_test.csv",
+          "same_stem_candidate_count": 0,
+          "first_20_stems": []
+        },
+        {
+          "train_member": "Text/VQA/train/SARVQA2_train.csv",
+          "test_member": "Text/Caption/test/Caption_test.csv",
+          "same_stem_candidate_count": 0,
+          "first_20_stems": []
+        },
+        {
+          "train_member": "Text/VQA/train/SARVQA2_train.csv",
+          "test_member": "Text/Caption/test/Caption_test1.csv",
+          "same_stem_candidate_count": 0,
+          "first_20_stems": []
+        },
+        {
+          "train_member": "Text/VQA/train/SARVQA2_train.csv",
+          "test_member": "Text/VQA/test/SARVQA1_test.csv",
+          "same_stem_candidate_count": 0,
+          "first_20_stems": []
+        },
+        {
+          "train_member": "Text/VQA/train/SARVQA2_train.csv",
+          "test_member": "Text/VQA/test/SARVQA2_test.csv",
+          "same_stem_candidate_count": 0,
+          "first_20_stems": []
+        }
+      ],
+      "stem_caveat": "Same stem is a same-ID candidate, not verified equal pixel content. Zero stem overlap would still not establish source-scene independence or exclude transformed neighboring images/model training exposure."
+    },
+    "examples_to_text_mapping": {
+      "by_example_image": {
+        "0001320.jpg": {
+          "Text/VQA/test/SARVQA1_test.csv": {
+            "text_image_name": "0001320.jpg",
+            "annotation_rows": 11,
+            "match": "exact_basename"
+          }
+        },
+        "0012296.jpg": {
+          "Text/VQA/test/SARVQA1_test.csv": {
+            "text_image_name": "0012296.jpg",
+            "annotation_rows": 11,
+            "match": "exact_basename"
+          }
+        },
+        "0016526.jpg": {
+          "Text/VQA/train/SARVQA1_train.csv": {
+            "text_image_name": "0016526.png",
+            "annotation_rows": 9,
+            "match": "stem_only_extension_differs_not_proven_equivalent"
+          }
+        },
+        "0031548.jpg": {
+          "Text/VQA/test/SARVQA1_test.csv": {
+            "text_image_name": "0031548.png",
+            "annotation_rows": 9,
+            "match": "stem_only_extension_differs_not_proven_equivalent"
+          }
+        },
+        "0069243.jpg": {
+          "Text/VQA/test/SARVQA1_test.csv": {
+            "text_image_name": "0069243.jpg",
+            "annotation_rows": 9,
+            "match": "exact_basename"
+          }
+        },
+        "0081429.jpg": {
+          "Text/VQA/train/SARVQA1_train.csv": {
+            "text_image_name": "0081429.png",
+            "annotation_rows": 22,
+            "match": "stem_only_extension_differs_not_proven_equivalent"
+          }
+        },
+        "0096469.jpg": {
+          "Text/VQA/train/SARVQA1_train.csv": {
+            "text_image_name": "0096469.jpg",
+            "annotation_rows": 8,
+            "match": "exact_basename"
+          }
+        },
+        "0101536.jpg": {
+          "Text/VQA/test/SARVQA1_test.csv": {
+            "text_image_name": "0101536.jpg",
+            "annotation_rows": 9,
+            "match": "exact_basename"
+          }
+        },
+        "France_Haute-Garonne_CNES_324.png": {
+          "Text/Caption/test/Caption_test.csv": {
+            "text_image_name": "France_Haute-Garonne_CNES_324.png",
+            "annotation_rows": 1,
+            "match": "exact_basename"
+          },
+          "Text/Caption/test/Caption_test1.csv": {
+            "text_image_name": "France_Haute-Garonne_CNES_324.png",
+            "annotation_rows": 2,
+            "match": "exact_basename"
+          },
+          "Text/VQA/test/SARVQA2_test.csv": {
+            "text_image_name": "France_Haute-Garonne_CNES_324.png",
+            "annotation_rows": 7,
+            "match": "exact_basename"
+          }
+        },
+        "France_Haute-Garonne_Toulouse_118.png": {
+          "Text/Caption/test/Caption_test.csv": {
+            "text_image_name": "France_Haute-Garonne_Toulouse_118.png",
+            "annotation_rows": 1,
+            "match": "exact_basename"
+          },
+          "Text/Caption/test/Caption_test1.csv": {
+            "text_image_name": "France_Haute-Garonne_Toulouse_118.png",
+            "annotation_rows": 2,
+            "match": "exact_basename"
+          },
+          "Text/VQA/test/SARVQA2_test.csv": {
+            "text_image_name": "France_Haute-Garonne_Toulouse_118.png",
+            "annotation_rows": 9,
+            "match": "exact_basename"
+          }
+        },
+        "GF2_Barcelona_41.4145_2.2087.png": {
+          "Text/Caption/test/Caption_test.csv": {
+            "text_image_name": "GF2_Barcelona_41.4145_2.2087.png",
+            "annotation_rows": 2,
+            "match": "exact_basename"
+          },
+          "Text/Caption/test/Caption_test1.csv": {
+            "text_image_name": "GF2_Barcelona_41.4145_2.2087.png",
+            "annotation_rows": 2,
+            "match": "exact_basename"
+          },
+          "Text/VQA/test/SARVQA2_test.csv": {
+            "text_image_name": "GF2_Barcelona_41.4145_2.2087.png",
+            "annotation_rows": 9,
+            "match": "exact_basename"
+          }
+        },
+        "Japan_Tokyo_Haneda_37.png": {
+          "Text/Caption/test/Caption_test.csv": {
+            "text_image_name": "Japan_Tokyo_Haneda_37.png",
+            "annotation_rows": 1,
+            "match": "exact_basename"
+          },
+          "Text/Caption/test/Caption_test1.csv": {
+            "text_image_name": "Japan_Tokyo_Haneda_37.png",
+            "annotation_rows": 2,
+            "match": "exact_basename"
+          },
+          "Text/VQA/test/SARVQA2_test.csv": {
+            "text_image_name": "Japan_Tokyo_Haneda_37.png",
+            "annotation_rows": 10,
+            "match": "exact_basename"
+          }
+        },
+        "Japan_Tokyo_Shinjuku_v1_23.png": {
+          "Text/Caption/test/Caption_test.csv": {
+            "text_image_name": "Japan_Tokyo_Shinjuku_v1_23.png",
+            "annotation_rows": 1,
+            "match": "exact_basename"
+          },
+          "Text/Caption/test/Caption_test1.csv": {
+            "text_image_name": "Japan_Tokyo_Shinjuku_v1_23.png",
+            "annotation_rows": 2,
+            "match": "exact_basename"
+          },
+          "Text/VQA/test/SARVQA2_test.csv": {
+            "text_image_name": "Japan_Tokyo_Shinjuku_v1_23.png",
+            "annotation_rows": 7,
+            "match": "exact_basename"
+          }
+        },
+        "Japan_Tokyo_Shinjuku_v1_6.png": {
+          "Text/Caption/test/Caption_test1.csv": {
+            "text_image_name": "Japan_Tokyo_Shinjuku_v1_6.png",
+            "annotation_rows": 2,
+            "match": "exact_basename"
+          },
+          "Text/VQA/test/SARVQA2_test.csv": {
+            "text_image_name": "Japan_Tokyo_Shinjuku_v1_6.png",
+            "annotation_rows": 9,
+            "match": "exact_basename"
+          }
+        },
+        "Japan_Tokyo_Shinjuku_v2_14.png": {
+          "Text/Caption/test/Caption_test.csv": {
+            "text_image_name": "Japan_Tokyo_Shinjuku_v2_14.png",
+            "annotation_rows": 1,
+            "match": "exact_basename"
+          },
+          "Text/Caption/test/Caption_test1.csv": {
+            "text_image_name": "Japan_Tokyo_Shinjuku_v2_14.png",
+            "annotation_rows": 2,
+            "match": "exact_basename"
+          },
+          "Text/VQA/test/SARVQA2_test.csv": {
+            "text_image_name": "Japan_Tokyo_Shinjuku_v2_14.png",
+            "annotation_rows": 8,
+            "match": "exact_basename"
+          }
+        },
+        "P_0208.png": {
+          "Text/Caption/test/Caption_test.csv": {
+            "text_image_name": "P_0208.png",
+            "annotation_rows": 2,
+            "match": "exact_basename"
+          },
+          "Text/Caption/test/Caption_test1.csv": {
+            "text_image_name": "P_0208.png",
+            "annotation_rows": 2,
+            "match": "exact_basename"
+          },
+          "Text/VQA/test/SARVQA2_test.csv": {
+            "text_image_name": "P_0208.png",
+            "annotation_rows": 8,
+            "match": "exact_basename"
+          }
+        },
+        "P_0218.png": {
+          "Text/Caption/test/Caption_test.csv": {
+            "text_image_name": "P_0218.png",
+            "annotation_rows": 2,
+            "match": "exact_basename"
+          },
+          "Text/Caption/test/Caption_test1.csv": {
+            "text_image_name": "P_0218.png",
+            "annotation_rows": 2,
+            "match": "exact_basename"
+          },
+          "Text/VQA/test/SARVQA2_test.csv": {
+            "text_image_name": "P_0218.png",
+            "annotation_rows": 5,
+            "match": "exact_basename"
+          }
+        },
+        "P_0618.png": {
+          "Text/Caption/test/Caption_test.csv": {
+            "text_image_name": "P_0618.png",
+            "annotation_rows": 2,
+            "match": "exact_basename"
+          },
+          "Text/Caption/test/Caption_test1.csv": {
+            "text_image_name": "P_0618.png",
+            "annotation_rows": 2,
+            "match": "exact_basename"
+          },
+          "Text/VQA/test/SARVQA2_test.csv": {
+            "text_image_name": "P_0618.png",
+            "annotation_rows": 5,
+            "match": "exact_basename"
+          }
+        },
+        "P_0636.png": {
+          "Text/Caption/test/Caption_test.csv": {
+            "text_image_name": "P_0636.png",
+            "annotation_rows": 2,
+            "match": "exact_basename"
+          },
+          "Text/Caption/test/Caption_test1.csv": {
+            "text_image_name": "P_0636.png",
+            "annotation_rows": 2,
+            "match": "exact_basename"
+          },
+          "Text/VQA/test/SARVQA2_test.csv": {
+            "text_image_name": "P_0636.png",
+            "annotation_rows": 6,
+            "match": "exact_basename"
+          }
+        },
+        "USA_California_Chico_8.png": {
+          "Text/Caption/test/Caption_test.csv": {
+            "text_image_name": "USA_California_Chico_8.png",
+            "annotation_rows": 1,
+            "match": "exact_basename"
+          },
+          "Text/Caption/test/Caption_test1.csv": {
+            "text_image_name": "USA_California_Chico_8.png",
+            "annotation_rows": 2,
+            "match": "exact_basename"
+          },
+          "Text/VQA/test/SARVQA2_test.csv": {
+            "text_image_name": "USA_California_Chico_8.png",
+            "annotation_rows": 8,
+            "match": "exact_basename"
+          }
+        }
+      },
+      "examples_with_any_exact_basename_match": 17,
+      "examples_with_any_stem_match": 20,
+      "warning": "A .jpg example and .png text reference with the same numeric stem is a mapping candidate, not verified same image bytes or preprocessing.",
+      "provided_split_presence": {
+        "train": {
+          "images_with_exact_basename_match": 1,
+          "exact_images": [
+            "0096469.jpg"
+          ],
+          "images_with_stem_match_but_no_exact_basename_in_this_split": 2,
+          "stem_only_images": [
+            "0016526.jpg",
+            "0081429.jpg"
+          ],
+          "images_with_any_stem_match": 3,
+          "images_not_matched_even_by_stem": [
+            "0001320.jpg",
+            "0012296.jpg",
+            "0031548.jpg",
+            "0069243.jpg",
+            "0101536.jpg",
+            "France_Haute-Garonne_CNES_324.png",
+            "France_Haute-Garonne_Toulouse_118.png",
+            "GF2_Barcelona_41.4145_2.2087.png",
+            "Japan_Tokyo_Haneda_37.png",
+            "Japan_Tokyo_Shinjuku_v1_23.png",
+            "Japan_Tokyo_Shinjuku_v1_6.png",
+            "Japan_Tokyo_Shinjuku_v2_14.png",
+            "P_0208.png",
+            "P_0218.png",
+            "P_0618.png",
+            "P_0636.png",
+            "USA_California_Chico_8.png"
+          ],
+          "exact_basename_annotation_rows": 8,
+          "stem_only_extension_difference_annotation_rows": 31,
+          "by_example_image": {
+            "0016526.jpg": [
+              {
+                "member": "Text/VQA/train/SARVQA1_train.csv",
+                "text_image_name": "0016526.png",
+                "annotation_rows": 9,
+                "match": "stem_only_extension_differs"
+              }
+            ],
+            "0081429.jpg": [
+              {
+                "member": "Text/VQA/train/SARVQA1_train.csv",
+                "text_image_name": "0081429.png",
+                "annotation_rows": 22,
+                "match": "stem_only_extension_differs"
+              }
+            ],
+            "0096469.jpg": [
+              {
+                "member": "Text/VQA/train/SARVQA1_train.csv",
+                "text_image_name": "0096469.jpg",
+                "annotation_rows": 8,
+                "match": "exact_basename"
+              }
+            ]
+          }
+        },
+        "test": {
+          "images_with_exact_basename_match": 16,
+          "exact_images": [
+            "0001320.jpg",
+            "0012296.jpg",
+            "0069243.jpg",
+            "0101536.jpg",
+            "France_Haute-Garonne_CNES_324.png",
+            "France_Haute-Garonne_Toulouse_118.png",
+            "GF2_Barcelona_41.4145_2.2087.png",
+            "Japan_Tokyo_Haneda_37.png",
+            "Japan_Tokyo_Shinjuku_v1_23.png",
+            "Japan_Tokyo_Shinjuku_v1_6.png",
+            "Japan_Tokyo_Shinjuku_v2_14.png",
+            "P_0208.png",
+            "P_0218.png",
+            "P_0618.png",
+            "P_0636.png",
+            "USA_California_Chico_8.png"
+          ],
+          "images_with_stem_match_but_no_exact_basename_in_this_split": 1,
+          "stem_only_images": [
+            "0031548.jpg"
+          ],
+          "images_with_any_stem_match": 17,
+          "images_not_matched_even_by_stem": [
+            "0016526.jpg",
+            "0081429.jpg",
+            "0096469.jpg"
+          ],
+          "exact_basename_annotation_rows": 171,
+          "stem_only_extension_difference_annotation_rows": 9,
+          "by_example_image": {
+            "0001320.jpg": [
+              {
+                "member": "Text/VQA/test/SARVQA1_test.csv",
+                "text_image_name": "0001320.jpg",
+                "annotation_rows": 11,
+                "match": "exact_basename"
+              }
+            ],
+            "0012296.jpg": [
+              {
+                "member": "Text/VQA/test/SARVQA1_test.csv",
+                "text_image_name": "0012296.jpg",
+                "annotation_rows": 11,
+                "match": "exact_basename"
+              }
+            ],
+            "0031548.jpg": [
+              {
+                "member": "Text/VQA/test/SARVQA1_test.csv",
+                "text_image_name": "0031548.png",
+                "annotation_rows": 9,
+                "match": "stem_only_extension_differs"
+              }
+            ],
+            "0069243.jpg": [
+              {
+                "member": "Text/VQA/test/SARVQA1_test.csv",
+                "text_image_name": "0069243.jpg",
+                "annotation_rows": 9,
+                "match": "exact_basename"
+              }
+            ],
+            "0101536.jpg": [
+              {
+                "member": "Text/VQA/test/SARVQA1_test.csv",
+                "text_image_name": "0101536.jpg",
+                "annotation_rows": 9,
+                "match": "exact_basename"
+              }
+            ],
+            "France_Haute-Garonne_CNES_324.png": [
+              {
+                "member": "Text/Caption/test/Caption_test.csv",
+                "text_image_name": "France_Haute-Garonne_CNES_324.png",
+                "annotation_rows": 1,
+                "match": "exact_basename"
+              },
+              {
+                "member": "Text/Caption/test/Caption_test1.csv",
+                "text_image_name": "France_Haute-Garonne_CNES_324.png",
+                "annotation_rows": 2,
+                "match": "exact_basename"
+              },
+              {
+                "member": "Text/VQA/test/SARVQA2_test.csv",
+                "text_image_name": "France_Haute-Garonne_CNES_324.png",
+                "annotation_rows": 7,
+                "match": "exact_basename"
+              }
+            ],
+            "France_Haute-Garonne_Toulouse_118.png": [
+              {
+                "member": "Text/Caption/test/Caption_test.csv",
+                "text_image_name": "France_Haute-Garonne_Toulouse_118.png",
+                "annotation_rows": 1,
+                "match": "exact_basename"
+              },
+              {
+                "member": "Text/Caption/test/Caption_test1.csv",
+                "text_image_name": "France_Haute-Garonne_Toulouse_118.png",
+                "annotation_rows": 2,
+                "match": "exact_basename"
+              },
+              {
+                "member": "Text/VQA/test/SARVQA2_test.csv",
+                "text_image_name": "France_Haute-Garonne_Toulouse_118.png",
+                "annotation_rows": 9,
+                "match": "exact_basename"
+              }
+            ],
+            "GF2_Barcelona_41.4145_2.2087.png": [
+              {
+                "member": "Text/Caption/test/Caption_test.csv",
+                "text_image_name": "GF2_Barcelona_41.4145_2.2087.png",
+                "annotation_rows": 2,
+                "match": "exact_basename"
+              },
+              {
+                "member": "Text/Caption/test/Caption_test1.csv",
+                "text_image_name": "GF2_Barcelona_41.4145_2.2087.png",
+                "annotation_rows": 2,
+                "match": "exact_basename"
+              },
+              {
+                "member": "Text/VQA/test/SARVQA2_test.csv",
+                "text_image_name": "GF2_Barcelona_41.4145_2.2087.png",
+                "annotation_rows": 9,
+                "match": "exact_basename"
+              }
+            ],
+            "Japan_Tokyo_Haneda_37.png": [
+              {
+                "member": "Text/Caption/test/Caption_test.csv",
+                "text_image_name": "Japan_Tokyo_Haneda_37.png",
+                "annotation_rows": 1,
+                "match": "exact_basename"
+              },
+              {
+                "member": "Text/Caption/test/Caption_test1.csv",
+                "text_image_name": "Japan_Tokyo_Haneda_37.png",
+                "annotation_rows": 2,
+                "match": "exact_basename"
+              },
+              {
+                "member": "Text/VQA/test/SARVQA2_test.csv",
+                "text_image_name": "Japan_Tokyo_Haneda_37.png",
+                "annotation_rows": 10,
+                "match": "exact_basename"
+              }
+            ],
+            "Japan_Tokyo_Shinjuku_v1_23.png": [
+              {
+                "member": "Text/Caption/test/Caption_test.csv",
+                "text_image_name": "Japan_Tokyo_Shinjuku_v1_23.png",
+                "annotation_rows": 1,
+                "match": "exact_basename"
+              },
+              {
+                "member": "Text/Caption/test/Caption_test1.csv",
+                "text_image_name": "Japan_Tokyo_Shinjuku_v1_23.png",
+                "annotation_rows": 2,
+                "match": "exact_basename"
+              },
+              {
+                "member": "Text/VQA/test/SARVQA2_test.csv",
+                "text_image_name": "Japan_Tokyo_Shinjuku_v1_23.png",
+                "annotation_rows": 7,
+                "match": "exact_basename"
+              }
+            ],
+            "Japan_Tokyo_Shinjuku_v1_6.png": [
+              {
+                "member": "Text/Caption/test/Caption_test1.csv",
+                "text_image_name": "Japan_Tokyo_Shinjuku_v1_6.png",
+                "annotation_rows": 2,
+                "match": "exact_basename"
+              },
+              {
+                "member": "Text/VQA/test/SARVQA2_test.csv",
+                "text_image_name": "Japan_Tokyo_Shinjuku_v1_6.png",
+                "annotation_rows": 9,
+                "match": "exact_basename"
+              }
+            ],
+            "Japan_Tokyo_Shinjuku_v2_14.png": [
+              {
+                "member": "Text/Caption/test/Caption_test.csv",
+                "text_image_name": "Japan_Tokyo_Shinjuku_v2_14.png",
+                "annotation_rows": 1,
+                "match": "exact_basename"
+              },
+              {
+                "member": "Text/Caption/test/Caption_test1.csv",
+                "text_image_name": "Japan_Tokyo_Shinjuku_v2_14.png",
+                "annotation_rows": 2,
+                "match": "exact_basename"
+              },
+              {
+                "member": "Text/VQA/test/SARVQA2_test.csv",
+                "text_image_name": "Japan_Tokyo_Shinjuku_v2_14.png",
+                "annotation_rows": 8,
+                "match": "exact_basename"
+              }
+            ],
+            "P_0208.png": [
+              {
+                "member": "Text/Caption/test/Caption_test.csv",
+                "text_image_name": "P_0208.png",
+                "annotation_rows": 2,
+                "match": "exact_basename"
+              },
+              {
+                "member": "Text/Caption/test/Caption_test1.csv",
+                "text_image_name": "P_0208.png",
+                "annotation_rows": 2,
+                "match": "exact_basename"
+              },
+              {
+                "member": "Text/VQA/test/SARVQA2_test.csv",
+                "text_image_name": "P_0208.png",
+                "annotation_rows": 8,
+                "match": "exact_basename"
+              }
+            ],
+            "P_0218.png": [
+              {
+                "member": "Text/Caption/test/Caption_test.csv",
+                "text_image_name": "P_0218.png",
+                "annotation_rows": 2,
+                "match": "exact_basename"
+              },
+              {
+                "member": "Text/Caption/test/Caption_test1.csv",
+                "text_image_name": "P_0218.png",
+                "annotation_rows": 2,
+                "match": "exact_basename"
+              },
+              {
+                "member": "Text/VQA/test/SARVQA2_test.csv",
+                "text_image_name": "P_0218.png",
+                "annotation_rows": 5,
+                "match": "exact_basename"
+              }
+            ],
+            "P_0618.png": [
+              {
+                "member": "Text/Caption/test/Caption_test.csv",
+                "text_image_name": "P_0618.png",
+                "annotation_rows": 2,
+                "match": "exact_basename"
+              },
+              {
+                "member": "Text/Caption/test/Caption_test1.csv",
+                "text_image_name": "P_0618.png",
+                "annotation_rows": 2,
+                "match": "exact_basename"
+              },
+              {
+                "member": "Text/VQA/test/SARVQA2_test.csv",
+                "text_image_name": "P_0618.png",
+                "annotation_rows": 5,
+                "match": "exact_basename"
+              }
+            ],
+            "P_0636.png": [
+              {
+                "member": "Text/Caption/test/Caption_test.csv",
+                "text_image_name": "P_0636.png",
+                "annotation_rows": 2,
+                "match": "exact_basename"
+              },
+              {
+                "member": "Text/Caption/test/Caption_test1.csv",
+                "text_image_name": "P_0636.png",
+                "annotation_rows": 2,
+                "match": "exact_basename"
+              },
+              {
+                "member": "Text/VQA/test/SARVQA2_test.csv",
+                "text_image_name": "P_0636.png",
+                "annotation_rows": 6,
+                "match": "exact_basename"
+              }
+            ],
+            "USA_California_Chico_8.png": [
+              {
+                "member": "Text/Caption/test/Caption_test.csv",
+                "text_image_name": "USA_California_Chico_8.png",
+                "annotation_rows": 1,
+                "match": "exact_basename"
+              },
+              {
+                "member": "Text/Caption/test/Caption_test1.csv",
+                "text_image_name": "USA_California_Chico_8.png",
+                "annotation_rows": 2,
+                "match": "exact_basename"
+              },
+              {
+                "member": "Text/VQA/test/SARVQA2_test.csv",
+                "text_image_name": "USA_California_Chico_8.png",
+                "annotation_rows": 8,
+                "match": "exact_basename"
+              }
+            ]
+          }
+        }
+      },
+      "example_images_with_train_and_test_stem_candidates": [],
+      "split_count_note": "Counts are distinct example images. Within each split, exact and stem-only image categories are mutually exclusive. The same example may appear as a candidate in both splits; these are not held-out guarantees."
+    },
+    "limitations": [
+      "Examples are demonstration pairs, not a verified formal held-out benchmark.",
+      "Only 20 example image bytes were downloaded; Text annotations reference many images whose bytes are absent locally.",
+      "CSV and JSON are alternate encodings, not two independent sets of annotations.",
+      "Annotation inspection does not validate answer correctness, model normal ability, scene-level independence, or pretraining exposure.",
+      "No raw files or archive members were modified or extracted; no external author paths were opened."
+    ],
+    "status": "passed_format_only",
+    "application_totals_counting_csv_once": {
+      "image description": 45650,
+      "object identification": 484620,
+      "object classification": 132525,
+      "instance counting": 117382,
+      "object positioning": 106171,
+      "region referring": 221450,
+      "others": 18479
+    },
+    "csv_json_representation_check": {
+      "all_record_counts_match": true,
+      "all_image_reference_multisets_match": true,
+      "question_answer_text_identity_checked": false,
+      "note": "Observed SARVQA1 JSON prompts may append class choices absent from CSV. Do not infer prompt-text identity from matching counts/image names."
+    }
+  },
+  "audit_script_sha256": "68cef06431546ac8cdec3fa4d0198d167e0a73585d04d619204420a015aa5288"
+}
