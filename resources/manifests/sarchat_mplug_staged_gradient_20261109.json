@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "script_sha256": "606900cd5bfa9e96f7fd281a53d27e07d070751877800030973ebb1f5a7bc9bb",
+  "inventory_sha256": "8794bbef9182fb71c189c2c3ce6ac7800282e482bb83672fbb07022a1a6e78cd",
+  "feature_max_abs_difference": 0.015625,
+  "feature_relative_l2": 1.5939669538056478e-05,
+  "sample_id": "sar-adapt-00143e1b2c521d1b65fd",
+  "target": " ship",
+  "input_shape": [
+    5,
+    3,
+    384,
+    384
+  ],
+  "staged_loss": 13.970526695251465,
+  "full_loss": 13.970526695251465,
+  "gradient_cosine": 1.0000410079956055,
+  "gradient_relative_l2": 0.0020113225504560447,
+  "gradient_finite": true,
+  "gradient_nonzero": 2143254,
+  "weights_frozen": true,
+  "staged_peak_allocated_mib": 3761.63720703125,
+  "full_peak_allocated_mib": 10588.60791015625,
+  "staged_seconds": 7.496011400000043,
+  "full_seconds": 41.18807719999995,
+  "physical_vram_mib": 6143.875,
+  "total_seconds": 59.86135349999995,
+  "run_sha256": "9c480eae03de23f3d594685b465320683fce1a447b892f7ddda697cf57ca80da",
+  "baseline_run": "runs/sar-sarchat-mplug-20261109/gradient.json",
+  "scope": "one-image next-token engineering equivalence comparison",
+  "limitations": [
+    "preprocessed image tiles only; raw image pipeline not differentiable yet",
+    "single image and one token; no full natural language loss, attack or multi-step tests",
+    "FP16 math is approximate; not bit-for-bit equality",
+    "memory is PyTorch allocator including model; not total physical device usage"
+  ]
+}

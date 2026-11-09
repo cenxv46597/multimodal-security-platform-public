@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "script_sha256": "3e84ed59d22bf7fc988499328a538e84b2fd2489e0123325d03c6ffb3651cac6",
+  "inventory_sha256": "8794bbef9182fb71c189c2c3ce6ac7800282e482bb83672fbb07022a1a6e78cd",
+  "sample_id": "sar-adapt-00143e1b2c521d1b65fd",
+  "raw_shape": [
+    1,
+    1,
+    256,
+    256
+  ],
+  "tile_shape": [
+    5,
+    3,
+    384,
+    384
+  ],
+  "approx_pixel_mean_abs_error": 0.00206078146584332,
+  "approx_pixel_max_abs_error": 0.04457283020019531,
+  "note": "Differentiable tensor bicubic approximates PIL bicubic; not bit-exact",
+  "feature_relative_l2": 0.0703280121088028,
+  "native_answer": "It is bridge",
+  "approximate_answer": "It is bridge",
+  "answers_match": true,
+  "loss": 13.892212867736816,
+  "gradient_finite": true,
+  "gradient_nonzero": 65536,
+  "gradient_max_abs": 11.719184875488281,
+  "weights_frozen": true,
+  "seconds": 18.544528999999784,
+  "peak_allocated_mib": 3792.76611328125,
+  "run_sha256": "2e76703124fa748e3dc62bdcf34d38c62de3e434864b0fb7ae0c74801fb830af",
+  "interpretation": "Raw grayscale differentiability demonstrated only for an approximate tensor interpolation path; model equivalence is not established.",
+  "limitations": [
+    "single image, one target token, fixed 2x2 crop plus global view",
+    "continuous tensor bicubic approximates non-differentiable PIL/8-bit resize; forward paths differ",
+    "only one generated answer checked, which was not correct for its reference",
+    "feature relative L2 difference about 7%; needs broader review before attack experiments",
+    "gradient is in normalized 0..1 display-image domain, not physical SAR signal",
+    "no attack or independent model evaluation performed"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "model": "JimmyMa99/SARChat-DeepSeekVL-1.3B",
+  "revision": "master",
+  "revision_note": "branch; content pinned by each upstream SHA256",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size": 2075,
+      "sha256": "247a3cfc672484dd40bdf07af0f83ee7a4457e9a995dadb47eedc36c630103b6"
+    },
+    {
+      "path": "README.md",
+      "size": 1426,
+      "sha256": "dabcaa0f41a9cdc8040f279564a1e5cad73dc16bc17150bfd49edb8cd9ddb84e"
+    },
+    {
+      "path": "args.json",
+      "size": 13555,
+      "sha256": "7d96f3d8e232b87fab5df0bdacd444fb577f42ddfc97027e16cd6a5c8da2f794"
+    },
+    {
+      "path": "config.json",
+      "size": 1316,
+      "sha256": "78b8fce83fa8c9904fa85dcd559dddb2d2f4a969938b0136746ace5d267ffe92"
+    },
+    {
+      "path": "configuration.json",
+      "size": 51,
+      "sha256": "2d4464e2ead06bc9bc718c781309ad1e7baded626d66e8dcdc8b469ba185faf0"
+    },
+    {
+      "path": "model.safetensors",
+      "size": 3950538088,
+      "sha256": "22d01ceebe4ed22d8887927935190e425c2a382086c1ae8b64800f3f6828ea4f"
+    },
+    {
+      "path": "preprocessor_config.json",
+      "size": 347,
+      "sha256": "181260bd4970b8d2a93f8f2478197fdbcbaea987dd1c3dddd95936b4eea9c3b3"
+    },
+    {
+      "path": "processor_config.json",
+      "size": 210,
+      "sha256": "db31da16a2ac5be5c612de402eaf797c23b9a473552d1f9d78ffb7a0c9778efa"
+    },
+    {
+      "path": "special_tokens_map.json",
+      "size": 433,
+      "sha256": "e5a8b3e728ab18a8bc385505de17837e6597d0281fd562bc74d236e1d5ea38db"
+    },
+    {
+      "path": "tokenizer.json",
+      "size": 7503852,
+      "sha256": "760a8df9c7966bc0be6fa4ac47e9e2bfc540689471cce526fc52e700ad9a6a2a"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "size": 3345,
+      "sha256": "4b3a4ced2cd936f5b25f7f19a83ce3bfe62f519a82e372b1f5a3c4ace070a124"
+    }
+  ]
+}

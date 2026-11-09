@@ -1,0 +1,789 @@
+{
+  "date": "2026-11-08",
+  "status": "completed",
+  "scope": "Exploratory origin-only control for interpreting the existing grouped SAR development set. No image pixels or learned model used by the control.",
+  "grouped_plan": {
+    "path": "resources/manifests/sar_grouped_development_plan_20261107.json",
+    "sha256": "bc712ce9733fa633e3a6628cea93da0f3777291dd36f011a98ac0152c117f4f9"
+  },
+  "grouped_records": {
+    "path": "data/processed/sar_grouped_development_v1/records.jsonl",
+    "sha256": "9f1f978b9cfea9a825a81e023eb415496a9554fb41fdd97fd6bc69deb6441fad"
+  },
+  "origin_mapping": {
+    "path": ".work/sar-grouped-development-20261107/mapping.json",
+    "sha256": "e0d814f6661657679ac355f52728df94cb0eb02d00756b7a0d97ce50aa787f55"
+  },
+  "frozen_siglip_reference": {
+    "path": "runs/sar-vision-probe-20261107/probe.json",
+    "sha256": "0da6f84f7b34fb93be198f3a20e7fa03628380c3a1e5da47210cf26cf6fea2df"
+  },
+  "rule": "Fit per-origin majority label using only the fixed 120 training rows. Origin is the first underscore-delimited segment of the authoritative SARDet source basename. Ties follow the task label order. An unseen origin uses the global training majority with the same tiebreaker.",
+  "fallback": "ship",
+  "rules_by_origin": {
+    "7Shipdataset": "ship",
+    "4MSAR": "tank",
+    "3HRSID": "ship",
+    "6SAR-AIRcraft": "aircraft",
+    "5SADD": "aircraft",
+    "10SIVED": "car",
+    "9OGSOD": "harbor"
+  },
+  "origin_label_counts": {
+    "train": {
+      "10SIVED": {
+        "car": 20
+      },
+      "3HRSID": {
+        "ship": 1
+      },
+      "4MSAR": {
+        "ship": 13,
+        "tank": 16,
+        "bridge": 3
+      },
+      "5SADD": {
+        "aircraft": 1
+      },
+      "6SAR-AIRcraft": {
+        "aircraft": 19
+      },
+      "7Shipdataset": {
+        "ship": 6
+      },
+      "9OGSOD": {
+        "tank": 4,
+        "bridge": 17,
+        "harbor": 20
+      }
+    },
+    "grouped_development": {
+      "10SIVED": {
+        "car": 10
+      },
+      "1AIR": {
+        "ship": 1
+      },
+      "4MSAR": {
+        "ship": 3,
+        "tank": 8,
+        "bridge": 1
+      },
+      "5SADD": {
+        "aircraft": 3
+      },
+      "6SAR-AIRcraft": {
+        "aircraft": 7
+      },
+      "7Shipdataset": {
+        "ship": 6
+      },
+      "9OGSOD": {
+        "tank": 2,
+        "bridge": 9,
+        "harbor": 10
+      }
+    }
+  },
+  "scores": {
+    "origin_only_grouped": {
+      "samples": 60,
+      "correct": 45,
+      "per_class": {
+        "ship": {
+          "correct": 7,
+          "samples": 10
+        },
+        "aircraft": {
+          "correct": 10,
+          "samples": 10
+        },
+        "car": {
+          "correct": 10,
+          "samples": 10
+        },
+        "tank": {
+          "correct": 8,
+          "samples": 10
+        },
+        "bridge": {
+          "correct": 0,
+          "samples": 10
+        },
+        "harbor": {
+          "correct": 10,
+          "samples": 10
+        }
+      }
+    },
+    "unseen_origin_count_grouped": 1,
+    "origin_only_grouped_correct_without_unseen_fallback": 44,
+    "origin_only_original": {
+      "samples": 60,
+      "correct": 45,
+      "per_class": {
+        "ship": {
+          "correct": 7,
+          "samples": 10
+        },
+        "aircraft": {
+          "correct": 10,
+          "samples": 10
+        },
+        "car": {
+          "correct": 10,
+          "samples": 10
+        },
+        "tank": {
+          "correct": 8,
+          "samples": 10
+        },
+        "bridge": {
+          "correct": 0,
+          "samples": 10
+        },
+        "harbor": {
+          "correct": 10,
+          "samples": 10
+        }
+      }
+    },
+    "siglip_original": {
+      "samples": 60,
+      "correct": 45,
+      "per_class": {
+        "ship": {
+          "correct": 8,
+          "samples": 10
+        },
+        "aircraft": {
+          "correct": 8,
+          "samples": 10
+        },
+        "car": {
+          "correct": 10,
+          "samples": 10
+        },
+        "tank": {
+          "correct": 7,
+          "samples": 10
+        },
+        "bridge": {
+          "correct": 8,
+          "samples": 10
+        },
+        "harbor": {
+          "correct": 4,
+          "samples": 10
+        }
+      }
+    },
+    "origin_only_common": {
+      "samples": 58,
+      "correct": 43,
+      "per_class": {
+        "ship": {
+          "correct": 7,
+          "samples": 10
+        },
+        "aircraft": {
+          "correct": 10,
+          "samples": 10
+        },
+        "car": {
+          "correct": 10,
+          "samples": 10
+        },
+        "tank": {
+          "correct": 8,
+          "samples": 10
+        },
+        "bridge": {
+          "correct": 0,
+          "samples": 10
+        },
+        "harbor": {
+          "correct": 8,
+          "samples": 8
+        }
+      }
+    },
+    "siglip_common": {
+      "samples": 58,
+      "correct": 44,
+      "per_class": {
+        "ship": {
+          "correct": 8,
+          "samples": 10
+        },
+        "aircraft": {
+          "correct": 8,
+          "samples": 10
+        },
+        "car": {
+          "correct": 10,
+          "samples": 10
+        },
+        "tank": {
+          "correct": 7,
+          "samples": 10
+        },
+        "bridge": {
+          "correct": 8,
+          "samples": 10
+        },
+        "harbor": {
+          "correct": 3,
+          "samples": 8
+        }
+      }
+    },
+    "paired_common": {
+      "siglip_only": 10,
+      "both_correct": 34,
+      "both_wrong": 5,
+      "source_only": 9
+    }
+  },
+  "grouped_predictions": [
+    {
+      "sample_id": "sar-adapt-00143e1b2c521d1b65fd",
+      "origin": "4MSAR",
+      "reference": "ship",
+      "predicted": "tank",
+      "unseen_origin": false,
+      "probe": "ship",
+      "siglip_archived_answer_if_retained": "ship"
+    },
+    {
+      "sample_id": "sar-adapt-0014962ac3e76bce336d",
+      "origin": "1AIR",
+      "reference": "ship",
+      "predicted": "ship",
+      "unseen_origin": true,
+      "probe": "ship",
+      "siglip_archived_answer_if_retained": "ship"
+    },
+    {
+      "sample_id": "sar-adapt-0015e3221e5104550b4e",
+      "origin": "7Shipdataset",
+      "reference": "ship",
+      "predicted": "ship",
+      "unseen_origin": false,
+      "probe": "ship",
+      "siglip_archived_answer_if_retained": "ship"
+    },
+    {
+      "sample_id": "sar-adapt-00162db607eea45274e8",
+      "origin": "7Shipdataset",
+      "reference": "ship",
+      "predicted": "ship",
+      "unseen_origin": false,
+      "probe": "ship",
+      "siglip_archived_answer_if_retained": "ship"
+    },
+    {
+      "sample_id": "sar-adapt-001665852241f3f7daf1",
+      "origin": "4MSAR",
+      "reference": "ship",
+      "predicted": "tank",
+      "unseen_origin": false,
+      "probe": "tank",
+      "siglip_archived_answer_if_retained": "tank"
+    },
+    {
+      "sample_id": "sar-adapt-001707645466613fbc56",
+      "origin": "7Shipdataset",
+      "reference": "ship",
+      "predicted": "ship",
+      "unseen_origin": false,
+      "probe": "ship",
+      "siglip_archived_answer_if_retained": "ship"
+    },
+    {
+      "sample_id": "sar-adapt-0017d5a49e2110a6cd36",
+      "origin": "7Shipdataset",
+      "reference": "ship",
+      "predicted": "ship",
+      "unseen_origin": false,
+      "probe": "harbor",
+      "siglip_archived_answer_if_retained": "harbor"
+    },
+    {
+      "sample_id": "sar-adapt-001965b71bafcd6842ce",
+      "origin": "4MSAR",
+      "reference": "ship",
+      "predicted": "tank",
+      "unseen_origin": false,
+      "probe": "ship",
+      "siglip_archived_answer_if_retained": "ship"
+    },
+    {
+      "sample_id": "sar-adapt-0019990a7f8a3c4b5530",
+      "origin": "7Shipdataset",
+      "reference": "ship",
+      "predicted": "ship",
+      "unseen_origin": false,
+      "probe": "ship",
+      "siglip_archived_answer_if_retained": "ship"
+    },
+    {
+      "sample_id": "sar-adapt-001a49b3f049caf33ee1",
+      "origin": "7Shipdataset",
+      "reference": "ship",
+      "predicted": "ship",
+      "unseen_origin": false,
+      "probe": "ship",
+      "siglip_archived_answer_if_retained": "ship"
+    },
+    {
+      "sample_id": "sar-adapt-0042ac0f83993a44a48a",
+      "origin": "6SAR-AIRcraft",
+      "reference": "aircraft",
+      "predicted": "aircraft",
+      "unseen_origin": false,
+      "probe": "aircraft",
+      "siglip_archived_answer_if_retained": "aircraft"
+    },
+    {
+      "sample_id": "sar-adapt-0042f9464220ece14cbf",
+      "origin": "6SAR-AIRcraft",
+      "reference": "aircraft",
+      "predicted": "aircraft",
+      "unseen_origin": false,
+      "probe": "aircraft",
+      "siglip_archived_answer_if_retained": "aircraft"
+    },
+    {
+      "sample_id": "sar-adapt-0044eb815efbcdbb5d6c",
+      "origin": "5SADD",
+      "reference": "aircraft",
+      "predicted": "aircraft",
+      "unseen_origin": false,
+      "probe": "aircraft",
+      "siglip_archived_answer_if_retained": "aircraft"
+    },
+    {
+      "sample_id": "sar-adapt-00468412a01c30994b71",
+      "origin": "5SADD",
+      "reference": "aircraft",
+      "predicted": "aircraft",
+      "unseen_origin": false,
+      "probe": "harbor",
+      "siglip_archived_answer_if_retained": "harbor"
+    },
+    {
+      "sample_id": "sar-adapt-0047f2f065db8baa9cc9",
+      "origin": "6SAR-AIRcraft",
+      "reference": "aircraft",
+      "predicted": "aircraft",
+      "unseen_origin": false,
+      "probe": "aircraft",
+      "siglip_archived_answer_if_retained": "aircraft"
+    },
+    {
+      "sample_id": "sar-adapt-004aca398f4b7e5ec196",
+      "origin": "6SAR-AIRcraft",
+      "reference": "aircraft",
+      "predicted": "aircraft",
+      "unseen_origin": false,
+      "probe": "aircraft",
+      "siglip_archived_answer_if_retained": "aircraft"
+    },
+    {
+      "sample_id": "sar-adapt-00558b87699ea02d1eaa",
+      "origin": "5SADD",
+      "reference": "aircraft",
+      "predicted": "aircraft",
+      "unseen_origin": false,
+      "probe": "bridge",
+      "siglip_archived_answer_if_retained": "bridge"
+    },
+    {
+      "sample_id": "sar-adapt-005dd70e78c6a6147687",
+      "origin": "6SAR-AIRcraft",
+      "reference": "aircraft",
+      "predicted": "aircraft",
+      "unseen_origin": false,
+      "probe": "aircraft",
+      "siglip_archived_answer_if_retained": "aircraft"
+    },
+    {
+      "sample_id": "sar-adapt-005f2b900c783eb164e5",
+      "origin": "6SAR-AIRcraft",
+      "reference": "aircraft",
+      "predicted": "aircraft",
+      "unseen_origin": false,
+      "probe": "aircraft",
+      "siglip_archived_answer_if_retained": "aircraft"
+    },
+    {
+      "sample_id": "sar-adapt-006107a7218edd8a8c70",
+      "origin": "6SAR-AIRcraft",
+      "reference": "aircraft",
+      "predicted": "aircraft",
+      "unseen_origin": false,
+      "probe": "aircraft",
+      "siglip_archived_answer_if_retained": "aircraft"
+    },
+    {
+      "sample_id": "sar-adapt-072871f196b28fb8fbc4",
+      "origin": "10SIVED",
+      "reference": "car",
+      "predicted": "car",
+      "unseen_origin": false,
+      "probe": "car",
+      "siglip_archived_answer_if_retained": "car"
+    },
+    {
+      "sample_id": "sar-adapt-07519f77b1b2f1f7dce3",
+      "origin": "10SIVED",
+      "reference": "car",
+      "predicted": "car",
+      "unseen_origin": false,
+      "probe": "car",
+      "siglip_archived_answer_if_retained": "car"
+    },
+    {
+      "sample_id": "sar-adapt-0917e3effecb53870d25",
+      "origin": "10SIVED",
+      "reference": "car",
+      "predicted": "car",
+      "unseen_origin": false,
+      "probe": "car",
+      "siglip_archived_answer_if_retained": "car"
+    },
+    {
+      "sample_id": "sar-adapt-09865e90e1bdb152b00b",
+      "origin": "10SIVED",
+      "reference": "car",
+      "predicted": "car",
+      "unseen_origin": false,
+      "probe": "car",
+      "siglip_archived_answer_if_retained": "car"
+    },
+    {
+      "sample_id": "sar-adapt-099f4b1a62a672bacbf6",
+      "origin": "10SIVED",
+      "reference": "car",
+      "predicted": "car",
+      "unseen_origin": false,
+      "probe": "car",
+      "siglip_archived_answer_if_retained": "car"
+    },
+    {
+      "sample_id": "sar-adapt-09ab19e6e44864c477c9",
+      "origin": "10SIVED",
+      "reference": "car",
+      "predicted": "car",
+      "unseen_origin": false,
+      "probe": "car",
+      "siglip_archived_answer_if_retained": "car"
+    },
+    {
+      "sample_id": "sar-adapt-09cbf6cfd460a8320861",
+      "origin": "10SIVED",
+      "reference": "car",
+      "predicted": "car",
+      "unseen_origin": false,
+      "probe": "car",
+      "siglip_archived_answer_if_retained": "car"
+    },
+    {
+      "sample_id": "sar-adapt-0a713cae6df158efada0",
+      "origin": "10SIVED",
+      "reference": "car",
+      "predicted": "car",
+      "unseen_origin": false,
+      "probe": "car",
+      "siglip_archived_answer_if_retained": "car"
+    },
+    {
+      "sample_id": "sar-adapt-0a94226fd2b31d76c780",
+      "origin": "10SIVED",
+      "reference": "car",
+      "predicted": "car",
+      "unseen_origin": false,
+      "probe": "car",
+      "siglip_archived_answer_if_retained": "car"
+    },
+    {
+      "sample_id": "sar-adapt-0af987bc304dddabeecb",
+      "origin": "10SIVED",
+      "reference": "car",
+      "predicted": "car",
+      "unseen_origin": false,
+      "probe": "car",
+      "siglip_archived_answer_if_retained": "car"
+    },
+    {
+      "sample_id": "sar-adapt-043a5c3085537911e485",
+      "origin": "4MSAR",
+      "reference": "tank",
+      "predicted": "tank",
+      "unseen_origin": false,
+      "probe": "bridge",
+      "siglip_archived_answer_if_retained": "bridge"
+    },
+    {
+      "sample_id": "sar-adapt-0473d7618dbec66dfb68",
+      "origin": "4MSAR",
+      "reference": "tank",
+      "predicted": "tank",
+      "unseen_origin": false,
+      "probe": "tank",
+      "siglip_archived_answer_if_retained": "tank"
+    },
+    {
+      "sample_id": "sar-adapt-04b2aab0a166df487fb1",
+      "origin": "4MSAR",
+      "reference": "tank",
+      "predicted": "tank",
+      "unseen_origin": false,
+      "probe": "tank",
+      "siglip_archived_answer_if_retained": "tank"
+    },
+    {
+      "sample_id": "sar-adapt-04e833b9731c649bd5a4",
+      "origin": "4MSAR",
+      "reference": "tank",
+      "predicted": "tank",
+      "unseen_origin": false,
+      "probe": "tank",
+      "siglip_archived_answer_if_retained": "tank"
+    },
+    {
+      "sample_id": "sar-adapt-051056e6f1074969274f",
+      "origin": "4MSAR",
+      "reference": "tank",
+      "predicted": "tank",
+      "unseen_origin": false,
+      "probe": "tank",
+      "siglip_archived_answer_if_retained": "tank"
+    },
+    {
+      "sample_id": "sar-adapt-05555e24298c737a2739",
+      "origin": "4MSAR",
+      "reference": "tank",
+      "predicted": "tank",
+      "unseen_origin": false,
+      "probe": "tank",
+      "siglip_archived_answer_if_retained": "tank"
+    },
+    {
+      "sample_id": "sar-adapt-05590bb5b92dbeaffc82",
+      "origin": "4MSAR",
+      "reference": "tank",
+      "predicted": "tank",
+      "unseen_origin": false,
+      "probe": "tank",
+      "siglip_archived_answer_if_retained": "tank"
+    },
+    {
+      "sample_id": "sar-adapt-05e0dd583d0729810e51",
+      "origin": "9OGSOD",
+      "reference": "tank",
+      "predicted": "harbor",
+      "unseen_origin": false,
+      "probe": "bridge",
+      "siglip_archived_answer_if_retained": "bridge"
+    },
+    {
+      "sample_id": "sar-adapt-06063831414b30b5d889",
+      "origin": "9OGSOD",
+      "reference": "tank",
+      "predicted": "harbor",
+      "unseen_origin": false,
+      "probe": "bridge",
+      "siglip_archived_answer_if_retained": "bridge"
+    },
+    {
+      "sample_id": "sar-adapt-0648130fc8b2569e6001",
+      "origin": "4MSAR",
+      "reference": "tank",
+      "predicted": "tank",
+      "unseen_origin": false,
+      "probe": "tank",
+      "siglip_archived_answer_if_retained": "tank"
+    },
+    {
+      "sample_id": "sar-adapt-00670eebc1ace4f031c8",
+      "origin": "9OGSOD",
+      "reference": "bridge",
+      "predicted": "harbor",
+      "unseen_origin": false,
+      "probe": "bridge",
+      "siglip_archived_answer_if_retained": "bridge"
+    },
+    {
+      "sample_id": "sar-adapt-006ba932a68632a8b689",
+      "origin": "9OGSOD",
+      "reference": "bridge",
+      "predicted": "harbor",
+      "unseen_origin": false,
+      "probe": "bridge",
+      "siglip_archived_answer_if_retained": "bridge"
+    },
+    {
+      "sample_id": "sar-adapt-008362616e26a5c515f1",
+      "origin": "9OGSOD",
+      "reference": "bridge",
+      "predicted": "harbor",
+      "unseen_origin": false,
+      "probe": "bridge",
+      "siglip_archived_answer_if_retained": "bridge"
+    },
+    {
+      "sample_id": "sar-adapt-008869871959f8b5496c",
+      "origin": "9OGSOD",
+      "reference": "bridge",
+      "predicted": "harbor",
+      "unseen_origin": false,
+      "probe": "bridge",
+      "siglip_archived_answer_if_retained": "bridge"
+    },
+    {
+      "sample_id": "sar-adapt-008ac2527d909f088184",
+      "origin": "9OGSOD",
+      "reference": "bridge",
+      "predicted": "harbor",
+      "unseen_origin": false,
+      "probe": "bridge",
+      "siglip_archived_answer_if_retained": "bridge"
+    },
+    {
+      "sample_id": "sar-adapt-008c6ec77ad6849f9044",
+      "origin": "9OGSOD",
+      "reference": "bridge",
+      "predicted": "harbor",
+      "unseen_origin": false,
+      "probe": "harbor",
+      "siglip_archived_answer_if_retained": "harbor"
+    },
+    {
+      "sample_id": "sar-adapt-008ceb5b16d4b540e500",
+      "origin": "9OGSOD",
+      "reference": "bridge",
+      "predicted": "harbor",
+      "unseen_origin": false,
+      "probe": "bridge",
+      "siglip_archived_answer_if_retained": "bridge"
+    },
+    {
+      "sample_id": "sar-adapt-008d8cab05568320b024",
+      "origin": "4MSAR",
+      "reference": "bridge",
+      "predicted": "tank",
+      "unseen_origin": false,
+      "probe": "tank",
+      "siglip_archived_answer_if_retained": "tank"
+    },
+    {
+      "sample_id": "sar-adapt-0094f1b2e42f925c078e",
+      "origin": "9OGSOD",
+      "reference": "bridge",
+      "predicted": "harbor",
+      "unseen_origin": false,
+      "probe": "bridge",
+      "siglip_archived_answer_if_retained": "bridge"
+    },
+    {
+      "sample_id": "sar-adapt-0095ae0851e656a7504c",
+      "origin": "9OGSOD",
+      "reference": "bridge",
+      "predicted": "harbor",
+      "unseen_origin": false,
+      "probe": "bridge",
+      "siglip_archived_answer_if_retained": "bridge"
+    },
+    {
+      "sample_id": "sar-adapt-038dad1d1abe093f8342",
+      "origin": "9OGSOD",
+      "reference": "harbor",
+      "predicted": "harbor",
+      "unseen_origin": false,
+      "probe": "bridge",
+      "siglip_archived_answer_if_retained": "bridge"
+    },
+    {
+      "sample_id": "sar-adapt-042a78e191e48dffecc4",
+      "origin": "9OGSOD",
+      "reference": "harbor",
+      "predicted": "harbor",
+      "unseen_origin": false,
+      "probe": "harbor",
+      "siglip_archived_answer_if_retained": "harbor"
+    },
+    {
+      "sample_id": "sar-adapt-04352dbe1b803f666e53",
+      "origin": "9OGSOD",
+      "reference": "harbor",
+      "predicted": "harbor",
+      "unseen_origin": false,
+      "probe": "harbor",
+      "siglip_archived_answer_if_retained": "harbor"
+    },
+    {
+      "sample_id": "sar-adapt-05108b4bcce9d77334e7",
+      "origin": "9OGSOD",
+      "reference": "harbor",
+      "predicted": "harbor",
+      "unseen_origin": false,
+      "probe": "harbor",
+      "siglip_archived_answer_if_retained": "harbor"
+    },
+    {
+      "sample_id": "sar-adapt-0563b195e956d0f689cd",
+      "origin": "9OGSOD",
+      "reference": "harbor",
+      "predicted": "harbor",
+      "unseen_origin": false,
+      "probe": "bridge",
+      "siglip_archived_answer_if_retained": "bridge"
+    },
+    {
+      "sample_id": "sar-adapt-05b56f9bd5399343ff9e",
+      "origin": "9OGSOD",
+      "reference": "harbor",
+      "predicted": "harbor",
+      "unseen_origin": false,
+      "probe": "aircraft",
+      "siglip_archived_answer_if_retained": "aircraft"
+    },
+    {
+      "sample_id": "sar-adapt-05c33cbe6bc4936bd146",
+      "origin": "9OGSOD",
+      "reference": "harbor",
+      "predicted": "harbor",
+      "unseen_origin": false,
+      "probe": "bridge",
+      "siglip_archived_answer_if_retained": "bridge"
+    },
+    {
+      "sample_id": "sar-adapt-0662e9c8f7d3a76dba9f",
+      "origin": "9OGSOD",
+      "reference": "harbor",
+      "predicted": "harbor",
+      "unseen_origin": false,
+      "probe": "aircraft",
+      "siglip_archived_answer_if_retained": "aircraft"
+    },
+    {
+      "sample_id": "sar-clean-dev-005928d8efb26474c4b1",
+      "origin": "9OGSOD",
+      "reference": "harbor",
+      "predicted": "harbor",
+      "unseen_origin": false,
+      "siglip_archived_answer_if_retained": null
+    },
+    {
+      "sample_id": "sar-clean-dev-01e04c876562b1601ca0",
+      "origin": "9OGSOD",
+      "reference": "harbor",
+      "predicted": "harbor",
+      "unseen_origin": false,
+      "siglip_archived_answer_if_retained": null
+    }
+  ],
+  "interpretation": "Origin metadata is used by this diagnostic only. Its strong scores establish a source-label association that confounds the panel. Similar aggregate scores do not establish that SigLIP used source cues or invalidate differences on individual images. The two replacement harbor images have no archived SigLIP score."
+}

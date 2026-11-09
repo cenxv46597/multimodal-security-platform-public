@@ -1,0 +1,9 @@
+{
+  "feasibility_sha256": "03edd928e2e4c0e772d7cd5267fe7059c0562ba8e6cd120696e6e2afa289a909",
+  "grouped_plan_sha256": "bc712ce9733fa633e3a6628cea93da0f3777291dd36f011a98ac0152c117f4f9",
+  "model": "LLaVA standard adapted projector",
+  "fill": "Original image per-channel median, computed over the entire original RGB image, rounded down to uint8. Identical fill for target and background.",
+  "score": "Sum of full-vocabulary log probabilities for the reference label and EOS, conditional on the fixed image and original question.",
+  "comparison": "For each eligible image compute original minus target-occluded score and original minus background-occluded score. Positive paired difference indicates a larger score drop for target occlusion.",
+  "limitations": "Boxes may omit targets; median fill may introduce artifacts; background position is deterministic and may differ in visual content. Development diagnosis only."
+}

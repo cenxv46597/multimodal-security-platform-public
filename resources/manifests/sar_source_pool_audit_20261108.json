@@ -1,0 +1,38 @@
+{
+  "status": "completed",
+  "scope": "SARDet-100K fixed v1 author train COCO; images with exactly one annotated category, no SARLANG eligibility filtering",
+  "coco_compressed_sha256": "b24fd50861b23df66e25c72696265715774901d4a0879220578ac977963eea82",
+  "mapping_sha256": "e0d814f6661657679ac355f52728df94cb0eb02d00756b7a0d97ce50aa787f55",
+  "total_images": 94493,
+  "single_category_images": 93495,
+  "by_category_and_source": {
+    "ship": {
+      "7Shipdataset": 31784,
+      "4MSAR": 23730,
+      "3HRSID": 3642,
+      "8SSDD": 928,
+      "1AIR": 438,
+      "2AIR": 270
+    },
+    "tank": {
+      "4MSAR": 1129,
+      "9OGSOD": 266
+    },
+    "bridge": {
+      "9OGSOD": 12818,
+      "4MSAR": 1665
+    },
+    "aircraft": {
+      "6SAR-AIRcraft": 13976,
+      "5SADD": 795,
+      "4MSAR": 92
+    },
+    "harbor": {
+      "9OGSOD": 1125
+    },
+    "car": {
+      "10SIVED": 837
+    }
+  },
+  "limits": "Source family is not an independent geographic scene; image-level categories do not prove single instance or complete labels. Counts do not verify task eligibility or availability of bytes."
+}

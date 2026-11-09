@@ -1,0 +1,103 @@
+{
+  "protocol_id": "sar_proxy_selection_v0",
+  "date": "2026-11-07",
+  "stage": "Candidate resource screening completed. Local candidate loading and capability evaluation pending.",
+  "fixed_evidence": {
+    "task": {
+      "path": "experiments/protocols/sar_single_category_v0.json",
+      "sha256": "8115c82b6164f5f50de4d6d3dd478467a9b8d78c7718b8035bbfd8fa7e801f59"
+    },
+    "scoring": {
+      "path": "experiments/protocols/sar_clean_development_screen_v0.json",
+      "sha256": "bc8e50d533720ca61d986c72aac11c001a6f1437c33a5cb939009f880b1f488a"
+    },
+    "grouped_plan": {
+      "path": "resources/manifests/sar_grouped_development_plan_20261107.json",
+      "sha256": "bc712ce9733fa633e3a6628cea93da0f3777291dd36f011a98ac0152c117f4f9"
+    },
+    "grouped_records": {
+      "path": "data/processed/sar_grouped_development_v1/records.jsonl",
+      "sha256": "9f1f978b9cfea9a825a81e023eb415496a9554fb41fdd97fd6bc69deb6441fad"
+    },
+    "llava_reference": {
+      "path": "resources/manifests/sar_grouped_development_results_20261107.json",
+      "sha256": "f7bd8f4eb131e44fc8ebf9c99832445c3b9584345c4505fa93a6fa3964f91958",
+      "variant": "scores.standard"
+    }
+  },
+  "comparison": {
+    "panel": "The 60 grouped validation rows in existing order, 10 per class. Use the scoring protocol's generation, parser, denominator and thresholds, and the grouped plan's sampling.",
+    "inputs": "Supply the same unperturbed image and exact task question through each model's own chat template. Keep IDs, group keys, labels and metadata on the evaluation side.",
+    "execution": "Batch size 1. Keep the first run at the published weights and record the template, image size and tile settings, dtype, attention backend, dependency versions, raw answers, latency and peak memory.",
+    "gate": "At least 57 valid answers and 36 correct out of 60, with at least 5 correct out of 10 in each class. Retain invalid, missing and failed outputs in all relevant denominators.",
+    "interpretation": "Development selection only. Geographic scene independence and checkpoint training exposure remain unresolved. The English answer tank refers to a storage tank."
+  },
+  "candidate_order": [
+    {
+      "model": "OpenGVLab/InternVL2_5-1B",
+      "revision": "9d423ea1ae9f893897ee3f7493141073f5afcf22",
+      "source": "https://huggingface.co/OpenGVLab/InternVL2_5-1B/tree/9d423ea1ae9f893897ee3f7493141073f5afcf22",
+      "license": "MIT",
+      "weight": {
+        "path": "model.safetensors",
+        "bytes": 1876463472,
+        "sha256": "8d5575f96a88f9048a2a054267f4a1523ec6d3dc36ed57e39e612306dec72dc3"
+      },
+      "local_snapshot": "models/InternVL2_5-1B/9d423ea1ae9f",
+      "resource_status": "Published general VLM. Fixed configuration and model code are cached for review. Vocabulary and weight files are absent. Earlier file HEAD is evidence of a public endpoint, with current download connectivity unverified.",
+      "cached_inventory": {
+        "path": ".work/next-clean-screen-20261105/proxy/internvl_root_download_manifest.json",
+        "sha256": "64d726e950b827f658434beb72369177653fa3d36fdd89a14841d0b059d258b9",
+        "files": 16,
+        "total_bytes": 1881624852,
+        "earlier_head_report": ".work/next-clean-screen-20261105/proxy/head_and_dependencies.json"
+      },
+      "selection_reason": "InternViT visual backbone provides a different architecture from the LLaVA reference and a general baseline for the related SARChat checkpoint.",
+      "first_probe": "Review the fixed custom model code before offline loading. Use an isolated environment with compatible torchvision, timm and einops. Start with FP16 eager, use_flash_attn=False, one 448px tile and no thumbnail."
+    },
+    {
+      "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "revision": "a7da5b986cb59b408707209984f360a5f4ad7e47",
+      "source": "https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct/tree/a7da5b986cb59b408707209984f360a5f4ad7e47",
+      "license": "Apache-2.0",
+      "weight": {
+        "path": "model.safetensors",
+        "approximate_bytes": 1020000000,
+        "sha256": "d05b567eeaf534e83d375551f068ed57b5f52d37c657197f644af5ef9db091a2"
+      },
+      "resource_status": "Published general VLM. Not downloaded or run locally.",
+      "selection_reason": "Native Idefics3 path in the current Transformers environment. Same architecture family as the earlier SmolVLM-256M, with a larger language backbone.",
+      "first_probe": "Reuse the installed Transformers path. Start with FP16 eager and the native single-image processor with image splitting disabled."
+    },
+    {
+      "model": "LiquidAI/LFM2-VL-450M",
+      "revision": "d355d88bf86e5c7054230232120e573ca2238286",
+      "source": "https://huggingface.co/LiquidAI/LFM2-VL-450M",
+      "license": "LFM Open License v1",
+      "weight": {
+        "path": "model.safetensors",
+        "approximate_bytes": 902000000,
+        "sha256": "163cab2c6c394a8532c405d63603e7b25f9220a344df950288411d1fba0b0567"
+      },
+      "resource_status": "Published general VLM. Not downloaded or run locally.",
+      "selection_reason": "Different vision-language architecture within a small weight budget, with higher environment setup cost.",
+      "first_probe": "Use an isolated environment with Transformers 4.57 or newer and compatible torchvision. Freeze the official single-image preprocessing settings before the scored run and verify FP16 eager generation."
+    }
+  ],
+  "domain_waitlist": {
+    "model": "JimmyMa99/SARChat-InternVL2.5-1B",
+    "source": "https://www.modelscope.cn/models/JimmyMa99/SARChat-InternVL2.5-1B",
+    "paper": "https://arxiv.org/html/2502.08168v5",
+    "access_evidence": "resources/manifests/sarchat_access_check.json",
+    "entry_condition": "Prioritize once the official full checkpoint or required adapter and base can be obtained with authorization. Verify a fixed revision, loadability and known SARDet or SARLANG training overlap before interpreting development results."
+  },
+  "decision_rules": {
+    "resource_gate": "Verify the pinned files and one-image local CUDA generation on the 6144 MiB Pascal GPU. Record access, dependency or memory failures separately from accuracy. Move on if the issue persists after a bounded compatibility check.",
+    "first_clean_run": "Run the same 60 images once after the resource gate. Archive all results, including failures.",
+    "adjustments": "If the candidate falls short, allow at most two follow-up configurations. Before each run, record one diagnosed cause, one changed factor, expected effect and resource budget. Use only the fixed 120 training rows if an adjustment learns parameters.",
+    "continuation_signal": "Consider a second adjustment only if the first adds at least three correct answers, or adds at least two correct in a previously failing target class without lowering total correct. In both cases no class may newly fall below five correct. A passing configuration advances directly.",
+    "exit": "Move to the next candidate when there is no evidence-backed adjustment, no continuation signal, or the adjustment budget is spent below the gate. Keep the strongest clean result and record the reason for stopping.",
+    "gradient_gate": "Only after the clean gate, use a differentiable forward loss with weights frozen and caching off. Require a finite, nonzero gradient on the processed image tensor and measure peak memory in the chosen configuration. Record this separately from any future raw-pixel differentiable preprocessing."
+  },
+  "scope": "SAR image-plus-text proxy intake for a larger research plan covering HRRP, domain text, generative behavior and transfer to a real closed-source target."
+}

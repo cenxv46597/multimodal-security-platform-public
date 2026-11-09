@@ -1,0 +1,98 @@
+{
+  "scope": "Descriptive evaluation by known source and class on reused development panel. Counts are small and source is not a verified independent scene.",
+  "groups": [
+    {
+      "label": "aircraft",
+      "origin": "5SADD",
+      "count": 3,
+      "llava_correct": 1,
+      "vitp_correct": 1,
+      "source_rule_correct": 3
+    },
+    {
+      "label": "aircraft",
+      "origin": "6SAR-AIRcraft",
+      "count": 7,
+      "llava_correct": 7,
+      "vitp_correct": 0,
+      "source_rule_correct": 7
+    },
+    {
+      "label": "bridge",
+      "origin": "4MSAR",
+      "count": 1,
+      "llava_correct": 0,
+      "vitp_correct": 0,
+      "source_rule_correct": 0
+    },
+    {
+      "label": "bridge",
+      "origin": "9OGSOD",
+      "count": 9,
+      "llava_correct": 6,
+      "vitp_correct": 6,
+      "source_rule_correct": 0
+    },
+    {
+      "label": "car",
+      "origin": "10SIVED",
+      "count": 10,
+      "llava_correct": 6,
+      "vitp_correct": 0,
+      "source_rule_correct": 10
+    },
+    {
+      "label": "harbor",
+      "origin": "9OGSOD",
+      "count": 10,
+      "llava_correct": 0,
+      "vitp_correct": 1,
+      "source_rule_correct": 10
+    },
+    {
+      "label": "ship",
+      "origin": "1AIR",
+      "count": 1,
+      "llava_correct": 0,
+      "vitp_correct": 1,
+      "source_rule_correct": 1
+    },
+    {
+      "label": "ship",
+      "origin": "4MSAR",
+      "count": 3,
+      "llava_correct": 3,
+      "vitp_correct": 1,
+      "source_rule_correct": 0
+    },
+    {
+      "label": "ship",
+      "origin": "7Shipdataset",
+      "count": 6,
+      "llava_correct": 6,
+      "vitp_correct": 4,
+      "source_rule_correct": 6
+    },
+    {
+      "label": "tank",
+      "origin": "4MSAR",
+      "count": 8,
+      "llava_correct": 0,
+      "vitp_correct": 0,
+      "source_rule_correct": 8
+    },
+    {
+      "label": "tank",
+      "origin": "9OGSOD",
+      "count": 2,
+      "llava_correct": 0,
+      "vitp_correct": 0,
+      "source_rule_correct": 0
+    }
+  ],
+  "sources": {
+    "resources/manifests/sar_source_shortcut_audit_20261108.json": "14790ce2bef33b534aeec39d225be1eca0a2d2c764192dbe734e69e93c41f622",
+    "runs/sar-grouped-development-20261107/comparison.json": "5983371631caee421a60b749e9cc4cb83b7493cee41da180c97be2a5b7fee500",
+    "runs/sar-vitp-20261108/screen.json": "3143593eb1d6c592c5fa9dcbd2dadbe6754e17202d443fc07e5bd21208088404"
+  }
+}

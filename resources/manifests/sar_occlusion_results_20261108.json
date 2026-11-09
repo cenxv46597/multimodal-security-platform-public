@@ -1,0 +1,84 @@
+{
+  "status": "completed",
+  "source_run": {
+    "path": "runs/sar-occlusion-20261108/results.json",
+    "sha256": "7852e2496ec52c0ff4e99b2e8c5b63cfeea1cca75e9feed79d88cf41b840c29e"
+  },
+  "protocol": {
+    "path": "experiments\\protocols\\sar_occlusion_score_v0.json",
+    "sha256": "2c8996cda8d3a381162c0ab5736fee64f75eb4bf9edfa8e0282a55fc9a0f8f4c"
+  },
+  "planned": 60,
+  "evaluated": 56,
+  "target_drop_larger": 28,
+  "mean_paired_difference": 0.017529353324789554,
+  "mean_target_drop": -0.031243770358352258,
+  "mean_background_drop": -0.04877312368314181,
+  "per_class": {
+    "ship": {
+      "planned": 10,
+      "evaluated": 10,
+      "status_counts": {
+        "ok": 10
+      },
+      "mean_paired_difference": 0.0042023777961730955,
+      "target_drop_larger": 5
+    },
+    "aircraft": {
+      "planned": 10,
+      "evaluated": 10,
+      "status_counts": {
+        "ok": 10
+      },
+      "mean_paired_difference": 0.04158705323934555,
+      "target_drop_larger": 6
+    },
+    "car": {
+      "planned": 10,
+      "evaluated": 10,
+      "status_counts": {
+        "ok": 10
+      },
+      "mean_paired_difference": -0.090182950720191,
+      "target_drop_larger": 3
+    },
+    "tank": {
+      "planned": 10,
+      "evaluated": 10,
+      "status_counts": {
+        "ok": 10
+      },
+      "mean_paired_difference": -0.25425286293029786,
+      "target_drop_larger": 4
+    },
+    "bridge": {
+      "planned": 10,
+      "evaluated": 10,
+      "status_counts": {
+        "ok": 10
+      },
+      "mean_paired_difference": 0.3097891242709011,
+      "target_drop_larger": 7
+    },
+    "harbor": {
+      "planned": 10,
+      "evaluated": 6,
+      "status_counts": {
+        "ok": 6,
+        "no_matching_background": 4
+      },
+      "mean_paired_difference": 0.14503606160481772,
+      "target_drop_larger": 3
+    }
+  },
+  "archived_original_score_check": {
+    "matched_samples": 55,
+    "max_absolute_error": 4.5367050915956497e-07
+  },
+  "limitations": [
+    "Development panel with source and class association",
+    "Four harbor samples lack matched backgrounds",
+    "Annotated boxes can miss objects and background patches can contain unannotated targets",
+    "Occlusion may introduce distribution shift and different visual content"
+  ]
+}

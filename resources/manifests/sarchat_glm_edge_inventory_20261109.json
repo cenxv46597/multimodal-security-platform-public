@@ -1,0 +1,72 @@
+{
+  "model": "JimmyMa99/SARChat-GLM-edge-v-2B",
+  "revision": "master",
+  "revision_note": "branch; files pinned by upstream SHA256",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size": 2075,
+      "sha256": "247a3cfc672484dd40bdf07af0f83ee7a4457e9a995dadb47eedc36c630103b6"
+    },
+    {
+      "path": "README.md",
+      "size": 1424,
+      "sha256": "961f7d89dfde29ee0b065c8427cf4a6e809520e41c2a559d07b805f57cc25c40"
+    },
+    {
+      "path": "config.json",
+      "size": 1319,
+      "sha256": "dbab55d747384977446d803d11917ed1861ce8d945ffa058229b6c4c64a02adf"
+    },
+    {
+      "path": "configuration.json",
+      "size": 54,
+      "sha256": "5a7ab171148c6e30e583bcde1177fe16b8db9e4ec407ff5627ea004e4625f4da"
+    },
+    {
+      "path": "configuration_glm.py",
+      "size": 7408,
+      "sha256": "68050fcccf974647c188f565c67a1148ac030505329f55a194a4b47bc1459122"
+    },
+    {
+      "path": "generation_config.json",
+      "size": 151,
+      "sha256": "c7102a9a43dca8c694b0bd7e8456ee18394979f3894599cb5b206e2b2808abb1"
+    },
+    {
+      "path": "model.safetensors",
+      "size": 3907073352,
+      "sha256": "ff5d954b33535668340d9aa747ee527f0a151947f0143c1a5ddffbacbcf4a0d1"
+    },
+    {
+      "path": "modeling_glm.py",
+      "size": 61500,
+      "sha256": "880c4b65f20e96a54d1e50489d4dfd63c9af27f4a57446ff23ea2e9db6f3fdc6"
+    },
+    {
+      "path": "preprocessor_config.json",
+      "size": 396,
+      "sha256": "7e2ae9f16f23052c8bb9bccf51255ca53059896f43dadd412ae6c9f0cfdaaad4"
+    },
+    {
+      "path": "siglip.py",
+      "size": 2773,
+      "sha256": "693a5da9419928ee3928cdfab230b4f2ee38c4b46986c2494eca26fe5b86f2ea"
+    },
+    {
+      "path": "special_tokens_map.json",
+      "size": 601,
+      "sha256": "35a6dd9ff6e2474ba72b180db853851d2a84fce3d12095089285f447c7474541"
+    },
+    {
+      "path": "tokenizer.json",
+      "size": 6834426,
+      "sha256": "f78a0fcf4b6ef0e462557283a53ebf71cd91a41f41dc581fb870b724e6edb9bf"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "size": 3505,
+      "sha256": "b779e70ae7bd27f9a66ab0ac2441b494a1e8d7219ba1bca9defd7f8d2af828de"
+    }
+  ]
+}

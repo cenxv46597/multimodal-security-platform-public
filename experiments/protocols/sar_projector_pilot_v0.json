@@ -1,0 +1,19 @@
+{
+  "id": "sar_projector_pilot_v0",
+  "data_plan_sha256": "7ead393652361a5e9b789c62794f956a128818e814c2a5674adeda2e6759a68a",
+  "train_per_class": 20,
+  "validation_per_class": 10,
+  "seed": 20261107,
+  "optimizer": "AdamW",
+  "learning_rate": 0.0001,
+  "weight_decay": 0.0,
+  "gradient_clip_norm": 1.0,
+  "epochs": 1,
+  "batch_size": 1,
+  "training_time_limit_seconds": 2400,
+  "peak_reserved_limit_mib": 5632,
+  "minimum_free_mib": 512,
+  "precision": "Frozen FP16 vision and language backbones, FP32 projector, eager attention",
+  "probe": "Use the first shuffled training image. Require a finite parameter change, lower same-image loss, finite FP32 AdamW states and unchanged frozen tensors. Restore the original projector and restart AdamW before the pilot.",
+  "validation": "Compare before and after on the same 60 development images with the original question, greedy generation and strict scorer. Apply the existing development gate. Original scene lineage remains unresolved."
+}

@@ -1,0 +1,12 @@
+{
+  "purpose": "Exploratory model selection on the existing grouped development panel, not independent test",
+  "model": "JimmyMa99/SARChat-GLM-edge-v-2B",
+  "model_revision": "master; fixed per-file SHA256 inventory",
+  "grouped_plan_sha256": "bc712ce9733fa633e3a6628cea93da0f3777291dd36f011a98ac0152c117f4f9",
+  "question": "What target category is shown in this SAR image? Choose one of: ship, aircraft, car, oil storage tank, bridge, harbor. Answer in a clear natural sentence.",
+  "task": "single target category; tank means oil storage tank",
+  "generation": {"do_sample": false, "max_new_tokens": 32},
+  "scoring": "Blind-to-reference semantic adjudication of each raw answer; retain ambiguity, negation, multiple categories, out-of-vocabulary responses, and truncation as unresolved where appropriate. Report total sample denominator and per-class counts.",
+  "comparability": "Prior candidates used a different question with a request for lowercase labels and a 12-token limit; results are indicative, not controlled like-for-like ranking.",
+  "limitations": "The reused panel is exploratory and may overlap the model training sources. Native preprocessing differs across architectures; no claims of independent generalization."
+}

@@ -1,0 +1,41 @@
+{
+  "dataset_doi": "10.17632/t2f8n66c87.2",
+  "version": 2,
+  "status": "format and source-name reconnaissance; not a test split",
+  "facility_mask_archive_sha256": "1fe31a906854655d0fb405f6dabe56d8ccf869b3ed57abd4cb1f8c04b69d0150",
+  "script_sha256": "caab7ae6f4deb88673b7002f43acf6e13aef434ef2aae88d6f39c6155da6fc28",
+  "mask_files": 5267,
+  "images_containing_each_value": {
+    "0": 5267,
+    "1": 914,
+    "4": 1085,
+    "2": 1565,
+    "3": 1258,
+    "5": 642
+  },
+  "oil_tank_value": 2,
+  "oil_tank_mask_count": 1565,
+  "source_name_group_rule": "filename before _slice1024_; proxy, not verified scene identity",
+  "groups_with_oil_tank": {
+    "ICEYE_GRD_SLEDP_4228243_2024090Netherlands_down1x": 1186,
+    "ICEYE_X23_GRD_SLEDF_3521349_20240305T1055Afica_down1x": 379
+  },
+  "one_mask_example_per_group": {
+    "ICEYE_GRD_SLEDP_4228243_2024090Netherlands_down1x": {
+      "file": "ICEYE_GRD_SLEDP_4228243_2024090Netherlands_down1x_slice1024_0000.png",
+      "mask_sha256": "33c7ad92f4b6afb5f00a6845e0daf951c1cd97c3f0dce065e139ca1db951659e",
+      "oil_mask_pixels": 2223
+    },
+    "ICEYE_X23_GRD_SLEDF_3521349_20240305T1055Afica_down1x": {
+      "file": "ICEYE_X23_GRD_SLEDF_3521349_20240305T1055Afica_down1x_slice1024_0009.png",
+      "mask_sha256": "b6787c3e25f9ea1f7b1ecc6c58b98febcd8c9e132eb448ea70cbfde526cc72cb",
+      "oil_mask_pixels": 5557
+    }
+  },
+  "limitations": [
+    "Mask value 2 interpreted using dataset description; annotation quality unverified",
+    "Filename prefixes are not guaranteed distinct geographic sites",
+    "Potential model training exposure and scene overlap not assessed",
+    "Segmentation images can contain multiple categories; not ready for single-label classification"
+  ]
+}

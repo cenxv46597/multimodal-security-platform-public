@@ -104,6 +104,20 @@ def get_inputs(processor, record, device, dtype, model_key="llava"):
     return result
 
 
+def generate_answer(model, processor, batch, max_new_tokens, model_key="llava"):
+    import torch
+
+    extra = {"num_logits_to_keep": 1} if model_key == "llava" else {}
+    with torch.inference_mode():
+        generated = model.generate(**batch, max_new_tokens=max_new_tokens,
+                                   do_sample=False, use_cache=True, return_dict_in_generate=True,
+                                   output_logits=True, **extra)
+    if not generated.logits or not all(bool(torch.isfinite(value).all()) for value in generated.logits):
+        raise RuntimeError("Nonfinite or absent generation logits")
+    new = generated.sequences[:, batch["input_ids"].shape[1]:]
+    return processor.batch_decode(new, skip_special_tokens=True)[0], int(new.shape[1])
+
+
 def timed(report, key, function, device):
     import torch
 
@@ -193,15 +207,7 @@ def run(args, report):
     model = holder["model"]
 
     def generate(batch):
-        extra = {"num_logits_to_keep": 1} if args.model == "llava" else {}
-        with torch.inference_mode():
-            generated = model.generate(**batch, max_new_tokens=screen["generation"]["max_new_tokens"],
-                                       do_sample=False, use_cache=True, return_dict_in_generate=True,
-                                       output_logits=True, **extra)
-        if not generated.logits or not all(bool(torch.isfinite(value).all()) for value in generated.logits):
-            raise RuntimeError("Nonfinite or absent generation logits")
-        new = generated.sequences[:, batch["input_ids"].shape[1]:]
-        return processor.batch_decode(new, skip_special_tokens=True)[0], int(new.shape[1])
+        return generate_answer(model, processor, batch, screen["generation"]["max_new_tokens"], args.model)
 
     if args.phase == "forward":
         def forward():

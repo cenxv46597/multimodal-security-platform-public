@@ -1,0 +1,65 @@
+{
+  "status": "completed",
+  "scope": "D4 rotation/reflection screening of the frozen adaptation split. Original scene lineage is not established.",
+  "source_records_path": "data/processed/sar_adaptation_v0/records.jsonl",
+  "source_records_sha256": "a20ae1360eb5ed6eb2c18e2abaf9fcb3f7865d1591ab1c0ac0b6a5943387d663",
+  "source_coco_sha256": "5fd26a7431a70a9126ae14ffefce3c1d775244f9b6b0c9b444dc3edbc7a6f863",
+  "thumbnail_side_px": 64,
+  "ncc_threshold": 0.8,
+  "box_corner_tolerance_px": 3,
+  "train_images": 120,
+  "validation_images": 60,
+  "cross_partition_image_pairs": 7200,
+  "orientation_comparisons": 57600,
+  "candidates": [
+    {
+      "train_id": "sar-adapt-035a3e98962b09fdd4e3",
+      "train_image": "0045756.png",
+      "train_label": "harbor",
+      "validation_id": "sar-adapt-0441a44f453530f44882",
+      "validation_image": "0063351.png",
+      "validation_label": "harbor",
+      "thumbnail_ncc": 0.989078,
+      "thumbnail_orientation": {
+        "rotation_counterclockwise_degrees": 0,
+        "left_right_reflection_after_rotation": true
+      },
+      "status": "high_confidence_geometric_derivative",
+      "native_ncc": 0.902145,
+      "native_orientation": {
+        "rotation_counterclockwise_degrees": 0,
+        "left_right_reflection_after_rotation": true
+      },
+      "train_boxes": 6,
+      "validation_boxes": 6,
+      "max_matched_box_corner_error_px": 3.0
+    },
+    {
+      "train_id": "sar-adapt-038826373eb0ce194484",
+      "train_image": "0011323.png",
+      "train_label": "harbor",
+      "validation_id": "sar-adapt-043a17103d48b9e085e3",
+      "validation_image": "0092732.png",
+      "validation_label": "harbor",
+      "thumbnail_ncc": 0.98716,
+      "thumbnail_orientation": {
+        "rotation_counterclockwise_degrees": 180,
+        "left_right_reflection_after_rotation": true
+      },
+      "status": "high_confidence_geometric_derivative",
+      "native_ncc": 0.875062,
+      "native_orientation": {
+        "rotation_counterclockwise_degrees": 180,
+        "left_right_reflection_after_rotation": true
+      },
+      "train_boxes": 3,
+      "validation_boxes": 3,
+      "max_matched_box_corner_error_px": 2.0
+    }
+  ],
+  "excluded_validation_ids": [
+    "sar-adapt-043a17103d48b9e085e3",
+    "sar-adapt-0441a44f453530f44882"
+  ],
+  "exclusion_policy": "All thumbnail candidates are excluded from the sensitivity subset. The original split is retained."
+}

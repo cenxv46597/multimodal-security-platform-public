@@ -1,0 +1,10 @@
+{
+  "base_revision": "5648fa26ff23acaba53588936d9f1dfaf305f522",
+  "base_sha256": "4e4666a35fc7a8672ef834b767ebc1a877d6ab277f88b139f3462ee44831bf16",
+  "adapter_revision": "67c434c09d70c9880204cf966aa51e22d777d578",
+  "adapter_sha256": "cee8d23c36d7186a528b316c917e5c341225037d64af3c641ea2adb41aa8d918",
+  "grouped_plan_sha256": "bc712ce9733fa633e3a6628cea93da0f3777291dd36f011a98ac0152c117f4f9",
+  "task": "Same fixed SAR image and six-label question. Native chat template with one image and no sensor-specific claim.",
+  "execution": "FP16 eager, one 448 pixel tile, ImageNet normalization, greedy 12 new tokens, strict existing parser.",
+  "scope": "Development compatibility and clean capability only. Sentinel-1 training does not establish six-class target recognition."
+}

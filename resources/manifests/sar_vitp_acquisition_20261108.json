@@ -1,0 +1,185 @@
+{
+  "status": "passed",
+  "date": "2026-11-08",
+  "model": "GreatBird/ViTP",
+  "variant": "ViTP_InternVL_1B_rs",
+  "revision": "2d26fd26d65870c2daa169a8f319ff499668abe8",
+  "license": "CC-BY-NC-4.0",
+  "local_snapshot": "models/ViTP_InternVL_1B_rs/2d26fd26d658",
+  "total_files": 16,
+  "total_bytes": 1881624852,
+  "protocol": {
+    "path": "experiments/protocols/sar_vitp_candidate_v0.json",
+    "sha256": "289e17cfc48312018b05b2467c54f25eedad3a24e8ff46e6a627f066bcf46881"
+  },
+  "base_acquisition": {
+    "path": "resources/manifests/sar_internvl_acquisition_20261108.json",
+    "sha256": "9c86b819c61b3227393373df5afb66b514e7a111e451bbebbf1f37d157c70df2"
+  },
+  "configuration": "The released ViTP checkpoint lacks a complete standalone inference package. Pair it with the verified, unmodified InternVL2.5-1B config, tokenizer, template and code as a controlled compatibility choice. Require all 637 tensor names, shapes and dtypes to match before loading. Do not claim this is an author-provided ViTP inference configuration.",
+  "weight_download": {
+    "source": "Author-linked ModelScope mirror, independently checked against Hugging Face SHA256",
+    "url": "https://www.modelscope.cn/api/v1/datasets/GreatBird/ViTP/repo?Revision=fb92975164c7b2ec4cad7005d5d5141a79c6bb23&FilePath=ckpts%2FViTP_InternVL_1B_rs.safetensors",
+    "sha256": "cb63f06371476844f0813d80043e83c2cdd2bfa7878c6221b37b909be2ea10a9"
+  },
+  "tensor_layout": {
+    "identical_names_shapes_and_dtypes": true,
+    "stored_dtype": "BF16",
+    "count": 637,
+    "by_module": {
+      "language_model": 291,
+      "mlp1": 6,
+      "vision_model": 340
+    },
+    "changed_bytes_by_tensor_count": {
+      "language_model": 291,
+      "mlp1": 6,
+      "vision_model": 340
+    }
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 34050,
+      "sha256": "75cc821e6e802f3821e7840f5c80ba59d942cab2cd780a22d34308f6ce170886",
+      "source_url": "https://huggingface.co/OpenGVLab/InternVL2_5-1B/resolve/9d423ea1ae9f893897ee3f7493141073f5afcf22/README.md",
+      "upstream_sha256": null,
+      "upstream_git_blob_sha1": "a31d88e5aee95ccc11cd27babbe055ee8bb01570",
+      "origin": "verified InternVL2.5-1B base snapshot"
+    },
+    {
+      "path": "added_tokens.json",
+      "bytes": 790,
+      "sha256": "e66b6bc948dec3421f01a8986f31632cf8d556aaa89f7b39c183b3dd4b5b2c83",
+      "source_url": "https://huggingface.co/OpenGVLab/InternVL2_5-1B/resolve/9d423ea1ae9f893897ee3f7493141073f5afcf22/added_tokens.json",
+      "upstream_sha256": null,
+      "upstream_git_blob_sha1": "dd972e4080e791eab591742c1168ee7fd6279146",
+      "origin": "verified InternVL2.5-1B base snapshot"
+    },
+    {
+      "path": "config.json",
+      "bytes": 3737,
+      "sha256": "7e35f990b9383800fac0383daf804e9243c45d88d93221a60fdb2d42a46e75dc",
+      "source_url": "https://huggingface.co/OpenGVLab/InternVL2_5-1B/resolve/9d423ea1ae9f893897ee3f7493141073f5afcf22/config.json",
+      "upstream_sha256": null,
+      "upstream_git_blob_sha1": "46faa7302f5dfff0294dfcb0ec658ee60c17adcc",
+      "origin": "verified InternVL2.5-1B base snapshot"
+    },
+    {
+      "path": "configuration.json",
+      "bytes": 41,
+      "sha256": "c75163c168a22da49f0af6731992d670817f837054a1a79a05d3327837aded22",
+      "source_url": "https://huggingface.co/OpenGVLab/InternVL2_5-1B/resolve/9d423ea1ae9f893897ee3f7493141073f5afcf22/configuration.json",
+      "upstream_sha256": null,
+      "upstream_git_blob_sha1": "2d68ec396fff9f92f36288c120a00b33f3788867",
+      "origin": "verified InternVL2.5-1B base snapshot"
+    },
+    {
+      "path": "configuration_intern_vit.py",
+      "bytes": 5548,
+      "sha256": "22dd687a5f142985407675fc6b1dc688c2ded93e54192543ecf28ef495a6efa8",
+      "source_url": "https://huggingface.co/OpenGVLab/InternVL2_5-1B/resolve/9d423ea1ae9f893897ee3f7493141073f5afcf22/configuration_intern_vit.py",
+      "upstream_sha256": null,
+      "upstream_git_blob_sha1": "7e630c456eb9cf350e55bf850c3ff72f445a7e17",
+      "origin": "verified InternVL2.5-1B base snapshot"
+    },
+    {
+      "path": "configuration_internvl_chat.py",
+      "bytes": 4036,
+      "sha256": "6524e6deae6c318543d1022a599f011120f5a970eaa25f1118e7f5d0e346710c",
+      "source_url": "https://huggingface.co/OpenGVLab/InternVL2_5-1B/resolve/9d423ea1ae9f893897ee3f7493141073f5afcf22/configuration_internvl_chat.py",
+      "upstream_sha256": null,
+      "upstream_git_blob_sha1": "502772cc6e24e6d1fbc5bf91ce76c9b234101eaf",
+      "origin": "verified InternVL2.5-1B base snapshot"
+    },
+    {
+      "path": "conversation.py",
+      "bytes": 15309,
+      "sha256": "b1b9f280e9cb9211e519e2b8071002b57cc742aadb2f49b05fa674ee3c7d83ee",
+      "source_url": "https://huggingface.co/OpenGVLab/InternVL2_5-1B/resolve/9d423ea1ae9f893897ee3f7493141073f5afcf22/conversation.py",
+      "upstream_sha256": null,
+      "upstream_git_blob_sha1": "5a771766f21ce3aeeb99b286fb8d188b0038a547",
+      "origin": "verified InternVL2.5-1B base snapshot"
+    },
+    {
+      "path": "generation_config.json",
+      "bytes": 129,
+      "sha256": "7b8d6e728b139fe0d93129e4f6c908efc9fb1e9981ebee68b509b082f3d761aa",
+      "source_url": "https://huggingface.co/OpenGVLab/InternVL2_5-1B/resolve/9d423ea1ae9f893897ee3f7493141073f5afcf22/generation_config.json",
+      "upstream_sha256": null,
+      "upstream_git_blob_sha1": "ad56757950bfa85900de6f41f11ef4cca19c6c93",
+      "origin": "verified InternVL2.5-1B base snapshot"
+    },
+    {
+      "path": "merges.txt",
+      "bytes": 1671839,
+      "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "source_url": "https://huggingface.co/OpenGVLab/InternVL2_5-1B/resolve/9d423ea1ae9f893897ee3f7493141073f5afcf22/merges.txt",
+      "upstream_sha256": null,
+      "upstream_git_blob_sha1": "20024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0",
+      "origin": "verified InternVL2.5-1B base snapshot"
+    },
+    {
+      "path": "model.safetensors",
+      "bytes": 1876463472,
+      "sha256": "cb63f06371476844f0813d80043e83c2cdd2bfa7878c6221b37b909be2ea10a9",
+      "source_url": "https://huggingface.co/GreatBird/ViTP/resolve/2d26fd26d65870c2daa169a8f319ff499668abe8/ckpts/ViTP_InternVL_1B_rs.safetensors",
+      "upstream_sha256": "cb63f06371476844f0813d80043e83c2cdd2bfa7878c6221b37b909be2ea10a9",
+      "upstream_git_blob_sha1": null
+    },
+    {
+      "path": "modeling_intern_vit.py",
+      "bytes": 18106,
+      "sha256": "1978e330ea5533dda4d1379096aded271fc741347fc48cb4924846b56a2a6a4b",
+      "source_url": "https://huggingface.co/OpenGVLab/InternVL2_5-1B/resolve/9d423ea1ae9f893897ee3f7493141073f5afcf22/modeling_intern_vit.py",
+      "upstream_sha256": null,
+      "upstream_git_blob_sha1": "233b0293451a13c7b5211d65633deb73a13b240c",
+      "origin": "verified InternVL2.5-1B base snapshot"
+    },
+    {
+      "path": "modeling_internvl_chat.py",
+      "bytes": 15926,
+      "sha256": "5d8f26ccfeb8434c0bcc295050725add4b2f2b0ffb4d1ab550c877a648386597",
+      "source_url": "https://huggingface.co/OpenGVLab/InternVL2_5-1B/resolve/9d423ea1ae9f893897ee3f7493141073f5afcf22/modeling_internvl_chat.py",
+      "upstream_sha256": null,
+      "upstream_git_blob_sha1": "cb83c575490fef0cf510d8a9d33746c140f71cf3",
+      "origin": "verified InternVL2.5-1B base snapshot"
+    },
+    {
+      "path": "preprocessor_config.json",
+      "bytes": 287,
+      "sha256": "0658115064c561026539aeeead9ed3b1a8e0cc90967df8c142849199f955d2b4",
+      "source_url": "https://huggingface.co/OpenGVLab/InternVL2_5-1B/resolve/9d423ea1ae9f893897ee3f7493141073f5afcf22/preprocessor_config.json",
+      "upstream_sha256": null,
+      "upstream_git_blob_sha1": "dfd7e50d9d4e67cd679b16b337b419a0c6cfa849",
+      "origin": "verified InternVL2.5-1B base snapshot"
+    },
+    {
+      "path": "special_tokens_map.json",
+      "bytes": 744,
+      "sha256": "13a6dea522a937ef05172912c66214162c75165e723a3d6cf4ae2d09752013bf",
+      "source_url": "https://huggingface.co/OpenGVLab/InternVL2_5-1B/resolve/9d423ea1ae9f893897ee3f7493141073f5afcf22/special_tokens_map.json",
+      "upstream_sha256": null,
+      "upstream_git_blob_sha1": "74ea6ef5bd52e11d45791fbab7cca3dc984942fa",
+      "origin": "verified InternVL2.5-1B base snapshot"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "bytes": 7431,
+      "sha256": "44ec7e967b6259306f6334e90dcb555833b5d2cf6558a86c6f25deb1bc1a0b6a",
+      "source_url": "https://huggingface.co/OpenGVLab/InternVL2_5-1B/resolve/9d423ea1ae9f893897ee3f7493141073f5afcf22/tokenizer_config.json",
+      "upstream_sha256": null,
+      "upstream_git_blob_sha1": "6cdf6b3038bbb4e13c03b295643d6ff091315dc2",
+      "origin": "verified InternVL2.5-1B base snapshot"
+    },
+    {
+      "path": "vocab.json",
+      "bytes": 3383407,
+      "sha256": "87a257b04b17642a0688c98cd1df89c398bda4fee532d6f88b38a659ecb4ac8d",
+      "source_url": "https://huggingface.co/OpenGVLab/InternVL2_5-1B/resolve/9d423ea1ae9f893897ee3f7493141073f5afcf22/vocab.json",
+      "upstream_sha256": null,
+      "upstream_git_blob_sha1": "6bce3a0a3866c4791a74d83d78f6824c3af64ec3",
+      "origin": "verified InternVL2.5-1B base snapshot"
+    }
+  ]
+}

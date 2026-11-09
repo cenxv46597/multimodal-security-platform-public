@@ -1,0 +1,76 @@
+{
+  "status": "completed",
+  "source_run": {
+    "path": "runs/sar-satquery-20261108/screen.json",
+    "sha256": "ee1aad54da5032bbd47d7d979a28bc1ce27ba36648cc5d4a69b78e04eeb5ca97"
+  },
+  "protocol_sha256": "58bf25a8f7d99b2b3446ec8361afc6e9fdc526970d1787a0070b5b4d918cbc41",
+  "model": "raja0007/satquery-satellite-vlm",
+  "base_revision": "5648fa26ff23acaba53588936d9f1dfaf305f522",
+  "adapter_revision": "67c434c09d70c9880204cf966aa51e22d777d578",
+  "environment": {
+    "torch": "2.6.0+cu118",
+    "gpu": "NVIDIA GeForce GTX 1060 with Max-Q Design",
+    "dtype": "float16",
+    "adapter_tensors_verified": 392
+  },
+  "score": {
+    "planned_samples": 60,
+    "correct": 10,
+    "accuracy": 0.16666666666666666,
+    "valid_answer_fraction": 1.0,
+    "per_class": {
+      "ship": {
+        "support": 10,
+        "correct": 10,
+        "recall": 1.0
+      },
+      "aircraft": {
+        "support": 10,
+        "correct": 0,
+        "recall": 0.0
+      },
+      "car": {
+        "support": 10,
+        "correct": 0,
+        "recall": 0.0
+      },
+      "tank": {
+        "support": 10,
+        "correct": 0,
+        "recall": 0.0
+      },
+      "bridge": {
+        "support": 10,
+        "correct": 0,
+        "recall": 0.0
+      },
+      "harbor": {
+        "support": 10,
+        "correct": 0,
+        "recall": 0.0
+      }
+    },
+    "gate": {
+      "criteria": {
+        "complete_planned_size": true,
+        "complete_prediction_accounting": true,
+        "class_support": true,
+        "valid_answer_fraction": true,
+        "accuracy": false,
+        "per_class_recall": false
+      },
+      "passed": false
+    }
+  },
+  "answer_counts": {
+    "ship": 59,
+    "car": 1
+  },
+  "peak_allocated_mib": 2148.38427734375,
+  "limitations": [
+    "PEFT 0.15.2 ignored newer configuration fields saved by PEFT 0.21.0; 392 adapter tensors were independently compared to the checkpoint.",
+    "This first comparison uses the fixed six-class question and does not assert Sentinel-1 provenance.",
+    "Original geographic scene and training exposure unresolved."
+  ]
+}

@@ -1,0 +1,591 @@
+{
+  "status": "exploratory development; assistant-reviewed answer variants; no independent human review",
+  "source_sha256": "37444bc75105e480d131904dee78ba58a7bcd798db22d354d56998011040b833",
+  "model": "JimmyMa99/SARChat-DeepSeekVL-1.3B",
+  "counts": {
+    "unresolved": 45,
+    "correct": 15
+  },
+  "total": 60,
+  "per_class": {
+    "ship": {
+      "support": 10,
+      "correct": 1,
+      "wrong_label": 0,
+      "unresolved": 9
+    },
+    "aircraft": {
+      "support": 10,
+      "correct": 3,
+      "wrong_label": 0,
+      "unresolved": 7
+    },
+    "car": {
+      "support": 10,
+      "correct": 2,
+      "wrong_label": 0,
+      "unresolved": 8
+    },
+    "tank": {
+      "support": 10,
+      "correct": 4,
+      "wrong_label": 0,
+      "unresolved": 6
+    },
+    "bridge": {
+      "support": 10,
+      "correct": 0,
+      "wrong_label": 0,
+      "unresolved": 10
+    },
+    "harbor": {
+      "support": 10,
+      "correct": 5,
+      "wrong_label": 0,
+      "unresolved": 5
+    }
+  },
+  "answer_interpretation_before_reference": {
+    "Car": "car",
+    "In this SAR image, I can identify several objects and their locations: There are 3 harbors: one in the middle center portion {<10><": "harbor",
+    "In this SAR image, I can identify several objects and their locations: There is a harbor in the middle left portion {<0><69><12": "harbor",
+    "In this SAR image, I can identify several objects and their locations: There is a harbor in the middle right portion {<129><69><": "harbor",
+    "It is aircraft": "aircraft",
+    "There are 10 instances. {<1><1><1><12>}{<1><1><1><22>}{<1": null,
+    "There are 10 instances. {<20><68><52><94>}{<52><68><83><": null,
+    "There are 11 instances. {<160><101><190><127>}{<161><1": null,
+    "There are 16 instances. {<1><1><1><12>}{<1><1><1><21>}{<1": null,
+    "There are 16 instances. {<387><226><422><252>}{<427><2": null,
+    "There are 16 instances. {<40><40><82><80>}{<169><41><21": null,
+    "There are 16 instances. {<40><42><82><85>}{<169><42><21": null,
+    "There are 16 instances. {<40><49><80><85>}{<169><48><21": null,
+    "There are 16 instances. {<41><42><82><85>}{<169><42><21": null,
+    "There are 16 instances. {<41><42><85><85>}{<169><42><21": null,
+    "There are 16 instances. {<42><42><80><79>}{<170><42><21": null,
+    "There are 2 cars: one in the top center portion {<223><121><284><168>}, one": "car",
+    "There are 2 harbors": "harbor",
+    "There are 2 instances. {<101><139><111><150>}{<101><15": null,
+    "There are 2 instances. {<105><191><120><198>}{<119><14": null,
+    "There are 2 instances. {<105><1><121><12>}{<129><1><145": null,
+    "There are 2 instances. {<105><28><122><71>}{<181><169><": null,
+    "There are 2 instances. {<107><211><123><224>}{<128><21": null,
+    "There are 2 instances. {<115><-16><240><105>}{<119><29": null,
+    "There are 2 instances. {<115><14><131><40>}{<137><1><15": null,
+    "There are 2 instances. {<119><187><130><194>}{<119><23": null,
+    "There are 2 instances. {<11><37><36><57>}{<11><43><36><6": null,
+    "There are 2 instances. {<146><159><160><171>}{<147><17": null,
+    "There are 2 instances. {<181><1><200><21>}{<181><21><20": null,
+    "There are 2 instances. {<184><177><217><193>}{<220><17": null,
+    "There are 2 instances. {<1><-12><80><102>}{<-15><209><72": null,
+    "There are 2 instances. {<1><-16><78><78>}{<1><119><72><2": null,
+    "There are 2 instances. {<1><179><102><214>}{<113><130><": null,
+    "There are 2 instances. {<1><1><18><1>}{<1><110><19><120>}": null,
+    "There are 2 instances. {<1><1><256><256>}{<1><1><256><16": null,
+    "There are 2 instances. {<1><67><40><86>}{<1><67><40><86>}": null,
+    "There are 2 instances. {<211><35><224><44>}{<211><44><2": null,
+    "There are 2 instances. {<233><101><282><152>}{<283><38": null,
+    "There are 2 instances. {<24><164><68><182>}{<31><171><6": null,
+    "There are 2 instances. {<295><29><352><53>}{<295><43><3": null,
+    "There are 2 instances. {<420><139><485><201>}{<433><22": null,
+    "There are 2 instances. {<62><19><77><60>}{<65><140><78><": null,
+    "There are 2 tanks": "tank",
+    "There are 2 tanks: one in the top left portion {<55><1><63><12>}, one in the top left portion": "tank",
+    "There are 2 tanks: one in the top right portion {<208><57><216><64>}, one in the": "tank",
+    "There are 3 instances. {<10><10><46><48>}{<10><58><46><1": null,
+    "There are 3 instances. {<10><1><101><12>}{<10><1><101><1": null,
+    "There are 3 instances. {<10><1><107><121>}{<108><1><197": null,
+    "There are 3 instances. {<116><11><133><20>}{<139><11><1": null,
+    "There are 3 instances. {<19><10><32><20>}{<19><20><32><2": null,
+    "There are 3 instances. {<67><10><86><32>}{<73><140><100": null,
+    "There are 4 instances. {<220><229><264><281>}{<219><21": null,
+    "There are 4 instances. {<399><240><457><274>}{<399><28": null,
+    "There are 6 tanks: one in the bottom right portion {<190><182><214><210>}, one": "tank",
+    "There is  a small ship in the middle left portion {<42><139><83><189>}.": "ship",
+    "There is 1 instance. {<124><37><188><102>}": null,
+    "There is 1 instance. {<273><309><352><385>}": null
+  },
+  "items": [
+    {
+      "sample_id": "sar-adapt-00143e1b2c521d1b65fd",
+      "answer": "There are 2 instances. {<1><1><256><256>}{<1><1><256><16",
+      "interpreted_label": null,
+      "reference": "ship",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-0014962ac3e76bce336d",
+      "answer": "There is 1 instance. {<273><309><352><385>}",
+      "interpreted_label": null,
+      "reference": "ship",
+      "outcome": "unresolved",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-0015e3221e5104550b4e",
+      "answer": "There is 1 instance. {<124><37><188><102>}",
+      "interpreted_label": null,
+      "reference": "ship",
+      "outcome": "unresolved",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-00162db607eea45274e8",
+      "answer": "There are 2 instances. {<1><67><40><86>}{<1><67><40><86>}",
+      "interpreted_label": null,
+      "reference": "ship",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-001665852241f3f7daf1",
+      "answer": "There are 2 instances. {<184><177><217><193>}{<220><17",
+      "interpreted_label": null,
+      "reference": "ship",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-001707645466613fbc56",
+      "answer": "There is  a small ship in the middle left portion {<42><139><83><189>}.",
+      "interpreted_label": "ship",
+      "reference": "ship",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-0017d5a49e2110a6cd36",
+      "answer": "There are 3 instances. {<67><10><86><32>}{<73><140><100",
+      "interpreted_label": null,
+      "reference": "ship",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-001965b71bafcd6842ce",
+      "answer": "There are 2 instances. {<1><1><18><1>}{<1><110><19><120>}",
+      "interpreted_label": null,
+      "reference": "ship",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-0019990a7f8a3c4b5530",
+      "answer": "There are 2 instances. {<24><164><68><182>}{<31><171><6",
+      "interpreted_label": null,
+      "reference": "ship",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-001a49b3f049caf33ee1",
+      "answer": "There are 2 instances. {<62><19><77><60>}{<65><140><78><",
+      "interpreted_label": null,
+      "reference": "ship",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-0042ac0f83993a44a48a",
+      "answer": "There are 4 instances. {<399><240><457><274>}{<399><28",
+      "interpreted_label": null,
+      "reference": "aircraft",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-0042f9464220ece14cbf",
+      "answer": "There are 2 instances. {<1><-12><80><102>}{<-15><209><72",
+      "interpreted_label": null,
+      "reference": "aircraft",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-0044eb815efbcdbb5d6c",
+      "answer": "There are 10 instances. {<20><68><52><94>}{<52><68><83><",
+      "interpreted_label": null,
+      "reference": "aircraft",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-00468412a01c30994b71",
+      "answer": "It is aircraft",
+      "interpreted_label": "aircraft",
+      "reference": "aircraft",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-0047f2f065db8baa9cc9",
+      "answer": "It is aircraft",
+      "interpreted_label": "aircraft",
+      "reference": "aircraft",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-004aca398f4b7e5ec196",
+      "answer": "It is aircraft",
+      "interpreted_label": "aircraft",
+      "reference": "aircraft",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-00558b87699ea02d1eaa",
+      "answer": "There are 3 instances. {<10><10><46><48>}{<10><58><46><1",
+      "interpreted_label": null,
+      "reference": "aircraft",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-005dd70e78c6a6147687",
+      "answer": "There are 2 instances. {<115><-16><240><105>}{<119><29",
+      "interpreted_label": null,
+      "reference": "aircraft",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-005f2b900c783eb164e5",
+      "answer": "There are 2 instances. {<1><-16><78><78>}{<1><119><72><2",
+      "interpreted_label": null,
+      "reference": "aircraft",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-006107a7218edd8a8c70",
+      "answer": "There are 2 instances. {<295><29><352><53>}{<295><43><3",
+      "interpreted_label": null,
+      "reference": "aircraft",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-072871f196b28fb8fbc4",
+      "answer": "There are 3 instances. {<10><1><101><12>}{<10><1><101><1",
+      "interpreted_label": null,
+      "reference": "car",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-07519f77b1b2f1f7dce3",
+      "answer": "There are 16 instances. {<40><40><82><80>}{<169><41><21",
+      "interpreted_label": null,
+      "reference": "car",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-0917e3effecb53870d25",
+      "answer": "There are 4 instances. {<220><229><264><281>}{<219><21",
+      "interpreted_label": null,
+      "reference": "car",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-09865e90e1bdb152b00b",
+      "answer": "There are 16 instances. {<41><42><82><85>}{<169><42><21",
+      "interpreted_label": null,
+      "reference": "car",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-099f4b1a62a672bacbf6",
+      "answer": "There are 2 cars: one in the top center portion {<223><121><284><168>}, one",
+      "interpreted_label": "car",
+      "reference": "car",
+      "outcome": "correct",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-09ab19e6e44864c477c9",
+      "answer": "There are 16 instances. {<40><42><82><85>}{<169><42><21",
+      "interpreted_label": null,
+      "reference": "car",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-09cbf6cfd460a8320861",
+      "answer": "Car",
+      "interpreted_label": "car",
+      "reference": "car",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-0a713cae6df158efada0",
+      "answer": "There are 16 instances. {<40><49><80><85>}{<169><48><21",
+      "interpreted_label": null,
+      "reference": "car",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-0a94226fd2b31d76c780",
+      "answer": "There are 16 instances. {<41><42><85><85>}{<169><42><21",
+      "interpreted_label": null,
+      "reference": "car",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-0af987bc304dddabeecb",
+      "answer": "There are 16 instances. {<42><42><80><79>}{<170><42><21",
+      "interpreted_label": null,
+      "reference": "car",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-043a5c3085537911e485",
+      "answer": "There are 10 instances. {<1><1><1><12>}{<1><1><1><22>}{<1",
+      "interpreted_label": null,
+      "reference": "tank",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-0473d7618dbec66dfb68",
+      "answer": "There are 2 tanks",
+      "interpreted_label": "tank",
+      "reference": "tank",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-04b2aab0a166df487fb1",
+      "answer": "There are 16 instances. {<1><1><1><12>}{<1><1><1><21>}{<1",
+      "interpreted_label": null,
+      "reference": "tank",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-04e833b9731c649bd5a4",
+      "answer": "There are 2 instances. {<107><211><123><224>}{<128><21",
+      "interpreted_label": null,
+      "reference": "tank",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-051056e6f1074969274f",
+      "answer": "There are 11 instances. {<160><101><190><127>}{<161><1",
+      "interpreted_label": null,
+      "reference": "tank",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-05555e24298c737a2739",
+      "answer": "There are 2 instances. {<233><101><282><152>}{<283><38",
+      "interpreted_label": null,
+      "reference": "tank",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-05590bb5b92dbeaffc82",
+      "answer": "There are 16 instances. {<387><226><422><252>}{<427><2",
+      "interpreted_label": null,
+      "reference": "tank",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-05e0dd583d0729810e51",
+      "answer": "There are 2 tanks: one in the top right portion {<208><57><216><64>}, one in the",
+      "interpreted_label": "tank",
+      "reference": "tank",
+      "outcome": "correct",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-06063831414b30b5d889",
+      "answer": "There are 2 tanks: one in the top left portion {<55><1><63><12>}, one in the top left portion",
+      "interpreted_label": "tank",
+      "reference": "tank",
+      "outcome": "correct",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-0648130fc8b2569e6001",
+      "answer": "There are 6 tanks: one in the bottom right portion {<190><182><214><210>}, one",
+      "interpreted_label": "tank",
+      "reference": "tank",
+      "outcome": "correct",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-00670eebc1ace4f031c8",
+      "answer": "There are 2 instances. {<119><187><130><194>}{<119><23",
+      "interpreted_label": null,
+      "reference": "bridge",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-006ba932a68632a8b689",
+      "answer": "There are 2 instances. {<115><14><131><40>}{<137><1><15",
+      "interpreted_label": null,
+      "reference": "bridge",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-008362616e26a5c515f1",
+      "answer": "There are 2 instances. {<105><28><122><71>}{<181><169><",
+      "interpreted_label": null,
+      "reference": "bridge",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-008869871959f8b5496c",
+      "answer": "There are 3 instances. {<116><11><133><20>}{<139><11><1",
+      "interpreted_label": null,
+      "reference": "bridge",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-008ac2527d909f088184",
+      "answer": "There are 2 instances. {<146><159><160><171>}{<147><17",
+      "interpreted_label": null,
+      "reference": "bridge",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-008c6ec77ad6849f9044",
+      "answer": "There are 2 instances. {<1><179><102><214>}{<113><130><",
+      "interpreted_label": null,
+      "reference": "bridge",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-008ceb5b16d4b540e500",
+      "answer": "There are 2 instances. {<101><139><111><150>}{<101><15",
+      "interpreted_label": null,
+      "reference": "bridge",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-008d8cab05568320b024",
+      "answer": "There are 2 instances. {<420><139><485><201>}{<433><22",
+      "interpreted_label": null,
+      "reference": "bridge",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-0094f1b2e42f925c078e",
+      "answer": "There are 2 instances. {<105><191><120><198>}{<119><14",
+      "interpreted_label": null,
+      "reference": "bridge",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-0095ae0851e656a7504c",
+      "answer": "There are 2 instances. {<11><37><36><57>}{<11><43><36><6",
+      "interpreted_label": null,
+      "reference": "bridge",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-038dad1d1abe093f8342",
+      "answer": "There are 2 instances. {<105><1><121><12>}{<129><1><145",
+      "interpreted_label": null,
+      "reference": "harbor",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-042a78e191e48dffecc4",
+      "answer": "There are 2 harbors",
+      "interpreted_label": "harbor",
+      "reference": "harbor",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-04352dbe1b803f666e53",
+      "answer": "In this SAR image, I can identify several objects and their locations: There are 3 harbors: one in the middle center portion {<10><",
+      "interpreted_label": "harbor",
+      "reference": "harbor",
+      "outcome": "correct",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-05108b4bcce9d77334e7",
+      "answer": "In this SAR image, I can identify several objects and their locations: There is a harbor in the middle left portion {<0><69><12",
+      "interpreted_label": "harbor",
+      "reference": "harbor",
+      "outcome": "correct",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-0563b195e956d0f689cd",
+      "answer": "There are 2 instances. {<181><1><200><21>}{<181><21><20",
+      "interpreted_label": null,
+      "reference": "harbor",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-05b56f9bd5399343ff9e",
+      "answer": "There are 3 instances. {<10><1><107><121>}{<108><1><197",
+      "interpreted_label": null,
+      "reference": "harbor",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-05c33cbe6bc4936bd146",
+      "answer": "There are 3 instances. {<19><10><32><20>}{<19><20><32><2",
+      "interpreted_label": null,
+      "reference": "harbor",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-adapt-0662e9c8f7d3a76dba9f",
+      "answer": "In this SAR image, I can identify several objects and their locations: There is a harbor in the middle right portion {<129><69><",
+      "interpreted_label": "harbor",
+      "reference": "harbor",
+      "outcome": "correct",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-clean-dev-005928d8efb26474c4b1",
+      "answer": "There are 2 instances. {<211><35><224><44>}{<211><44><2",
+      "interpreted_label": null,
+      "reference": "harbor",
+      "outcome": "unresolved",
+      "hit_token_limit": true
+    },
+    {
+      "sample_id": "sar-clean-dev-01e04c876562b1601ca0",
+      "answer": "In this SAR image, I can identify several objects and their locations: There are 3 harbors: one in the middle center portion {<10><",
+      "interpreted_label": "harbor",
+      "reference": "harbor",
+      "outcome": "correct",
+      "hit_token_limit": true
+    }
+  ],
+  "hit_token_limit": 51,
+  "note": "Truncated answer is interpreted only when it already names one class; many counts/coordinates do not identify any category."
+}

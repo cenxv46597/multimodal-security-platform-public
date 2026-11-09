@@ -1,0 +1,9 @@
+{
+  "model": "JimmyMa99/SARChat-InternVL2.5-1B",
+  "revision": "6c963963",
+  "grouped_plan_sha256": "bc712ce9733fa633e3a6628cea93da0f3777291dd36f011a98ac0152c117f4f9",
+  "weight_sha256": "3631034bba7eed7b107656f7d8d2bf56a19242f94212c20c189dc8acee7fc77a",
+  "execution": "Offline FP16 eager inference using the released model code, one 448px tile, native chat template, exact fixed question and greedy 12-token decoding.",
+  "scoring": "Original strict six-label scoring on the fixed grouped development panel.",
+  "limitations": "The SARChat training corpus is built on SARDet-100K. Training exposure and geographic scene overlap with the development panel remain unresolved."
+}

@@ -1,0 +1,135 @@
+{
+  "model": "JimmyMa99/SARChat-DeepSeekVL-1.3B",
+  "inventory_sha256": "d88b3e0ca1d386c88cd0b409590ba0f2bfcb33cf67571a7bb9a46758f70d22e5",
+  "source_commit": "681bffb4519856ad27cc17531aacde31ddf6f1a7",
+  "source_archive_sha256": "d7695f103d570fb73fb5756ab8df1064c059372f70cc1cfefa7d96459b4ea779",
+  "runner_sha256": "211930f897d447bfa4ab647dddb00c85ddafecdacdc221984fb317a66d91708d",
+  "screen_sha256": "dacf57617e18c8aa5211bf27ce403d079e9ba3694709f76694eb1a3db4812de6",
+  "diagnostic_probe_sha256": "9d92f8cac53161abae627dabedd301b77917684fcfab5ff13c65572e29364af2",
+  "screen_score": {
+    "scope": "Exploratory development screen, not a formal test",
+    "planned_samples": 60,
+    "correct": 1,
+    "accuracy": 0.016666666666666666,
+    "valid_answer_fraction": 0.016666666666666666,
+    "status_counts": {
+      "invalid_answer": 59,
+      "valid": 1
+    },
+    "per_class": {
+      "ship": {
+        "support": 10,
+        "correct": 0,
+        "recall": 0.0
+      },
+      "aircraft": {
+        "support": 10,
+        "correct": 0,
+        "recall": 0.0
+      },
+      "car": {
+        "support": 10,
+        "correct": 1,
+        "recall": 0.1
+      },
+      "tank": {
+        "support": 10,
+        "correct": 0,
+        "recall": 0.0
+      },
+      "bridge": {
+        "support": 10,
+        "correct": 0,
+        "recall": 0.0
+      },
+      "harbor": {
+        "support": 10,
+        "correct": 0,
+        "recall": 0.0
+      }
+    },
+    "six_class_macro_recall": 0.016666666666666666,
+    "confusion": {
+      "ship": {
+        "ship": 0,
+        "aircraft": 0,
+        "car": 0,
+        "tank": 0,
+        "bridge": 0,
+        "harbor": 0,
+        "__invalid_or_missing__": 10
+      },
+      "aircraft": {
+        "ship": 0,
+        "aircraft": 0,
+        "car": 0,
+        "tank": 0,
+        "bridge": 0,
+        "harbor": 0,
+        "__invalid_or_missing__": 10
+      },
+      "car": {
+        "ship": 0,
+        "aircraft": 0,
+        "car": 1,
+        "tank": 0,
+        "bridge": 0,
+        "harbor": 0,
+        "__invalid_or_missing__": 9
+      },
+      "tank": {
+        "ship": 0,
+        "aircraft": 0,
+        "car": 0,
+        "tank": 0,
+        "bridge": 0,
+        "harbor": 0,
+        "__invalid_or_missing__": 10
+      },
+      "bridge": {
+        "ship": 0,
+        "aircraft": 0,
+        "car": 0,
+        "tank": 0,
+        "bridge": 0,
+        "harbor": 0,
+        "__invalid_or_missing__": 10
+      },
+      "harbor": {
+        "ship": 0,
+        "aircraft": 0,
+        "car": 0,
+        "tank": 0,
+        "bridge": 0,
+        "harbor": 0,
+        "__invalid_or_missing__": 10
+      }
+    },
+    "gate": {
+      "criteria": {
+        "complete_planned_size": true,
+        "complete_prediction_accounting": true,
+        "class_support": true,
+        "valid_answer_fraction": false,
+        "accuracy": false,
+        "per_class_recall": false
+      },
+      "passed": false
+    },
+    "denominator_rule": "All planned samples including missing, invalid and failed responses"
+  },
+  "peak_allocated_mib": 3966.8017578125,
+  "first_sample_default_system_answer": "There are 2 instances. {<1><1><",
+  "first_sample_training_system_answer": "There are 2 instances. {<1><1><",
+  "limitations": [
+    "59 invalid answers; not a pure vision accuracy measure",
+    "DeepSeek native conversation prompt differs from recorded training system/template; one-image system-only check is not full Swift template reproduction",
+    "development samples potentially exposed in SARDet training, and source-class confounding",
+    "no image gradient or attack tested",
+    "master branch content pinned by file SHA256; commit revision not resolved"
+  ],
+  "dependencies": {
+    "attrdict3": "2.0.2 (wheel sha256 a98b72de6a3f20b0997cc7efbba3555af6558ed9a97de4468a3f81cac11595dc)",
+    "six": "1.17.0 (wheel sha256 4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274)"
+  }
+}

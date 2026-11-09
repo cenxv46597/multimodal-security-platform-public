@@ -1,0 +1,1084 @@
+{
+  "status": "completed",
+  "protocol": "experiments/protocols/sar_occlusion_feasibility_v0.json",
+  "protocol_sha256": "2a777575425e56754f0e9b05b7b1e4e866d8857010ba73bbfb725dedaeb96f89",
+  "samples": [
+    {
+      "sample_id": "sar-adapt-00143e1b2c521d1b65fd",
+      "label": "ship",
+      "target_box": [
+        187,
+        230,
+        209,
+        244
+      ],
+      "annotated_box_count": 1,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        22,
+        14
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-0014962ac3e76bce336d",
+      "label": "ship",
+      "target_box": [
+        298,
+        325,
+        357,
+        395
+      ],
+      "annotated_box_count": 1,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        59,
+        70
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-0015e3221e5104550b4e",
+      "label": "ship",
+      "target_box": [
+        117,
+        33,
+        192,
+        109
+      ],
+      "annotated_box_count": 1,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        75,
+        76
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-00162db607eea45274e8",
+      "label": "ship",
+      "target_box": [
+        0,
+        68,
+        49,
+        92
+      ],
+      "annotated_box_count": 1,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        49,
+        24
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-001665852241f3f7daf1",
+      "label": "ship",
+      "target_box": [
+        192,
+        179,
+        233,
+        192
+      ],
+      "annotated_box_count": 1,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        41,
+        13
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-001707645466613fbc56",
+      "label": "ship",
+      "target_box": [
+        41,
+        142,
+        82,
+        195
+      ],
+      "annotated_box_count": 1,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        41,
+        53
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-0017d5a49e2110a6cd36",
+      "label": "ship",
+      "target_box": [
+        71,
+        135,
+        83,
+        164
+      ],
+      "annotated_box_count": 1,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        12,
+        29
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-001965b71bafcd6842ce",
+      "label": "ship",
+      "target_box": [
+        200,
+        242,
+        237,
+        256
+      ],
+      "annotated_box_count": 4,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        37,
+        14
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-0019990a7f8a3c4b5530",
+      "label": "ship",
+      "target_box": [
+        22,
+        163,
+        68,
+        183
+      ],
+      "annotated_box_count": 1,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        46,
+        20
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-001a49b3f049caf33ee1",
+      "label": "ship",
+      "target_box": [
+        59,
+        35,
+        82,
+        73
+      ],
+      "annotated_box_count": 2,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        23,
+        38
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-0042ac0f83993a44a48a",
+      "label": "aircraft",
+      "target_box": [
+        397,
+        359,
+        457,
+        399
+      ],
+      "annotated_box_count": 5,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        60,
+        40
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-0042f9464220ece14cbf",
+      "label": "aircraft",
+      "target_box": [
+        74,
+        0,
+        129,
+        42
+      ],
+      "annotated_box_count": 1,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        55,
+        42
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-0044eb815efbcdbb5d6c",
+      "label": "aircraft",
+      "target_box": [
+        73,
+        59,
+        109,
+        95
+      ],
+      "annotated_box_count": 12,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        36,
+        36
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-00468412a01c30994b71",
+      "label": "aircraft",
+      "target_box": [
+        92,
+        139,
+        146,
+        181
+      ],
+      "annotated_box_count": 2,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        54,
+        42
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-0047f2f065db8baa9cc9",
+      "label": "aircraft",
+      "target_box": [
+        196,
+        147,
+        318,
+        264
+      ],
+      "annotated_box_count": 2,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        122,
+        117
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-004aca398f4b7e5ec196",
+      "label": "aircraft",
+      "target_box": [
+        455,
+        328,
+        512,
+        401
+      ],
+      "annotated_box_count": 1,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        57,
+        73
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-00558b87699ea02d1eaa",
+      "label": "aircraft",
+      "target_box": [
+        0,
+        22,
+        20,
+        40
+      ],
+      "annotated_box_count": 2,
+      "status": "eligible",
+      "background_box": [
+        33,
+        0,
+        53,
+        18
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-005dd70e78c6a6147687",
+      "label": "aircraft",
+      "target_box": [
+        59,
+        47,
+        152,
+        115
+      ],
+      "annotated_box_count": 2,
+      "status": "eligible",
+      "background_box": [
+        211,
+        0,
+        304,
+        68
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-005f2b900c783eb164e5",
+      "label": "aircraft",
+      "target_box": [
+        25,
+        177,
+        84,
+        229
+      ],
+      "annotated_box_count": 1,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        59,
+        52
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-006107a7218edd8a8c70",
+      "label": "aircraft",
+      "target_box": [
+        305,
+        37,
+        375,
+        66
+      ],
+      "annotated_box_count": 2,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        70,
+        29
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-072871f196b28fb8fbc4",
+      "label": "car",
+      "target_box": [
+        1,
+        408,
+        65,
+        454
+      ],
+      "annotated_box_count": 3,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        64,
+        46
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-07519f77b1b2f1f7dce3",
+      "label": "car",
+      "target_box": [
+        427,
+        426,
+        469,
+        470
+      ],
+      "annotated_box_count": 16,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        42,
+        44
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-0917e3effecb53870d25",
+      "label": "car",
+      "target_box": [
+        165,
+        207,
+        213,
+        269
+      ],
+      "annotated_box_count": 4,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        48,
+        62
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-09865e90e1bdb152b00b",
+      "label": "car",
+      "target_box": [
+        425,
+        423,
+        470,
+        468
+      ],
+      "annotated_box_count": 16,
+      "status": "eligible",
+      "background_box": [
+        82,
+        0,
+        127,
+        45
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-099f4b1a62a672bacbf6",
+      "label": "car",
+      "target_box": [
+        224,
+        366,
+        289,
+        423
+      ],
+      "annotated_box_count": 2,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        65,
+        57
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-09ab19e6e44864c477c9",
+      "label": "car",
+      "target_box": [
+        299,
+        294,
+        344,
+        343
+      ],
+      "annotated_box_count": 16,
+      "status": "eligible",
+      "background_box": [
+        83,
+        0,
+        128,
+        49
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-09cbf6cfd460a8320861",
+      "label": "car",
+      "target_box": [
+        169,
+        407,
+        233,
+        462
+      ],
+      "annotated_box_count": 8,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        64,
+        55
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-0a713cae6df158efada0",
+      "label": "car",
+      "target_box": [
+        45,
+        42,
+        85,
+        81
+      ],
+      "annotated_box_count": 16,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        40,
+        39
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-0a94226fd2b31d76c780",
+      "label": "car",
+      "target_box": [
+        296,
+        42,
+        345,
+        89
+      ],
+      "annotated_box_count": 16,
+      "status": "eligible",
+      "background_box": [
+        81,
+        0,
+        130,
+        47
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-0af987bc304dddabeecb",
+      "label": "car",
+      "target_box": [
+        38,
+        298,
+        84,
+        339
+      ],
+      "annotated_box_count": 16,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        46,
+        41
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-043a5c3085537911e485",
+      "label": "tank",
+      "target_box": [
+        8,
+        51,
+        45,
+        82
+      ],
+      "annotated_box_count": 17,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        37,
+        31
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-0473d7618dbec66dfb68",
+      "label": "tank",
+      "target_box": [
+        108,
+        210,
+        137,
+        245
+      ],
+      "annotated_box_count": 2,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        29,
+        35
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-04b2aab0a166df487fb1",
+      "label": "tank",
+      "target_box": [
+        94,
+        215,
+        124,
+        250
+      ],
+      "annotated_box_count": 22,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        30,
+        35
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-04e833b9731c649bd5a4",
+      "label": "tank",
+      "target_box": [
+        98,
+        218,
+        118,
+        237
+      ],
+      "annotated_box_count": 7,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        20,
+        19
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-051056e6f1074969274f",
+      "label": "tank",
+      "target_box": [
+        191,
+        86,
+        232,
+        122
+      ],
+      "annotated_box_count": 11,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        41,
+        36
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-05555e24298c737a2739",
+      "label": "tank",
+      "target_box": [
+        32,
+        70,
+        63,
+        102
+      ],
+      "annotated_box_count": 5,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        31,
+        32
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-05590bb5b92dbeaffc82",
+      "label": "tank",
+      "target_box": [
+        344,
+        408,
+        382,
+        441
+      ],
+      "annotated_box_count": 17,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        38,
+        33
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-05e0dd583d0729810e51",
+      "label": "tank",
+      "target_box": [
+        54,
+        201,
+        60,
+        207
+      ],
+      "annotated_box_count": 1,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        6,
+        6
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-06063831414b30b5d889",
+      "label": "tank",
+      "target_box": [
+        123,
+        88,
+        131,
+        94
+      ],
+      "annotated_box_count": 5,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        8,
+        6
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-0648130fc8b2569e6001",
+      "label": "tank",
+      "target_box": [
+        184,
+        148,
+        217,
+        183
+      ],
+      "annotated_box_count": 8,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        33,
+        35
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-00670eebc1ace4f031c8",
+      "label": "bridge",
+      "target_box": [
+        216,
+        219,
+        223,
+        229
+      ],
+      "annotated_box_count": 1,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        7,
+        10
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-006ba932a68632a8b689",
+      "label": "bridge",
+      "target_box": [
+        117,
+        12,
+        130,
+        53
+      ],
+      "annotated_box_count": 1,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        13,
+        41
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-008362616e26a5c515f1",
+      "label": "bridge",
+      "target_box": [
+        178,
+        166,
+        237,
+        194
+      ],
+      "annotated_box_count": 2,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        59,
+        28
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-008869871959f8b5496c",
+      "label": "bridge",
+      "target_box": [
+        78,
+        176,
+        85,
+        245
+      ],
+      "annotated_box_count": 3,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        7,
+        69
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-008ac2527d909f088184",
+      "label": "bridge",
+      "target_box": [
+        174,
+        200,
+        190,
+        209
+      ],
+      "annotated_box_count": 1,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        16,
+        9
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-008c6ec77ad6849f9044",
+      "label": "bridge",
+      "target_box": [
+        0,
+        171,
+        139,
+        199
+      ],
+      "annotated_box_count": 1,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        139,
+        28
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-008ceb5b16d4b540e500",
+      "label": "bridge",
+      "target_box": [
+        165,
+        138,
+        176,
+        146
+      ],
+      "annotated_box_count": 1,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        11,
+        8
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-008d8cab05568320b024",
+      "label": "bridge",
+      "target_box": [
+        342,
+        0,
+        478,
+        156
+      ],
+      "annotated_box_count": 1,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        136,
+        156
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-0094f1b2e42f925c078e",
+      "label": "bridge",
+      "target_box": [
+        111,
+        178,
+        120,
+        185
+      ],
+      "annotated_box_count": 2,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        9,
+        7
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-0095ae0851e656a7504c",
+      "label": "bridge",
+      "target_box": [
+        12,
+        34,
+        54,
+        75
+      ],
+      "annotated_box_count": 1,
+      "status": "eligible",
+      "background_box": [
+        54,
+        0,
+        96,
+        41
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-038dad1d1abe093f8342",
+      "label": "harbor",
+      "target_box": [
+        82,
+        0,
+        105,
+        22
+      ],
+      "annotated_box_count": 3,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        23,
+        22
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-042a78e191e48dffecc4",
+      "label": "harbor",
+      "target_box": [
+        100,
+        83,
+        192,
+        174
+      ],
+      "annotated_box_count": 1,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        92,
+        91
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-04352dbe1b803f666e53",
+      "label": "harbor",
+      "target_box": [
+        21,
+        0,
+        161,
+        139
+      ],
+      "annotated_box_count": 3,
+      "status": "no_matching_background"
+    },
+    {
+      "sample_id": "sar-adapt-05108b4bcce9d77334e7",
+      "label": "harbor",
+      "target_box": [
+        2,
+        110,
+        131,
+        250
+      ],
+      "annotated_box_count": 1,
+      "status": "no_matching_background"
+    },
+    {
+      "sample_id": "sar-adapt-0563b195e956d0f689cd",
+      "label": "harbor",
+      "target_box": [
+        178,
+        128,
+        222,
+        170
+      ],
+      "annotated_box_count": 1,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        44,
+        42
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-05b56f9bd5399343ff9e",
+      "label": "harbor",
+      "target_box": [
+        66,
+        0,
+        131,
+        101
+      ],
+      "annotated_box_count": 4,
+      "status": "eligible",
+      "background_box": [
+        152,
+        88,
+        217,
+        189
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-05c33cbe6bc4936bd146",
+      "label": "harbor",
+      "target_box": [
+        36,
+        142,
+        66,
+        158
+      ],
+      "annotated_box_count": 5,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        30,
+        16
+      ]
+    },
+    {
+      "sample_id": "sar-adapt-0662e9c8f7d3a76dba9f",
+      "label": "harbor",
+      "target_box": [
+        111,
+        68,
+        252,
+        210
+      ],
+      "annotated_box_count": 2,
+      "status": "no_matching_background"
+    },
+    {
+      "sample_id": "sar-clean-dev-005928d8efb26474c4b1",
+      "label": "harbor",
+      "target_box": [
+        213,
+        58,
+        245,
+        77
+      ],
+      "annotated_box_count": 2,
+      "status": "eligible",
+      "background_box": [
+        0,
+        0,
+        32,
+        19
+      ]
+    },
+    {
+      "sample_id": "sar-clean-dev-01e04c876562b1601ca0",
+      "label": "harbor",
+      "target_box": [
+        36,
+        4,
+        251,
+        175
+      ],
+      "annotated_box_count": 3,
+      "status": "no_matching_background"
+    }
+  ],
+  "per_class": {
+    "ship": {
+      "eligible": 10
+    },
+    "aircraft": {
+      "eligible": 10
+    },
+    "car": {
+      "eligible": 10
+    },
+    "tank": {
+      "eligible": 10
+    },
+    "bridge": {
+      "eligible": 10
+    },
+    "harbor": {
+      "eligible": 6,
+      "no_matching_background": 4
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "status": "upstream_inventory",
+  "model": "JimmyMa99/SARChat-InternVL2.5-1B",
+  "revision": "6c963963",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size": 2075,
+      "sha256": "247a3cfc672484dd40bdf07af0f83ee7a4457e9a995dadb47eedc36c630103b6"
+    },
+    {
+      "path": "README.md",
+      "size": 1431,
+      "sha256": "a4e3fa6137d8aae43790cb64c2d72d86edd63c5316f134a1c661d8055d151dac"
+    },
+    {
+      "path": "added_tokens.json",
+      "size": 790,
+      "sha256": "e66b6bc948dec3421f01a8986f31632cf8d556aaa89f7b39c183b3dd4b5b2c83"
+    },
+    {
+      "path": "args.json",
+      "size": 16095,
+      "sha256": "cdec4c266bf38b840aea6e55828ef77f43e204958f01977d1907904934ad44d4"
+    },
+    {
+      "path": "config.json",
+      "size": 5494,
+      "sha256": "b71648050a8e423e29eb9ff274a97a847e419adfbcd5f2aebd84a1523dfef662"
+    },
+    {
+      "path": "configuration_intern_vit.py",
+      "size": 5548,
+      "sha256": "22dd687a5f142985407675fc6b1dc688c2ded93e54192543ecf28ef495a6efa8"
+    },
+    {
+      "path": "configuration_internvl_chat.py",
+      "size": 3885,
+      "sha256": "f88c46b4abd60767396ee251bac17a02adb19a2a5d69c72d5e9ad93173f09803"
+    },
+    {
+      "path": "conversation.py",
+      "size": 15309,
+      "sha256": "b1b9f280e9cb9211e519e2b8071002b57cc742aadb2f49b05fa674ee3c7d83ee"
+    },
+    {
+      "path": "generation_config.json",
+      "size": 129,
+      "sha256": "65d812db389bd3752c04de901a86146049e93c690ae80402a45bea2e401cb95b"
+    },
+    {
+      "path": "merges.txt",
+      "size": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    {
+      "path": "model.safetensors",
+      "size": 1876463472,
+      "sha256": "3631034bba7eed7b107656f7d8d2bf56a19242f94212c20c189dc8acee7fc77a"
+    },
+    {
+      "path": "modeling_intern_vit.py",
+      "size": 18063,
+      "sha256": "619c2b96987bf45018a32d8abd16e7f7036995c16e1bd762c3507d58b8fdb672"
+    },
+    {
+      "path": "modeling_internvl_chat.py",
+      "size": 15594,
+      "sha256": "4935c1f1d205167150d4449cbaf4bf340d8d5d0fd96ca97be5d15b26d489ead1"
+    },
+    {
+      "path": "preprocessor_config.json",
+      "size": 287,
+      "sha256": "0658115064c561026539aeeead9ed3b1a8e0cc90967df8c142849199f955d2b4"
+    },
+    {
+      "path": "special_tokens_map.json",
+      "size": 744,
+      "sha256": "13a6dea522a937ef05172912c66214162c75165e723a3d6cf4ae2d09752013bf"
+    },
+    {
+      "path": "tokenizer.json",
+      "size": 11423542,
+      "sha256": "34a2790c1c37a3f4774fef44480b2b50e3c0f40f2122d26e057f249460b8735d"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "size": 9054,
+      "sha256": "77957c4a935ca4fd98acba11f945c75c01ab9fd6ec0668cabb905b2ccab66d0d"
+    },
+    {
+      "path": "vocab.json",
+      "size": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  ]
+}

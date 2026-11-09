@@ -1,0 +1,9 @@
+{
+  "id": "sar_storage_tank_prompt_v0",
+  "grouped_plan_sha256": "bc712ce9733fa633e3a6628cea93da0f3777291dd36f011a98ac0152c117f4f9",
+  "grouped_result_sha256": "f7bd8f4eb131e44fc8ebf9c99832445c3b9584345c4505fa93a6fa3964f91958",
+  "model_condition": "standard",
+  "insert_before": "Respond with only the lowercase label.",
+  "definition": "In this task, the label tank means an oil storage tank.",
+  "comparison": "Same grouped development images, standard adapted projector, greedy generation and strict answer scoring. Insert the definition for every image. Compare correct storage tank answers, false storage tank predictions and all-six-class results."
+}

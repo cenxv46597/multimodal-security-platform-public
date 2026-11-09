@@ -1,0 +1,1878 @@
+{
+  "status": "post-hoc manual adjudication of exactly observed responses; not a general parser or independent test",
+  "review_rule": "Accept clear unique category, including sentences, plurals and explicit counts; multi-category, unspecified and out-of-vocabulary responses unresolved. Labels interpreted before comparing reference.",
+  "script_sha256": "2693eeee990dd59f35641b35d4c3953f3bc959a6d7e215c9352e71edb225f6c0",
+  "grouped_plan_sha256": "bc712ce9733fa633e3a6628cea93da0f3777291dd36f011a98ac0152c117f4f9",
+  "models": {
+    "internvl": {
+      "source_sha256": "f222391cdf7c0745c73a438f59304a57757255203b3780350167b90c432a30dc",
+      "counts": {
+        "wrong_label": 10,
+        "correct": 50
+      },
+      "per_class": {
+        "ship": {
+          "support": 10,
+          "correct": 9,
+          "wrong_label": 1,
+          "unresolved": 0
+        },
+        "aircraft": {
+          "support": 10,
+          "correct": 7,
+          "wrong_label": 3,
+          "unresolved": 0
+        },
+        "car": {
+          "support": 10,
+          "correct": 7,
+          "wrong_label": 3,
+          "unresolved": 0
+        },
+        "tank": {
+          "support": 10,
+          "correct": 9,
+          "wrong_label": 1,
+          "unresolved": 0
+        },
+        "bridge": {
+          "support": 10,
+          "correct": 9,
+          "wrong_label": 1,
+          "unresolved": 0
+        },
+        "harbor": {
+          "support": 10,
+          "correct": 9,
+          "wrong_label": 1,
+          "unresolved": 0
+        }
+      },
+      "items": [
+        {
+          "sample_id": "sar-adapt-00143e1b2c521d1b65fd",
+          "answer": "bridge",
+          "interpreted_label": "bridge",
+          "reference": "ship",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-0014962ac3e76bce336d",
+          "answer": "ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0015e3221e5104550b4e",
+          "answer": " ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-00162db607eea45274e8",
+          "answer": "ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-001665852241f3f7daf1",
+          "answer": "It is ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-001707645466613fbc56",
+          "answer": " ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0017d5a49e2110a6cd36",
+          "answer": "Ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-001965b71bafcd6842ce",
+          "answer": " ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0019990a7f8a3c4b5530",
+          "answer": " ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-001a49b3f049caf33ee1",
+          "answer": " ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0042ac0f83993a44a48a",
+          "answer": " aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0042f9464220ece14cbf",
+          "answer": " bridge",
+          "interpreted_label": "bridge",
+          "reference": "aircraft",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-0044eb815efbcdbb5d6c",
+          "answer": " aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-00468412a01c30994b71",
+          "answer": " aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0047f2f065db8baa9cc9",
+          "answer": " aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-004aca398f4b7e5ec196",
+          "answer": "Ship",
+          "interpreted_label": "ship",
+          "reference": "aircraft",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-00558b87699ea02d1eaa",
+          "answer": " aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-005dd70e78c6a6147687",
+          "answer": " aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-005f2b900c783eb164e5",
+          "answer": "Bridge",
+          "interpreted_label": "bridge",
+          "reference": "aircraft",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-006107a7218edd8a8c70",
+          "answer": " aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-072871f196b28fb8fbc4",
+          "answer": " bridge",
+          "interpreted_label": "bridge",
+          "reference": "car",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-07519f77b1b2f1f7dce3",
+          "answer": "Car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0917e3effecb53870d25",
+          "answer": "car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-09865e90e1bdb152b00b",
+          "answer": "Car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-099f4b1a62a672bacbf6",
+          "answer": "ship",
+          "interpreted_label": "ship",
+          "reference": "car",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-09ab19e6e44864c477c9",
+          "answer": "Car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-09cbf6cfd460a8320861",
+          "answer": "飞机",
+          "interpreted_label": "aircraft",
+          "reference": "car",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-0a713cae6df158efada0",
+          "answer": "Car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0a94226fd2b31d76c780",
+          "answer": "Car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0af987bc304dddabeecb",
+          "answer": "Car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-043a5c3085537911e485",
+          "answer": "Tank",
+          "interpreted_label": "tank",
+          "reference": "tank",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0473d7618dbec66dfb68",
+          "answer": "tank",
+          "interpreted_label": "tank",
+          "reference": "tank",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-04b2aab0a166df487fb1",
+          "answer": "tank",
+          "interpreted_label": "tank",
+          "reference": "tank",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-04e833b9731c649bd5a4",
+          "answer": "Tank",
+          "interpreted_label": "tank",
+          "reference": "tank",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-051056e6f1074969274f",
+          "answer": "tank",
+          "interpreted_label": "tank",
+          "reference": "tank",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-05555e24298c737a2739",
+          "answer": "tank",
+          "interpreted_label": "tank",
+          "reference": "tank",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-05590bb5b92dbeaffc82",
+          "answer": "Tank",
+          "interpreted_label": "tank",
+          "reference": "tank",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-05e0dd583d0729810e51",
+          "answer": "tank",
+          "interpreted_label": "tank",
+          "reference": "tank",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-06063831414b30b5d889",
+          "answer": "Bridge",
+          "interpreted_label": "bridge",
+          "reference": "tank",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-0648130fc8b2569e6001",
+          "answer": " tank",
+          "interpreted_label": "tank",
+          "reference": "tank",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-00670eebc1ace4f031c8",
+          "answer": " bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-006ba932a68632a8b689",
+          "answer": " bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-008362616e26a5c515f1",
+          "answer": " bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-008869871959f8b5496c",
+          "answer": " bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-008ac2527d909f088184",
+          "answer": " bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-008c6ec77ad6849f9044",
+          "answer": " bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-008ceb5b16d4b540e500",
+          "answer": " bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-008d8cab05568320b024",
+          "answer": "tank",
+          "interpreted_label": "tank",
+          "reference": "bridge",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-0094f1b2e42f925c078e",
+          "answer": " bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0095ae0851e656a7504c",
+          "answer": " bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-038dad1d1abe093f8342",
+          "answer": " harbor",
+          "interpreted_label": "harbor",
+          "reference": "harbor",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-042a78e191e48dffecc4",
+          "answer": " bridge",
+          "interpreted_label": "bridge",
+          "reference": "harbor",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-04352dbe1b803f666e53",
+          "answer": " harbor",
+          "interpreted_label": "harbor",
+          "reference": "harbor",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-05108b4bcce9d77334e7",
+          "answer": " harbor",
+          "interpreted_label": "harbor",
+          "reference": "harbor",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0563b195e956d0f689cd",
+          "answer": " harbor",
+          "interpreted_label": "harbor",
+          "reference": "harbor",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-05b56f9bd5399343ff9e",
+          "answer": " harbor",
+          "interpreted_label": "harbor",
+          "reference": "harbor",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-05c33cbe6bc4936bd146",
+          "answer": " harbor",
+          "interpreted_label": "harbor",
+          "reference": "harbor",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0662e9c8f7d3a76dba9f",
+          "answer": " harbor",
+          "interpreted_label": "harbor",
+          "reference": "harbor",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-clean-dev-005928d8efb26474c4b1",
+          "answer": " harbor",
+          "interpreted_label": "harbor",
+          "reference": "harbor",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-clean-dev-01e04c876562b1601ca0",
+          "answer": " harbor",
+          "interpreted_label": "harbor",
+          "reference": "harbor",
+          "outcome": "correct"
+        }
+      ]
+    },
+    "qwen2vl": {
+      "source_sha256": "19f59210771adb9961bf18eb6b155da0cb07e6291ba0bc5f9392d5db2950c241",
+      "counts": {
+        "wrong_label": 14,
+        "unresolved": 4,
+        "correct": 42
+      },
+      "per_class": {
+        "ship": {
+          "support": 10,
+          "correct": 8,
+          "wrong_label": 1,
+          "unresolved": 1
+        },
+        "aircraft": {
+          "support": 10,
+          "correct": 9,
+          "wrong_label": 0,
+          "unresolved": 1
+        },
+        "car": {
+          "support": 10,
+          "correct": 8,
+          "wrong_label": 2,
+          "unresolved": 0
+        },
+        "tank": {
+          "support": 10,
+          "correct": 6,
+          "wrong_label": 4,
+          "unresolved": 0
+        },
+        "bridge": {
+          "support": 10,
+          "correct": 9,
+          "wrong_label": 0,
+          "unresolved": 1
+        },
+        "harbor": {
+          "support": 10,
+          "correct": 2,
+          "wrong_label": 7,
+          "unresolved": 1
+        }
+      },
+      "items": [
+        {
+          "sample_id": "sar-adapt-00143e1b2c521d1b65fd",
+          "answer": "Bridge",
+          "interpreted_label": "bridge",
+          "reference": "ship",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-0014962ac3e76bce336d",
+          "answer": "crossing",
+          "interpreted_label": null,
+          "reference": "ship",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-0015e3221e5104550b4e",
+          "answer": "ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-00162db607eea45274e8",
+          "answer": "ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-001665852241f3f7daf1",
+          "answer": "ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-001707645466613fbc56",
+          "answer": "ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0017d5a49e2110a6cd36",
+          "answer": "ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-001965b71bafcd6842ce",
+          "answer": "ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0019990a7f8a3c4b5530",
+          "answer": "Ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-001a49b3f049caf33ee1",
+          "answer": "ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0042ac0f83993a44a48a",
+          "answer": "It is aircrafts",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0042f9464220ece14cbf",
+          "answer": " aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0044eb815efbcdbb5d6c",
+          "answer": "Aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-00468412a01c30994b71",
+          "answer": " aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0047f2f065db8baa9cc9",
+          "answer": " aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-004aca398f4b7e5ec196",
+          "answer": "It is aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-00558b87699ea02d1eaa",
+          "answer": "road",
+          "interpreted_label": null,
+          "reference": "aircraft",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-005dd70e78c6a6147687",
+          "answer": "It is aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-005f2b900c783eb164e5",
+          "answer": " aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-006107a7218edd8a8c70",
+          "answer": " aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-072871f196b28fb8fbc4",
+          "answer": "The image shows a ship.",
+          "interpreted_label": "ship",
+          "reference": "car",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-07519f77b1b2f1f7dce3",
+          "answer": "car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0917e3effecb53870d25",
+          "answer": "Car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-09865e90e1bdb152b00b",
+          "answer": "car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-099f4b1a62a672bacbf6",
+          "answer": "ship",
+          "interpreted_label": "ship",
+          "reference": "car",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-09ab19e6e44864c477c9",
+          "answer": "car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-09cbf6cfd460a8320861",
+          "answer": "Car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0a713cae6df158efada0",
+          "answer": "car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0a94226fd2b31d76c780",
+          "answer": "car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0af987bc304dddabeecb",
+          "answer": "car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-043a5c3085537911e485",
+          "answer": "Bridge",
+          "interpreted_label": "bridge",
+          "reference": "tank",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-0473d7618dbec66dfb68",
+          "answer": "tank",
+          "interpreted_label": "tank",
+          "reference": "tank",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-04b2aab0a166df487fb1",
+          "answer": "tank",
+          "interpreted_label": "tank",
+          "reference": "tank",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-04e833b9731c649bd5a4",
+          "answer": "Ship",
+          "interpreted_label": "ship",
+          "reference": "tank",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-051056e6f1074969274f",
+          "answer": "Tank",
+          "interpreted_label": "tank",
+          "reference": "tank",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-05555e24298c737a2739",
+          "answer": "ship",
+          "interpreted_label": "ship",
+          "reference": "tank",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-05590bb5b92dbeaffc82",
+          "answer": "tank",
+          "interpreted_label": "tank",
+          "reference": "tank",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-05e0dd583d0729810e51",
+          "answer": "tank",
+          "interpreted_label": "tank",
+          "reference": "tank",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-06063831414b30b5d889",
+          "answer": "Bridge",
+          "interpreted_label": "bridge",
+          "reference": "tank",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-0648130fc8b2569e6001",
+          "answer": "Tank",
+          "interpreted_label": "tank",
+          "reference": "tank",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-00670eebc1ace4f031c8",
+          "answer": "bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-006ba932a68632a8b689",
+          "answer": "bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-008362616e26a5c515f1",
+          "answer": "bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-008869871959f8b5496c",
+          "answer": "bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-008ac2527d909f088184",
+          "answer": "Bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-008c6ec77ad6849f9044",
+          "answer": "bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-008ceb5b16d4b540e500",
+          "answer": "bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-008d8cab05568320b024",
+          "answer": "Hole",
+          "interpreted_label": null,
+          "reference": "bridge",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-0094f1b2e42f925c078e",
+          "answer": "bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0095ae0851e656a7504c",
+          "answer": "bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-038dad1d1abe093f8342",
+          "answer": "Bridge",
+          "interpreted_label": "bridge",
+          "reference": "harbor",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-042a78e191e48dffecc4",
+          "answer": "car",
+          "interpreted_label": "car",
+          "reference": "harbor",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-04352dbe1b803f666e53",
+          "answer": "The middle right portion features a small harbor.",
+          "interpreted_label": "harbor",
+          "reference": "harbor",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-05108b4bcce9d77334e7",
+          "answer": "ship",
+          "interpreted_label": "ship",
+          "reference": "harbor",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-0563b195e956d0f689cd",
+          "answer": "bridge",
+          "interpreted_label": "bridge",
+          "reference": "harbor",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-05b56f9bd5399343ff9e",
+          "answer": "helicopter",
+          "interpreted_label": null,
+          "reference": "harbor",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-05c33cbe6bc4936bd146",
+          "answer": "It is harbor",
+          "interpreted_label": "harbor",
+          "reference": "harbor",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0662e9c8f7d3a76dba9f",
+          "answer": "ship",
+          "interpreted_label": "ship",
+          "reference": "harbor",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-clean-dev-005928d8efb26474c4b1",
+          "answer": "bridge",
+          "interpreted_label": "bridge",
+          "reference": "harbor",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-clean-dev-01e04c876562b1601ca0",
+          "answer": "ship",
+          "interpreted_label": "ship",
+          "reference": "harbor",
+          "outcome": "wrong_label"
+        }
+      ]
+    },
+    "deepseekvl": {
+      "source_sha256": "dacf57617e18c8aa5211bf27ce403d079e9ba3694709f76694eb1a3db4812de6",
+      "counts": {
+        "unresolved": 52,
+        "correct": 8
+      },
+      "per_class": {
+        "ship": {
+          "support": 10,
+          "correct": 0,
+          "wrong_label": 0,
+          "unresolved": 10
+        },
+        "aircraft": {
+          "support": 10,
+          "correct": 2,
+          "wrong_label": 0,
+          "unresolved": 8
+        },
+        "car": {
+          "support": 10,
+          "correct": 2,
+          "wrong_label": 0,
+          "unresolved": 8
+        },
+        "tank": {
+          "support": 10,
+          "correct": 2,
+          "wrong_label": 0,
+          "unresolved": 8
+        },
+        "bridge": {
+          "support": 10,
+          "correct": 0,
+          "wrong_label": 0,
+          "unresolved": 10
+        },
+        "harbor": {
+          "support": 10,
+          "correct": 2,
+          "wrong_label": 0,
+          "unresolved": 8
+        }
+      },
+      "items": [
+        {
+          "sample_id": "sar-adapt-00143e1b2c521d1b65fd",
+          "answer": "There are 2 instances. {<1><1><",
+          "interpreted_label": null,
+          "reference": "ship",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-0014962ac3e76bce336d",
+          "answer": "There is 1 instance. {<273><",
+          "interpreted_label": null,
+          "reference": "ship",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-0015e3221e5104550b4e",
+          "answer": "There are 2 instances. {<123><",
+          "interpreted_label": null,
+          "reference": "ship",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-00162db607eea45274e8",
+          "answer": "There are 2 instances. {<1><67",
+          "interpreted_label": null,
+          "reference": "ship",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-001665852241f3f7daf1",
+          "answer": "There are 2 instances. {<184><",
+          "interpreted_label": null,
+          "reference": "ship",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-001707645466613fbc56",
+          "answer": "There are 2 instances. {<42><1",
+          "interpreted_label": null,
+          "reference": "ship",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-0017d5a49e2110a6cd36",
+          "answer": "There are 3 instances. {<67><1",
+          "interpreted_label": null,
+          "reference": "ship",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-001965b71bafcd6842ce",
+          "answer": "There are 2 instances. {<1><1><",
+          "interpreted_label": null,
+          "reference": "ship",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-0019990a7f8a3c4b5530",
+          "answer": "There are 2 instances. {<24><1",
+          "interpreted_label": null,
+          "reference": "ship",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-001a49b3f049caf33ee1",
+          "answer": "There are 2 instances. {<62><1",
+          "interpreted_label": null,
+          "reference": "ship",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-0042ac0f83993a44a48a",
+          "answer": "There are 4 instances. {<399><",
+          "interpreted_label": null,
+          "reference": "aircraft",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-0042f9464220ece14cbf",
+          "answer": "There are 2 instances. {<1><-1",
+          "interpreted_label": null,
+          "reference": "aircraft",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-0044eb815efbcdbb5d6c",
+          "answer": "There are 10 instances. {<20><",
+          "interpreted_label": null,
+          "reference": "aircraft",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-00468412a01c30994b71",
+          "answer": "There are 2 instances. {<38><2",
+          "interpreted_label": null,
+          "reference": "aircraft",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-0047f2f065db8baa9cc9",
+          "answer": "There are 2 aircrafts",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-004aca398f4b7e5ec196",
+          "answer": "It is aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-00558b87699ea02d1eaa",
+          "answer": "There are 3 instances. {<10><1",
+          "interpreted_label": null,
+          "reference": "aircraft",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-005dd70e78c6a6147687",
+          "answer": "There are 2 instances. {<115><",
+          "interpreted_label": null,
+          "reference": "aircraft",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-005f2b900c783eb164e5",
+          "answer": "There are 2 instances. {<1><-1",
+          "interpreted_label": null,
+          "reference": "aircraft",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-006107a7218edd8a8c70",
+          "answer": "There are 2 instances. {<296><",
+          "interpreted_label": null,
+          "reference": "aircraft",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-072871f196b28fb8fbc4",
+          "answer": "There are 3 instances. {<10><1",
+          "interpreted_label": null,
+          "reference": "car",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-07519f77b1b2f1f7dce3",
+          "answer": "There are 16 instances. {<40><",
+          "interpreted_label": null,
+          "reference": "car",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-0917e3effecb53870d25",
+          "answer": "There are 4 instances. {<223><",
+          "interpreted_label": null,
+          "reference": "car",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-09865e90e1bdb152b00b",
+          "answer": "There are 16 instances. {<41><",
+          "interpreted_label": null,
+          "reference": "car",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-099f4b1a62a672bacbf6",
+          "answer": "There are 2 cars: one in the bottom left portion",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-09ab19e6e44864c477c9",
+          "answer": "There are 16 instances. {<40><",
+          "interpreted_label": null,
+          "reference": "car",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-09cbf6cfd460a8320861",
+          "answer": "Car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0a713cae6df158efada0",
+          "answer": "There are 16 instances. {<40><",
+          "interpreted_label": null,
+          "reference": "car",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-0a94226fd2b31d76c780",
+          "answer": "There are 16 instances. {<41><",
+          "interpreted_label": null,
+          "reference": "car",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-0af987bc304dddabeecb",
+          "answer": "There are 16 instances. {<42><",
+          "interpreted_label": null,
+          "reference": "car",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-043a5c3085537911e485",
+          "answer": "There are 10 instances. {<1><1",
+          "interpreted_label": null,
+          "reference": "tank",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-0473d7618dbec66dfb68",
+          "answer": "There are 2 tanks: one in the top right portion",
+          "interpreted_label": "tank",
+          "reference": "tank",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-04b2aab0a166df487fb1",
+          "answer": "There are 16 instances. {<1><1",
+          "interpreted_label": null,
+          "reference": "tank",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-04e833b9731c649bd5a4",
+          "answer": "There are 11 instances. {<105",
+          "interpreted_label": null,
+          "reference": "tank",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-051056e6f1074969274f",
+          "answer": "There are 11 instances. {<160",
+          "interpreted_label": null,
+          "reference": "tank",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-05555e24298c737a2739",
+          "answer": "There are 2 instances. {<281><",
+          "interpreted_label": null,
+          "reference": "tank",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-05590bb5b92dbeaffc82",
+          "answer": "There are 16 instances. {<380",
+          "interpreted_label": null,
+          "reference": "tank",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-05e0dd583d0729810e51",
+          "answer": "There are 2 instances. {<149><",
+          "interpreted_label": null,
+          "reference": "tank",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-06063831414b30b5d889",
+          "answer": "There are 2 instances. {<14><1",
+          "interpreted_label": null,
+          "reference": "tank",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-0648130fc8b2569e6001",
+          "answer": "There are 6 tanks: one in the bottom right portion",
+          "interpreted_label": "tank",
+          "reference": "tank",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-00670eebc1ace4f031c8",
+          "answer": "There are 2 instances. {<119><",
+          "interpreted_label": null,
+          "reference": "bridge",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-006ba932a68632a8b689",
+          "answer": "There are 2 instances. {<115><",
+          "interpreted_label": null,
+          "reference": "bridge",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-008362616e26a5c515f1",
+          "answer": "There are 2 instances. {<105><",
+          "interpreted_label": null,
+          "reference": "bridge",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-008869871959f8b5496c",
+          "answer": "There are 3 instances. {<116><",
+          "interpreted_label": null,
+          "reference": "bridge",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-008ac2527d909f088184",
+          "answer": "There are 2 instances. {<129><",
+          "interpreted_label": null,
+          "reference": "bridge",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-008c6ec77ad6849f9044",
+          "answer": "There are 2 instances. {<1><18",
+          "interpreted_label": null,
+          "reference": "bridge",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-008ceb5b16d4b540e500",
+          "answer": "There are 2 instances. {<101><",
+          "interpreted_label": null,
+          "reference": "bridge",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-008d8cab05568320b024",
+          "answer": "There are 3 instances. {<420><",
+          "interpreted_label": null,
+          "reference": "bridge",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-0094f1b2e42f925c078e",
+          "answer": "There are 2 instances. {<105><",
+          "interpreted_label": null,
+          "reference": "bridge",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-0095ae0851e656a7504c",
+          "answer": "There are 2 instances. {<19><3",
+          "interpreted_label": null,
+          "reference": "bridge",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-038dad1d1abe093f8342",
+          "answer": "There are 2 instances. {<105><",
+          "interpreted_label": null,
+          "reference": "harbor",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-042a78e191e48dffecc4",
+          "answer": "There are 2 harbors: one in the middle center",
+          "interpreted_label": "harbor",
+          "reference": "harbor",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-04352dbe1b803f666e53",
+          "answer": "In this SAR image, I can identify several objects and their",
+          "interpreted_label": null,
+          "reference": "harbor",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-05108b4bcce9d77334e7",
+          "answer": "In this SAR image, I can identify several objects and their",
+          "interpreted_label": null,
+          "reference": "harbor",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-0563b195e956d0f689cd",
+          "answer": "There are 2 instances. {<181><",
+          "interpreted_label": null,
+          "reference": "harbor",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-05b56f9bd5399343ff9e",
+          "answer": "There are 3 instances. {<10><1",
+          "interpreted_label": null,
+          "reference": "harbor",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-05c33cbe6bc4936bd146",
+          "answer": "There are 3 instances. {<19><1",
+          "interpreted_label": null,
+          "reference": "harbor",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-0662e9c8f7d3a76dba9f",
+          "answer": "In this SAR image, I can identify several objects and their",
+          "interpreted_label": null,
+          "reference": "harbor",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-clean-dev-005928d8efb26474c4b1",
+          "answer": "There are 2 instances. {<211><",
+          "interpreted_label": null,
+          "reference": "harbor",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-clean-dev-01e04c876562b1601ca0",
+          "answer": "In  large harbor, I can see a harbor. {",
+          "interpreted_label": "harbor",
+          "reference": "harbor",
+          "outcome": "correct"
+        }
+      ]
+    },
+    "mplug": {
+      "source_sha256": "759a06acd5747abfb463e197eb1bbf65c3a08c4e5fc014c84baa0d315cf304a3",
+      "counts": {
+        "wrong_label": 5,
+        "correct": 54,
+        "unresolved": 1
+      },
+      "per_class": {
+        "ship": {
+          "support": 10,
+          "correct": 9,
+          "wrong_label": 1,
+          "unresolved": 0
+        },
+        "aircraft": {
+          "support": 10,
+          "correct": 10,
+          "wrong_label": 0,
+          "unresolved": 0
+        },
+        "car": {
+          "support": 10,
+          "correct": 10,
+          "wrong_label": 0,
+          "unresolved": 0
+        },
+        "tank": {
+          "support": 10,
+          "correct": 6,
+          "wrong_label": 3,
+          "unresolved": 1
+        },
+        "bridge": {
+          "support": 10,
+          "correct": 10,
+          "wrong_label": 0,
+          "unresolved": 0
+        },
+        "harbor": {
+          "support": 10,
+          "correct": 9,
+          "wrong_label": 1,
+          "unresolved": 0
+        }
+      },
+      "items": [
+        {
+          "sample_id": "sar-adapt-00143e1b2c521d1b65fd",
+          "answer": "It is bridge",
+          "interpreted_label": "bridge",
+          "reference": "ship",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-0014962ac3e76bce336d",
+          "answer": "It is ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0015e3221e5104550b4e",
+          "answer": "It is ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-00162db607eea45274e8",
+          "answer": "It is ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-001665852241f3f7daf1",
+          "answer": "It is ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-001707645466613fbc56",
+          "answer": "It is ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0017d5a49e2110a6cd36",
+          "answer": "It is ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-001965b71bafcd6842ce",
+          "answer": "It is ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0019990a7f8a3c4b5530",
+          "answer": "It is ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-001a49b3f049caf33ee1",
+          "answer": "It is ship",
+          "interpreted_label": "ship",
+          "reference": "ship",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0042ac0f83993a44a48a",
+          "answer": "It is aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0042f9464220ece14cbf",
+          "answer": "It is aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0044eb815efbcdbb5d6c",
+          "answer": "It is aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-00468412a01c30994b71",
+          "answer": "It is aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0047f2f065db8baa9cc9",
+          "answer": "It is aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-004aca398f4b7e5ec196",
+          "answer": "It is aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-00558b87699ea02d1eaa",
+          "answer": "It is aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-005dd70e78c6a6147687",
+          "answer": "It is aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-005f2b900c783eb164e5",
+          "answer": "It is aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-006107a7218edd8a8c70",
+          "answer": "It is aircraft",
+          "interpreted_label": "aircraft",
+          "reference": "aircraft",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-072871f196b28fb8fbc4",
+          "answer": "It is car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-07519f77b1b2f1f7dce3",
+          "answer": "It is car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0917e3effecb53870d25",
+          "answer": "It is car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-09865e90e1bdb152b00b",
+          "answer": "It is car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-099f4b1a62a672bacbf6",
+          "answer": "It is car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-09ab19e6e44864c477c9",
+          "answer": "car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-09cbf6cfd460a8320861",
+          "answer": "It is car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0a713cae6df158efada0",
+          "answer": "car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0a94226fd2b31d76c780",
+          "answer": "car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0af987bc304dddabeecb",
+          "answer": "car",
+          "interpreted_label": "car",
+          "reference": "car",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-043a5c3085537911e485",
+          "answer": "It is tank",
+          "interpreted_label": "tank",
+          "reference": "tank",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0473d7618dbec66dfb68",
+          "answer": "It is tank",
+          "interpreted_label": "tank",
+          "reference": "tank",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-04b2aab0a166df487fb1",
+          "answer": "It is tank",
+          "interpreted_label": "tank",
+          "reference": "tank",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-04e833b9731c649bd5a4",
+          "answer": "It is ship",
+          "interpreted_label": "ship",
+          "reference": "tank",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-051056e6f1074969274f",
+          "answer": "It is tank",
+          "interpreted_label": "tank",
+          "reference": "tank",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-05555e24298c737a2739",
+          "answer": "It is ship",
+          "interpreted_label": "ship",
+          "reference": "tank",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-05590bb5b92dbeaffc82",
+          "answer": "They are ship and tank",
+          "interpreted_label": null,
+          "reference": "tank",
+          "outcome": "unresolved"
+        },
+        {
+          "sample_id": "sar-adapt-05e0dd583d0729810e51",
+          "answer": "It is bridge",
+          "interpreted_label": "bridge",
+          "reference": "tank",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-06063831414b30b5d889",
+          "answer": "It is tank",
+          "interpreted_label": "tank",
+          "reference": "tank",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0648130fc8b2569e6001",
+          "answer": "It is tank",
+          "interpreted_label": "tank",
+          "reference": "tank",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-00670eebc1ace4f031c8",
+          "answer": "It is bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-006ba932a68632a8b689",
+          "answer": "It is bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-008362616e26a5c515f1",
+          "answer": "It is bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-008869871959f8b5496c",
+          "answer": "It is bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-008ac2527d909f088184",
+          "answer": "It is bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-008c6ec77ad6849f9044",
+          "answer": "It is bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-008ceb5b16d4b540e500",
+          "answer": "It is bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-008d8cab05568320b024",
+          "answer": "It is bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0094f1b2e42f925c078e",
+          "answer": "It is bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0095ae0851e656a7504c",
+          "answer": "It is bridge",
+          "interpreted_label": "bridge",
+          "reference": "bridge",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-038dad1d1abe093f8342",
+          "answer": "It is harbor",
+          "interpreted_label": "harbor",
+          "reference": "harbor",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-042a78e191e48dffecc4",
+          "answer": "It is harbor",
+          "interpreted_label": "harbor",
+          "reference": "harbor",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-04352dbe1b803f666e53",
+          "answer": "It is harbor",
+          "interpreted_label": "harbor",
+          "reference": "harbor",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-05108b4bcce9d77334e7",
+          "answer": "It is harbor",
+          "interpreted_label": "harbor",
+          "reference": "harbor",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0563b195e956d0f689cd",
+          "answer": "It is bridge",
+          "interpreted_label": "bridge",
+          "reference": "harbor",
+          "outcome": "wrong_label"
+        },
+        {
+          "sample_id": "sar-adapt-05b56f9bd5399343ff9e",
+          "answer": "It is harbor",
+          "interpreted_label": "harbor",
+          "reference": "harbor",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-05c33cbe6bc4936bd146",
+          "answer": "It is harbor",
+          "interpreted_label": "harbor",
+          "reference": "harbor",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-adapt-0662e9c8f7d3a76dba9f",
+          "answer": "It is harbor",
+          "interpreted_label": "harbor",
+          "reference": "harbor",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-clean-dev-005928d8efb26474c4b1",
+          "answer": "It is harbor",
+          "interpreted_label": "harbor",
+          "reference": "harbor",
+          "outcome": "correct"
+        },
+        {
+          "sample_id": "sar-clean-dev-01e04c876562b1601ca0",
+          "answer": "It is harbor",
+          "interpreted_label": "harbor",
+          "reference": "harbor",
+          "outcome": "correct"
+        }
+      ]
+    }
+  }
+}

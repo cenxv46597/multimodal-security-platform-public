@@ -1,0 +1,92 @@
+{
+  "status": "completed",
+  "source_run": {
+    "path": "runs\\sar-target-crop-20261108\\results.json",
+    "sha256": "8e29e5175ae9c15a570c7ec1af6bef66632e07883d1eab23855c64b09b7c1775"
+  },
+  "protocol_sha256": "909f0a1c8129a6e32c9b11ed541ce377c54b5974f028f9f6343d95eb5630fa78",
+  "scope": "Annotated largest-object crop with 25% box-width and box-height context on each side.",
+  "whole_image_correct": 29,
+  "crop_correct": 13,
+  "crop_valid_fraction": 1.0,
+  "status_counts": {
+    "valid": 60
+  },
+  "whole_image_per_class": {
+    "ship": {
+      "support": 10,
+      "correct": 9,
+      "recall": 0.9
+    },
+    "aircraft": {
+      "support": 10,
+      "correct": 8,
+      "recall": 0.8
+    },
+    "car": {
+      "support": 10,
+      "correct": 6,
+      "recall": 0.6
+    },
+    "tank": {
+      "support": 10,
+      "correct": 0,
+      "recall": 0.0
+    },
+    "bridge": {
+      "support": 10,
+      "correct": 6,
+      "recall": 0.6
+    },
+    "harbor": {
+      "support": 10,
+      "correct": 0,
+      "recall": 0.0
+    }
+  },
+  "crop_per_class": {
+    "ship": {
+      "support": 10,
+      "correct": 8,
+      "recall": 0.8
+    },
+    "aircraft": {
+      "support": 10,
+      "correct": 2,
+      "recall": 0.2
+    },
+    "car": {
+      "support": 10,
+      "correct": 3,
+      "recall": 0.3
+    },
+    "tank": {
+      "support": 10,
+      "correct": 0,
+      "recall": 0.0
+    },
+    "bridge": {
+      "support": 10,
+      "correct": 0,
+      "recall": 0.0
+    },
+    "harbor": {
+      "support": 10,
+      "correct": 0,
+      "recall": 0.0
+    }
+  },
+  "paired": {
+    "both_correct": 12,
+    "crop_only_correct": 1,
+    "whole_only_correct": 17,
+    "both_wrong": 30
+  },
+  "limitations": [
+    "Ground-truth location supplied",
+    "Crop changes scale and surrounding context",
+    "Single largest annotated target selected",
+    "Scene independence unresolved",
+    "One model and one fixed crop policy"
+  ]
+}

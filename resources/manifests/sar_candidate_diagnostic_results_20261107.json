@@ -1,0 +1,203 @@
+{
+  "status": "completed",
+  "scope": "Image-level development diagnosis",
+  "source_run": {
+    "path": "runs/sar-candidate-diagnostic-20261107/diagnostic.json",
+    "sha256": "92ef71d99d59970805d349796f708b8fed5d676b2d66ef309760504dbde1d006"
+  },
+  "source_pilot": {
+    "path": "runs/sar-projector-pilot-20261107/pilot.json",
+    "sha256": "6760686d8c2df82e67cf898359f39bc98fafa5313e1c7d2227d62d07c2ca5a7d"
+  },
+  "source_records_sha256": "a20ae1360eb5ed6eb2c18e2abaf9fcb3f7865d1591ab1c0ac0b6a5943387d663",
+  "model_revision": "1090956dd1c79bc93ae98dcf395590369435ec91",
+  "projector_checkpoint": {
+    "path": "runs/sar-projector-pilot-20261107/pilot.safetensors",
+    "sha256": "3c9434312a220a3b1155c49c019e62efc78c33de136d7b207b36e62fdfa0d7dc",
+    "bytes": 8921536
+  },
+  "candidate_score": "Sum of full-vocabulary natural log probabilities of answer tokens and EOS",
+  "swap_rule": "Within-class validation ordinal matched to the same ordinal in each of the other five classes",
+  "target_ids": {
+    "ship": [
+      5270,
+      151645
+    ],
+    "aircraft": [
+      1310,
+      7712,
+      151645
+    ],
+    "car": [
+      6918,
+      151645
+    ],
+    "tank": [
+      85171,
+      151645
+    ],
+    "bridge": [
+      13709,
+      151645
+    ],
+    "harbor": [
+      12982,
+      9368,
+      151645
+    ]
+  },
+  "seconds": 235.90137940000204,
+  "peak_allocated_mib": 1810.384765625,
+  "metrics": {
+    "samples": 60,
+    "free_correct": 29,
+    "candidate_correct": 29,
+    "candidate_correct_free_wrong": 0,
+    "candidate_wrong_free_correct": 0,
+    "swap_comparisons": 300,
+    "per_class": {
+      "ship": {
+        "support": 10,
+        "free_correct": 9,
+        "candidate_correct": 9,
+        "rank_histogram": {
+          "1": 9,
+          "2": 1
+        },
+        "median_reference_rank": 1.0,
+        "mean_margin_over_best_other": 3.2253772005371504,
+        "mean_matched_minus_swapped_logprob": 2.935515166663099,
+        "mean_matched_minus_swapped_label_logprob": 2.9345353181660174,
+        "mean_matched_minus_swapped_eos_logprob": 0.000979848497081548,
+        "matched_score_higher_count": 46,
+        "swaps": 50,
+        "candidate_top1_counts": {
+          "ship": 9,
+          "aircraft": 1
+        },
+        "mean_label_margin_over_best_other": 3.2432919362559915,
+        "mean_eos_margin_over_best_other": -0.01791473571884126
+      },
+      "aircraft": {
+        "support": 10,
+        "free_correct": 8,
+        "candidate_correct": 8,
+        "rank_histogram": {
+          "1": 8,
+          "2": 1,
+          "5": 1
+        },
+        "median_reference_rank": 1.0,
+        "mean_margin_over_best_other": 0.7744237334449281,
+        "mean_matched_minus_swapped_logprob": 3.171162978244829,
+        "mean_matched_minus_swapped_label_logprob": 3.208528850215953,
+        "mean_matched_minus_swapped_eos_logprob": -0.03736587197112385,
+        "matched_score_higher_count": 41,
+        "swaps": 50,
+        "candidate_top1_counts": {
+          "aircraft": 8,
+          "ship": 1,
+          "car": 1
+        },
+        "mean_label_margin_over_best_other": 0.6989680116064847,
+        "mean_eos_margin_over_best_other": 0.07545572183844343
+      },
+      "car": {
+        "support": 10,
+        "free_correct": 6,
+        "candidate_correct": 6,
+        "rank_histogram": {
+          "1": 6,
+          "3": 4
+        },
+        "median_reference_rank": 1.0,
+        "mean_margin_over_best_other": 1.3694435654097106,
+        "mean_matched_minus_swapped_logprob": 3.4344456851863834,
+        "mean_matched_minus_swapped_label_logprob": 3.43045428654179,
+        "mean_matched_minus_swapped_eos_logprob": 0.003991398644593573,
+        "matched_score_higher_count": 42,
+        "swaps": 50,
+        "candidate_top1_counts": {
+          "aircraft": 4,
+          "car": 6
+        },
+        "mean_label_margin_over_best_other": 1.3659880286315456,
+        "mean_eos_margin_over_best_other": 0.0034555367781649695
+      },
+      "tank": {
+        "support": 10,
+        "free_correct": 0,
+        "candidate_correct": 0,
+        "rank_histogram": {
+          "5": 5,
+          "6": 5
+        },
+        "median_reference_rank": 5.5,
+        "mean_margin_over_best_other": -7.909447819297793,
+        "mean_matched_minus_swapped_logprob": 0.8795264742670406,
+        "mean_matched_minus_swapped_label_logprob": 0.8741952228546143,
+        "mean_matched_minus_swapped_eos_logprob": 0.005331251412426355,
+        "matched_score_higher_count": 33,
+        "swaps": 50,
+        "candidate_top1_counts": {
+          "ship": 7,
+          "aircraft": 1,
+          "bridge": 2
+        },
+        "mean_label_margin_over_best_other": -7.912459293752908,
+        "mean_eos_margin_over_best_other": 0.0030114744551156037
+      },
+      "bridge": {
+        "support": 10,
+        "free_correct": 6,
+        "candidate_correct": 6,
+        "rank_histogram": {
+          "1": 6,
+          "5": 3,
+          "6": 1
+        },
+        "median_reference_rank": 1.0,
+        "mean_margin_over_best_other": 1.9636170843298602,
+        "mean_matched_minus_swapped_logprob": 4.051665287088634,
+        "mean_matched_minus_swapped_label_logprob": 4.037064607604407,
+        "mean_matched_minus_swapped_eos_logprob": 0.014600679484226475,
+        "matched_score_higher_count": 46,
+        "swaps": 50,
+        "candidate_top1_counts": {
+          "bridge": 6,
+          "car": 2,
+          "ship": 2
+        },
+        "mean_label_margin_over_best_other": 1.9624999705469235,
+        "mean_eos_margin_over_best_other": 0.0011171137829364853
+      },
+      "harbor": {
+        "support": 10,
+        "free_correct": 0,
+        "candidate_correct": 0,
+        "rank_histogram": {
+          "2": 2,
+          "3": 1,
+          "4": 7
+        },
+        "median_reference_rank": 4.0,
+        "mean_margin_over_best_other": -3.3306829256629498,
+        "mean_matched_minus_swapped_logprob": 2.1566053990337606,
+        "mean_matched_minus_swapped_label_logprob": 2.1555063142068684,
+        "mean_matched_minus_swapped_eos_logprob": 0.0010990848268920671,
+        "matched_score_higher_count": 42,
+        "swaps": 50,
+        "candidate_top1_counts": {
+          "bridge": 2,
+          "ship": 2,
+          "aircraft": 5,
+          "car": 1
+        },
+        "mean_label_margin_over_best_other": -3.3322019854793323,
+        "mean_eos_margin_over_best_other": 0.0015190598163826508
+      }
+    },
+    "candidate_agrees_with_free": 60
+  },
+  "interpretation_limit": "Scores are image-level development diagnostics on reused validation samples. Cross-class replacements share images and cannot identify the encoder, projector or language model as the cause."
+}

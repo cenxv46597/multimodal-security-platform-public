@@ -1,0 +1,23 @@
+{
+  "status": "exploratory paired development comparison",
+  "one_b_audit_sha256": "56ffad12196634b63e92946ce61fa1d573aed14cde95477bb10617c4b7273518",
+  "two_b_audit_sha256": "d164fb1c21302d547181949c280482747889862c0559e351708930e2d4fb4bb3",
+  "grouped_by_correctness": {
+    "both_correct": 51,
+    "only_1b_correct": 3,
+    "only_2b_correct": 4,
+    "neither_correct": 2
+  },
+  "note": "Unresolved counted as not correct for this paired comparison; see separate audit for unresolved counts.",
+  "two_b_weight_sha256": "a23c44278b8b7e7c7a4af7adf1822862a5c30ec4c301cd02c3fed4787f79f217",
+  "sentencepiece": {
+    "version": "0.2.3",
+    "wheel_sha256": "84e9def430ca8cc848b84adb304ffb77bff151cfc7dc66eb881f0385258f536b"
+  },
+  "limitations": [
+    "Development panel of 60, not independent test; SARChat training exposure unresolved",
+    "same question and budget, model-native templates and processing",
+    "2B gradient and attack not tested",
+    "master branch files pinned by upstream SHA256, commit unresolved"
+  ]
+}

@@ -1,0 +1,542 @@
+{
+  "status": "exploratory development screen; exact existing answers manually adjudicated by assistant, not independently reviewed",
+  "source_sha256": "a410de3cc3d9640429014ad416845ca5f66f3c98d7e804bda842b7c943305698",
+  "script_sha256": "e691d995d7bcb4fd4604e72e8d14fa642752c33c9215ebd41c0286e2721f4e0e",
+  "protocol_sha256": "e450d7793665521a778602005ad7bc5df9aaf0efa978ba2f2cd45a65ac173fb2",
+  "model": "JimmyMa99/SARChat-GLM-edge-v-2B",
+  "counts": {
+    "correct": 49,
+    "wrong_label": 10,
+    "unresolved": 1
+  },
+  "total": 60,
+  "accuracy_all_planned": 0.8166666666666667,
+  "judgable_fraction": 0.9833333333333333,
+  "per_class": {
+    "ship": {
+      "support": 10,
+      "correct": 9,
+      "wrong_label": 1,
+      "unresolved": 0
+    },
+    "aircraft": {
+      "support": 10,
+      "correct": 5,
+      "wrong_label": 5,
+      "unresolved": 0
+    },
+    "car": {
+      "support": 10,
+      "correct": 8,
+      "wrong_label": 2,
+      "unresolved": 0
+    },
+    "tank": {
+      "support": 10,
+      "correct": 7,
+      "wrong_label": 2,
+      "unresolved": 1
+    },
+    "bridge": {
+      "support": 10,
+      "correct": 10,
+      "wrong_label": 0,
+      "unresolved": 0
+    },
+    "harbor": {
+      "support": 10,
+      "correct": 10,
+      "wrong_label": 0,
+      "unresolved": 0
+    }
+  },
+  "items": [
+    {
+      "sample_id": "sar-adapt-00143e1b2c521d1b65fd",
+      "answer": "It is ship",
+      "interpreted_label": "ship",
+      "reference": "ship",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-0014962ac3e76bce336d",
+      "answer": "It is ship",
+      "interpreted_label": "ship",
+      "reference": "ship",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-0015e3221e5104550b4e",
+      "answer": "It is ship",
+      "interpreted_label": "ship",
+      "reference": "ship",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-00162db607eea45274e8",
+      "answer": "It is ship",
+      "interpreted_label": "ship",
+      "reference": "ship",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-001665852241f3f7daf1",
+      "answer": "It is tank",
+      "interpreted_label": "tank",
+      "reference": "ship",
+      "outcome": "wrong_label",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-001707645466613fbc56",
+      "answer": "It is ship",
+      "interpreted_label": "ship",
+      "reference": "ship",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-0017d5a49e2110a6cd36",
+      "answer": "It is ship",
+      "interpreted_label": "ship",
+      "reference": "ship",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-001965b71bafcd6842ce",
+      "answer": "It is ship",
+      "interpreted_label": "ship",
+      "reference": "ship",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-0019990a7f8a3c4b5530",
+      "answer": "It is ship",
+      "interpreted_label": "ship",
+      "reference": "ship",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-001a49b3f049caf33ee1",
+      "answer": "It is ship",
+      "interpreted_label": "ship",
+      "reference": "ship",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-0042ac0f83993a44a48a",
+      "answer": "It is harbor",
+      "interpreted_label": "harbor",
+      "reference": "aircraft",
+      "outcome": "wrong_label",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-0042f9464220ece14cbf",
+      "answer": "It is harbor",
+      "interpreted_label": "harbor",
+      "reference": "aircraft",
+      "outcome": "wrong_label",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-0044eb815efbcdbb5d6c",
+      "answer": "It is aircraft",
+      "interpreted_label": "aircraft",
+      "reference": "aircraft",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-00468412a01c30994b71",
+      "answer": "It is aircraft",
+      "interpreted_label": "aircraft",
+      "reference": "aircraft",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-0047f2f065db8baa9cc9",
+      "answer": "It is aircraft",
+      "interpreted_label": "aircraft",
+      "reference": "aircraft",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-004aca398f4b7e5ec196",
+      "answer": "It is harbor",
+      "interpreted_label": "harbor",
+      "reference": "aircraft",
+      "outcome": "wrong_label",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-00558b87699ea02d1eaa",
+      "answer": "It is harbor",
+      "interpreted_label": "harbor",
+      "reference": "aircraft",
+      "outcome": "wrong_label",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-005dd70e78c6a6147687",
+      "answer": "It is aircraft",
+      "interpreted_label": "aircraft",
+      "reference": "aircraft",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-005f2b900c783eb164e5",
+      "answer": "bridge",
+      "interpreted_label": "bridge",
+      "reference": "aircraft",
+      "outcome": "wrong_label",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-006107a7218edd8a8c70",
+      "answer": "It is aircraft",
+      "interpreted_label": "aircraft",
+      "reference": "aircraft",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-072871f196b28fb8fbc4",
+      "answer": "It is bridge",
+      "interpreted_label": "bridge",
+      "reference": "car",
+      "outcome": "wrong_label",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-07519f77b1b2f1f7dce3",
+      "answer": "It is car",
+      "interpreted_label": "car",
+      "reference": "car",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-0917e3effecb53870d25",
+      "answer": "It is car",
+      "interpreted_label": "car",
+      "reference": "car",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-09865e90e1bdb152b00b",
+      "answer": "It is car",
+      "interpreted_label": "car",
+      "reference": "car",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-099f4b1a62a672bacbf6",
+      "answer": "It is car",
+      "interpreted_label": "car",
+      "reference": "car",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-09ab19e6e44864c477c9",
+      "answer": "It is car",
+      "interpreted_label": "car",
+      "reference": "car",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-09cbf6cfd460a8320861",
+      "answer": "It is harbor",
+      "interpreted_label": "harbor",
+      "reference": "car",
+      "outcome": "wrong_label",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-0a713cae6df158efada0",
+      "answer": "It is car",
+      "interpreted_label": "car",
+      "reference": "car",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-0a94226fd2b31d76c780",
+      "answer": "It is car",
+      "interpreted_label": "car",
+      "reference": "car",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-0af987bc304dddabeecb",
+      "answer": "It is car",
+      "interpreted_label": "car",
+      "reference": "car",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-043a5c3085537911e485",
+      "answer": "It is tank",
+      "interpreted_label": "tank",
+      "reference": "tank",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-0473d7618dbec66dfb68",
+      "answer": "It is tank",
+      "interpreted_label": "tank",
+      "reference": "tank",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-04b2aab0a166df487fb1",
+      "answer": "It is tank",
+      "interpreted_label": "tank",
+      "reference": "tank",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-04e833b9731c649bd5a4",
+      "answer": "It is tank",
+      "interpreted_label": "tank",
+      "reference": "tank",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-051056e6f1074969274f",
+      "answer": "It is tank",
+      "interpreted_label": "tank",
+      "reference": "tank",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-05555e24298c737a2739",
+      "answer": "It is ship",
+      "interpreted_label": "ship",
+      "reference": "tank",
+      "outcome": "wrong_label",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-05590bb5b92dbeaffc82",
+      "answer": "It is tank",
+      "interpreted_label": "tank",
+      "reference": "tank",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-05e0dd583d0729810e51",
+      "answer": "It is bridge",
+      "interpreted_label": "bridge",
+      "reference": "tank",
+      "outcome": "wrong_label",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-06063831414b30b5d889",
+      "answer": "They are harbor and tank",
+      "interpreted_label": null,
+      "reference": "tank",
+      "outcome": "unresolved",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-0648130fc8b2569e6001",
+      "answer": "It is tank",
+      "interpreted_label": "tank",
+      "reference": "tank",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-00670eebc1ace4f031c8",
+      "answer": "bridge",
+      "interpreted_label": "bridge",
+      "reference": "bridge",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-006ba932a68632a8b689",
+      "answer": "It is bridge",
+      "interpreted_label": "bridge",
+      "reference": "bridge",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-008362616e26a5c515f1",
+      "answer": "It is bridge",
+      "interpreted_label": "bridge",
+      "reference": "bridge",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-008869871959f8b5496c",
+      "answer": "It is bridge",
+      "interpreted_label": "bridge",
+      "reference": "bridge",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-008ac2527d909f088184",
+      "answer": "It is bridge",
+      "interpreted_label": "bridge",
+      "reference": "bridge",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-008c6ec77ad6849f9044",
+      "answer": "It is bridge",
+      "interpreted_label": "bridge",
+      "reference": "bridge",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-008ceb5b16d4b540e500",
+      "answer": "bridge",
+      "interpreted_label": "bridge",
+      "reference": "bridge",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-008d8cab05568320b024",
+      "answer": "It is bridge",
+      "interpreted_label": "bridge",
+      "reference": "bridge",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-0094f1b2e42f925c078e",
+      "answer": "It is bridge",
+      "interpreted_label": "bridge",
+      "reference": "bridge",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-0095ae0851e656a7504c",
+      "answer": "It is bridge",
+      "interpreted_label": "bridge",
+      "reference": "bridge",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-038dad1d1abe093f8342",
+      "answer": "It is harbor",
+      "interpreted_label": "harbor",
+      "reference": "harbor",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-042a78e191e48dffecc4",
+      "answer": "It is harbor",
+      "interpreted_label": "harbor",
+      "reference": "harbor",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-04352dbe1b803f666e53",
+      "answer": "It is harbor",
+      "interpreted_label": "harbor",
+      "reference": "harbor",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-05108b4bcce9d77334e7",
+      "answer": "It is harbor",
+      "interpreted_label": "harbor",
+      "reference": "harbor",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-0563b195e956d0f689cd",
+      "answer": "It is harbor",
+      "interpreted_label": "harbor",
+      "reference": "harbor",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-05b56f9bd5399343ff9e",
+      "answer": "It is harbor",
+      "interpreted_label": "harbor",
+      "reference": "harbor",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-05c33cbe6bc4936bd146",
+      "answer": "It is harbor",
+      "interpreted_label": "harbor",
+      "reference": "harbor",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-adapt-0662e9c8f7d3a76dba9f",
+      "answer": "It is harbor",
+      "interpreted_label": "harbor",
+      "reference": "harbor",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-clean-dev-005928d8efb26474c4b1",
+      "answer": "It is harbor",
+      "interpreted_label": "harbor",
+      "reference": "harbor",
+      "outcome": "correct",
+      "hit_token_limit": false
+    },
+    {
+      "sample_id": "sar-clean-dev-01e04c876562b1601ca0",
+      "answer": "It is harbor",
+      "interpreted_label": "harbor",
+      "reference": "harbor",
+      "outcome": "correct",
+      "hit_token_limit": false
+    }
+  ],
+  "peak_per_sample_allocated_mib": 3855.91455078125,
+  "limitations": [
+    "Not independent test; training overlap and source confounding unresolved",
+    "Different prompt and token budget than previous models; ranking is not controlled",
+    "Semantic interpretations for this run reviewed by assistant only",
+    "No image-gradient or attack test"
+  ]
+}

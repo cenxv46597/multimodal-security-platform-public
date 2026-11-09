@@ -1,0 +1,69 @@
+{
+  "status": "two positive examples for input and annotation format only; not a test set",
+  "script_sha256": "b163484417605cf9ff701852b1812572315286169922ee488c945f590cbf2eb3",
+  "dataset_doi": "10.17632/t2f8n66c87.2",
+  "rows": [
+    {
+      "image_path": ".work/sar-port-data-20261109/ICEYE_GRD_SLEDP_4228243_2024090Netherlands_down1x_slice1024_0000.png",
+      "image_sha256": "95bcd5eb470ac6f03508bb95e35613563b3da15813008bea722ad7ded85cb340",
+      "facility_mask_path": ".work/sar-port-data-20261109/fac_all/slice_fac/ICEYE_GRD_SLEDP_4228243_2024090Netherlands_down1x_slice1024_0000.png",
+      "facility_mask_sha256": "33c7ad92f4b6afb5f00a6845e0daf951c1cd97c3f0dce065e139ca1db951659e",
+      "functional_mask_path": ".work/sar-port-data-20261109/func_examples/ICEYE_GRD_SLEDP_4228243_2024090Netherlands_down1x_slice1024_0000.png",
+      "functional_mask_sha256": "3af675cbdb3fb777a7a40fdf768feca5fd686836b21a466fad931d69ef89a051",
+      "source_name_group": "ICEYE_GRD_SLEDP_4228243_2024090Netherlands_down1x",
+      "oil_pixels": 2223,
+      "oil_union_bbox_xyxy_exclusive": [
+        985,
+        967,
+        1024,
+        1024
+      ],
+      "facility_value_pixel_counts": {
+        "0": 1039624,
+        "2": 2223,
+        "3": 6729
+      },
+      "functional_value_pixel_counts": {
+        "0": 874187,
+        "3": 10825,
+        "4": 163564
+      },
+      "annotation_derived_reference": "oil tank mask present; unverified by human or independent source"
+    },
+    {
+      "image_path": ".work/sar-port-data-20261109/ICEYE_X23_GRD_SLEDF_3521349_20240305T1055Afica_down1x_slice1024_0009.png",
+      "image_sha256": "3f1d116934e5151ac13eef034967c4fdd82093cb7182bae9fb84882c7c3f0d91",
+      "facility_mask_path": ".work/sar-port-data-20261109/fac_all/slice_fac/ICEYE_X23_GRD_SLEDF_3521349_20240305T1055Afica_down1x_slice1024_0009.png",
+      "facility_mask_sha256": "b6787c3e25f9ea1f7b1ecc6c58b98febcd8c9e132eb448ea70cbfde526cc72cb",
+      "functional_mask_path": ".work/sar-port-data-20261109/func_examples/ICEYE_X23_GRD_SLEDF_3521349_20240305T1055Afica_down1x_slice1024_0009.png",
+      "functional_mask_sha256": "c027127610a03349afd397bbffe8e10afb0b147c3a0cee0a00fa93843ea327f8",
+      "source_name_group": "ICEYE_X23_GRD_SLEDF_3521349_20240305T1055Afica_down1x",
+      "oil_pixels": 5557,
+      "oil_union_bbox_xyxy_exclusive": [
+        970,
+        328,
+        1024,
+        508
+      ],
+      "facility_value_pixel_counts": {
+        "0": 1040603,
+        "2": 5557,
+        "3": 2416
+      },
+      "functional_value_pixel_counts": {
+        "0": 847581,
+        "3": 20743,
+        "4": 180252
+      },
+      "annotation_derived_reference": "oil tank mask present; unverified by human or independent source"
+    }
+  ],
+  "candidate_question": "Does this SAR image contain any oil storage tanks? Answer in natural language.",
+  "limitations": [
+    "Two positives and zero verified negatives cannot evaluate accuracy or false positives",
+    "Mask labels may be incomplete; images may contain other categories",
+    "Two filename groups are not proof of independent geographic scenes or unseen training data",
+    "Union bbox is only a visualization aid, not an individual object box",
+    "No model was run and these samples are not reserved as a final test set"
+  ]
+}

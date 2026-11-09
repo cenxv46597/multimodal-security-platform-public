@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "script_sha256": "569f7491e64897fbf690857f00c47aafa235907e7441f56af2e9dd09a1bb2fbe",
+  "inventory_sha256": "8794bbef9182fb71c189c2c3ce6ac7800282e482bb83672fbb07022a1a6e78cd",
+  "phase": "one-image engineering probe",
+  "sample_id": "sar-adapt-00143e1b2c521d1b65fd",
+  "reference": "ship",
+  "target": " ship",
+  "objective": "one next-token cross entropy; engineering check only",
+  "input": "five preprocessed RGB image tiles",
+  "input_shape": [
+    5,
+    3,
+    384,
+    384
+  ],
+  "feature_max_abs_difference": 0.0,
+  "loss": 13.970526695251465,
+  "gradient_finite": true,
+  "gradient_nonzero": 2143253,
+  "gradient_max_abs": 1.205078125,
+  "weights_frozen": true,
+  "seconds": 91.41179690000001,
+  "peak_allocated_mib": 10567.3955078125,
+  "run_sha256": "3664c467230e559d74065afb1fc623c0fd6cbc8d0d3eac3b0e5986f24669d366",
+  "physical_gpu_memory_mib": 6144,
+  "limitations": [
+    "one next-token teacher-forced gradient from five preprocessed image tiles; not original image pixels",
+    "adapted vision forward matches reference visual features on this input only",
+    "peak PyTorch allocated memory exceeds physical VRAM; runtime may use shared memory and is not evidence of fitting in 6 GiB",
+    "no attack performed"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "protocol_id": "sar_vitp_candidate_v0",
+  "date": "2026-11-08",
+  "scope": "Controlled clean development comparison of two compatible InternVL checkpoint sets.",
+  "fixed_evidence": {
+    "task": {
+      "path": "experiments/protocols/sar_single_category_v0.json",
+      "sha256": "8115c82b6164f5f50de4d6d3dd478467a9b8d78c7718b8035bbfd8fa7e801f59"
+    },
+    "scoring": {
+      "path": "experiments/protocols/sar_clean_development_screen_v0.json",
+      "sha256": "bc8e50d533720ca61d986c72aac11c001a6f1437c33a5cb939009f880b1f488a"
+    },
+    "grouped_plan": {
+      "path": "resources/manifests/sar_grouped_development_plan_20261107.json",
+      "sha256": "bc712ce9733fa633e3a6628cea93da0f3777291dd36f011a98ac0152c117f4f9"
+    },
+    "grouped_records": {
+      "path": "data/processed/sar_grouped_development_v1/records.jsonl",
+      "sha256": "9f1f978b9cfea9a825a81e023eb415496a9554fb41fdd97fd6bc69deb6441fad"
+    },
+    "llava_reference": {
+      "path": "resources/manifests/sar_grouped_development_results_20261107.json",
+      "sha256": "f7bd8f4eb131e44fc8ebf9c99832445c3b9584345c4505fa93a6fa3964f91958",
+      "variant": "scores.standard"
+    }
+  },
+  "paired_reference": {
+    "path": "runs/sar-internvl-20261108/screen.json",
+    "sha256": "74bf6f080b8219c495361b7cd1424ae890080dad811b4dd2e91c2bfbec2311eb",
+    "model": "OpenGVLab/InternVL2_5-1B",
+    "revision": "9d423ea1ae9f893897ee3f7493141073f5afcf22"
+  },
+  "base_acquisition": {
+    "path": "resources/manifests/sar_internvl_acquisition_20261108.json",
+    "sha256": "9c86b819c61b3227393373df5afb66b514e7a111e451bbebbf1f37d157c70df2"
+  },
+  "candidate_order": [
+    {
+      "model": "GreatBird/ViTP",
+      "variant": "ViTP_InternVL_1B_rs",
+      "revision": "2d26fd26d65870c2daa169a8f319ff499668abe8",
+      "local_snapshot": "models/ViTP_InternVL_1B_rs/2d26fd26d658",
+      "license": "CC-BY-NC-4.0",
+      "source_file": "https://huggingface.co/GreatBird/ViTP/resolve/2d26fd26d65870c2daa169a8f319ff499668abe8/ckpts/ViTP_InternVL_1B_rs.safetensors",
+      "weight": {
+        "path": "model.safetensors",
+        "bytes": 1876463472,
+        "sha256": "cb63f06371476844f0813d80043e83c2cdd2bfa7878c6221b37b909be2ea10a9"
+      },
+      "cached_inventory": {"files": 16, "total_bytes": 1881624852}
+    }
+  ],
+  "configuration_choice": "The released ViTP checkpoint lacks a complete standalone inference package. Pair it with the verified, unmodified InternVL2.5-1B config, tokenizer, template and code as a controlled compatibility choice. Require all 637 tensor names, shapes and dtypes to match before loading. Do not claim this is an author-provided ViTP inference configuration.",
+  "fixed_comparison": "Same grouped validation rows, task question, images, processor, one 448px tile, FP16 eager runtime, greedy generation up to 12 tokens, parser and full denominator as the general InternVL reference. Check that the probe and scored runs match and report paired outputs. The LLaVA result is an adapted development reference, not this paired control.",
+  "development_gate": "At least 57 valid and 36 correct out of 60, with at least 5 correct out of 10 in each class.",
+  "limits": "Weights come from different training recipes. Scores describe this development panel only. Original geographic scene independence and training exposure are unresolved. No evidence of HRRP, domain text, real closed-source transfer or robustness can be inferred from this screen."
+}

@@ -1,0 +1,12 @@
+{
+  "model": "Praneyaarora/satquery-internvl35-1b-epoch2-lora",
+  "scope": "Exploratory fixed 12-image subset; two images per class; not independent generalization",
+  "raw_report": "runs/satquery-epoch2-20261109/pilot-language-model-adapter.json",
+  "answer_interpretation_before_reference": {"ship": "ship", "oil storage tank": "tank", "harbor": "harbor"},
+  "correct": 3,
+  "total": 12,
+  "predicted_counts": {"ship": 10, "tank": 1, "harbor": 1},
+  "correct_per_class_out_of_two": {"ship": 2, "aircraft": 0, "car": 0, "tank": 0, "bridge": 0, "harbor": 1},
+  "interpretation": "Strong ship bias on this tiny pilot. Do not extrapolate overall accuracy or claim all SAR capability absent; no further 60-image screen in this round.",
+  "limitations": ["single 448 tile; author describes dynamic tiling", "remote-sensing model, SAR training unconfirmed", "training-data overlap unknown", "32-token cap; chat API does not report generated token count"]
+}

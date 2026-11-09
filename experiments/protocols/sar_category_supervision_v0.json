@@ -1,0 +1,11 @@
+{
+  "id": "sar_category_supervision_v0",
+  "base_protocol_sha256": "b262771668d1005f9323a37e94110873144e041aa64f22baa1faeab30170d782",
+  "standard_pilot_summary_sha256": "120581ccfdb4e89bdb04118d550d5901299a6865d3d949ebfedc0d6bd825d0c4",
+  "overlap_audit_sha256": "7321db956032a57c3e719ecf334270f2c037fa72f25c3d8494013d4154f7ad17",
+  "category_first_token_loss_weight": 1.0,
+  "loss": "Full-vocabulary mean cross entropy of the answer and EOS plus weight times cross entropy over the six distinct category first tokens at the last prompt position.",
+  "initialization": "Original projector weights and empty AdamW state, matching the standard pilot.",
+  "comparison": "Same fixed 120 training rows, order, optimizer, and precision. Evaluate ordinary greedy generation on the same 60 development images. Reuse the verified unadapted predictions and compare with the standard pilot's adapted outputs.",
+  "overlap_sensitivity": "Fix exclusions using the hashed rotation and reflection audit before training. Keep the historical 60-image comparison and separately score the retained development images."
+}

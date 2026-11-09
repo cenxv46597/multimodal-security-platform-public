@@ -1,0 +1,90 @@
+{
+  "status": "metadata_completed_and_12_examples_visually_inspected",
+  "scope": "60 grouped development rows; boxes are author annotations",
+  "by_class": {
+    "ship": {
+      "samples": 10,
+      "instance_count_distribution": {
+        "1": 8,
+        "4": 1,
+        "2": 1
+      },
+      "max_box_fraction_median": 0.0136871337890625,
+      "max_box_fraction_min": 0.00469970703125,
+      "max_box_fraction_max": 0.08697509765625
+    },
+    "aircraft": {
+      "samples": 10,
+      "instance_count_distribution": {
+        "5": 1,
+        "1": 3,
+        "12": 1,
+        "2": 5
+      },
+      "max_box_fraction_median": 0.013788223266601562,
+      "max_box_fraction_min": 0.007174744897959184,
+      "max_box_fraction_max": 0.05445098876953125
+    },
+    "car": {
+      "samples": 10,
+      "instance_count_distribution": {
+        "3": 1,
+        "16": 6,
+        "4": 1,
+        "2": 1,
+        "8": 1
+      },
+      "max_box_fraction_median": 0.00859832763671875,
+      "max_box_fraction_min": 0.005950927734375,
+      "max_box_fraction_max": 0.014133453369140625
+    },
+    "tank": {
+      "samples": 10,
+      "instance_count_distribution": {
+        "17": 2,
+        "2": 1,
+        "22": 1,
+        "7": 1,
+        "11": 1,
+        "5": 2,
+        "1": 1,
+        "8": 1
+      },
+      "max_box_fraction_median": 0.01064300537109375,
+      "max_box_fraction_min": 0.00054931640625,
+      "max_box_fraction_max": 0.02252197265625
+    },
+    "bridge": {
+      "samples": 10,
+      "instance_count_distribution": {
+        "1": 7,
+        "2": 2,
+        "3": 1
+      },
+      "max_box_fraction_median": 0.00775146484375,
+      "max_box_fraction_min": 0.0009613037109375,
+      "max_box_fraction_max": 0.0809326171875
+    },
+    "harbor": {
+      "samples": 10,
+      "instance_count_distribution": {
+        "3": 3,
+        "1": 3,
+        "4": 1,
+        "5": 1,
+        "2": 2
+      },
+      "max_box_fraction_median": 0.11396026611328125,
+      "max_box_fraction_min": 0.00732421875,
+      "max_box_fraction_max": 0.5609893798828125
+    }
+  },
+  "examples": "smallest and largest maximum annotated box per class",
+  "sheet": ".work/sar-label-audit-20261108/contact-sheet.png",
+  "visual_review": "Contact sheet examined with source annotation boxes. Many objects occupy small image regions; visual inspection alone does not verify semantic correctness, missing annotations, or class completeness.",
+  "limitations": [
+    "Annotation category agreement verifies metadata consistency, not correctness of the original annotations.",
+    "Multiple boxes can share one category, so multiple objects remain compatible with single-category labeling.",
+    "The 12 displayed examples were selected by extremes of annotated box area and are not a random quality audit."
+  ]
+}

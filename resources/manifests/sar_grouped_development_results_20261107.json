@@ -1,0 +1,354 @@
+{
+  "status": "completed",
+  "scope": "Reused development images separated by observed source and geometry groups",
+  "source_run": {
+    "path": "runs/sar-grouped-development-20261107/comparison.json",
+    "sha256": "5983371631caee421a60b749e9cc4cb83b7493cee41da180c97be2a5b7fee500"
+  },
+  "source_plan": {
+    "path": "resources/manifests/sar_grouped_development_plan_20261107.json",
+    "sha256": "bc712ce9733fa633e3a6628cea93da0f3777291dd36f011a98ac0152c117f4f9"
+  },
+  "observed_groups": 236,
+  "multi_image_groups": 4,
+  "selected_training_images": 120,
+  "selected_validation_images": 60,
+  "retained_count": 58,
+  "replacement_count": 2,
+  "harbor_coverage": {
+    "training": {
+      "large": 12,
+      "medium": 5,
+      "small": 3
+    },
+    "original_validation": {
+      "small": 4,
+      "medium": 2,
+      "large": 4
+    },
+    "grouped_validation": {
+      "small": 4,
+      "medium": 2,
+      "large": 4
+    },
+    "historical_pool": {
+      "large": 3,
+      "medium": 3,
+      "small": 4
+    }
+  },
+  "scores": {
+    "standard": {
+      "correct": 29,
+      "samples": 60,
+      "accuracy": 0.48333333333333334,
+      "valid_answer_fraction": 1.0,
+      "per_class": {
+        "ship": {
+          "support": 10,
+          "correct": 9,
+          "recall": 0.9
+        },
+        "aircraft": {
+          "support": 10,
+          "correct": 8,
+          "recall": 0.8
+        },
+        "car": {
+          "support": 10,
+          "correct": 6,
+          "recall": 0.6
+        },
+        "tank": {
+          "support": 10,
+          "correct": 0,
+          "recall": 0.0
+        },
+        "bridge": {
+          "support": 10,
+          "correct": 6,
+          "recall": 0.6
+        },
+        "harbor": {
+          "support": 10,
+          "correct": 0,
+          "recall": 0.0
+        }
+      },
+      "confusion": {
+        "ship": {
+          "ship": 9,
+          "aircraft": 1,
+          "car": 0,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "aircraft": {
+          "ship": 1,
+          "aircraft": 8,
+          "car": 1,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "car": {
+          "ship": 0,
+          "aircraft": 4,
+          "car": 6,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "tank": {
+          "ship": 7,
+          "aircraft": 1,
+          "car": 0,
+          "tank": 0,
+          "bridge": 2,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "bridge": {
+          "ship": 2,
+          "aircraft": 0,
+          "car": 2,
+          "tank": 0,
+          "bridge": 6,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "harbor": {
+          "ship": 2,
+          "aircraft": 4,
+          "car": 2,
+          "tank": 0,
+          "bridge": 2,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        }
+      },
+      "subsets": {
+        "retained": {
+          "samples": 58,
+          "correct": 29
+        },
+        "replacements": {
+          "samples": 2,
+          "correct": 0
+        }
+      },
+      "harbor_by_scale": {
+        "small": {
+          "samples": 4,
+          "correct": 0,
+          "predicted_labels": {
+            "bridge": 2,
+            "car": 2
+          }
+        },
+        "medium": {
+          "samples": 2,
+          "correct": 0,
+          "predicted_labels": {
+            "ship": 1,
+            "aircraft": 1
+          }
+        },
+        "large": {
+          "samples": 4,
+          "correct": 0,
+          "predicted_labels": {
+            "aircraft": 3,
+            "ship": 1
+          }
+        }
+      },
+      "replacement_predictions": [
+        {
+          "sample_id": "sar-clean-dev-005928d8efb26474c4b1",
+          "status": "ok",
+          "answer": "car",
+          "generated_tokens": 2,
+          "seconds": 1.0810151000005135,
+          "prediction_source": "new_replacement_inference",
+          "reference": "harbor"
+        },
+        {
+          "sample_id": "sar-clean-dev-01e04c876562b1601ca0",
+          "status": "ok",
+          "answer": "ship",
+          "generated_tokens": 2,
+          "seconds": 0.6812901000012062,
+          "prediction_source": "new_replacement_inference",
+          "reference": "harbor"
+        }
+      ]
+    },
+    "category_supervision": {
+      "correct": 26,
+      "samples": 60,
+      "accuracy": 0.43333333333333335,
+      "valid_answer_fraction": 1.0,
+      "per_class": {
+        "ship": {
+          "support": 10,
+          "correct": 4,
+          "recall": 0.4
+        },
+        "aircraft": {
+          "support": 10,
+          "correct": 9,
+          "recall": 0.9
+        },
+        "car": {
+          "support": 10,
+          "correct": 6,
+          "recall": 0.6
+        },
+        "tank": {
+          "support": 10,
+          "correct": 0,
+          "recall": 0.0
+        },
+        "bridge": {
+          "support": 10,
+          "correct": 5,
+          "recall": 0.5
+        },
+        "harbor": {
+          "support": 10,
+          "correct": 2,
+          "recall": 0.2
+        }
+      },
+      "confusion": {
+        "ship": {
+          "ship": 4,
+          "aircraft": 1,
+          "car": 0,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 5,
+          "__invalid_or_missing__": 0
+        },
+        "aircraft": {
+          "ship": 0,
+          "aircraft": 9,
+          "car": 0,
+          "tank": 0,
+          "bridge": 1,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "car": {
+          "ship": 0,
+          "aircraft": 4,
+          "car": 6,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "tank": {
+          "ship": 0,
+          "aircraft": 2,
+          "car": 0,
+          "tank": 0,
+          "bridge": 3,
+          "harbor": 5,
+          "__invalid_or_missing__": 0
+        },
+        "bridge": {
+          "ship": 0,
+          "aircraft": 1,
+          "car": 2,
+          "tank": 0,
+          "bridge": 5,
+          "harbor": 2,
+          "__invalid_or_missing__": 0
+        },
+        "harbor": {
+          "ship": 0,
+          "aircraft": 4,
+          "car": 2,
+          "tank": 0,
+          "bridge": 2,
+          "harbor": 2,
+          "__invalid_or_missing__": 0
+        }
+      },
+      "subsets": {
+        "retained": {
+          "samples": 58,
+          "correct": 25
+        },
+        "replacements": {
+          "samples": 2,
+          "correct": 1
+        }
+      },
+      "harbor_by_scale": {
+        "small": {
+          "samples": 4,
+          "correct": 0,
+          "predicted_labels": {
+            "bridge": 2,
+            "car": 2
+          }
+        },
+        "medium": {
+          "samples": 2,
+          "correct": 1,
+          "predicted_labels": {
+            "harbor": 1,
+            "aircraft": 1
+          }
+        },
+        "large": {
+          "samples": 4,
+          "correct": 1,
+          "predicted_labels": {
+            "aircraft": 3,
+            "harbor": 1
+          }
+        }
+      },
+      "replacement_predictions": [
+        {
+          "sample_id": "sar-clean-dev-005928d8efb26474c4b1",
+          "status": "ok",
+          "answer": "car",
+          "generated_tokens": 2,
+          "seconds": 0.6823938999987149,
+          "prediction_source": "new_replacement_inference",
+          "reference": "harbor"
+        },
+        {
+          "sample_id": "sar-clean-dev-01e04c876562b1601ca0",
+          "status": "ok",
+          "answer": "harbor",
+          "generated_tokens": 3,
+          "seconds": 0.7441080000025977,
+          "prediction_source": "new_replacement_inference",
+          "reference": "harbor"
+        }
+      ]
+    }
+  },
+  "paired": {
+    "both_correct": 23,
+    "became_correct": 3,
+    "became_incorrect": 6,
+    "both_incorrect": 28,
+    "direction": "standard to category supervision"
+  },
+  "tank_provenance": {
+    "9OGSOD": 6,
+    "4MSAR": 34
+  },
+  "scope_limit": "Upstream filenames and screened transforms isolate observed groups. Acquisition scene lineage and prior model exposure are unresolved."
+}

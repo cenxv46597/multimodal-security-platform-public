@@ -1,0 +1,274 @@
+{
+  "status": "completed",
+  "scope": "Prompt wording comparison on reused grouped development images",
+  "source_run": {
+    "path": "runs/sar-storage-tank-prompt-20261107/comparison.json",
+    "sha256": "e510c6363fd7bbeceac83a0421b91be746421458d2e34a86fc5010a6fc39d970"
+  },
+  "protocol": {
+    "id": "sar_storage_tank_prompt_v0",
+    "grouped_plan_sha256": "bc712ce9733fa633e3a6628cea93da0f3777291dd36f011a98ac0152c117f4f9",
+    "grouped_result_sha256": "f7bd8f4eb131e44fc8ebf9c99832445c3b9584345c4505fa93a6fa3964f91958",
+    "model_condition": "standard",
+    "insert_before": "Respond with only the lowercase label.",
+    "definition": "In this task, the label tank means an oil storage tank.",
+    "comparison": "Same grouped development images, standard adapted projector, greedy generation and strict answer scoring. Insert the definition for every image. Compare correct storage tank answers, false storage tank predictions and all-six-class results."
+  },
+  "protocol_sha256": "4af58c5521269c140e944fd3fed1e85c5d27b2bcfbbe499479e547fc8edc7b85",
+  "records": {
+    "path": "data/processed/sar_grouped_development_v1/records.jsonl",
+    "count": 180,
+    "sha256": "9f1f978b9cfea9a825a81e023eb415496a9554fb41fdd97fd6bc69deb6441fad"
+  },
+  "model_revision": "1090956dd1c79bc93ae98dcf395590369435ec91",
+  "base_weight_sha256": "ec7b02696781afdb1f27871fdffe0f71ef030932d10fbd759bc59392669605f7",
+  "projector_checkpoint": {
+    "path": "runs/sar-projector-pilot-20261107/pilot.safetensors",
+    "sha256": "3c9434312a220a3b1155c49c019e62efc78c33de136d7b207b36e62fdfa0d7dc",
+    "bytes": 8921536
+  },
+  "original_question": "What target category is shown in this SAR image? Choose exactly one of: ship, aircraft, car, tank, bridge, harbor. Respond with only the lowercase label.",
+  "clarified_question": "What target category is shown in this SAR image? Choose exactly one of: ship, aircraft, car, tank, bridge, harbor. In this task, the label tank means an oil storage tank. Respond with only the lowercase label.",
+  "input_check": {
+    "identical_processed_image": true,
+    "original_prompt_tokens": 772,
+    "clarified_prompt_tokens": 785
+  },
+  "seconds": 60.370841899999505,
+  "source_grouped_baseline": {
+    "path": "runs/sar-grouped-development-20261107/comparison.json",
+    "sha256": "5983371631caee421a60b749e9cc4cb83b7493cee41da180c97be2a5b7fee500"
+  },
+  "scores": {
+    "original": {
+      "planned_samples": 60,
+      "correct": 29,
+      "accuracy": 0.48333333333333334,
+      "valid_answer_fraction": 1.0,
+      "per_class": {
+        "ship": {
+          "support": 10,
+          "correct": 9,
+          "recall": 0.9
+        },
+        "aircraft": {
+          "support": 10,
+          "correct": 8,
+          "recall": 0.8
+        },
+        "car": {
+          "support": 10,
+          "correct": 6,
+          "recall": 0.6
+        },
+        "tank": {
+          "support": 10,
+          "correct": 0,
+          "recall": 0.0
+        },
+        "bridge": {
+          "support": 10,
+          "correct": 6,
+          "recall": 0.6
+        },
+        "harbor": {
+          "support": 10,
+          "correct": 0,
+          "recall": 0.0
+        }
+      },
+      "status_counts": {
+        "valid": 60
+      },
+      "confusion": {
+        "ship": {
+          "ship": 9,
+          "aircraft": 1,
+          "car": 0,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "aircraft": {
+          "ship": 1,
+          "aircraft": 8,
+          "car": 1,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "car": {
+          "ship": 0,
+          "aircraft": 4,
+          "car": 6,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "tank": {
+          "ship": 7,
+          "aircraft": 1,
+          "car": 0,
+          "tank": 0,
+          "bridge": 2,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "bridge": {
+          "ship": 2,
+          "aircraft": 0,
+          "car": 2,
+          "tank": 0,
+          "bridge": 6,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "harbor": {
+          "ship": 2,
+          "aircraft": 4,
+          "car": 2,
+          "tank": 0,
+          "bridge": 2,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        }
+      },
+      "tank": {
+        "correct": 0,
+        "support": 10,
+        "false_positives": 0,
+        "tank_predictions": 0
+      },
+      "parsed_answer_counts": {
+        "ship": 21,
+        "aircraft": 18,
+        "car": 11,
+        "bridge": 10
+      }
+    },
+    "clarified": {
+      "planned_samples": 60,
+      "correct": 29,
+      "accuracy": 0.48333333333333334,
+      "valid_answer_fraction": 0.95,
+      "per_class": {
+        "ship": {
+          "support": 10,
+          "correct": 9,
+          "recall": 0.9
+        },
+        "aircraft": {
+          "support": 10,
+          "correct": 9,
+          "recall": 0.9
+        },
+        "car": {
+          "support": 10,
+          "correct": 5,
+          "recall": 0.5
+        },
+        "tank": {
+          "support": 10,
+          "correct": 0,
+          "recall": 0.0
+        },
+        "bridge": {
+          "support": 10,
+          "correct": 5,
+          "recall": 0.5
+        },
+        "harbor": {
+          "support": 10,
+          "correct": 1,
+          "recall": 0.1
+        }
+      },
+      "status_counts": {
+        "valid": 57,
+        "invalid_answer": 3
+      },
+      "confusion": {
+        "ship": {
+          "ship": 9,
+          "aircraft": 1,
+          "car": 0,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "aircraft": {
+          "ship": 0,
+          "aircraft": 9,
+          "car": 0,
+          "tank": 0,
+          "bridge": 1,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "car": {
+          "ship": 0,
+          "aircraft": 4,
+          "car": 5,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 1
+        },
+        "tank": {
+          "ship": 5,
+          "aircraft": 2,
+          "car": 0,
+          "tank": 0,
+          "bridge": 2,
+          "harbor": 1,
+          "__invalid_or_missing__": 0
+        },
+        "bridge": {
+          "ship": 1,
+          "aircraft": 1,
+          "car": 0,
+          "tank": 2,
+          "bridge": 5,
+          "harbor": 0,
+          "__invalid_or_missing__": 1
+        },
+        "harbor": {
+          "ship": 1,
+          "aircraft": 4,
+          "car": 0,
+          "tank": 2,
+          "bridge": 1,
+          "harbor": 1,
+          "__invalid_or_missing__": 1
+        }
+      },
+      "tank": {
+        "correct": 0,
+        "support": 10,
+        "false_positives": 4,
+        "tank_predictions": 4
+      },
+      "parsed_answer_counts": {
+        "ship": 16,
+        "aircraft": 21,
+        "bridge": 9,
+        "car": 5,
+        "null": 3,
+        "harbor": 2,
+        "tank": 4
+      }
+    }
+  },
+  "paired": {
+    "both_correct": 27,
+    "became_correct": 2,
+    "became_incorrect": 2,
+    "both_incorrect": 29,
+    "same_parsed_label": 47
+  },
+  "limit": "One definition on a reused grouped development set. The added words and positions may shift language priors, so this comparison cannot identify the model's internal interpretation of the original word."
+}

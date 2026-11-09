@@ -1,0 +1,152 @@
+{
+  "status": "passed",
+  "scope": "Offline engineering preflight; one sample, no weight update, no accuracy or attack",
+  "model_revision": "1090956dd1c79bc93ae98dcf395590369435ec91",
+  "source_runs": {
+    "original-resources": {
+      "path": "runs/sar-adaptation-preflight-20261107/original-resources.json",
+      "sha256": "d030063c1ebcfb3dc2e9d9be8081037b9af7a8a0ae9a3e39899b6da1b71e2ef2"
+    },
+    "prepare": {
+      "path": "runs/sar-adaptation-preflight-20261107/prepare.json",
+      "sha256": "d087e4dd3ed9c8f10d672fbda72dbb1205cb9f847c647871439f9cf1c9591461"
+    },
+    "projector-backward": {
+      "path": "runs/sar-adaptation-preflight-20261107/projector-backward.json",
+      "sha256": "e562c8b52c85142142f7c82bf8d90d9c0688355fd97bb8b1e28edc38f4aff521"
+    }
+  },
+  "local_reverification": {
+    "original_resource_files": 1599,
+    "original_resource_bytes": 538404732,
+    "sarlang_pilot_files": 3,
+    "sarlang_pilot_bytes": 24655896,
+    "existing_development_images": 60,
+    "llava_checkpoint": {
+      "files_verified": 14,
+      "weight_sha256": "ec7b02696781afdb1f27871fdffe0f71ef030932d10fbd759bc59392669605f7",
+      "weight_file_unchanged": true
+    }
+  },
+  "versions": {
+    "torch": "2.6.0+cu118",
+    "transformers": "4.48.3",
+    "pillow": "13.0.0"
+  },
+  "probe": {
+    "sample_id": "sar-clean-dev-00006a35a023a5a7840e",
+    "image_sha256": "94d55c8d4dc2efb920cc94e14a44a94db6ebb4014105f608d3392a74fd75af26",
+    "sample_role": "fixed first record from the existing development screen; engineering only",
+    "prefix_tokens": 772,
+    "image_tokens": 729,
+    "pixel_shape": [
+      1,
+      3,
+      384,
+      384
+    ],
+    "answer_target": "ship",
+    "target_ids": [
+      5270,
+      151645
+    ],
+    "eos_token_id": 151645,
+    "all_six_label_prefix_checks_passed": true,
+    "target_ids_by_label": {
+      "ship": [
+        5270,
+        151645
+      ],
+      "aircraft": [
+        1310,
+        7712,
+        151645
+      ],
+      "car": [
+        6918,
+        151645
+      ],
+      "tank": [
+        85171,
+        151645
+      ],
+      "bridge": [
+        13709,
+        151645
+      ],
+      "harbor": [
+        12982,
+        9368,
+        151645
+      ]
+    },
+    "supervised_tokens": 2,
+    "loss_excludes_prompt_and_image_tokens": true,
+    "first_answer_predicted_at_zero_based_position": 771,
+    "reference_in_generation_prompt": false
+  },
+  "gpu": {
+    "name": "NVIDIA GeForce GTX 1060 with Max-Q Design",
+    "compute_capability": [
+      6,
+      1
+    ],
+    "physical_memory_mib": 6143.875,
+    "free_before_load_mib": 5199.0
+  },
+  "model_load": {
+    "seconds": 7.218188499999997,
+    "parameters": 864031264,
+    "parameters_enabled_for_gradient": 2230272,
+    "percentage_enabled_for_gradient": 0.25812399306884337,
+    "mode": "eval",
+    "dtype": "float16",
+    "attention": "eager",
+    "peak_allocated_mib": 1678.64990234375,
+    "peak_reserved_mib": 1720.0,
+    "memory_scope": "PyTorch allocator including resident model, not whole-device usage"
+  },
+  "backward": {
+    "seconds": 10.992021300000488,
+    "answer_loss": 0.313922256231308,
+    "projector_gradients": {
+      "multi_modal_projector.linear_1.weight": {
+        "elements": 1179648,
+        "nonzero": 1179637,
+        "l2": 8.04500961303711
+      },
+      "multi_modal_projector.linear_1.bias": {
+        "elements": 1024,
+        "nonzero": 1024,
+        "l2": 0.13253253698349
+      },
+      "multi_modal_projector.linear_2.weight": {
+        "elements": 1048576,
+        "nonzero": 1048568,
+        "l2": 6.236143589019775
+      },
+      "multi_modal_projector.linear_2.bias": {
+        "elements": 1024,
+        "nonzero": 1024,
+        "l2": 0.3462119996547699
+      }
+    },
+    "frozen_parameters_with_gradients": 0,
+    "image_requires_gradient": false,
+    "projector_values_unchanged": true,
+    "optimizer_created": false,
+    "optimizer_steps": 0,
+    "free_after_backward_mib": 1379.0,
+    "peak_allocated_mib": 3640.84228515625,
+    "peak_reserved_mib": 3792.0,
+    "memory_scope": "PyTorch allocator including resident model, not whole-device usage"
+  },
+  "scope_limits": {
+    "weights_updated": false,
+    "fit_or_accuracy_test_run": false,
+    "formal_test_used": false,
+    "attack_run": false,
+    "trainability_with_optimizer_measured": false,
+    "establishes_sar_capability": false
+  }
+}

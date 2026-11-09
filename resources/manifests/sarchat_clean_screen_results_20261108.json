@@ -1,0 +1,152 @@
+{
+  "model": "JimmyMa99/SARChat-InternVL2.5-1B",
+  "revision": "6c963963",
+  "screen_sha256": "f222391cdf7c0745c73a438f59304a57757255203b3780350167b90c432a30dc",
+  "gradient_report_sha256": "d60b48652d4ab695019b1795541a17ce6e6b3f94652c52cd7137ff5142db173d",
+  "protocol_sha256": "96e41ea93f47002b64857a3842445aa1102bb838255b4d56402213486d6aa9b9",
+  "runner_sha256": "be80d75749e17b7902a5645d988a17ffe8abd0980f6633dd50c4364ba50b5d63",
+  "inventory_sha256": "b658b6382170e0d9913b3d6afcd31b685854fdc5d7a84e3ae9acc624e75e1f36",
+  "score": {
+    "scope": "Exploratory development screen, not a formal test",
+    "planned_samples": 60,
+    "correct": 49,
+    "accuracy": 0.8166666666666667,
+    "valid_answer_fraction": 0.9666666666666667,
+    "status_counts": {
+      "valid": 58,
+      "invalid_answer": 2
+    },
+    "per_class": {
+      "ship": {
+        "support": 10,
+        "correct": 8,
+        "recall": 0.8
+      },
+      "aircraft": {
+        "support": 10,
+        "correct": 7,
+        "recall": 0.7
+      },
+      "car": {
+        "support": 10,
+        "correct": 7,
+        "recall": 0.7
+      },
+      "tank": {
+        "support": 10,
+        "correct": 9,
+        "recall": 0.9
+      },
+      "bridge": {
+        "support": 10,
+        "correct": 9,
+        "recall": 0.9
+      },
+      "harbor": {
+        "support": 10,
+        "correct": 9,
+        "recall": 0.9
+      }
+    },
+    "six_class_macro_recall": 0.8166666666666668,
+    "confusion": {
+      "ship": {
+        "ship": 8,
+        "aircraft": 0,
+        "car": 0,
+        "tank": 0,
+        "bridge": 1,
+        "harbor": 0,
+        "__invalid_or_missing__": 1
+      },
+      "aircraft": {
+        "ship": 1,
+        "aircraft": 7,
+        "car": 0,
+        "tank": 0,
+        "bridge": 2,
+        "harbor": 0,
+        "__invalid_or_missing__": 0
+      },
+      "car": {
+        "ship": 1,
+        "aircraft": 0,
+        "car": 7,
+        "tank": 0,
+        "bridge": 1,
+        "harbor": 0,
+        "__invalid_or_missing__": 1
+      },
+      "tank": {
+        "ship": 0,
+        "aircraft": 0,
+        "car": 0,
+        "tank": 9,
+        "bridge": 1,
+        "harbor": 0,
+        "__invalid_or_missing__": 0
+      },
+      "bridge": {
+        "ship": 0,
+        "aircraft": 0,
+        "car": 0,
+        "tank": 1,
+        "bridge": 9,
+        "harbor": 0,
+        "__invalid_or_missing__": 0
+      },
+      "harbor": {
+        "ship": 0,
+        "aircraft": 0,
+        "car": 0,
+        "tank": 0,
+        "bridge": 1,
+        "harbor": 9,
+        "__invalid_or_missing__": 0
+      }
+    },
+    "gate": {
+      "criteria": {
+        "complete_planned_size": true,
+        "complete_prediction_accounting": true,
+        "class_support": true,
+        "valid_answer_fraction": true,
+        "accuracy": true,
+        "per_class_recall": true
+      },
+      "passed": true
+    },
+    "denominator_rule": "All planned samples including missing, invalid and failed responses"
+  },
+  "gpu": "NVIDIA GeForce GTX 1060 with Max-Q Design",
+  "screen_peak_allocated_mib": 1886.16162109375,
+  "gradient": {
+    "status": "passed",
+    "screen_sha256": "f222391cdf7c0745c73a438f59304a57757255203b3780350167b90c432a30dc",
+    "script_sha256": "dbcd07f4b035ea2a11bade9c2024be19974fc8199e5c29b01e8489086addfe0e",
+    "sample_id": "sar-adapt-00143e1b2c521d1b65fd",
+    "reference": "ship",
+    "input": "normalized RGB tensor after resizing",
+    "shape": [
+      1,
+      3,
+      448,
+      448
+    ],
+    "dtype": "torch.float16",
+    "target_tokens": 2,
+    "loss": 1.9312505722045898,
+    "gradient_finite": true,
+    "gradient_nonzero": 602111,
+    "gradient_max_abs": 7.15234375,
+    "weights_frozen": true,
+    "seconds": 14.53260379999847,
+    "peak_allocated_mib": 3924.30322265625
+  },
+  "limitations": [
+    "Exploratory development panel; not independent held-out test",
+    "SARChat training uses SARDet-100K; sample and source overlap must be audited",
+    "Grouped panel has source/class confounding; scene independence is not established",
+    "Gradient checked for normalized resized input only; no attack performed"
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "status": "exploratory pilot; assistant semantic interpretation is not independent human review",
+  "source_sha256": "434f2db703c94b1409f3d5c154b5ed2a62b3cc9f91f233740500f980dde19d45",
+  "model": "akshaydudhane/EarthDial_4B_MS",
+  "answer_interpretation_before_reference": {
+    "Bare land": null,
+    "The ship is located in the right of the image.": "ship",
+    "The ship is in the right of the image.": "ship",
+    "The ship is in the left of the image.": "ship",
+    "The target category in this SAR image is coniferous forest.": null,
+    "The coniferous forest is transitional in this SAR image.": null,
+    "The ship is in the upper right of the image.": "ship",
+    "The coniferous forest is located in the upper right of the image.": null,
+    "The ship is located in the upper right of the image.": "ship"
+  },
+  "counts": {
+    "unresolved": 5,
+    "correct": 1,
+    "wrong_label": 6
+  },
+  "total": 12,
+  "per_class": {
+    "ship": {
+      "support": 2,
+      "correct": 1,
+      "wrong_label": 0,
+      "unresolved": 1
+    },
+    "aircraft": {
+      "support": 2,
+      "correct": 0,
+      "wrong_label": 2,
+      "unresolved": 0
+    },
+    "car": {
+      "support": 2,
+      "correct": 0,
+      "wrong_label": 0,
+      "unresolved": 2
+    },
+    "tank": {
+      "support": 2,
+      "correct": 0,
+      "wrong_label": 1,
+      "unresolved": 1
+    },
+    "bridge": {
+      "support": 2,
+      "correct": 0,
+      "wrong_label": 1,
+      "unresolved": 1
+    },
+    "harbor": {
+      "support": 2,
+      "correct": 0,
+      "wrong_label": 2,
+      "unresolved": 0
+    }
+  },
+  "items": [
+    {
+      "sample_id": "sar-adapt-00143e1b2c521d1b65fd",
+      "answer": "Bare land",
+      "interpreted_label": null,
+      "reference": "ship",
+      "outcome": "unresolved"
+    },
+    {
+      "sample_id": "sar-adapt-0014962ac3e76bce336d",
+      "answer": "The ship is located in the right of the image.",
+      "interpreted_label": "ship",
+      "reference": "ship",
+      "outcome": "correct"
+    },
+    {
+      "sample_id": "sar-adapt-0042ac0f83993a44a48a",
+      "answer": "The ship is in the right of the image.",
+      "interpreted_label": "ship",
+      "reference": "aircraft",
+      "outcome": "wrong_label"
+    },
+    {
+      "sample_id": "sar-adapt-0042f9464220ece14cbf",
+      "answer": "The ship is in the left of the image.",
+      "interpreted_label": "ship",
+      "reference": "aircraft",
+      "outcome": "wrong_label"
+    },
+    {
+      "sample_id": "sar-adapt-072871f196b28fb8fbc4",
+      "answer": "Bare land",
+      "interpreted_label": null,
+      "reference": "car",
+      "outcome": "unresolved"
+    },
+    {
+      "sample_id": "sar-adapt-07519f77b1b2f1f7dce3",
+      "answer": "The target category in this SAR image is coniferous forest.",
+      "interpreted_label": null,
+      "reference": "car",
+      "outcome": "unresolved"
+    },
+    {
+      "sample_id": "sar-adapt-043a5c3085537911e485",
+      "answer": "The coniferous forest is transitional in this SAR image.",
+      "interpreted_label": null,
+      "reference": "tank",
+      "outcome": "unresolved"
+    },
+    {
+      "sample_id": "sar-adapt-0473d7618dbec66dfb68",
+      "answer": "The ship is in the right of the image.",
+      "interpreted_label": "ship",
+      "reference": "tank",
+      "outcome": "wrong_label"
+    },
+    {
+      "sample_id": "sar-adapt-00670eebc1ace4f031c8",
+      "answer": "The ship is in the upper right of the image.",
+      "interpreted_label": "ship",
+      "reference": "bridge",
+      "outcome": "wrong_label"
+    },
+    {
+      "sample_id": "sar-adapt-006ba932a68632a8b689",
+      "answer": "The coniferous forest is located in the upper right of the image.",
+      "interpreted_label": null,
+      "reference": "bridge",
+      "outcome": "unresolved"
+    },
+    {
+      "sample_id": "sar-adapt-038dad1d1abe093f8342",
+      "answer": "The ship is in the upper right of the image.",
+      "interpreted_label": "ship",
+      "reference": "harbor",
+      "outcome": "wrong_label"
+    },
+    {
+      "sample_id": "sar-adapt-042a78e191e48dffecc4",
+      "answer": "The ship is located in the upper right of the image.",
+      "interpreted_label": "ship",
+      "reference": "harbor",
+      "outcome": "wrong_label"
+    }
+  ],
+  "matched_sarchat_internvl2b": {
+    "correct": 12,
+    "total": 12,
+    "source_sha256": "d164fb1c21302d547181949c280482747889862c0559e351708930e2d4fb4bb3"
+  },
+  "limitations": [
+    "only 12 development images, two per class; training overlap not checked",
+    "single 448 tile and FP16, not author original BF16 dynamic tiling",
+    "legacy cache compatibility and CPU/GPU offload not numerically compared to author environment",
+    "out of six labels counted unresolved; no attack or input-gradient test",
+    "generation token count not instrumented"
+  ]
+}

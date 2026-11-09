@@ -1,0 +1,18 @@
+{
+  "doi": "10.17632/t2f8n66c87.2",
+  "status": "data format inspection only",
+  "files": [
+    {
+      "name": "ICEYE_GRD_SLEDP_4228243_2024090Netherlands_down1x_slice1024_0000.png",
+      "sha256": "95bcd5eb470ac6f03508bb95e35613563b3da15813008bea722ad7ded85cb340",
+      "size": 475561,
+      "id": "0d1019a8-8d33-43ee-895a-7ce984a1022f"
+    },
+    {
+      "name": "ICEYE_X23_GRD_SLEDF_3521349_20240305T1055Afica_down1x_slice1024_0009.png",
+      "sha256": "3f1d116934e5151ac13eef034967c4fdd82093cb7182bae9fb84882c7c3f0d91",
+      "size": 419163,
+      "id": "23cecaa5-fa3c-4fcb-b63b-e5153aeacb13"
+    }
+  ]
+}

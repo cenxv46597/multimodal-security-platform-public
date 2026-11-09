@@ -1,0 +1,8 @@
+{
+  "stage": "Pre-inference feasibility of paired occlusion",
+  "grouped_plan_sha256": "bc712ce9733fa633e3a6628cea93da0f3777291dd36f011a98ac0152c117f4f9",
+  "target": "Largest clipped annotated box by pixel area; ties follow annotation order.",
+  "background": "Same pixel width and height; first top-to-bottom, left-to-right placement whose rectangle does not overlap any annotated box.",
+  "eligibility": "Both boxes must fit inside the original image and have nonzero area. Report all other samples as ineligible.",
+  "scope": "Feasibility only. The comparison of model scores requires a separately fixed fill and scoring procedure."
+}

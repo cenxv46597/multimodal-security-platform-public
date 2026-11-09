@@ -1,0 +1,304 @@
+{
+  "status": "completed",
+  "scope": "One-pass projector adaptation and paired image-level development validation",
+  "source_run": {
+    "path": "runs/sar-projector-pilot-20261107/pilot.json",
+    "sha256": "6760686d8c2df82e67cf898359f39bc98fafa5313e1c7d2227d62d07c2ca5a7d"
+  },
+  "source_acquisition": {
+    "path": "resources/manifests/sar_adaptation_data_acquisition_20261107.json",
+    "sha256": "ada12650afdc488a2dc72fa0ff030085f05557e48671f44df3d644d2e88b245d",
+    "verified_images": 180,
+    "response_body_bytes": 19900841
+  },
+  "records_sha256": "a20ae1360eb5ed6eb2c18e2abaf9fcb3f7865d1591ab1c0ac0b6a5943387d663",
+  "model_revision": "1090956dd1c79bc93ae98dcf395590369435ec91",
+  "base_weight_sha256": "ec7b02696781afdb1f27871fdffe0f71ef030932d10fbd759bc59392669605f7",
+  "protocol": {
+    "id": "sar_projector_pilot_v0",
+    "data_plan_sha256": "7ead393652361a5e9b789c62794f956a128818e814c2a5674adeda2e6759a68a",
+    "train_per_class": 20,
+    "validation_per_class": 10,
+    "seed": 20261107,
+    "optimizer": "AdamW",
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0,
+    "gradient_clip_norm": 1.0,
+    "epochs": 1,
+    "batch_size": 1,
+    "training_time_limit_seconds": 2400,
+    "peak_reserved_limit_mib": 5632,
+    "minimum_free_mib": 512,
+    "precision": "Frozen FP16 vision and language backbones, FP32 projector, eager attention",
+    "probe": "Use the first shuffled training image. Require a finite parameter change, lower same-image loss, finite FP32 AdamW states and unchanged frozen tensors. Restore the original projector and restart AdamW before the pilot.",
+    "validation": "Compare before and after on the same 60 development images with the original question, greedy generation and strict scorer. Apply the existing development gate. Original scene lineage remains unresolved."
+  },
+  "protocol_sha256": "b262771668d1005f9323a37e94110873144e041aa64f22baa1faeab30170d782",
+  "screen_sha256": "bc8e50d533720ca61d986c72aac11c001a6f1437c33a5cb939009f880b1f488a",
+  "probe": {
+    "loss": 1.6689711809158325,
+    "gradient_norm_before_clip": 12.99335765838623,
+    "sample_id": "sar-adapt-01936c702d0e46578cb1",
+    "loss_after": 0.6547155380249023,
+    "seconds": 5.546962799999164,
+    "max_abs_parameter_change": 0.00010000169277191162,
+    "peak_allocated_mib": 3650.48095703125,
+    "peak_reserved_mib": 3810.0,
+    "free_mib_at_check": 1361.0,
+    "optimizer_steps": 1,
+    "frozen_sha256": "973419b778175a1fe6b2f1773a94095145a770fab9ba5822d73784536be9b4cd",
+    "passed": true,
+    "label": "harbor"
+  },
+  "training": {
+    "updates": 120,
+    "seconds": 115.27169449999928,
+    "peak_allocated_mib": 3667.119140625,
+    "peak_reserved_mib": 3812.0,
+    "projector_parameters": 2230272,
+    "frozen_weights_sha256": "973419b778175a1fe6b2f1773a94095145a770fab9ba5822d73784536be9b4cd",
+    "max_abs_projector_change": 0.0071732960641384125
+  },
+  "scores": {
+    "before": {
+      "planned_samples": 60,
+      "correct": 10,
+      "accuracy": 0.16666666666666666,
+      "valid_answer_fraction": 1.0,
+      "status_counts": {
+        "valid": 60
+      },
+      "per_class": {
+        "ship": {
+          "support": 10,
+          "correct": 10,
+          "recall": 1.0
+        },
+        "aircraft": {
+          "support": 10,
+          "correct": 0,
+          "recall": 0.0
+        },
+        "car": {
+          "support": 10,
+          "correct": 0,
+          "recall": 0.0
+        },
+        "tank": {
+          "support": 10,
+          "correct": 0,
+          "recall": 0.0
+        },
+        "bridge": {
+          "support": 10,
+          "correct": 0,
+          "recall": 0.0
+        },
+        "harbor": {
+          "support": 10,
+          "correct": 0,
+          "recall": 0.0
+        }
+      },
+      "six_class_macro_recall": 0.16666666666666666,
+      "confusion": {
+        "ship": {
+          "ship": 10,
+          "aircraft": 0,
+          "car": 0,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "aircraft": {
+          "ship": 10,
+          "aircraft": 0,
+          "car": 0,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "car": {
+          "ship": 10,
+          "aircraft": 0,
+          "car": 0,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "tank": {
+          "ship": 10,
+          "aircraft": 0,
+          "car": 0,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "bridge": {
+          "ship": 10,
+          "aircraft": 0,
+          "car": 0,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "harbor": {
+          "ship": 10,
+          "aircraft": 0,
+          "car": 0,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        }
+      },
+      "gate": {
+        "criteria": {
+          "complete_planned_size": true,
+          "complete_prediction_accounting": true,
+          "class_support": true,
+          "valid_answer_fraction": true,
+          "accuracy": false,
+          "per_class_recall": false
+        },
+        "passed": false
+      },
+      "raw_answer_counts": {
+        "ship": 60
+      }
+    },
+    "after": {
+      "planned_samples": 60,
+      "correct": 29,
+      "accuracy": 0.48333333333333334,
+      "valid_answer_fraction": 1.0,
+      "status_counts": {
+        "valid": 60
+      },
+      "per_class": {
+        "ship": {
+          "support": 10,
+          "correct": 9,
+          "recall": 0.9
+        },
+        "aircraft": {
+          "support": 10,
+          "correct": 8,
+          "recall": 0.8
+        },
+        "car": {
+          "support": 10,
+          "correct": 6,
+          "recall": 0.6
+        },
+        "tank": {
+          "support": 10,
+          "correct": 0,
+          "recall": 0.0
+        },
+        "bridge": {
+          "support": 10,
+          "correct": 6,
+          "recall": 0.6
+        },
+        "harbor": {
+          "support": 10,
+          "correct": 0,
+          "recall": 0.0
+        }
+      },
+      "six_class_macro_recall": 0.48333333333333334,
+      "confusion": {
+        "ship": {
+          "ship": 9,
+          "aircraft": 1,
+          "car": 0,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "aircraft": {
+          "ship": 1,
+          "aircraft": 8,
+          "car": 1,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "car": {
+          "ship": 0,
+          "aircraft": 4,
+          "car": 6,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "tank": {
+          "ship": 7,
+          "aircraft": 1,
+          "car": 0,
+          "tank": 0,
+          "bridge": 2,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "bridge": {
+          "ship": 2,
+          "aircraft": 0,
+          "car": 2,
+          "tank": 0,
+          "bridge": 6,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "harbor": {
+          "ship": 2,
+          "aircraft": 5,
+          "car": 1,
+          "tank": 0,
+          "bridge": 2,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        }
+      },
+      "gate": {
+        "criteria": {
+          "complete_planned_size": true,
+          "complete_prediction_accounting": true,
+          "class_support": true,
+          "valid_answer_fraction": true,
+          "accuracy": false,
+          "per_class_recall": false
+        },
+        "passed": false
+      },
+      "raw_answer_counts": {
+        "ship": 21,
+        "aircraft": 19,
+        "car": 10,
+        "bridge": 10
+      }
+    }
+  },
+  "paired": {
+    "both_correct": 9,
+    "became_correct": 20,
+    "became_incorrect": 1,
+    "both_incorrect": 30
+  },
+  "projector_checkpoint": {
+    "path": "runs/sar-projector-pilot-20261107/pilot.safetensors",
+    "sha256": "3c9434312a220a3b1155c49c019e62efc78c33de136d7b207b36e62fdfa0d7dc",
+    "bytes": 8921536
+  },
+  "total_seconds": 252.0067725000008,
+  "original_scene_independence": "unresolved"
+}

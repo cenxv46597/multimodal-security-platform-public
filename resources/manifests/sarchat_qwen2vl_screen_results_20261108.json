@@ -1,0 +1,138 @@
+{
+  "model": "JimmyMa99/SARChat-Qwen2VL-2B",
+  "inventory_sha256": "c4e9da12e49b604725a5a890301fbaf9eabb839de0870b25fb9ecce22495365a",
+  "runner_sha256": "d48c418a4ec61b514a8236454b9fe05d80b0352e66abf2a3baaed310e6bb8e26",
+  "screen_sha256": "19f59210771adb9961bf18eb6b155da0cb07e6291ba0bc5f9392d5db2950c241",
+  "probe_sha256": "c471b2ea1637f07054cd5ef6280ffdfe2150e66575a641860e1fe46cae310ee3",
+  "score": {
+    "scope": "Exploratory development screen, not a formal test",
+    "planned_samples": 60,
+    "correct": 37,
+    "accuracy": 0.6166666666666667,
+    "valid_answer_fraction": 0.8333333333333334,
+    "status_counts": {
+      "valid": 50,
+      "invalid_answer": 10
+    },
+    "per_class": {
+      "ship": {
+        "support": 10,
+        "correct": 8,
+        "recall": 0.8
+      },
+      "aircraft": {
+        "support": 10,
+        "correct": 6,
+        "recall": 0.6
+      },
+      "car": {
+        "support": 10,
+        "correct": 8,
+        "recall": 0.8
+      },
+      "tank": {
+        "support": 10,
+        "correct": 6,
+        "recall": 0.6
+      },
+      "bridge": {
+        "support": 10,
+        "correct": 9,
+        "recall": 0.9
+      },
+      "harbor": {
+        "support": 10,
+        "correct": 0,
+        "recall": 0.0
+      }
+    },
+    "six_class_macro_recall": 0.6166666666666667,
+    "confusion": {
+      "ship": {
+        "ship": 8,
+        "aircraft": 0,
+        "car": 0,
+        "tank": 0,
+        "bridge": 1,
+        "harbor": 0,
+        "__invalid_or_missing__": 1
+      },
+      "aircraft": {
+        "ship": 0,
+        "aircraft": 6,
+        "car": 0,
+        "tank": 0,
+        "bridge": 0,
+        "harbor": 0,
+        "__invalid_or_missing__": 4
+      },
+      "car": {
+        "ship": 1,
+        "aircraft": 0,
+        "car": 8,
+        "tank": 0,
+        "bridge": 0,
+        "harbor": 0,
+        "__invalid_or_missing__": 1
+      },
+      "tank": {
+        "ship": 2,
+        "aircraft": 0,
+        "car": 0,
+        "tank": 6,
+        "bridge": 2,
+        "harbor": 0,
+        "__invalid_or_missing__": 0
+      },
+      "bridge": {
+        "ship": 0,
+        "aircraft": 0,
+        "car": 0,
+        "tank": 0,
+        "bridge": 9,
+        "harbor": 0,
+        "__invalid_or_missing__": 1
+      },
+      "harbor": {
+        "ship": 3,
+        "aircraft": 0,
+        "car": 1,
+        "tank": 0,
+        "bridge": 3,
+        "harbor": 0,
+        "__invalid_or_missing__": 3
+      }
+    },
+    "gate": {
+      "criteria": {
+        "complete_planned_size": true,
+        "complete_prediction_accounting": true,
+        "class_support": true,
+        "valid_answer_fraction": false,
+        "accuracy": true,
+        "per_class_recall": false
+      },
+      "passed": false
+    },
+    "denominator_rule": "All planned samples including missing, invalid and failed responses"
+  },
+  "gpu": "NVIDIA GeForce GTX 1060 with Max-Q Design",
+  "max_per_sample_peak_allocated_mib": 4380.2734375,
+  "execution": {
+    "dtype": "float16",
+    "attention": "eager",
+    "max_pixels": 200704,
+    "generation": {
+      "do_sample": false,
+      "max_new_tokens": 12
+    }
+  },
+  "limitations": [
+    "60-image exploratory development panel; not independent formal test",
+    "strict parser marks complete sentences invalid, including some harbor mentions",
+    "SARChat training uses SARDet-100K; potential sample/source exposure and class-source confounding",
+    "model-specific image preprocessing; not a controlled architecture-only comparison",
+    "no gradient or attacks performed",
+    "master branch contents pinned by upstream file SHA256; commit revision unresolved"
+  ]
+}

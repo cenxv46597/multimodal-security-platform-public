@@ -1,0 +1,107 @@
+{
+  "model": "JimmyMa99/SARChat-InternVL2.5-2B",
+  "revision": "master",
+  "revision_note": "branch; content pinned by upstream file SHA256",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size": 2076,
+      "sha256": "f1e3f0b3500dc6049147ab8843c408e132fbfc93c93f8b973ea41cc0ae309246"
+    },
+    {
+      "path": "README.md",
+      "size": 1427,
+      "sha256": "132efd0e8b5aca98affac177797186520204b09f7e9f0c116c6aba9f49c6ab35"
+    },
+    {
+      "path": "added_tokens.json",
+      "size": 179,
+      "sha256": "df59e170102f8d19d3e186cc91c81006c9822ea9fe8ce2b68e7be77195c01db3"
+    },
+    {
+      "path": "args.json",
+      "size": 16121,
+      "sha256": "e2cb559c48216c803148d472f10d63d5dbf2fe5c5c8353a4b0a4e5b2eeabeb22"
+    },
+    {
+      "path": "config.json",
+      "size": 5811,
+      "sha256": "aa822d85fe8aa1fe0b34b64a2d9ea3c9de378d12d4a87cb49ed786b101af9032"
+    },
+    {
+      "path": "configuration.json",
+      "size": 54,
+      "sha256": "ab5336ae1ae17295c692c8164145540b8992abe63d59a09b259142ea7358b911"
+    },
+    {
+      "path": "configuration_intern_vit.py",
+      "size": 5548,
+      "sha256": "22dd687a5f142985407675fc6b1dc688c2ded93e54192543ecf28ef495a6efa8"
+    },
+    {
+      "path": "configuration_internlm2.py",
+      "size": 7005,
+      "sha256": "9f9e14d64be7b81068e8421fd27e1c466b3fb6aeb67725ca328e56083c3f7a60"
+    },
+    {
+      "path": "configuration_internvl_chat.py",
+      "size": 3937,
+      "sha256": "fdc4ed90052f46f6bd5ac7fcfb573e8086e1d6d085a9320b9ecf90f4fb928b24"
+    },
+    {
+      "path": "conversation.py",
+      "size": 15309,
+      "sha256": "b1b9f280e9cb9211e519e2b8071002b57cc742aadb2f49b05fa674ee3c7d83ee"
+    },
+    {
+      "path": "generation_config.json",
+      "size": 115,
+      "sha256": "e9134bda711dcb222776dc0756a2b18af2f489bfbddd35e3e53e400e813175f9"
+    },
+    {
+      "path": "model.safetensors",
+      "size": 4411571040,
+      "sha256": "a23c44278b8b7e7c7a4af7adf1822862a5c30ec4c301cd02c3fed4787f79f217"
+    },
+    {
+      "path": "modeling_intern_vit.py",
+      "size": 18063,
+      "sha256": "619c2b96987bf45018a32d8abd16e7f7036995c16e1bd762c3507d58b8fdb672"
+    },
+    {
+      "path": "modeling_internlm2.py",
+      "size": 61208,
+      "sha256": "c014d933c6afdf7414791c1859c692ca4b49c925688bcc00fbd1658ef75fb0ba"
+    },
+    {
+      "path": "modeling_internvl_chat.py",
+      "size": 15656,
+      "sha256": "cdefb116374d9fa05fb0fcce1e4ac70a62fb04ec111f16a83d10a771acbcbaa8"
+    },
+    {
+      "path": "preprocessor_config.json",
+      "size": 287,
+      "sha256": "0658115064c561026539aeeead9ed3b1a8e0cc90967df8c142849199f955d2b4"
+    },
+    {
+      "path": "special_tokens_map.json",
+      "size": 844,
+      "sha256": "8cb729e6fd4c29e8c5be65cb51128735cea0ab56606a186cf8cbb30123c72eae"
+    },
+    {
+      "path": "tokenization_internlm2.py",
+      "size": 8791,
+      "sha256": "e548dc777a1def2f5339cfe12de8da2d12500d664e3dafa5c585c407e4b806fa"
+    },
+    {
+      "path": "tokenizer.model",
+      "size": 1477754,
+      "sha256": "f868398fc4e05ee1e8aeba95ddf18ddcc45b8bce55d5093bead5bbf80429b48b"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "size": 4036,
+      "sha256": "6bf5ae20f0d212e0755a9f64b111304360f380c1ddb862fbfc9bd341ec99ee28"
+    }
+  ]
+}

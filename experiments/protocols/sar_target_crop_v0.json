@@ -1,0 +1,9 @@
+{
+  "grouped_plan_sha256": "bc712ce9733fa633e3a6628cea93da0f3777291dd36f011a98ac0152c117f4f9",
+  "task": "Annotated-object crop classification on the same 60 development images.",
+  "target_selection": "Largest clipped annotated box, ties follow source annotation order.",
+  "crop": "Expand selected clipped box by 25 percent of its width and height on each side, round outward and clip to image bounds.",
+  "model": "LLaVA standard adapted projector",
+  "question_and_scoring": "Reuse fixed six-class question, greedy decoding, 12 new tokens, strict full-label parser and all 60 samples in the denominator.",
+  "interpretation": "Ground-truth boxes supply target location. This separate task diagnoses classification given location and is not directly comparable as unassisted whole-image inference. Cropping changes context and effective resolution."
+}

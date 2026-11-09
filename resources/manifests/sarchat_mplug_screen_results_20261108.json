@@ -1,0 +1,263 @@
+{
+  "model": "JimmyMa99/SARChat-mPLUG-Owl3-1B",
+  "runner_sha256": "ee68494092929a06cfdba084089c4dc0a0afa18c975b7aef1961d4c8cc2b8ea3",
+  "inventory_sha256": "8794bbef9182fb71c189c2c3ce6ac7800282e482bb83672fbb07022a1a6e78cd",
+  "probe_sha256": "4c2481b57a8a7486362e5edff9cc6a23514e91b7e6601dfca3f50b2e43f31030",
+  "screen_sha256": "759a06acd5747abfb463e197eb1bbf65c3a08c4e5fc014c84baa0d315cf304a3",
+  "strict_score": {
+    "scope": "Exploratory development screen, not a formal test",
+    "planned_samples": 60,
+    "correct": 4,
+    "accuracy": 0.06666666666666667,
+    "valid_answer_fraction": 0.06666666666666667,
+    "status_counts": {
+      "invalid_answer": 56,
+      "valid": 4
+    },
+    "per_class": {
+      "ship": {
+        "support": 10,
+        "correct": 0,
+        "recall": 0.0
+      },
+      "aircraft": {
+        "support": 10,
+        "correct": 0,
+        "recall": 0.0
+      },
+      "car": {
+        "support": 10,
+        "correct": 4,
+        "recall": 0.4
+      },
+      "tank": {
+        "support": 10,
+        "correct": 0,
+        "recall": 0.0
+      },
+      "bridge": {
+        "support": 10,
+        "correct": 0,
+        "recall": 0.0
+      },
+      "harbor": {
+        "support": 10,
+        "correct": 0,
+        "recall": 0.0
+      }
+    },
+    "six_class_macro_recall": 0.06666666666666667,
+    "confusion": {
+      "ship": {
+        "ship": 0,
+        "aircraft": 0,
+        "car": 0,
+        "tank": 0,
+        "bridge": 0,
+        "harbor": 0,
+        "__invalid_or_missing__": 10
+      },
+      "aircraft": {
+        "ship": 0,
+        "aircraft": 0,
+        "car": 0,
+        "tank": 0,
+        "bridge": 0,
+        "harbor": 0,
+        "__invalid_or_missing__": 10
+      },
+      "car": {
+        "ship": 0,
+        "aircraft": 0,
+        "car": 4,
+        "tank": 0,
+        "bridge": 0,
+        "harbor": 0,
+        "__invalid_or_missing__": 6
+      },
+      "tank": {
+        "ship": 0,
+        "aircraft": 0,
+        "car": 0,
+        "tank": 0,
+        "bridge": 0,
+        "harbor": 0,
+        "__invalid_or_missing__": 10
+      },
+      "bridge": {
+        "ship": 0,
+        "aircraft": 0,
+        "car": 0,
+        "tank": 0,
+        "bridge": 0,
+        "harbor": 0,
+        "__invalid_or_missing__": 10
+      },
+      "harbor": {
+        "ship": 0,
+        "aircraft": 0,
+        "car": 0,
+        "tank": 0,
+        "bridge": 0,
+        "harbor": 0,
+        "__invalid_or_missing__": 10
+      }
+    },
+    "gate": {
+      "criteria": {
+        "complete_planned_size": true,
+        "complete_prediction_accounting": true,
+        "class_support": true,
+        "valid_answer_fraction": false,
+        "accuracy": false,
+        "per_class_recall": false
+      },
+      "passed": false
+    },
+    "denominator_rule": "All planned samples including missing, invalid and failed responses"
+  },
+  "posthoc_diagnostic": {
+    "description": "post-hoc exploratory diagnostic, not original gate",
+    "rule": "Keep strict single labels; additionally accept exactly It is <one label>, ignoring case and outer whitespace, no punctuation.",
+    "converted": 55,
+    "score": {
+      "scope": "Exploratory development screen, not a formal test",
+      "planned_samples": 60,
+      "correct": 54,
+      "accuracy": 0.9,
+      "valid_answer_fraction": 0.9833333333333333,
+      "status_counts": {
+        "valid": 59,
+        "invalid_answer": 1
+      },
+      "per_class": {
+        "ship": {
+          "support": 10,
+          "correct": 9,
+          "recall": 0.9
+        },
+        "aircraft": {
+          "support": 10,
+          "correct": 10,
+          "recall": 1.0
+        },
+        "car": {
+          "support": 10,
+          "correct": 10,
+          "recall": 1.0
+        },
+        "tank": {
+          "support": 10,
+          "correct": 6,
+          "recall": 0.6
+        },
+        "bridge": {
+          "support": 10,
+          "correct": 10,
+          "recall": 1.0
+        },
+        "harbor": {
+          "support": 10,
+          "correct": 9,
+          "recall": 0.9
+        }
+      },
+      "six_class_macro_recall": 0.9,
+      "confusion": {
+        "ship": {
+          "ship": 9,
+          "aircraft": 0,
+          "car": 0,
+          "tank": 0,
+          "bridge": 1,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "aircraft": {
+          "ship": 0,
+          "aircraft": 10,
+          "car": 0,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "car": {
+          "ship": 0,
+          "aircraft": 0,
+          "car": 10,
+          "tank": 0,
+          "bridge": 0,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "tank": {
+          "ship": 2,
+          "aircraft": 0,
+          "car": 0,
+          "tank": 6,
+          "bridge": 1,
+          "harbor": 0,
+          "__invalid_or_missing__": 1
+        },
+        "bridge": {
+          "ship": 0,
+          "aircraft": 0,
+          "car": 0,
+          "tank": 0,
+          "bridge": 10,
+          "harbor": 0,
+          "__invalid_or_missing__": 0
+        },
+        "harbor": {
+          "ship": 0,
+          "aircraft": 0,
+          "car": 0,
+          "tank": 0,
+          "bridge": 1,
+          "harbor": 9,
+          "__invalid_or_missing__": 0
+        }
+      },
+      "gate": {
+        "criteria": {
+          "complete_planned_size": true,
+          "complete_prediction_accounting": true,
+          "class_support": true,
+          "valid_answer_fraction": true,
+          "accuracy": true,
+          "per_class_recall": true
+        },
+        "passed": true
+      },
+      "denominator_rule": "All planned samples including missing, invalid and failed responses"
+    },
+    "report_sha256": "f390ac85ab5bd98a8566e1a2a1ec701e7405a10d2517e4b27a1dfe3205c2ba90",
+    "diagnostic_script_sha256": "18aca45defcd66ed156673b87c90a545a5400c0882900358723701a25c684a64"
+  },
+  "same_rule_qwen": {
+    "correct": 40,
+    "valid_fraction": 0.8833333333333333,
+    "report_sha256": "68816d92ca6c51a979ce30f6f759e01072e3b747a37cd5729089e5bf6ee73a79"
+  },
+  "max_per_sample_peak_allocated_mib": 2606.93896484375,
+  "gpu": "NVIDIA GeForce GTX 1060 with Max-Q Design",
+  "execution": {
+    "dtype": "float16",
+    "attention": "sdpa",
+    "cut_enable": true,
+    "image_size": 384,
+    "system": "You are a helpful assistant.",
+    "generation": {
+      "do_sample": false,
+      "max_new_tokens": 12
+    }
+  },
+  "limitations": [
+    "Strict gate failed; alternate format rule was defined after observing output and is exploratory",
+    "Potential SARDet-100K training overlap and source/class confounding; independent test required",
+    "Official forward_image uses torch.inference_mode; input gradient not tested",
+    "master branch file contents pinned by SHA256; commit revision unresolved",
+    "Different models use model-specific image preprocessing"
+  ]
+}

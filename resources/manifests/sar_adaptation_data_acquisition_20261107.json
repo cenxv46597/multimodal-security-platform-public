@@ -1,0 +1,4347 @@
+{
+  "status": "passed",
+  "started_at": "2026-11-07T13:48:13+08:00",
+  "plan": "resources/manifests/sar_adaptation_data_plan_20261107.json",
+  "source_plan_sha256": "7ead393652361a5e9b789c62794f956a128818e814c2a5674adeda2e6759a68a",
+  "requested_images": 180,
+  "response_body_byte_limit": 39801682,
+  "max_attempts_per_image": 2,
+  "historical_development_images_checked": 60,
+  "example_images_checked": 20,
+  "pixel_hash": "SHA256 of 8-byte big-endian width, 8-byte big-endian height, and decoded RGB bytes",
+  "scope": "Development comparison at image level. Original scene and constituent source dataset lineage remain unresolved.",
+  "records": {
+    "path": "data/processed/sar_adaptation_v0/records.jsonl",
+    "count": 180,
+    "sha256": "a20ae1360eb5ed6eb2c18e2abaf9fcb3f7865d1591ab1c0ac0b6a5943387d663"
+  },
+  "training_run": false,
+  "formal_test_created": false,
+  "files": [
+    {
+      "sample_id": "sar-adapt-0000346e026baf935010",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0006909.jpg",
+        "bytes": 7044,
+        "sha256": "1e2a830edf8314b9252098a7774698c355fc2b3d8443c583fbbc1669b3bbaffd",
+        "pixel_sha256": "40c64466bd1f77a139f06993e3aecccf7dc8ceb4486720f85c8d9c2298e49a30",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0006909.jpg",
+        "content_range": "bytes 0-7043/7044",
+        "etag": "\"e128733faf68840ba6677b807f839fdb\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-000269daaf00ccc434e7",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0048598.jpg",
+        "bytes": 36032,
+        "sha256": "ded2fbf6ff0d927f43f01864fea2b7696cc30ff93f1cb0149d1e3f700f753870",
+        "pixel_sha256": "acc53f96b289eca6bb99c2f849a027df0eae492b334d9a81d1a5b23c5bd56ea6",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0048598.jpg",
+        "content_range": "bytes 0-36031/36032",
+        "etag": "\"502f03b48caf10a4da78bfebe40cdd9a\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0002af36064884ad498c",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0075094.jpg",
+        "bytes": 34371,
+        "sha256": "86c839eddac14c2263bc862b0a15fead1da5b1c929d4ac3eef9daadd57e02c33",
+        "pixel_sha256": "dc60682a3f7f54d40ba1d39e8c3e6025f717189bd4539de2f0da01d85e682cce",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0075094.jpg",
+        "content_range": "bytes 0-34370/34371",
+        "etag": "\"183da93c41faea825654cc3d6695aa57\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-00031e22d73ef441c61c",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0114311.jpg",
+        "bytes": 73401,
+        "sha256": "f966cd372299d5e371aa6fadcc7f083fd07f7c9da942e057a61c17711d15a62d",
+        "pixel_sha256": "3aab455409dad93acd8a3ee843e1b8c6bd69786d4661ff552e469bb61df5de4f",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          800,
+          800
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0114311.jpg",
+        "content_range": "bytes 0-73400/73401",
+        "etag": "\"36939b6bd29b4df71b56852bf8f4c82f\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0003de74a92391b3aabd",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0051846.jpg",
+        "bytes": 13675,
+        "sha256": "8fd32ca26910040e054e7e98a20d62fdec491006b6c9cfa0e709cfc8e4840014",
+        "pixel_sha256": "f34aa46d6d00debf2d32f5e51b9bffec9e9d110a0ab23014622e2329fe8a6871",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0051846.jpg",
+        "content_range": "bytes 0-13674/13675",
+        "etag": "\"378b42b0d3276261ae84bd499714cb59\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-000557be5aafd0b44e03",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0020987.jpg",
+        "bytes": 29106,
+        "sha256": "f9a61a508c67d11e57d7786eadd9cda6d48a9a1a5b9a90c92e44c5dc371be33c",
+        "pixel_sha256": "9a438e39a1dbf22c2529a86aa48769d2db3ce93963f10f5fa36ccee0c1a238fd",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0020987.jpg",
+        "content_range": "bytes 0-29105/29106",
+        "etag": "\"28dd749ec95dc5584de59daf5fa861c9\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0005a18aa075761aed6c",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0043087.jpg",
+        "bytes": 2470,
+        "sha256": "adf04ba267be3a13e9e847c103f186fa7728666a52aeb26bc1d0d0b3221b1f98",
+        "pixel_sha256": "0dc52549112946fde2fcb77d0d4deb9963bbc657a1b5cf9ace4c21330775fe6f",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0043087.jpg",
+        "content_range": "bytes 0-2469/2470",
+        "etag": "\"c61d0ec3415b1aea3d3924e4ad142540\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0006522153f152279905",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0109746.jpg",
+        "bytes": 15823,
+        "sha256": "71cd233253694efa20e4e628687d900ec32613dd391b387eefa3e86c3c980d02",
+        "pixel_sha256": "6377b0f2028c1cf3c879d68f2de3abea941548f8f8853bcf4376a0e0de7997d2",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0109746.jpg",
+        "content_range": "bytes 0-15822/15823",
+        "etag": "\"2245c661f78fa08e2f1c79337fea744e\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0007167c5c96069e35e7",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0062506.jpg",
+        "bytes": 57024,
+        "sha256": "e4fda5f9ed4bd02d15a390b7bdd972c9da3164b152ea2fd459613a1aa360551b",
+        "pixel_sha256": "43c76b069b452d48e7f984e752a40e0e6efe8e681c90032a7691335677b4c0b3",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0062506.jpg",
+        "content_range": "bytes 0-57023/57024",
+        "etag": "\"cce1f412262b2c3703c8d12faed8f8e3\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-00083c0417c3ef17caf7",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0079201.jpg",
+        "bytes": 2206,
+        "sha256": "e987fd09b1bbe2082c431417c1865776afabb9069c605af1ccc68e58980b61f6",
+        "pixel_sha256": "394c459c83a32e4870b2c137537233fc3f66dd4d05c86f8604f2cede4b890812",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0079201.jpg",
+        "content_range": "bytes 0-2205/2206",
+        "etag": "\"496c1e81d58ec49cad24c3f84e500186\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-000aae3318c1652a45ad",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0045584.jpg",
+        "bytes": 30051,
+        "sha256": "f1d65a3fe1c77047ba0b144e83b5141c6e321cc9f6818b24417ba33375929a3b",
+        "pixel_sha256": "b7cff7b5bf6c72cd0e2ee601bb460fb9d3bdca73c7ad0463bc027fb263f4943e",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0045584.jpg",
+        "content_range": "bytes 0-30050/30051",
+        "etag": "\"0d003771f119839899e188b70a45068b\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-000c4f6cd31466c827b0",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0075314.jpg",
+        "bytes": 48272,
+        "sha256": "01bac589148139d85f4d78d28172a11181838fed2e60f0be275b25b3c03b6c94",
+        "pixel_sha256": "c3e735cdc53b16c796de99afbbc5ff7fa11becb4fa98df4b5ea75bd5ae2f262f",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0075314.jpg",
+        "content_range": "bytes 0-48271/48272",
+        "etag": "\"de6e180c80ea64bf39fd47fbad8d9237\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-000d67daebb2e748bf49",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0109045.jpg",
+        "bytes": 16996,
+        "sha256": "2c09b542a76bc43dff67e127c803ba5505d91c7c34e8430cfff3522fbb5dcc28",
+        "pixel_sha256": "22a3c65ca159fc17b0200fa8647024cc8a22010520be5cc98e67fe79b88f9827",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0109045.jpg",
+        "content_range": "bytes 0-16995/16996",
+        "etag": "\"2adae7ff959b3cac7a2afce81f33a8e4\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-000e7ec7177850ab83ed",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0075356.jpg",
+        "bytes": 8682,
+        "sha256": "876b2831559ff97ac4f4c04efcaecd3db72cd95f19cf7b4da40b08031b3556b4",
+        "pixel_sha256": "c388e7435a55eea2fd6bf75dd18ded0f7999ac7824392c62d12798536c88b207",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0075356.jpg",
+        "content_range": "bytes 0-8681/8682",
+        "etag": "\"2d9136295b8c44c0fce5a310492d956d\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-000ee75a962f286f3a25",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0077978.jpg",
+        "bytes": 43665,
+        "sha256": "2d09d36658998161194d73e279ff48910d33a3082eb4484967ffe3d5a056720e",
+        "pixel_sha256": "a1cb762151e75b8d4319f5bfd70594a2993199718f8f522c0978366375200dbe",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0077978.jpg",
+        "content_range": "bytes 0-43664/43665",
+        "etag": "\"3f9153f3a0c1af3b3c0235d6fa89d3cc\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0010aa88e7e839c9a6ae",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0006363.jpg",
+        "bytes": 18079,
+        "sha256": "887949ffc181d7c3cbac5364abc84a7762c4f2b3640221e1552b57798667dafb",
+        "pixel_sha256": "e1c84afa88c8e9db24b67f7a8de381089dc469072bba5f2c1bb7b49780488b58",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0006363.jpg",
+        "content_range": "bytes 0-18078/18079",
+        "etag": "\"cd06041b60ef965635bca65278c3a440\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0010d8abe542369ada50",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0100945.jpg",
+        "bytes": 1978,
+        "sha256": "5959b5ae4ca188155326c503a4a78989584baddd80b7118fe44fc8d0715a684d",
+        "pixel_sha256": "184211544f94172007b1aef38bf2c38a27b302919a2567748e95796d08ffe3af",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0100945.jpg",
+        "content_range": "bytes 0-1977/1978",
+        "etag": "\"cf0bf7ffe6573a4e23e26d8d0dce6f8b\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-00114098fc2396a4f7b2",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0048357.jpg",
+        "bytes": 62711,
+        "sha256": "3c6f88be0a01707c960a694b2c995fd0b51f941513e666ef79bb5f19da184315",
+        "pixel_sha256": "dd3dcf09b142aa930105a786515d3e829ce27e0e4b833e7541fca3bef1a42b91",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0048357.jpg",
+        "content_range": "bytes 0-62710/62711",
+        "etag": "\"24c9901dc92d130cb13235cbce29b2b2\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-001146b2f877c3965a49",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0030537.jpg",
+        "bytes": 6738,
+        "sha256": "30f8e8fb108fba5b848ce947bba402d9fd3832034612b83cc85fd3da61e578eb",
+        "pixel_sha256": "69a072f11e610d44d2139f98a5aa1d2d5cad61fc30b846c2a705b56944722db6",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0030537.jpg",
+        "content_range": "bytes 0-6737/6738",
+        "etag": "\"779d7ab203e69af0fa07d03a7ed3f9f8\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-001183fac3d4309d086b",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0085485.jpg",
+        "bytes": 53036,
+        "sha256": "21d3b35b315343e6569ae4cd29d4d5fad05c52f29725a1d43f2d2959778074ee",
+        "pixel_sha256": "87752f05ce96bb77dd65d4f54b44b339f9148585b76d4eefbb0f0b3d993857c8",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0085485.jpg",
+        "content_range": "bytes 0-53035/53036",
+        "etag": "\"f6affbc75b8f60f62585cef310b32830\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0001f85efaa6950e90db",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0036077.jpg",
+        "bytes": 103187,
+        "sha256": "4459b782196ae43890212a896eb650adda1c67c1d6c4e5aba0d678da52c7aab2",
+        "pixel_sha256": "1b064caab8dee4bafec1f51571cdaa3a7394b31c3acd3abefb7e317c7a51245b",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0036077.jpg",
+        "content_range": "bytes 0-103186/103187",
+        "etag": "\"b014a14051b3c072182ab4932bf287b5\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-000344d6ef6feb8e81d5",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0096325.jpg",
+        "bytes": 60450,
+        "sha256": "98491b851cc59b5a1a15cddf2754226036d77b842b1dacc001b26c00f08c301e",
+        "pixel_sha256": "2c33426d018b8c08d4ea312ba9b52b54cb001cd6b53b1cf8330706cb6e001740",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0096325.jpg",
+        "content_range": "bytes 0-60449/60450",
+        "etag": "\"6426e6e97e2a99c6f5eaeb89ca973736\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0006b3a7209f4d55abb9",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0009778.jpg",
+        "bytes": 76871,
+        "sha256": "8bde9035dfddfaa62becc282253b5d9f3e97296744da9d08e1ce7833213dff71",
+        "pixel_sha256": "b94aea575ff6cff9e387af56dc610d7a7e69816118a4ded13ae714244851e4ca",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0009778.jpg",
+        "content_range": "bytes 0-76870/76871",
+        "etag": "\"bc6e69489f414fd723eff72172ec5c63\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0006c784c4bc151272c2",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0056152.jpg",
+        "bytes": 125986,
+        "sha256": "35df4793ba50a14b034371bb21c1619c09f94dd22b473ff26f746bf819846559",
+        "pixel_sha256": "3631561eeb0fe3ef9313e5c0bd47b5d02e541ae547428ed5cd7a950ed56af803",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0056152.jpg",
+        "content_range": "bytes 0-125985/125986",
+        "etag": "\"53430a981ea488f7f90b852e54866593\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0008438b593b076b1a97",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0074699.jpg",
+        "bytes": 48247,
+        "sha256": "f2e5985d2205f8693a0fe8724d2fbb3e1b7ba1a6f898bd4fedd16159f950008e",
+        "pixel_sha256": "f54acf80982aa0330cdba1c7d40e67f52835bd6930016407325bd1d133f899be",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0074699.jpg",
+        "content_range": "bytes 0-48246/48247",
+        "etag": "\"1d6be1e1efec14d2911f06762ec8ac0c\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0013420e536378aa9ba8",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0067530.jpg",
+        "bytes": 126451,
+        "sha256": "645701b6cc86c93392187bab3d090e0ba40db1eac90054cca73c759cbe4c73bc",
+        "pixel_sha256": "9494c582aba03e08968e40ff184aadb87287e5d023a2e6e30cc3be9275ba46bf",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0067530.jpg",
+        "content_range": "bytes 0-126450/126451",
+        "etag": "\"022457172d8eb59a7e6d907379bf9e55\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-001441ce87dc70a2fd74",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0100405.jpg",
+        "bytes": 79964,
+        "sha256": "bcbe813e066a8280b03b7ebe72dc261ff2e55d430feed0b4dae218e3059ac309",
+        "pixel_sha256": "d48151615cd6d1a02c6e8374458d9bb9b789ff071a03e3c299458e3fcf3de9c5",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0100405.jpg",
+        "content_range": "bytes 0-79963/79964",
+        "etag": "\"f0a2c87254f2a8c7c6c0e955d504f347\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-001f986de8f09f825a84",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0038147.bmp",
+        "bytes": 150582,
+        "sha256": "c04d6ac403c83eea472b656674d45e40b2e959812f3c6d269dd8f7c6bce84ca6",
+        "pixel_sha256": "4fb18be52c952fdd82240fe26765108a487ab9c70e16fdd0979025d36a5f88ff",
+        "format": "BMP",
+        "mode": "RGB",
+        "size": [
+          224,
+          224
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0038147.bmp",
+        "content_range": "bytes 0-150581/150582",
+        "etag": "\"b6e387fd25923254c9cded9ec9be5208\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-002284e2d4b5440dff09",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0017146.jpg",
+        "bytes": 45183,
+        "sha256": "072dfb0bf6a681c5ee3b1b72a4638c27327d790e93dbf7c465c737f25b2e3eae",
+        "pixel_sha256": "9803ba98b6cd7640db162800514a743922cf1857ed4ef86ca303c309e007e586",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0017146.jpg",
+        "content_range": "bytes 0-45182/45183",
+        "etag": "\"d2fdd0ddac95fbbd6b3b42d898073e41\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0026d9e7241f231c963c",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0106159.jpg",
+        "bytes": 108141,
+        "sha256": "f0aebfbc241b713e99197bf22f9e59f24096df67a835283ad20e60bf4bd24e89",
+        "pixel_sha256": "918bd8d6de39dcd3e8700fd5d09b955c47eeb3632e33d38063143dd6f1547e9b",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0106159.jpg",
+        "content_range": "bytes 0-108140/108141",
+        "etag": "\"9d916772982908f82736a49f1d8f4fc3\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0028c094441b30f27cf9",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0052259.jpg",
+        "bytes": 114626,
+        "sha256": "8156ea46cc4214e767d10ad2e568f8303eea17152e1596af5eff1eed4ede41bc",
+        "pixel_sha256": "c48f1ce1f0939ac7147bc07eef3479848ccb3473ea1d5044a7bc8665c543cafc",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0052259.jpg",
+        "content_range": "bytes 0-114625/114626",
+        "etag": "\"114839f773a79d4a69e11194fcf08a11\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-003332709a9b490391f3",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0060883.jpg",
+        "bytes": 91730,
+        "sha256": "034110b11a77cd54133faa74c6206389a2428c87cf420396300f7509a4e3657c",
+        "pixel_sha256": "6e70c690a62e32a77de2e612e719d7b2d39c1287d324c368869b9a4366df11c7",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0060883.jpg",
+        "content_range": "bytes 0-91729/91730",
+        "etag": "\"49fa65ae93b9173a5a5bfdc93c3ce1c5\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0036a897366f96af131a",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0057293.jpg",
+        "bytes": 122820,
+        "sha256": "7010f08e8bc903126f4ed8ef875e9b18204dc027833ffa14cdf8b8cecd3ab2fc",
+        "pixel_sha256": "8ab663e067dfd468e7ab5768d94988ad83b8f52b38e24dd74e0d5cf0391f2e23",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0057293.jpg",
+        "content_range": "bytes 0-122819/122820",
+        "etag": "\"0822d9428459cf30211e1754f13f7d16\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0037b6b077d930c98121",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0017058.jpg",
+        "bytes": 114448,
+        "sha256": "76fed0aa4d4abb034541569d6fa94715d70d8f3b2498cdd218e45d265dc54493",
+        "pixel_sha256": "e9f1007e75e0cd0f8f4bbd048a2f24abe742480bcef432023ac50cc48841e81b",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0017058.jpg",
+        "content_range": "bytes 0-114447/114448",
+        "etag": "\"77c4878fb36a776602b8ac03bc7eedee\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0038bec2dc4c1a0ead67",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0097045.jpg",
+        "bytes": 82709,
+        "sha256": "049cab04815426993983a93764237a7a7f4b91a3c90ef382eb4d3e8437090855",
+        "pixel_sha256": "2c6c12b073653f7e14e9a0cbc1ca910a31d553f59902e791a17be8cb0214ed38",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0097045.jpg",
+        "content_range": "bytes 0-82708/82709",
+        "etag": "\"e5405251853044364d85073a42e96200\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0039f1f6a500a34183d9",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0081974.jpg",
+        "bytes": 89151,
+        "sha256": "1e3747a14c6482c5f270601f23973f67d42e3ab98da4b27c9bddc701d094a063",
+        "pixel_sha256": "061d7bd1925b2b27ac74189d73028c53e9492e023384a0c8edf4187f4afcdeec",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0081974.jpg",
+        "content_range": "bytes 0-89150/89151",
+        "etag": "\"69c9a93545198e96513b63e703cfbf22\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-003d91be7bcf6d1a4b06",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0062603.jpg",
+        "bytes": 118945,
+        "sha256": "13b4913cd0bf1101ad51549b8e822fb75964149175c8857511afbb7ece6afd9b",
+        "pixel_sha256": "5c36e4b1cf487d81435908b1db32349ddb981e9dbc0a298d5742e2224f908f45",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0062603.jpg",
+        "content_range": "bytes 0-118944/118945",
+        "etag": "\"3c7f4f80395d6e51bb4c2c0b813313a1\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-003f814b9a99d851262f",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0101067.jpg",
+        "bytes": 66114,
+        "sha256": "71d93530a1aa0aa0d7a9ce3a6315d1b1b0e075d139ba6e834bc07f9087dc0ab8",
+        "pixel_sha256": "89f567d159c5f23f1773c5a03fdf303251da7e49e4c29b19027a6fcf13b9644f",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0101067.jpg",
+        "content_range": "bytes 0-66113/66114",
+        "etag": "\"16314c48bac39ef56201126c1e6c2907\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-00404578990ec59bc741",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0002191.jpg",
+        "bytes": 67119,
+        "sha256": "5322c2ab6dabc481b8c649747f2d699177ac76ab1f3f70aa18bf62f6fa7a6096",
+        "pixel_sha256": "0746ae51d5c364d455755844e62038a8d900794df59a2388ce0b9fb4597cf9d2",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0002191.jpg",
+        "content_range": "bytes 0-67118/67119",
+        "etag": "\"e8cf1a7aa2cbcc0b8ffb711d1dccad13\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-00428fa7875187472d7d",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0109167.jpg",
+        "bytes": 108573,
+        "sha256": "a1c86215d48d0fee249269983710680cf4d39e7b643ecd5a7b91326820c2dcc9",
+        "pixel_sha256": "feb7224665c72d37f632a1e7d0e1c4e2f76484dcce9178c3db6a90965075b335",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0109167.jpg",
+        "content_range": "bytes 0-108572/108573",
+        "etag": "\"4446c49cc67cbd4c7c1c8b04c8c02366\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-00569a642fca1d4e73a7",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0089014.jpg",
+        "bytes": 204231,
+        "sha256": "abf191f11ee8a7b4a0ad55d3427d0114bcdbf66932e8ea87d162e9018a4b8a65",
+        "pixel_sha256": "198408d3bab342cc4bdee742d32f14691a3f4dd2b44675a75afa0d0e2b362eea",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0089014.jpg",
+        "content_range": "bytes 0-204230/204231",
+        "etag": "\"0d701449131d3c5829f3b3a2efa3e255\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-00f189670311ac440157",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0045113.jpg",
+        "bytes": 111297,
+        "sha256": "4ae6734d84b4d8665a8a17614d0e9c21f2180d0bc3f5446683f660386901f70b",
+        "pixel_sha256": "225c24e5de1a4f133fb2fb9a4e13a3d2474a5ae34f41475d6066b18710fee307",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0045113.jpg",
+        "content_range": "bytes 0-111296/111297",
+        "etag": "\"57ce78aadb271f6cc7ecdb2ef69e440d\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-01d91851c2d04f811e13",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0069901.jpg",
+        "bytes": 145234,
+        "sha256": "4b9f379b044101e72bab637e41266c0f664db2d39073c5b307c73e21c4d74c82",
+        "pixel_sha256": "e8b0b94964864e331161b546311fb6e3e1223a25c8a3dd0a4b93da88a4553807",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0069901.jpg",
+        "content_range": "bytes 0-145233/145234",
+        "etag": "\"a1e5a5d2aad72a1b2b9380203ae564e2\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-01ec91a2f70c60479337",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0058982.jpg",
+        "bytes": 168962,
+        "sha256": "cabdd43db96a62904545180d58ecc5374041d025720d976123074701289d6b10",
+        "pixel_sha256": "ee3be84809f454248635cefcc7fa513a9137f1ffa829ae2b4d0f69eada7611aa",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0058982.jpg",
+        "content_range": "bytes 0-168961/168962",
+        "etag": "\"a31745081dc2eda6239c3e9190a1f2f4\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-024f4fbd5a322b98a4dc",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0007169.jpg",
+        "bytes": 209734,
+        "sha256": "edb2848569dcecef443f62c72282a601bc3ed6e4e90c878f1e24b94bb28aaa81",
+        "pixel_sha256": "47f522b98c5a2f271aa3066a6230a872c1bdf6d234254e5f46d4d6fcc6c8f699",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0007169.jpg",
+        "content_range": "bytes 0-209733/209734",
+        "etag": "\"bb3c1d58d9b49d55b856cebcd0070ff7\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-026278779781a828a290",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0002031.jpg",
+        "bytes": 131011,
+        "sha256": "cb751f066032b6d4bb7b8e06028c636378f3e9fa2368f187c94d25c657d4ba10",
+        "pixel_sha256": "ef36aa80354d8cc4ac4c2c9fe2781cb07f6448e5107b9de9b0ff6bbf01c0ba3e",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0002031.jpg",
+        "content_range": "bytes 0-131010/131011",
+        "etag": "\"529bd523c06a199a3aef5e03731be972\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-028fc8a49327fd3ab235",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0085830.jpg",
+        "bytes": 207705,
+        "sha256": "889ee4efd6d960f791a6f8d9424d22802cea351a20730f7c79c6c8f09d666923",
+        "pixel_sha256": "3e4663429d36a30a854a35f5f561acbe8aa887cd226f1b55b8be63f3508e607c",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0085830.jpg",
+        "content_range": "bytes 0-207704/207705",
+        "etag": "\"a0308487052011a2ae145956e882673b\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-02c0e8fac62a574a8f7a",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0116461.jpg",
+        "bytes": 154672,
+        "sha256": "88e1995b87739718cf4279c96064a1dfe04692ebffaaa30135d2b93c233b79d1",
+        "pixel_sha256": "bd5e5e68233d99cf78434e4bde93dbeca3968ed0c7c46539a986d6d6fbbcb110",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0116461.jpg",
+        "content_range": "bytes 0-154671/154672",
+        "etag": "\"b26ea6930d7d987b4f64a0831dca937c\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-02c6e24e5f30806521ff",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0043158.jpg",
+        "bytes": 134262,
+        "sha256": "3390b45fd21b928fefd2ed26dd5513cafc794abaf7f806faa823a08dc8ac5b6c",
+        "pixel_sha256": "4b852c516256b4920070f6afa59806003bb21d24af8b2525cd5e4058d4ae389a",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0043158.jpg",
+        "content_range": "bytes 0-134261/134262",
+        "etag": "\"7512b324a415dc28b78f6f7d3f63f45e\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-02ed9db64cb51ab4cbbe",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0079358.jpg",
+        "bytes": 146708,
+        "sha256": "397dcc028923873bee9cba12c330953ebdf52081e903f4cdb5f4f57aebf8e6cb",
+        "pixel_sha256": "827a9f715563e1b833cd5e62a32f185a7f6e4177bfa82003585a82fc94ede503",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0079358.jpg",
+        "content_range": "bytes 0-146707/146708",
+        "etag": "\"aea8bcf64bcec8b8c8edb13258dd9c63\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0329567d5f66be783ddb",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0043685.jpg",
+        "bytes": 152009,
+        "sha256": "a872ec8f38f9e3d64a2450d698293800178cebd0e7569181d171ccc102090c91",
+        "pixel_sha256": "b3f6a253ef0dc5a3cabeb60bc8aecfe3fd75185ca91377e686b37b5a9f5e7ca4",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0043685.jpg",
+        "content_range": "bytes 0-152008/152009",
+        "etag": "\"8b420c52eecd5511466bd74e80e89bd7\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-033bc5b88cb5f3be59f9",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0049919.jpg",
+        "bytes": 126905,
+        "sha256": "f44fe9d93463cd46c54365d53af703e6c2f32fc8bf37202d4e89a3a898777fba",
+        "pixel_sha256": "cd1dc8a2beafb3f401f9f969afdbc20571cdb52e5aa06c1a63e845ccbf9b735c",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0049919.jpg",
+        "content_range": "bytes 0-126904/126905",
+        "etag": "\"02049d37a0dadf610bfac6b5d3682182\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-04210424d871a801b170",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0084222.jpg",
+        "bytes": 77990,
+        "sha256": "a11f27f5be311a7a8f8cd0ea0fa928c729126de11aec5c9df318ffa7e3ec0ad6",
+        "pixel_sha256": "9cb11dd0479a7ddce420b5a28e8117f911135bf186f38e80c73c94f768b81bba",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0084222.jpg",
+        "content_range": "bytes 0-77989/77990",
+        "etag": "\"a70a2fb197ffea7ef7b150296bc62c30\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-044249adc799509e1bbb",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0097573.jpg",
+        "bytes": 113955,
+        "sha256": "e175ccf838bab46fa850216624ae8835ceb517c908f7947b7f94c64c1a6ab0a2",
+        "pixel_sha256": "a6a2d0c6f931a9dd56321001a496d7126b0bf8bb036268a1d686d1b03a4513c7",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0097573.jpg",
+        "content_range": "bytes 0-113954/113955",
+        "etag": "\"f7c0712db4513c6a90a947c4cd9ab2a9\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-044bfe0328cc9daf0f17",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0074883.jpg",
+        "bytes": 193973,
+        "sha256": "7f8e1a46b0b8e4716ec60844234ff4213b485ea0649315ebb53464e2e8166ca6",
+        "pixel_sha256": "cfb1a7d07615392daf8c2842f9cbf9e87faf60ecf1afcf9a362218c79a9c2b14",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0074883.jpg",
+        "content_range": "bytes 0-193972/193973",
+        "etag": "\"0018eb42e7cdbc711274c791eea299c3\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-04e98c09aa66c78995d2",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0067413.jpg",
+        "bytes": 157065,
+        "sha256": "fdaf6b600dfeb538a1c538061e42ef20e31675ab33259cb975297dd5abbf4961",
+        "pixel_sha256": "d2f48fe60838e438f494001d279f8d2992e752795080634f668bf4050c79b442",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0067413.jpg",
+        "content_range": "bytes 0-157064/157065",
+        "etag": "\"aa4c0efdaf2bab2f509b778bc9923c47\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-05b275c8e046735e316f",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0110243.jpg",
+        "bytes": 219429,
+        "sha256": "1fab784843ea2caa3bd7261b9b304d8b83b1431b86ad83e29c8f231f85e6fbc9",
+        "pixel_sha256": "80c1a4336ef2fc73fd9dd3c0dac9a17fe2db5e29c80520c8cce32260606ffd1c",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0110243.jpg",
+        "content_range": "bytes 0-219428/219429",
+        "etag": "\"5f61aa0de1ca89bed19b13262ddd872c\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-06649f4190a7e8b5e0a6",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0014953.jpg",
+        "bytes": 185540,
+        "sha256": "f7bbf887ea6be2e95d1dc648e7e3dde3eaa64c2e733644e7e13f39d8e8e2a789",
+        "pixel_sha256": "131a46e0f44c36bdef5bf91e32968496ec19cc8b654f7478446f26cd636eb25c",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0014953.jpg",
+        "content_range": "bytes 0-185539/185540",
+        "etag": "\"1fda788d2886ea6569b9caf74f5f7ddc\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-066ccf5e17d3825f00d4",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0002168.jpg",
+        "bytes": 161304,
+        "sha256": "c9aa2ec3cf5202d41917be2f6e7336e11757490af042ef179d1b781a17af2b43",
+        "pixel_sha256": "7f6ccf531c3b488f1a1661d1dac7b4151defc6531a02b65fd153d835e719f94a",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0002168.jpg",
+        "content_range": "bytes 0-161303/161304",
+        "etag": "\"0059a13e8f753a996fb16fb110f2f85f\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-06a0f3d84f45017be7bc",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0097819.jpg",
+        "bytes": 209138,
+        "sha256": "6bf019a1b07c849920b1a73b72b1015cee131658548d5906eb8876f70353b697",
+        "pixel_sha256": "b251bbff7b5394a5b9087716c7a22f801e4cec5a19554bd549c39dea9c1e95e5",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0097819.jpg",
+        "content_range": "bytes 0-209137/209138",
+        "etag": "\"7eeb2aecb00cca0f132a906e451193a0\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-001585f82feb0fb8d747",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0106863.png",
+        "bytes": 124745,
+        "sha256": "50af56cb5b4eccf86f8e6f4ebb7c410c359ec31a1985e570c02c92d64742a89b",
+        "pixel_sha256": "8bc4a74c2b7cc2a3298717496d8e1fcbcf880714f99d49f0f66c3642a42b951d",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0106863.png",
+        "content_range": "bytes 0-124744/124745",
+        "etag": "\"8b4b129509e65629f5e15ae37f2809a8\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-003ad7ea1dfe376eb8f9",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0086553.jpg",
+        "bytes": 21168,
+        "sha256": "f62155db286f0eb4155aa75a6c062a5bd690e7c26fcffb9a578258c31c90d90d",
+        "pixel_sha256": "11984f19247301051852cd17100d592bad7ea3993104c1fba7e72a8449d95d9d",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0086553.jpg",
+        "content_range": "bytes 0-21167/21168",
+        "etag": "\"05ca40424c497828831c7dd33b00d614\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0062545aae69b7b1014b",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0078205.jpg",
+        "bytes": 36812,
+        "sha256": "362584365f01493102dd7045bc482d74dcecd1816e01a390d7136608d083c70c",
+        "pixel_sha256": "b0592fea595b4cb1e31d2eaeed61005f5efce226542823067c7131027568ad42",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0078205.jpg",
+        "content_range": "bytes 0-36811/36812",
+        "etag": "\"79f5c7a06bb40c802d4504029c587e21\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-00a9fb744ceb5a2e533d",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0059497.png",
+        "bytes": 181266,
+        "sha256": "263553a7bc6af1ae07c48b3f0df03e5f625fb84a2217b70fa6014f05a50ed137",
+        "pixel_sha256": "a83a3fc870f988bd873956008bb6c0787064ed54e555f876f28126121eaab9eb",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0059497.png",
+        "content_range": "bytes 0-181265/181266",
+        "etag": "\"fb03733c5081859e0709c785acf26ae0\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-00c25de7b5a669233c4a",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0066255.jpg",
+        "bytes": 33339,
+        "sha256": "7a1c2672d0b0a8b9317ef1f487a0eb7b4ac5e6d8ec52ba691929a6824ecca05a",
+        "pixel_sha256": "b4223c4122f894e900fbc51fc9c242a422dacafdb209f2c9e428b39a2b702cfd",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0066255.jpg",
+        "content_range": "bytes 0-33338/33339",
+        "etag": "\"59a2c77e48fe24d14ea41f5f2d0dbe05\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-00dc9cac5afb58cd1edb",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0070761.jpg",
+        "bytes": 18368,
+        "sha256": "58d203bee4e208eb5e6832ea0ee51e3f564a11abac9e2954443de9f1e31f96ee",
+        "pixel_sha256": "a54d159493693b39a852c3cd478f1e45e93cc02ad919831779277091478a1906",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0070761.jpg",
+        "content_range": "bytes 0-18367/18368",
+        "etag": "\"691148489d782db04fcdee87e8e58422\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0153b6db7513ddca2b91",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0103025.jpg",
+        "bytes": 174217,
+        "sha256": "37087eb8182ab1f302c684b2c7ae9f646388bff06e0ff8cca96719684de16b54",
+        "pixel_sha256": "a7b3f7d0555eae951bdb907775ab414c083d7215f285dadd9215987825c1ccb8",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0103025.jpg",
+        "content_range": "bytes 0-174216/174217",
+        "etag": "\"0d0d2bb3963ad84ff2afcdd387dbc976\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-01a16b2b902d0162887f",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0020923.jpg",
+        "bytes": 35240,
+        "sha256": "76f9364ff14c4d853ebde0b4f5756355d84be5e1dcc56c2919dc35a88a30eada",
+        "pixel_sha256": "c0246acd9b3ad81c8e731994ed13fbefefc3cf73cb7757bcef5ba3fbb6b00f46",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0020923.jpg",
+        "content_range": "bytes 0-35239/35240",
+        "etag": "\"f9048c361190f8769c3dd8d0de96e1da\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-01d39362d43e2d3e4c71",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0036626.jpg",
+        "bytes": 51355,
+        "sha256": "e48e4f9aa3e28a02623bafae879b8aa702ced1109f1e5a86d1aee3c6ec490a32",
+        "pixel_sha256": "9b1e2c94f21cc570484370167769afefdfe548004e7565eb5ca4d544c8e72480",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0036626.jpg",
+        "content_range": "bytes 0-51354/51355",
+        "etag": "\"54963ec6c10212b201aaa12641f073c3\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-024370b1ae9ffa72ba4e",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0045778.jpg",
+        "bytes": 36326,
+        "sha256": "486dff1e554ce82da35e258ead6881e2bc0265627a36a015ce2788158a5a3254",
+        "pixel_sha256": "fdfd6d67a228646f79c787440ca819ff4418cef8618f0abbe6e2ca087ec253e9",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0045778.jpg",
+        "content_range": "bytes 0-36325/36326",
+        "etag": "\"fa29ef16989f71dc9e4cece9cfeabaac\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-02739a6f99dc600e5318",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0020607.jpg",
+        "bytes": 26834,
+        "sha256": "1722e4720b8960752efd9ca9a66483c044c848250974e4480f94d97a90375fa2",
+        "pixel_sha256": "ca0af6ef221519b926e215838226e9ab9ec578531ea8a315fa2bcf593047161a",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0020607.jpg",
+        "content_range": "bytes 0-26833/26834",
+        "etag": "\"217278f1dc303acd4c50b6cbecf27a61\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-02a92df850ab9e602c1b",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0108994.jpg",
+        "bytes": 51277,
+        "sha256": "2e884ec7134a40a15dce87cfb6dc839c3cf388e3d5f8f7120cd3867193f330e8",
+        "pixel_sha256": "43753019f2f3d125965907bd844755d09e38ff21b244560aa644eec9155914b2",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0108994.jpg",
+        "content_range": "bytes 0-51276/51277",
+        "etag": "\"bef998c6d6e7debfecd1aba1ad977e4c\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-02ce655ef84833a1ebe7",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0108821.jpg",
+        "bytes": 105034,
+        "sha256": "f62db36a6f5338bf092f6826016be046ca884ea2ea6ad7f6906fb369df1482d3",
+        "pixel_sha256": "68f0c15a9da6957942f7fc5772dee379b2e74a7fc093fe2bab671048beb2badc",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0108821.jpg",
+        "content_range": "bytes 0-105033/105034",
+        "etag": "\"3e255d4c3e6324efc4a8d8c67bcd29a4\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-03198538a5af636e76f5",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0018927.jpg",
+        "bytes": 126731,
+        "sha256": "35c8253c5028c211f82b1b7c3a4ad6cafbc3e15adcdeec5421c18ff245505c9a",
+        "pixel_sha256": "72cbc806a863cdc988d6c3b94955fdaf7d98c9ff6465a71f0288bd56eddd84fd",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0018927.jpg",
+        "content_range": "bytes 0-126730/126731",
+        "etag": "\"42b290926cd7aee64c3b14e5612b54c6\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-032bb68d809362848144",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0051755.jpg",
+        "bytes": 30771,
+        "sha256": "aa3d532cc884ce76f9d5110bd03d2de20b7d9103650e6af68babd505456255bc",
+        "pixel_sha256": "2dc7eecf59dccf03a44dea4637a8228996275a6fc7cc83c031990491b00d801c",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0051755.jpg",
+        "content_range": "bytes 0-30770/30771",
+        "etag": "\"c3a332ca7b3c6c43aeaf8b33c7fac097\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-034868987f182ac57527",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0005521.jpg",
+        "bytes": 144659,
+        "sha256": "e44a76dbe6d5f5624038d991a2dd1658dfa892e5abb1637aaf3338c390fb14a6",
+        "pixel_sha256": "d74e98c4b185358c1427043198ac3963482b15b1f63b540a35de7b343dc4ef63",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0005521.jpg",
+        "content_range": "bytes 0-144658/144659",
+        "etag": "\"dd7ae3f9fa00400d02839d2b4aaf8774\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-036fef3b2e94df36a8f3",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0066344.jpg",
+        "bytes": 15229,
+        "sha256": "18fb48f11da5a08c3c4dc4380f23a850e47371833ae708c64bbebc436f2d2426",
+        "pixel_sha256": "43d9be083702cceb2d30ea49c1c3914beabc68baa8bab682d65aa9d7ea5f86e5",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0066344.jpg",
+        "content_range": "bytes 0-15228/15229",
+        "etag": "\"7fda53c51985328ca70603073f047f7c\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-038d34f7bcbc0b7bea1c",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0105323.png",
+        "bytes": 124313,
+        "sha256": "f0a5ab4297250c7423e661d61a387664a11cb0ecb081c25390927fc174217a59",
+        "pixel_sha256": "1cd5a4655df0c9441a4be15f35f5918b49a748117e32cc0058631aecc8ce2d28",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0105323.png",
+        "content_range": "bytes 0-124312/124313",
+        "etag": "\"9c9cec837dc9ac8a3cff9724c8a2a117\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-03af3b615c92fddebacf",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0074298.jpg",
+        "bytes": 32797,
+        "sha256": "999688af4e0d51f3ccbd8dae1b2d975a562b5da94c63e259bfae6f8eaa49f8a8",
+        "pixel_sha256": "84cadc9868a5c4675266942fd3433f6e69d7ae511f90228e929fd9fcad4ed7eb",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0074298.jpg",
+        "content_range": "bytes 0-32796/32797",
+        "etag": "\"da06dc41b23c9962132bdbb32fff8505\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0407034503954a3143e3",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0012601.png",
+        "bytes": 131633,
+        "sha256": "726a8e24bfccd6ac828995c5212d135936ee7956e92dc9746cadb8d17e67fe7d",
+        "pixel_sha256": "971a6ed512cd19cadfa1ddee59e20b5e313df9255707e5a75d5a0b4c48a91e4a",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0012601.png",
+        "content_range": "bytes 0-131632/131633",
+        "etag": "\"2ecd1e8f1f69de93f9ca01d8278fc016\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-000ecbb687c7e7773660",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0048442.png",
+        "bytes": 163902,
+        "sha256": "43ad6401ca786bc6358a77a4c8266e79ae6c53ab0f4ba3ab39b7c37cc19bf259",
+        "pixel_sha256": "02624d2c6fda5c310138cb15238b48fde2fbbd2317eec48b274f4f7370c36a58",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0048442.png",
+        "content_range": "bytes 0-163901/163902",
+        "etag": "\"92ebd146141dcef059761f842601ff29\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-00101babeb58586b1304",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0042252.png",
+        "bytes": 132952,
+        "sha256": "06676344458408a85583f4d8088ffe12caea2c6c74b668caac64a5501887f659",
+        "pixel_sha256": "73169dba8f72b08a399c40526e6d93d158c4000fc08a2b4e2a2666b59abcc4d5",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0042252.png",
+        "content_range": "bytes 0-132951/132952",
+        "etag": "\"2df7d17c66b9ca3637d30399aecd216f\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-00105f9d63769ce10427",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0057162.png",
+        "bytes": 126939,
+        "sha256": "a2d100dcbd2b566cabb200a998b7411ec4baca63fdb8dc3c13911a30c08ffdfd",
+        "pixel_sha256": "7b12a834de7e8435d26490ba2da62cfe8fab7d35fc5185c86fd16978bf994353",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0057162.png",
+        "content_range": "bytes 0-126938/126939",
+        "etag": "\"63d4a332faefe33d3a4405cbdf23bbf6\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0010a72d5ec3d7b94584",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0095993.png",
+        "bytes": 127395,
+        "sha256": "7fa131f71c46186fde1bebec1443fd40d1f98bc7923cc5c5fc16bfaf8267ea74",
+        "pixel_sha256": "27cb7a1ea0c672828af3ba4350218e5bc89af024dda9c2fe835e6787533a1ff8",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0095993.png",
+        "content_range": "bytes 0-127394/127395",
+        "etag": "\"2ae7215c2cbe05e23c9d384f9173d3f4\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-00130cfe3990fde7ce26",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0065824.png",
+        "bytes": 145572,
+        "sha256": "def7dbc21ab881828db575371f8fcf9124d6aaab81669278afd5377a6876ae4f",
+        "pixel_sha256": "6ee115b000ff02c95f1b4128831ea08b1f83b19621cde57f16b540f7295eb228",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0065824.png",
+        "content_range": "bytes 0-145571/145572",
+        "etag": "\"8f5a686e684c560bc99797b328f30eaf\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-00142b3d5b66c78e7c91",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0094119.jpg",
+        "bytes": 94918,
+        "sha256": "b320692e7b5ff89e4f5b8f0cd9a31f939b7d4ac7d547f2a83af4d2589bc0cc98",
+        "pixel_sha256": "0450d42277e97862769855595bf253853ceac3960d5f73ee7b91c40d4a25ccc0",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0094119.jpg",
+        "content_range": "bytes 0-94917/94918",
+        "etag": "\"65e79f3e6753262d89c02b8850a5c3f1\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0018ca32cdadbff31cdc",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0050567.png",
+        "bytes": 182038,
+        "sha256": "a2e1d0b8a6d563c78dc4b8e1cb211b7f965336b0fa948396d7b5eb4bc8cfe86b",
+        "pixel_sha256": "9466eecd5ee9f5b727b97e703e37a45cdd5fe1399faf763cc070c4c912d69a60",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0050567.png",
+        "content_range": "bytes 0-182037/182038",
+        "etag": "\"aefcbd1c1e948fe8a3ecae8c1abac07c\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-001aa31effbaa509564f",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0077630.png",
+        "bytes": 136894,
+        "sha256": "d8812ddc5014e249739d1ba99f694505dda0f2be2df695ecc8c8d7aa7575c008",
+        "pixel_sha256": "c3f1d2e4d9d2ab9b6f937aff7efffece5eb3d131f28e4946f97105d485c26253",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0077630.png",
+        "content_range": "bytes 0-136893/136894",
+        "etag": "\"b9f4e113cd9c2a6b1809381fd420e4dc\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0020db190b555aea4b45",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0046129.jpg",
+        "bytes": 207255,
+        "sha256": "c6cb13deb06d02ac2f556588b404283dd7614e8a6c3d729fd0ab4cc4aa04a8bf",
+        "pixel_sha256": "24853ac31eab2f48feb6ef36baf16d6a11a3117e50d1323bedb56933e43b324e",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0046129.jpg",
+        "content_range": "bytes 0-207254/207255",
+        "etag": "\"7f1f1abd79cf120f8e13398dcea368d1\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0022c7ff2a2e4641c659",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0024472.png",
+        "bytes": 185543,
+        "sha256": "312fbcd0f1bdb7a8d61c6db69f4b6a888fb85d968f79712fc9aeaeffa0c768f3",
+        "pixel_sha256": "12267d00fa3908da981633ce8bd0c9714ccf9e0bd5fae15ec446c9196cbe6eac",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0024472.png",
+        "content_range": "bytes 0-185542/185543",
+        "etag": "\"bda3c70abd81edf2362fdd7993f1701c\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-002cb42c80c053b7e53f",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0084632.png",
+        "bytes": 179038,
+        "sha256": "885dc295a546f9d997d9ab3b50c8659ff7af7a6c3cdc8e7428520223dede4299",
+        "pixel_sha256": "b41a1a2ef24923694839640dd7b47542995106a927ef0de43dd44ac1e9ef2cc5",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0084632.png",
+        "content_range": "bytes 0-179037/179038",
+        "etag": "\"e9221cef4251c228050b3eab907a48fb\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-002cede206815665962f",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0048566.png",
+        "bytes": 179744,
+        "sha256": "149e68b957fef44d449d197771d2dc0a0f5019e3441ceacc39660fb01a457a19",
+        "pixel_sha256": "dc3b80360c93a23fc7dd217e87f89af05627d4d807340fd14a79defe442af426",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0048566.png",
+        "content_range": "bytes 0-179743/179744",
+        "etag": "\"072807b380927ca8d73a772281127c2a\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-003a1c0c4b6c67c03bcd",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0098815.png",
+        "bytes": 133266,
+        "sha256": "596b3e1ffc683c813bc490c7cdcc26a9b28da82485109f41922e4b66d159d419",
+        "pixel_sha256": "00b17015e654c4e65e54cf6e4319da76a05e66ac85b5a70856ee04eb9fdad385",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0098815.png",
+        "content_range": "bytes 0-133265/133266",
+        "etag": "\"83002e6e7152ab15afe831e38f6a9017\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-003e46add491da39255b",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0082897.png",
+        "bytes": 146590,
+        "sha256": "acf9df3bc43172cc2951a9b20ece3bb13a8461568c788e09348c4248f24f6078",
+        "pixel_sha256": "2cf53b3562ed8bdf73adb3943ea5344b88613b92ddfdfcd47dc43f6609c8633b",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0082897.png",
+        "content_range": "bytes 0-146589/146590",
+        "etag": "\"8f022e260f1891c7924582f74039aeba\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-003ff9b2be72e434bfd5",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0043900.png",
+        "bytes": 142981,
+        "sha256": "96658188e42b4b50d6de2bbb15356a36062d60fe0845ec448337f86a9d02c2fd",
+        "pixel_sha256": "77e5efee11c016c54c595dcc9de7beef55781e95879348a3fbe17902eef42dfc",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0043900.png",
+        "content_range": "bytes 0-142980/142981",
+        "etag": "\"b8775d7f51f3d01c21a664a524547122\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-00487549b41e79047ad2",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0086261.png",
+        "bytes": 181885,
+        "sha256": "fb26ef83c3ecc744d7d1bbfcdc0fcdd5d197226abc3cc51edeb46d262bfd0473",
+        "pixel_sha256": "5f4ad2ee1e4c5ea8b1130e819a4ef9f40b64bc2fdd05a93c3973d55708eecf4b",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0086261.png",
+        "content_range": "bytes 0-181884/181885",
+        "etag": "\"ea157c4f46a200ea9407ab7fe8ae8b31\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-004a023953522d9f41b2",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0012370.jpg",
+        "bytes": 37357,
+        "sha256": "5a577d816d3a0d9b71a98700d99e96b077d2162b7f9a127754401a70a0387aab",
+        "pixel_sha256": "aad8d9f8d7897ebebace54a19db20577ef1148187bddaebbd202475cb845481f",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0012370.jpg",
+        "content_range": "bytes 0-37356/37357",
+        "etag": "\"7baa4576e2a66c1ba2f8a2535c8a1a28\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-00504615bb209ce99c95",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0035726.png",
+        "bytes": 180971,
+        "sha256": "bd2434c4c91ed7e40b2e64bd82241b6476609f8d7f58202c8a5ee00b147bc0a3",
+        "pixel_sha256": "963a5e62e1bfc4dc5b02dcad8d2dd868f748f783dafecd6dd6cfd53f03b1df23",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0035726.png",
+        "content_range": "bytes 0-180970/180971",
+        "etag": "\"65185aeb1cf13a555b5687aff567db3f\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-00560319656874d60058",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0032139.png",
+        "bytes": 175407,
+        "sha256": "cb824cab4ac727b5ddc067e1ae5ddc1611feb7e8513cb1cdfa1feb7a6d87dd97",
+        "pixel_sha256": "a3e00862ecaf426e2bac153dd7e1cc543729c20a10a81bf8929961d61f99fcf6",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0032139.png",
+        "content_range": "bytes 0-175406/175407",
+        "etag": "\"9332299ad9cca9ed4a89b23e3eed5874\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-005f2ee831ecb6f22fac",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0040073.png",
+        "bytes": 157045,
+        "sha256": "2d2dc0d685f2b47290f739d55a415cb7d6edac43a8c032e1b9161520efd10801",
+        "pixel_sha256": "a68c9473259de335ce7d1725f62810dcadff4df47c03544599c3d6745a15581c",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0040073.png",
+        "content_range": "bytes 0-157044/157045",
+        "etag": "\"eb72ae174f94dbb611e270afff5805d5\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-000e9e4377a7818897d0",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0072441.png",
+        "bytes": 174313,
+        "sha256": "f05235d68ee07fff26b9cdd57e9153a69eafc6519d25af48eee62b375c45a043",
+        "pixel_sha256": "211589b7ea518171a8eb998cd250fe166a4ce412db114ae21ad023e077fc3aac",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0072441.png",
+        "content_range": "bytes 0-174312/174313",
+        "etag": "\"cc2677b28a37aa887567dfaa2f7d9118\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0055dc288151064cb460",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0001781.png",
+        "bytes": 170532,
+        "sha256": "c771ba382cee41dd62b0ee1e6b1e902333466babd8fb3d052491e0329995ec5a",
+        "pixel_sha256": "44879bcf1abe25ac7e23894bad33eadec5be6c58e0111f1cc842123b4d35fdcf",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0001781.png",
+        "content_range": "bytes 0-170531/170532",
+        "etag": "\"d9583287b058898592ee52a8a341ea32\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-007729af7d47dbc435bb",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0059159.png",
+        "bytes": 163356,
+        "sha256": "2a1d8ce0e38d898fce4a6a99c63c0e69659ef710e75c07cc00bf5e8ce4e73350",
+        "pixel_sha256": "8f2a4f018c5885648a4e925e72a226374624d51d66346d4aaadb91a3a63b1f44",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0059159.png",
+        "content_range": "bytes 0-163355/163356",
+        "etag": "\"3dbba28baa0d25cb24fe22601d8978f3\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-012c5197f2efe9cb9e9a",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0021584.png",
+        "bytes": 174330,
+        "sha256": "03cca9a7887c30b7e8d2bb4ea469ce1f9a1443ae397f07944bad8a12d373f1c8",
+        "pixel_sha256": "154841cd6b38bc469993cbfe8160e432b4a57c3cbc6ed0eb545b1f47f978be81",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0021584.png",
+        "content_range": "bytes 0-174329/174330",
+        "etag": "\"56822d162aba0ca6179af5147383b421\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-014df8ee23cab977a6e0",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0035796.png",
+        "bytes": 129975,
+        "sha256": "3135966f17473ec35bcba85ca3175671af819b9598bca23a4a3119c1a03440a6",
+        "pixel_sha256": "49dd798cf5d6ea020a7a5e1234fb6c0a28b5a522c22e2da79c8827735226d508",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0035796.png",
+        "content_range": "bytes 0-129974/129975",
+        "etag": "\"dfddc578db0678651933cf6a848ddc75\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-01936c702d0e46578cb1",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0032287.png",
+        "bytes": 110175,
+        "sha256": "dc9a78cb710cd8168fc3352d4520606f222e5a9f89619c6854506f1e9830b9d7",
+        "pixel_sha256": "0b7c7d6a85709b8d4e76ead164f47c5502c276db92eaf0e3d5f65724b879bb12",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0032287.png",
+        "content_range": "bytes 0-110174/110175",
+        "etag": "\"e57d0552d09a8966b9a824c182884fe7\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-01b417e9aa73ca05c89b",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0024226.png",
+        "bytes": 162734,
+        "sha256": "d33334d86306a5c01499cbd190ef2754967afe9fba03eabb43e7bc2f4f0ab796",
+        "pixel_sha256": "2a3e3babc852c6a1f99f6bced9f9a7a1bdc2bf186e909146dc46edfcfce8a43c",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0024226.png",
+        "content_range": "bytes 0-162733/162734",
+        "etag": "\"826eac9a8cb0c105704be93c718a74b3\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-01e1bf4d85d632f5a054",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0081161.png",
+        "bytes": 138908,
+        "sha256": "aa93a0c0774a69d11dcafde8a089d46fd3b4acaf512c402a146030cb5a4f6d1d",
+        "pixel_sha256": "01974b8ca6e4b452c4bfc9bddb9264dfc38d62009e6c9e6a30daf92a14ced98d",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0081161.png",
+        "content_range": "bytes 0-138907/138908",
+        "etag": "\"66455f7c8825af5a0ff4c027f14a0951\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-01f6ca5b0473dc98dcf2",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0107357.png",
+        "bytes": 157197,
+        "sha256": "c0372a2236ef54953a0e850ca9da40053c35ebe0ae9fc93abe2364122dadbf78",
+        "pixel_sha256": "df8d34ee835df3bf067b1f61aad11f05c056e7040d8768e1434328a9e4377950",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0107357.png",
+        "content_range": "bytes 0-157196/157197",
+        "etag": "\"ae574850b81f9ec7c4f5cf73fe88b184\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0225336709ff9de03d7a",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0003104.png",
+        "bytes": 100796,
+        "sha256": "a7db4beb896294f530a50e3120058f967b2a2c8b430aa393f35d5dccaa3bee10",
+        "pixel_sha256": "8d07864c1fe8b6afb21a92116b6cb6d186a948c0b99eded677d2ec05c00e0414",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0003104.png",
+        "content_range": "bytes 0-100795/100796",
+        "etag": "\"770e509f19c9b3323df01e392950ce57\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-023ddae496584b794d70",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0085804.png",
+        "bytes": 163187,
+        "sha256": "4a183ff993b8c09fc64e3e27690e871785e72b720cb10fb69b909796c51d8c3f",
+        "pixel_sha256": "455c1fb23238ae32fb606c98874d9ba80ca7b76ed38c0829fa6a561c8233aaa1",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0085804.png",
+        "content_range": "bytes 0-163186/163187",
+        "etag": "\"496ee0def896e38b6b550bf0724512f8\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-025ec9c652a4c9c8d5b9",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0084297.png",
+        "bytes": 106494,
+        "sha256": "9e0f4de6f5c36c3b3187dd7e5da02fc2208768ae1667290fc031d1969edc1bbf",
+        "pixel_sha256": "3c1adb70818b797f790654762d414ef023966e7ba0879fed701db19fe2a2174f",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0084297.png",
+        "content_range": "bytes 0-106493/106494",
+        "etag": "\"9a7b31070cf0de5ee126d454e9529324\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0264a98f70ae19cc4b03",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0016880.png",
+        "bytes": 174704,
+        "sha256": "82ab99484a06e6b69001f331773f3f03663c26a9d79ae4dd35bd90f8ab7ceed1",
+        "pixel_sha256": "57310187e16485f6b017561980e3a5f2011e3bc9cb1f72a7dffdf299aabfccfc",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0016880.png",
+        "content_range": "bytes 0-174703/174704",
+        "etag": "\"b3edd51349b2f7b7b204055b10736d0c\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-02b0050b4b9744493541",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0041374.png",
+        "bytes": 179854,
+        "sha256": "391d0e85b6b5276ed30c332954037acec7116e7597fa6c234c266ec16b46dd40",
+        "pixel_sha256": "2118a3431d6b29d36bd6fe152931042f2f85f39da3141b095a66de46ec06f61a",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0041374.png",
+        "content_range": "bytes 0-179853/179854",
+        "etag": "\"7fd9a5fdaf2c51157597e51d487ec747\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-02b04d80b19f78d2e426",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0015827.png",
+        "bytes": 179909,
+        "sha256": "919ca5f4ac2566f610bc050803eaea5a5b5be49373585dc3e69571a09a1119c6",
+        "pixel_sha256": "cfd25655dffcbac517e37683d6aa99eda68c6882c4f6637d5b99e4e07e3a7cc8",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0015827.png",
+        "content_range": "bytes 0-179908/179909",
+        "etag": "\"509c28b7e9477ee584d34bab9efa76a1\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-02f896d6b911421072d9",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0068257.png",
+        "bytes": 176537,
+        "sha256": "5bf9c83fb0bb0144f65adcb0c76281642b2c4bb34879a22d65a0eb6842c40f17",
+        "pixel_sha256": "2058245b2f25e3b68e5c4efb3fada8882b1e737966b5e52886418d84eecc0462",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0068257.png",
+        "content_range": "bytes 0-176536/176537",
+        "etag": "\"f1a8e15a305cdca89465ece6fb785733\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-033f825e627c8f30bdb3",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0068281.png",
+        "bytes": 136494,
+        "sha256": "0a461665e44eb6e15dbd57810828e763884a4673fc6b9acc3f36da593506f9aa",
+        "pixel_sha256": "6a3e8ecbb955e6291ee0f32fe05d085e5b1c9d76df4f0d7509cef1b1e25cc881",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0068281.png",
+        "content_range": "bytes 0-136493/136494",
+        "etag": "\"17b4a65536a64dd285d9c7ce7db1427b\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-035a3e98962b09fdd4e3",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0045756.png",
+        "bytes": 175647,
+        "sha256": "97768c1a1f6870bec1293c8e8cb4ccad54137925b2f1e01d8213977b215daa32",
+        "pixel_sha256": "0c2b0c30d03655d00e49e041a6183f797e1bdbaa79fff59bf5db88a00e07ad0d",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0045756.png",
+        "content_range": "bytes 0-175646/175647",
+        "etag": "\"64416fc13a2c90ad8f08724ca20e9c0f\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0362ce8f0531da3493fb",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0034482.png",
+        "bytes": 105613,
+        "sha256": "dfa528c73205a3f99c9a49dabd3b202dd7c4803ab2694bbe6091f8417d23c478",
+        "pixel_sha256": "6d0838550faacefb67eb32f2ae5ad01f367f197d6f4513b473520ed4a6dea266",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0034482.png",
+        "content_range": "bytes 0-105612/105613",
+        "etag": "\"f28d161a16fac5b4e434593fb39e4ffc\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-038826373eb0ce194484",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0011323.png",
+        "bytes": 138708,
+        "sha256": "20a1d62e41528867f8e1aa74e74665a86330b0f3dcc9a47c69039a44e0aac876",
+        "pixel_sha256": "78664f236a0afd092635f540baa401a26b7f8feecaed17b9b927beaf9f131e87",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0011323.png",
+        "content_range": "bytes 0-138707/138708",
+        "etag": "\"0ae80bc8f65434c8b3f866d31400ae32\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-00143e1b2c521d1b65fd",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0061628.jpg",
+        "bytes": 43886,
+        "sha256": "a3419b648fca6ccece031e9b99612a42d0f360335db21f25da967bea0b767613",
+        "pixel_sha256": "c3a86a4ac479f2ca8d6489f22fee1e99d11a78914d93d2e3961f873647fb7dfe",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0061628.jpg",
+        "content_range": "bytes 0-43885/43886",
+        "etag": "\"623a8d2f19d73c25096aa92ac0be9353\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0014962ac3e76bce336d",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0071960.jpg",
+        "bytes": 41250,
+        "sha256": "31f32b3dae10baf3517ebcd54a04e8ef905ff270385bad3e3f995d3d2b57a6aa",
+        "pixel_sha256": "5c76f74664d39bb24ad275fc793470f9c18caeda67a5e683640aeed3bdc05a38",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0071960.jpg",
+        "content_range": "bytes 0-41249/41250",
+        "etag": "\"bcb3e58524aef0062503f279171179b2\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0015e3221e5104550b4e",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0115216.jpg",
+        "bytes": 30595,
+        "sha256": "ea9604d417d9539991aeb894f76f4ecd57ef87ae805608b52294445571cda730",
+        "pixel_sha256": "b87fb1ee465a87df1120115968fb2d9bd351ea1751f6d82f8506e8aa1d5813c2",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0115216.jpg",
+        "content_range": "bytes 0-30594/30595",
+        "etag": "\"e57688eacac58219fa5cc370777c449d\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-00162db607eea45274e8",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0115990.jpg",
+        "bytes": 2371,
+        "sha256": "6b98d6b194aa5a550cf51fb8b8a721888a72a72cc69aa8237195d52d97e02f33",
+        "pixel_sha256": "6f340a65a1381d0817fd4674b8d13bf1d1a7a4c74159a8e31d3ffb2d2ae8cb4c",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0115990.jpg",
+        "content_range": "bytes 0-2370/2371",
+        "etag": "\"580812f173aa068a0be4bc9a13536a6b\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-001665852241f3f7daf1",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0033566.jpg",
+        "bytes": 18431,
+        "sha256": "417a946f7327d503ee4e981aa068fe6d992d26048fcac6d30cec6aec87b1b251",
+        "pixel_sha256": "e0d2498e3e26d6f5685329ff35f29d71b95113bbcfa95bc55950acd99304b515",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0033566.jpg",
+        "content_range": "bytes 0-18430/18431",
+        "etag": "\"466f91d16672acc6c0f226ea284a1def\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-001707645466613fbc56",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0064101.jpg",
+        "bytes": 3631,
+        "sha256": "b038406fc7556efa06224c95fe0eb97b2a91329f1c5321a02f85f1518c400b67",
+        "pixel_sha256": "aacc803d7748519b0c2588469e364a72ff45b80dbc4df5fcb4a7e8210a4e8369",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0064101.jpg",
+        "content_range": "bytes 0-3630/3631",
+        "etag": "\"d8cd8e56ec9734a0a72f62d8ffd1510a\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0017d5a49e2110a6cd36",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0074064.jpg",
+        "bytes": 25142,
+        "sha256": "c1d3820c70dc2f8b01e19dc29589c631151ffb2cdc9ea7a090d8988db34f2390",
+        "pixel_sha256": "dfbc21d5ac3d06b27f303f77ab9f42717f690be40b1b62ebc69871b3db407fdd",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0074064.jpg",
+        "content_range": "bytes 0-25141/25142",
+        "etag": "\"d509c6933f3fe4af956647ab6c355ebb\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-001965b71bafcd6842ce",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0050733.jpg",
+        "bytes": 43340,
+        "sha256": "f99f0dd31490d05941cf06f778ee909801960933ef147ce8f4ac1dfccdb54f7e",
+        "pixel_sha256": "ea6c1db5ab1fd952a9dee0ed140f4cda4976fac5790c6188d7459671e40e334d",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0050733.jpg",
+        "content_range": "bytes 0-43339/43340",
+        "etag": "\"193abd150cfb7493fbd0e7a7eefa6d9a\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0019990a7f8a3c4b5530",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0009291.jpg",
+        "bytes": 21546,
+        "sha256": "a2430c6595f9b5e305a3c215ac58219832197912be3ac7cc17494039a9b17f1d",
+        "pixel_sha256": "9982bb154cadd007bea38488823f1dec8f3ee4180d7aea1450444bc8e62fb64e",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0009291.jpg",
+        "content_range": "bytes 0-21545/21546",
+        "etag": "\"5bc61351ff95cb3e8855228e4cf27cf2\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-001a49b3f049caf33ee1",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0112192.jpg",
+        "bytes": 12869,
+        "sha256": "284a2e9001e9b05a68a59a4363c3302cbde46e9b03aa4d80e8949d6e5d7d4091",
+        "pixel_sha256": "6a1aaec5bf158a35edd16044cee79519606c6cdf23035553f322e6ff0fcc89f3",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0112192.jpg",
+        "content_range": "bytes 0-12868/12869",
+        "etag": "\"7c8aea71472ccd3592513da49bd29fcd\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0042ac0f83993a44a48a",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0084047.jpg",
+        "bytes": 51250,
+        "sha256": "1660746f6717a302f095fd6ebf8b5af3f7fb12ece39604ded8624d4df37584ed",
+        "pixel_sha256": "a9bd9547e5a520ef383beb26d8963ec881ca0db4e5e6b0e5697bfbff761ffbb9",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0084047.jpg",
+        "content_range": "bytes 0-51249/51250",
+        "etag": "\"205efac9cdf5584e24d9a189a74bb779\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0042f9464220ece14cbf",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0068246.jpg",
+        "bytes": 48558,
+        "sha256": "0c8842ad8f36bb32d5694245a54c7dd52f8b6ba391287e481d08eceda38ae2a9",
+        "pixel_sha256": "52f1414e96cf4c0063c4945297b11df61399909eee6c294ea7ded2d0f3e75a0d",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0068246.jpg",
+        "content_range": "bytes 0-48557/48558",
+        "etag": "\"b6a21a7fa8f5d6b6776be9d939485084\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0044eb815efbcdbb5d6c",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0026096.bmp",
+        "bytes": 150582,
+        "sha256": "f85b4e1b2f8061542b2137923b8157fbc5bf44608d80f1d211b84fe370df56ea",
+        "pixel_sha256": "e2acff1d56fc8a5c867ab61c125a798b33d87c831dfab0ab320d96af12310a76",
+        "format": "BMP",
+        "mode": "RGB",
+        "size": [
+          224,
+          224
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0026096.bmp",
+        "content_range": "bytes 0-150581/150582",
+        "etag": "\"35f3d1a92c3a1573a603c6eee5d0765a\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-00468412a01c30994b71",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0015256.bmp",
+        "bytes": 150582,
+        "sha256": "0e7af51baf2cde62be0db4c5f1d3435c049f8defeef7592a1397520bc952db4b",
+        "pixel_sha256": "b90825b0399541b710782767d208d1bf705111f64c115459893df1cbcf1935b1",
+        "format": "BMP",
+        "mode": "RGB",
+        "size": [
+          224,
+          224
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0015256.bmp",
+        "content_range": "bytes 0-150581/150582",
+        "etag": "\"9a92612b425ca9e59835f7dbb826fe30\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0047f2f065db8baa9cc9",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0011572.jpg",
+        "bytes": 119955,
+        "sha256": "adadbd16e5859200fc7c2b66d91f93ecf139ea3a52b5434b6ebdda9a447c4237",
+        "pixel_sha256": "ae556531a1648898c398247f8c4ca4ad462b92e35373d0d902fe2194e068a6b5",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0011572.jpg",
+        "content_range": "bytes 0-119954/119955",
+        "etag": "\"06344cde6c36fc81ed1cf7a6813b0df0\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-004aca398f4b7e5ec196",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0103578.jpg",
+        "bytes": 106489,
+        "sha256": "3e706fd05c5a1fedcf378c691bfb11219099b74467d568aded745517384e4e71",
+        "pixel_sha256": "115a33910b5966bbd53beae976f570e2f68ca170ec651cc2b8571fa1e2125d96",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0103578.jpg",
+        "content_range": "bytes 0-106488/106489",
+        "etag": "\"38de48a689051cbc128b740471b78465\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-00558b87699ea02d1eaa",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0072404.bmp",
+        "bytes": 150582,
+        "sha256": "5689000eae8b0f66a052fcc5d402f14e76c0200c252f6ed2f3fd077a017817a3",
+        "pixel_sha256": "e118bfad533e8b055f1a8e4a2224e8ea1cad02867f81cefe1fd3dcb88bc888c0",
+        "format": "BMP",
+        "mode": "RGB",
+        "size": [
+          224,
+          224
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0072404.bmp",
+        "content_range": "bytes 0-150581/150582",
+        "etag": "\"01cbc1ff9de8cadee05a1d5610a8ded3\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-005dd70e78c6a6147687",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0017022.jpg",
+        "bytes": 104506,
+        "sha256": "90e895718598e17fe16e8e8efdfa5b43a77dd8245516c0d8098154771a6f9030",
+        "pixel_sha256": "14ab8108eefaf9cbf289d9bca3aadfdea1536463ee1587a842ede057fd397a02",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0017022.jpg",
+        "content_range": "bytes 0-104505/104506",
+        "etag": "\"7989e2024d339dd778331233d9b55c79\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-005f2b900c783eb164e5",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0026429.jpg",
+        "bytes": 148664,
+        "sha256": "fbebad8f6e9d9a85191e530fc55a6b4d01bcf005765f45df968f9a36d9cf11cb",
+        "pixel_sha256": "db0de762d1a09a1c3c1b51e6e7882f8a65bbb035fcf99bb049ba6ae93d91c750",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0026429.jpg",
+        "content_range": "bytes 0-148663/148664",
+        "etag": "\"abb53757d25b6962a107a076763d6b38\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-006107a7218edd8a8c70",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0085470.jpg",
+        "bytes": 82549,
+        "sha256": "cbb97b9812cea28771f4b9197840075516ecad658f5101fb42b8235fc3677803",
+        "pixel_sha256": "c3507a3c702369b057060ca82fc927c664b20c9d103436977b3219cec88c9d2d",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0085470.jpg",
+        "content_range": "bytes 0-82548/82549",
+        "etag": "\"ca71629ee8ad4dd42a90f4de49e9d5a3\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-072871f196b28fb8fbc4",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0051131.jpg",
+        "bytes": 185937,
+        "sha256": "6cbaf3a5a9e604b07cc5d4d7e48b4442df9ebe9e11a75fbb4b71cca8fa0c7378",
+        "pixel_sha256": "84a2d1ef726bf42e348e6a3f014cda931685650702e75e8a6b79f5da136fd465",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0051131.jpg",
+        "content_range": "bytes 0-185936/185937",
+        "etag": "\"8ef6e829fa335eb7b2d2386812abd5db\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-07519f77b1b2f1f7dce3",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0017790.jpg",
+        "bytes": 175280,
+        "sha256": "5d754c03955e96b24edfa04a68873cb7c9bfb2fa6e5e4888a6b073f1b8171b37",
+        "pixel_sha256": "a6560c3010e78717ccee0d236cf23dd5086872a8c6f228e989f9cf1d98598e97",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0017790.jpg",
+        "content_range": "bytes 0-175279/175280",
+        "etag": "\"f6a72215e230031a296b02762f881fe7\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0917e3effecb53870d25",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0069633.jpg",
+        "bytes": 162849,
+        "sha256": "4cbd1337bbb161430d216cee108ccfa0e692281975fb9cb4ec516a5aa616a008",
+        "pixel_sha256": "ff6d2ac45dfa8c1be57d3bdeb910042837c16e528b05c31a18edd27c6b7ee46a",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0069633.jpg",
+        "content_range": "bytes 0-162848/162849",
+        "etag": "\"49ab643332681833c732dcda65445b7f\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-09865e90e1bdb152b00b",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0034729.jpg",
+        "bytes": 146547,
+        "sha256": "c77ede00b3ef662132836123effaa76c46e17b683e0c1c96d56b587f508f5f59",
+        "pixel_sha256": "cde4fb4fc93744d9df74aaec05b1c6dc50ae737d3a262b80a6ce06c3152df63f",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0034729.jpg",
+        "content_range": "bytes 0-146546/146547",
+        "etag": "\"8b3bf1efddf64118e8858eb1c0e17db6\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-099f4b1a62a672bacbf6",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0113219.jpg",
+        "bytes": 179648,
+        "sha256": "07400ad3a74c1fc58586a1b3f8c466bc875be8d82f7d4d0dc14f16e5b5e2af3f",
+        "pixel_sha256": "0d21f3473f81f317ae8a255975393cb3bdff6c42e1c150af28a4d0fa079b5a77",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0113219.jpg",
+        "content_range": "bytes 0-179647/179648",
+        "etag": "\"3a5cc1cb288946aa7ee12898e47bb5f9\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-09ab19e6e44864c477c9",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0051658.jpg",
+        "bytes": 197035,
+        "sha256": "7534c4646eb1e00400db47722cf7babb526d3beb647c1239c9ab81ee08a3e0f1",
+        "pixel_sha256": "88719d5457d83d6bf54c50cc2ede17627d30dd82f0f4fe6dae716a48e789a0c0",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0051658.jpg",
+        "content_range": "bytes 0-197034/197035",
+        "etag": "\"bd8ab0e7fcac9fc89696e8e767013df7\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-09cbf6cfd460a8320861",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0090397.jpg",
+        "bytes": 172230,
+        "sha256": "a88e7ca005c2cb4094b1e6260b2d0dc95a39556fdda81eb09c8410ae2006aa59",
+        "pixel_sha256": "ef8c385f8495056841fb98bb675df177ff1c97327dce2e3dc28474acbfaebedb",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0090397.jpg",
+        "content_range": "bytes 0-172229/172230",
+        "etag": "\"9b8a00b7ebd7dcb71fab648c4798d313\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0a713cae6df158efada0",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0045595.jpg",
+        "bytes": 165126,
+        "sha256": "bfd8eb8eecb3642c3d07438d01e3185ac35bf0c0f66a8048db00b61db76e471c",
+        "pixel_sha256": "35bdd8fc2d0a80d0f5159d7dbfb7e16a74e1f18ac1f7f1d7287ac9cccec699c8",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0045595.jpg",
+        "content_range": "bytes 0-165125/165126",
+        "etag": "\"35ff1541e06547c8d17dc48d49343867\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0a94226fd2b31d76c780",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0107750.jpg",
+        "bytes": 171666,
+        "sha256": "03c2b21c461d59e1d822b30d0b8159321aaa61c6de61b8b4d02d3e32033e4cea",
+        "pixel_sha256": "9fdc8588291a4f132cd51fde82df47d2496a8a4cefb1698339d749a31a0012d2",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0107750.jpg",
+        "content_range": "bytes 0-171665/171666",
+        "etag": "\"ba27352b73fc2375f9aa2cdea86d208e\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0af987bc304dddabeecb",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0012922.jpg",
+        "bytes": 172627,
+        "sha256": "a7f63cd65400be4ab4735453bbe7220fe484f34bc8431555d9ab9515243ba692",
+        "pixel_sha256": "3967e04ad474a4db8d621e6e2805680b453d5dc87fadc01234b9f97fa24e34c0",
+        "format": "JPEG",
+        "mode": "L",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0012922.jpg",
+        "content_range": "bytes 0-172626/172627",
+        "etag": "\"822c04d4d03048efe193307df82379e2\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-043a5c3085537911e485",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0099296.jpg",
+        "bytes": 52176,
+        "sha256": "af9a3c1a429d0a53987f7de25ff9bd66ad67a64c6ec60f6289914c0e0fb3ab18",
+        "pixel_sha256": "23d629debbeef92d363025d45bd301378d4b83229b9d5104422914e00a857e03",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0099296.jpg",
+        "content_range": "bytes 0-52175/52176",
+        "etag": "\"e54b226eefc8fa027a01c23a3a41b1b6\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0473d7618dbec66dfb68",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0050808.jpg",
+        "bytes": 35262,
+        "sha256": "6323e7482ff5feccb9e33c38e0a2c86014af52b60f0fd8e401076c3e7d9ce737",
+        "pixel_sha256": "3c9f1b8ece57a1c9bffbd28bce8067bb43baf1fbc1a97493e38f8f8ea23d4834",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0050808.jpg",
+        "content_range": "bytes 0-35261/35262",
+        "etag": "\"a0658c0c9bf1521916cbf4ae1694555b\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-04b2aab0a166df487fb1",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0029187.jpg",
+        "bytes": 46946,
+        "sha256": "f7c0ec842b8980a12b7ffb64fbc547a83ac9d37a4a632e601fb7b10042ae339a",
+        "pixel_sha256": "f431bd75eac3dfe1a0deeeae8a3039205205f2f5b94ec62bc0ab7ff28286abee",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0029187.jpg",
+        "content_range": "bytes 0-46945/46946",
+        "etag": "\"b5ebe7edd10e1fe1e38e57b1068a8d06\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-04e833b9731c649bd5a4",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0093489.jpg",
+        "bytes": 41717,
+        "sha256": "a6a3dcf54b5ccee85a4c5d8e1c1845474abf09f5c3564d3958bdc79212bfe5be",
+        "pixel_sha256": "d65e6e622e3b6558b68b0a0c4970bfe68374ef0cce95793f38bf6fcac8154524",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0093489.jpg",
+        "content_range": "bytes 0-41716/41717",
+        "etag": "\"f24fde9b4ce63fecb5b8261c3a12157b\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-051056e6f1074969274f",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0024622.jpg",
+        "bytes": 44069,
+        "sha256": "1b44598934183a8b914bd522c404172b9c050d88edbd59ca4e0ccee76d00835d",
+        "pixel_sha256": "5d5286413980580aeeb8a889c5cfd8afb693a51e2ef03f8a9d9c09e85477e963",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0024622.jpg",
+        "content_range": "bytes 0-44068/44069",
+        "etag": "\"eca3e698fc95b45abfece6eb36f69895\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-05555e24298c737a2739",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0070557.jpg",
+        "bytes": 104139,
+        "sha256": "73df506bc56bae1647fbe9c221abf175e942ba60fc4a403c31954c87ee1177e0",
+        "pixel_sha256": "c85a1b9658552a2ef8317a6c76e236f99aef1eb2199a7b78ba2c8633beb4528b",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0070557.jpg",
+        "content_range": "bytes 0-104138/104139",
+        "etag": "\"bdf5ff51884e0dc53cf4201f91a0ba4c\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-05590bb5b92dbeaffc82",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0023874.jpg",
+        "bytes": 159509,
+        "sha256": "fff649d895671ae1d67ee8d91b4c4e523e654ba89ac27a50e7f0a39d47500379",
+        "pixel_sha256": "969d2cc5a3b7edab4532392db39858cc176f49fd9cb534d7db87ea25bcaa3df2",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0023874.jpg",
+        "content_range": "bytes 0-159508/159509",
+        "etag": "\"bc0e4778f53b831589b1f42128989562\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-05e0dd583d0729810e51",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0091029.png",
+        "bytes": 179144,
+        "sha256": "f58bc84ed12857eeb9523a7ff2fd207981c8b4725fc6fb71e8fde2851e4dfc89",
+        "pixel_sha256": "1b55dab51c2f3e7139fc6e69a29ac6f9289b1988255b5f75809dd40ddb9bbf87",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0091029.png",
+        "content_range": "bytes 0-179143/179144",
+        "etag": "\"e3ddb7af839b1dd681f9a64c3dd44f5d\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-06063831414b30b5d889",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0094619.png",
+        "bytes": 180135,
+        "sha256": "c9b2e0f9dd17423b315044d18913940c9cb7e4bd3323f272e0a947ac8cc180ab",
+        "pixel_sha256": "b8a5371329f97dab0f14505e1ddd986a9048b3e289f1051b7c5c02797f61d5c6",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0094619.png",
+        "content_range": "bytes 0-180134/180135",
+        "etag": "\"f1f557640292ec0ee7e32491dd250e6e\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0648130fc8b2569e6001",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0049017.jpg",
+        "bytes": 35034,
+        "sha256": "7f6ab64db9396d43f24edd7ce790fb34ef1de8b7f94ca0cc553c619e83e13e95",
+        "pixel_sha256": "d858d8b94307099b5efe5a209f1655828988375145b78fb4d5d4889011e1f7ee",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0049017.jpg",
+        "content_range": "bytes 0-35033/35034",
+        "etag": "\"71c114bb370002b8525a79a18a64ffcd\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-00670eebc1ace4f031c8",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0089126.png",
+        "bytes": 154048,
+        "sha256": "10c74635f2e32ed1aefd66bbb92d079634fe410105997b64de0a392c9940ee45",
+        "pixel_sha256": "0295d1cb835b08a40e9793ef01d945b3b0c49811f856584890150d5990261e60",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0089126.png",
+        "content_range": "bytes 0-154047/154048",
+        "etag": "\"ad3e5cf8e490e237dae3452b846de69f\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-006ba932a68632a8b689",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0041755.png",
+        "bytes": 145601,
+        "sha256": "89d45097002fa7742f9851964e47b40024bd04773302c44651c39a6b726fa884",
+        "pixel_sha256": "393cb89ae37f20b4e60388aab84c1e907ba2e48870d04a4066b0af518133562d",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0041755.png",
+        "content_range": "bytes 0-145600/145601",
+        "etag": "\"fa4ca17de7c76052e8db4b91559a0559\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-008362616e26a5c515f1",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0104371.png",
+        "bytes": 155858,
+        "sha256": "a8c5c684b6fd97d5adfcd2fd45f4d5c91f14c4015bd4963901f910fe862875f7",
+        "pixel_sha256": "b7d571bc6f46d6cad69302a3e8251304e2c430f586ef81907da0faa1d8453517",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0104371.png",
+        "content_range": "bytes 0-155857/155858",
+        "etag": "\"33864fc453e967e3bd98fbf94d2aa9e0\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-008869871959f8b5496c",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0011447.png",
+        "bytes": 134470,
+        "sha256": "9697b1860bfa5e66af560303ce40088fa0a7ae3cce6944f17d312d65b6259766",
+        "pixel_sha256": "c30256e64fc74998fb414beb53bbaec09a4c24f234fe22ea9177bd601f2e2777",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0011447.png",
+        "content_range": "bytes 0-134469/134470",
+        "etag": "\"79fec0fbf424a26fc23e97dcaa3ee86f\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-008ac2527d909f088184",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0108395.png",
+        "bytes": 154700,
+        "sha256": "7da96803a669953c53f73cbfea48db42a4e3caf5022c06614a94e6583f7c2e91",
+        "pixel_sha256": "8b890d1ecdcd669875781e6857b24628e083e5dc76912cc7f4f754ed475eb6b9",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0108395.png",
+        "content_range": "bytes 0-154699/154700",
+        "etag": "\"1a6b7573181104ba5817a084d6440fa7\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-008c6ec77ad6849f9044",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0029829.png",
+        "bytes": 76603,
+        "sha256": "e6d01f8417660f4b80df28da8adc133615cea72faae867eb277cd41c646982b8",
+        "pixel_sha256": "175060addec140a3387c99648a3c3a327a991618d203816bee672d1fcc42521a",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0029829.png",
+        "content_range": "bytes 0-76602/76603",
+        "etag": "\"00cca5ca6a05ab4814a5a9396ee4712a\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-008ceb5b16d4b540e500",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0081103.png",
+        "bytes": 153606,
+        "sha256": "1f6981a766a5cf355337da53545277677cf407b2c8c6582b4e65b1a316e92da8",
+        "pixel_sha256": "fb1fc0a7d49ef8e41d4eb5ea30c50130fa04eadb794bf5eb0e2cf13a7c97b141",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0081103.png",
+        "content_range": "bytes 0-153605/153606",
+        "etag": "\"43be858d2401915aefd7f0f3c7fb3946\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-008d8cab05568320b024",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0000881.jpg",
+        "bytes": 63341,
+        "sha256": "50540cbaefe299658f2d66edcefc56a9d3d7dcd26681749fd891c4ace38fa593",
+        "pixel_sha256": "a7354acd567e97308ff799c4ad61eb7d2221a16a1571e76e98a75d84caa92a4f",
+        "format": "JPEG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0000881.jpg",
+        "content_range": "bytes 0-63340/63341",
+        "etag": "\"6ac1cb92ce6660af8d8292bd06922fde\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0094f1b2e42f925c078e",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0073496.png",
+        "bytes": 118324,
+        "sha256": "df8c942d9e77ee8ef4d7c0a028df15fee1082b10d9c581793d4682707b6d9500",
+        "pixel_sha256": "6d6c297a9832587e76015a9c240d7a9d1e8664ab6c76f7c042b407c4c1ba8759",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0073496.png",
+        "content_range": "bytes 0-118323/118324",
+        "etag": "\"6de811b6282c1f3a003d88913775afe0\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0095ae0851e656a7504c",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0017979.png",
+        "bytes": 145564,
+        "sha256": "a5ad041d165afb9e925445177466980ea3bd1fe1f1c913b8909444ac0c08612b",
+        "pixel_sha256": "e3b8119a305108292c71faf9a93e2f9d946bb1e7548c618fb52a11020c46140e",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0017979.png",
+        "content_range": "bytes 0-145563/145564",
+        "etag": "\"8fec04df8df65e5dff74cc94219f9ca0\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-038dad1d1abe093f8342",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0004932.png",
+        "bytes": 138505,
+        "sha256": "9231b61e5b34753d22cff53f8686f1110117063f8b433d9e87c7b6fe2da41fc4",
+        "pixel_sha256": "7c8acdec489e74912d5ece51ebe157a3771565593f8f215b4e2e3f29a12bbe6d",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0004932.png",
+        "content_range": "bytes 0-138504/138505",
+        "etag": "\"395c7dd0c6bb9bebe1fdfd51a983236c\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-042a78e191e48dffecc4",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0115562.png",
+        "bytes": 163926,
+        "sha256": "1031305c02122e856a171a1607981e3ee552437e2f592f992c6333d6c7fdaab9",
+        "pixel_sha256": "fe52e57181fc0debf2fa7758873a4b6f466d993e4e4357ece93460f700507135",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0115562.png",
+        "content_range": "bytes 0-163925/163926",
+        "etag": "\"ff0ee15bbe2d8ed9a5845f628ecab38a\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-04352dbe1b803f666e53",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0035779.png",
+        "bytes": 133882,
+        "sha256": "6a561d98cc8b30740c306f5ef849b4602465314253c8944637904ba60ce35537",
+        "pixel_sha256": "1c359cec079a274842c72c74fb0e549394399b7a2837adf49741c3ebae44cc30",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0035779.png",
+        "content_range": "bytes 0-133881/133882",
+        "etag": "\"ba42993403ebb1e0e786694c62d219c3\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-043a17103d48b9e085e3",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0092732.png",
+        "bytes": 181813,
+        "sha256": "4806bad2e268fa02b97a6bdcf3768501840400fb6e18ea92b629a5bd208c68d3",
+        "pixel_sha256": "b9914c5c6cba14c7eb0d6e8ed9fd4b8ee40014d2f0c889f33b1a5ead158420c0",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0092732.png",
+        "content_range": "bytes 0-181812/181813",
+        "etag": "\"2a6b615a2561381c6f83350dc7283d1e\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0441a44f453530f44882",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0063351.png",
+        "bytes": 141098,
+        "sha256": "76eba3af131de57ff7ad9271798040cb80233c843e20263c9303ca20da8180f2",
+        "pixel_sha256": "1fa447c30664298a5bdd77d6c248a23b51e527a78c896e21eb8b0899b6726033",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0063351.png",
+        "content_range": "bytes 0-141097/141098",
+        "etag": "\"01aec8a94a9589a04a307acafd04533c\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-05108b4bcce9d77334e7",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0073639.png",
+        "bytes": 99370,
+        "sha256": "9e6aa9ec5093eab1cfcccda69341f90c0b2a7295f8c7049fb73bf390b3a2cf4f",
+        "pixel_sha256": "71f293e7575fa8709093a781e6956e6b18f28e0a2d5e5e566d3a51bab7565e6a",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0073639.png",
+        "content_range": "bytes 0-99369/99370",
+        "etag": "\"e102fcb8e47066ca5ce6c016371d65a5\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0563b195e956d0f689cd",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0009092.png",
+        "bytes": 140021,
+        "sha256": "ba04708ee925a6b3ff1f574760a36a5e4fee60f4bebe01cc4b1035a0b51b9503",
+        "pixel_sha256": "8619bccd92e3adf4a44908443503324245d6f767265bd7d30f99a45da0d2bea8",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0009092.png",
+        "content_range": "bytes 0-140020/140021",
+        "etag": "\"9092f38b7a9f41347e562fd5f754f020\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-05b56f9bd5399343ff9e",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0068523.png",
+        "bytes": 149024,
+        "sha256": "4f7767058bb3b6b2e3a3fd4f55fd3c2e3bbf27e90b2fc5f5b2191bab4b1f5bbf",
+        "pixel_sha256": "13e9c8c3c0a83ce1ae24e29983b6b80613948911f178c92e09a66779decee7f3",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0068523.png",
+        "content_range": "bytes 0-149023/149024",
+        "etag": "\"b7f6d47eda11a30c27444b177a30e085\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-05c33cbe6bc4936bd146",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0109542.png",
+        "bytes": 184386,
+        "sha256": "9ffb9a9f2b1edcd8932370c3fafd155704314c95e27faa2524f17619153f1aaa",
+        "pixel_sha256": "f5b93ea328e753bf6a9e5e80a7162c676ddda4ab0aeebc0053bf2ea98a2a973f",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0109542.png",
+        "content_range": "bytes 0-184385/184386",
+        "etag": "\"7adf21c3093758275324c91fdd45d0c4\""
+      }
+    },
+    {
+      "sample_id": "sar-adapt-0662e9c8f7d3a76dba9f",
+      "asset": {
+        "file": "data/raw/sardet_adaptation_v0/kaggle-v1/train/0094247.png",
+        "bytes": 89797,
+        "sha256": "c82865b9766b5f8bab0c2c943de377cac5a3929342cfc93578f6ff33e9640f68",
+        "pixel_sha256": "8d74f5f95ea5981862a924cbdc5791d71e59671dcc94c0934de45b8005f848f8",
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          256,
+          256
+        ],
+        "dtype": "uint8"
+      },
+      "acquisition": {
+        "attempt": 1,
+        "prior_failures": [],
+        "status": 206,
+        "storage_path": "/kagglesdsdata/datasets/7339941/11694364/SARDet_100K/JPEGImages/train/0094247.png",
+        "content_range": "bytes 0-89796/89797",
+        "etag": "\"aae09cb6fb866bd558d3dcfe7ec8f3e9\""
+      }
+    }
+  ],
+  "exact_file_and_decoded_pixel_isolation": "passed",
+  "completed_at": "2026-11-07T13:50:49+08:00",
+  "verified_images": 180,
+  "response_body_bytes": 19900841,
+  "response_body_bytes_reserved": 19900841
+}
