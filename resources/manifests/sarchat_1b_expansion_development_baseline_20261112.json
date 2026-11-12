@@ -1,0 +1,209 @@
+{
+  "status": "completed",
+  "subset_sha256": "f14450bb6f9af2a9f164af594f2d67b3e8874acd3148b3027d00a374b7216fd0",
+  "question": "What target category is shown in this SAR image? Choose one of: ship, aircraft, car, oil storage tank, bridge, harbor. Answer in a clear natural sentence.",
+  "generation": {
+    "do_sample": false,
+    "max_new_tokens": 32
+  },
+  "predictions": [
+    {
+      "image_name": "0039246.jpg",
+      "reference": "ship",
+      "answer": "It is ship",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0097482.jpg",
+      "reference": "ship",
+      "answer": "It is ship",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0102883.jpg",
+      "reference": "ship",
+      "answer": "It is ship",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0030417.jpg",
+      "reference": "ship",
+      "answer": "It is ship",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0009325.jpg",
+      "reference": "ship",
+      "answer": "It is ship",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0052364.jpg",
+      "reference": "aircraft",
+      "answer": "It is aircraft",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0042592.jpg",
+      "reference": "aircraft",
+      "answer": "It is aircraft",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0012996.jpg",
+      "reference": "aircraft",
+      "answer": "It is aircraft",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0015386.jpg",
+      "reference": "aircraft",
+      "answer": "It is aircraft",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0093711.jpg",
+      "reference": "aircraft",
+      "answer": "It is aircraft",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0056716.jpg",
+      "reference": "car",
+      "answer": "It is car",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0043630.jpg",
+      "reference": "car",
+      "answer": "It is car",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0012005.jpg",
+      "reference": "car",
+      "answer": "It is bridge",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0037184.jpg",
+      "reference": "car",
+      "answer": "It is ship",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0069823.jpg",
+      "reference": "car",
+      "answer": "It is car",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0020862.jpg",
+      "reference": "tank",
+      "answer": "It is tank",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0032830.png",
+      "reference": "tank",
+      "answer": "It is tank",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0104022.jpg",
+      "reference": "tank",
+      "answer": "It is tank",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0009435.png",
+      "reference": "tank",
+      "answer": "They are bridge and tank",
+      "tokens": 6,
+      "status": "ok"
+    },
+    {
+      "image_name": "0089771.jpg",
+      "reference": "tank",
+      "answer": "It is tank",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0084169.png",
+      "reference": "bridge",
+      "answer": "It is bridge",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0030451.png",
+      "reference": "bridge",
+      "answer": "It is bridge",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0055159.png",
+      "reference": "bridge",
+      "answer": "It is bridge",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0075672.jpg",
+      "reference": "bridge",
+      "answer": "It is bridge",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0042226.png",
+      "reference": "bridge",
+      "answer": "It is bridge",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0031538.png",
+      "reference": "harbor",
+      "answer": "It is harbor",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0008186.png",
+      "reference": "harbor",
+      "answer": "It is harbor",
+      "tokens": 4,
+      "status": "ok"
+    },
+    {
+      "image_name": "0011960.png",
+      "reference": "harbor",
+      "answer": "It is harbor",
+      "tokens": 4,
+      "status": "ok"
+    }
+  ],
+  "seconds": 42.28191579999839,
+  "peak_allocated_mib": 1893.1943359375
+}
