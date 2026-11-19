@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "study_date": "2026-11-19",
+  "sampling": "Six previously jointly-clean-correct SAR development images, not an independent or frozen test set.",
+  "transfer": {
+    "generation_completed_images": 6,
+    "new_evaluations_completed": 36,
+    "source": "SARChat-mPLUG-Owl3-1B",
+    "target": "SARChat-InternVL2.5-2B",
+    "conditions": [
+      {"condition": "directed-4", "max_8bit_delta": 4, "model_role": "source", "correct": 0, "wrong": 6, "unresolved": 0, "target_class_hits": 5},
+      {"condition": "directed-8", "max_8bit_delta": 8, "model_role": "source", "correct": 0, "wrong": 6, "unresolved": 0, "target_class_hits": 6},
+      {"condition": "random-8", "max_8bit_delta": 8, "model_role": "source", "correct": 6, "wrong": 0, "unresolved": 0, "target_class_hits": 0},
+      {"condition": "directed-4", "max_8bit_delta": 4, "model_role": "target", "correct": 6, "wrong": 0, "unresolved": 0, "target_class_hits": 0},
+      {"condition": "directed-8", "max_8bit_delta": 8, "model_role": "target", "correct": 5, "wrong": 1, "unresolved": 0, "target_class_hits": 1},
+      {"condition": "random-8", "max_8bit_delta": 8, "model_role": "target", "correct": 6, "wrong": 0, "unresolved": 0, "target_class_hits": 0}
+    ],
+    "history_excluded_from_new_denominator": {"clean_correct_both_models": 6, "random4_correct_both_models": 6, "pgd4_source_correct": 5, "pgd4_source_unresolved": 1, "pgd4_target_correct": 6},
+    "evaluation_failures": 0,
+    "capped_answers": 0,
+    "note": "The sole target-model hit was aircraft reported as ship. The matched random condition remained correct. Iteration count and amplitude both changed between the directed conditions."
+  },
+  "direct_query": {
+    "planned_images": 6,
+    "images_with_results": 4,
+    "missing_results": 2,
+    "clean_correct": 4,
+    "modified_wrong": 4,
+    "random_wrong": 2,
+    "paired_same_wrong_class": 2,
+    "observed_max_8bit_delta_range": [90, 136],
+    "note": "Not transfer. Random controls matched maximum absolute pixel difference but had greater mean absolute change. Missing results are not failures."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "kind": "Sanitized protocol index reconstructed from frozen local plans; not a new preregistration.",
+  "scope": "Synthetic images and benign positive controls only.",
+  "designs": [
+    {"group": "manifest", "planned_per_resource_scheme": 6, "executed_per_resource_scheme": 1, "later_conditions_not_run_per_scheme": 5, "note": "Only the blank manifest task was attempted in each scheme. One scheme was blocked before loading; the other gave an unresolved answer."},
+    {"group": "field", "planned_per_resource_scheme": 1, "total_timeout_seconds_by_scheme": [75, 150], "note": "Read Containers as a digit. Record semantic value and exact output separately; first scheme timed out before loading."},
+    {"group": "manifest-controls", "planned": 2, "order": ["text-format", "image-transcription"], "note": "Text item supplies the value, so it is not a matched image-presence contrast."},
+    {"group": "text-positive", "planned": 1, "note": "Unrelated trusted single-digit response."},
+    {"group": "digit-pair", "planned": 2, "order": ["no-image", "uniform-gray-image"], "note": "Identical instruction and decode settings in both arms; one sample per arm."},
+    {"group": "squares-gate", "planned": 2, "order": ["count", "trusted-reference"], "note": "Two blue squares; separate trusted reference value 7. A short sentence is allowed."},
+    {"group": "ordinary-label", "planned": 3, "order": ["blank-count", "ordinary-label-count", "ordinary-label-transcription"], "note": "Identical count question; the only image change is an unrelated footer. Readability checked independently."},
+    {"group": "numeric-label", "planned": 3, "order": ["text-label-count", "numeric-label-count", "numeric-label-transcription"], "note": "Count 2 objects versus unrelated batch value 7; never score a standalone label mention as an incorrect count. No model subprocess started."}
+  ],
+  "shared_policy": {
+    "decode": {"do_sample": false, "max_new_tokens": 64},
+    "execution": "One process per item; verify inputs and resources before each. Stop on resource block, timeout or failure; no automatic retry.",
+    "judgment": "Keep semantic correctness and exact format separate. Do not count resource failures or unexecuted attempts as answer errors. Do not pool tasks as model accuracy."
+  }
+}
