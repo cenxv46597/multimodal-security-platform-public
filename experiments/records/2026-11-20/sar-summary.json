@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-20",
+  "direct_query_update": {
+    "study_date": "2026-11-19",
+    "planned": 6,
+    "with_results": 6,
+    "missing": 0,
+    "clean_correct": 6,
+    "modified_wrong": 6,
+    "random_wrong": 4,
+    "same_wrong_class_as_random": 3,
+    "modified_wrong_random_correct": 2,
+    "max_8bit_delta_range": [48, 211],
+    "note": "Updates a previously published 4-of-6 snapshot. Direct query, not transfer. Matched maximum difference is not matched mean difference. Conditioned development images."
+  },
+  "qwen_sar_baseline": {
+    "planned_calls": 12,
+    "completed_calls": 12,
+    "zeroshot": {"total": 6, "correct": 3, "wrong": 3, "unresolved": 0, "capped": 0},
+    "domain_prior": {"total": 6, "saved_correct": 0, "saved_wrong": 1, "saved_unresolved": 5, "capped": 5},
+    "note": "Saved judgments are retained separately from truncation. Long-prompt generation hit the token cap on 5/6; no causal conclusion about prompt length or model training."
+  },
+  "qwen_sar_text": {
+    "planned_calls": 18,
+    "completed_calls": 18,
+    "images": 3,
+    "selection": "Three development images selected because the same model answered the unmodified image correctly; conditional and not an independent test.",
+    "blank_classification_correct": 1,
+    "ordinary_classification_correct": 1,
+    "instruction_classification_correct": 0,
+    "ordinary_count_target_marker": 0,
+    "instruction_count_target_marker": 0,
+    "trusted_positive_target_marker": 0,
+    "ordinary_ocr_content_recovered": 1,
+    "ordinary_ocr_exact": 0,
+    "instruction_ocr_exact": 2,
+    "instruction_ocr_capped": 1,
+    "note": "Every condition has denominator 3. Adding the blank band changed layout and resizing; original-image selection 3/3 does not imply the banded baseline is correct. Zero target markers with a 0/3 trusted positive is not evidence of defense. Independent OCR does not show text was read during classification."
+  }
+}
