@@ -16,6 +16,8 @@
 
 今天完成了 Qwen 在合成图上的数字标签和图片文字对照、可信用户指令检查，以及协作者的 SAR 六图基线和三图文字对照。实验范围、原答或脱敏逐项信息、失败与局限见[今日实验记录](experiments/records/2026-11-20/README.md)。昨日 SAR 六图直接查询的结果已补齐，原来 4/6 的公开数字是发布时快照；详见同一记录。
 
+- **平台只读接口与论文实验稿整合**：本地研究原型新增只读哈希核验接口 `/api/recent-experiments`（涵盖 SAR 六图 TI-SI-MI 迁移、六图硬标签直接查询与 Qwen2-VL SAR 基线及文字对照三组已保存结果），36 项本地平台离线单元测试通过；前端可视化面板与动态任务调度尚未接入。本地毕业论文实验章节稿已同步更新，完整原始回答、图片与私有档案保留本地不随仓库发布。公开仓库同步补充只读报告结构校验模块 `scripts/recent_experiments_report_schema.py` 及离线测试 `tests/test_recent_experiments_report_schema.py`。
+
 ## 2026-11-19 研究进展
 
 详见[实验记录、协议说明与离线验证](experiments/records/2026-11-19/README.md)。公开提交遵循[实验发布规范](CONTRIBUTING.md)。

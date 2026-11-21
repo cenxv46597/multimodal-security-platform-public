@@ -31,6 +31,7 @@
 ```text
 python scripts/validate_research_20261120.py
 python -m unittest discover -s tests -p test_research_20261120.py -v
+python -m unittest discover -s tests -p test_recent_experiments_report_schema.py -v
 ```
 
-校验分母、已完成状态、部分逐字原答和配对逻辑；不重新判读所有语义、不复跑 GPU。合成图生成与通用记录工具仍见 [11 月 19 日记录](../2026-11-19/README.md)。与模型行为有关的结论始终以保存的原答和限定条件为准。
+校验分母、已完成状态、部分逐字原答、配对逻辑以及本地平台只读报告适配器的哈希与分母防篡改约束（[结构校验模块](../../../scripts/recent_experiments_report_schema.py)与[单元测试](../../../tests/test_recent_experiments_report_schema.py)，仅依赖 Python 标准库，不加载模型或私有数据）；不重新判读所有语义、不复跑 GPU。合成图生成与通用记录工具仍见 [11 月 19 日记录](../2026-11-19/README.md)。与模型行为有关的结论始终以保存的原答和限定条件为准。
