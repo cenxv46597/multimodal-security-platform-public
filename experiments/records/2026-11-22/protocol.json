@@ -1,0 +1,38 @@
+{
+  "scope": "one development pilot followed by a plan for all five remaining images in the original six-image order; no substitution; not preregistered as six before pilot",
+  "source_model": "SARChat mPLUG-Owl3-1B",
+  "target_model": "SARChat InternVL2.5-2B",
+  "input": "same SAR image and natural-language six-category question in all conditions",
+  "generation": {
+    "do_sample": false,
+    "max_new_tokens": 32
+  },
+  "perturbation": {
+    "method": "targeted TI-SI-MI adaptation with straight-through bicubic gradient approximation",
+    "steps": 8,
+    "linf_8bit": 8,
+    "scale_schedule": [
+      0,
+      448,
+      384,
+      448,
+      0,
+      448,
+      384,
+      448
+    ],
+    "ti_kernel": "5x5 Gaussian sigma 1.0",
+    "full_visual_cosine_coefficient": 10,
+    "ablation_visual_cosine_coefficient": 0
+  },
+  "execution": "Each process separately checked, 240-second watchdog, stop on failure, timeout, resource block, truncation or empty answer; no automatic retry. Two pilot-related failures retained separately and retry explicitly authorized.",
+  "planned_after_pilot": {
+    "generation_calls": 5,
+    "model_evaluations": 10
+  },
+  "limitations": [
+    "Six reused development images conditioned on clean correctness.",
+    "Full and ablation categories coincide on these images; no independent test or estimate of general effect.",
+    "Training exposure, label validity and scene independence are unresolved."
+  ]
+}

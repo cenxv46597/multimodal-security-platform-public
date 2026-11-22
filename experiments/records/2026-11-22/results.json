@@ -1,0 +1,133 @@
+{
+  "scope": "Previously used development images, selected for both models being clean-correct. One pilot preceded the plan for the other five; not an independent test.",
+  "question": "What target category is shown in this SAR image? Choose one of: ship, aircraft, car, oil storage tank, bridge, harbor. Answer in a clear natural sentence.",
+  "conditions": {
+    "baseline": "original SAR image",
+    "full": "targeted 8-step perturbation with visual cosine coefficient 10",
+    "ablation": "same setup with coefficient 0",
+    "random": "prior independent uniform integer random perturbation within 8/255"
+  },
+  "attempts": "Two failed source generation attempts on the aircraft image were retained locally (missing torchvision, then UnboundLocalError); rerun followed user authorization.",
+  "items": [
+    {
+      "reference": "ship",
+      "target": "tank",
+      "linf": 8,
+      "mae": 3.4582,
+      "models": {
+        "mplug": {
+          "ablation": "It is tank",
+          "baseline": "It is ship",
+          "full": "It is tank",
+          "random": "It is ship"
+        },
+        "internvl2b": {
+          "ablation": "It is ship",
+          "baseline": "It is ship",
+          "full": "It is ship",
+          "random": "It is ship"
+        }
+      }
+    },
+    {
+      "reference": "aircraft",
+      "target": "ship",
+      "linf": 8,
+      "mae": 6.5116,
+      "models": {
+        "mplug": {
+          "ablation": "It is ship",
+          "baseline": "It is aircraft",
+          "full": "It is ship",
+          "random": "It is aircraft"
+        },
+        "internvl2b": {
+          "ablation": "It is ship",
+          "baseline": "It is aircraft",
+          "full": "It is ship",
+          "random": "It is aircraft"
+        }
+      }
+    },
+    {
+      "reference": "car",
+      "target": "tank",
+      "linf": 8,
+      "mae": 6.5046,
+      "models": {
+        "mplug": {
+          "ablation": "It is tank",
+          "baseline": "It is car",
+          "full": "It is tank",
+          "random": "It is car"
+        },
+        "internvl2b": {
+          "ablation": "It is car",
+          "baseline": "It is car",
+          "full": "It is car",
+          "random": "It is car"
+        }
+      }
+    },
+    {
+      "reference": "tank",
+      "target": "ship",
+      "linf": 8,
+      "mae": 4.9852,
+      "models": {
+        "mplug": {
+          "ablation": "It is ship",
+          "baseline": "It is tank",
+          "full": "It is ship",
+          "random": "It is tank"
+        },
+        "internvl2b": {
+          "ablation": "It is tank",
+          "baseline": "It is tank",
+          "full": "It is tank",
+          "random": "It is tank"
+        }
+      }
+    },
+    {
+      "reference": "bridge",
+      "target": "harbor",
+      "linf": 8,
+      "mae": 6.478,
+      "models": {
+        "mplug": {
+          "ablation": "It is harbor",
+          "baseline": "It is bridge",
+          "full": "It is harbor",
+          "random": "It is bridge"
+        },
+        "internvl2b": {
+          "ablation": "It is bridge",
+          "baseline": "It is bridge",
+          "full": "It is bridge",
+          "random": "It is bridge"
+        }
+      }
+    },
+    {
+      "reference": "harbor",
+      "target": "bridge",
+      "linf": 8,
+      "mae": 6.378,
+      "models": {
+        "mplug": {
+          "ablation": "It is bridge",
+          "baseline": "It is harbor",
+          "full": "It is bridge",
+          "random": "It is harbor"
+        },
+        "internvl2b": {
+          "ablation": "It is harbor",
+          "baseline": "It is harbor",
+          "full": "It is harbor",
+          "random": "It is harbor"
+        }
+      }
+    }
+  ]
+}
