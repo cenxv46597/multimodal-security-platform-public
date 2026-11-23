@@ -1,0 +1,27 @@
+{
+  "as_of": "2026-11-23",
+  "work_packages": ["2026-11-26", "2026-11-27", "2026-11-28", "2026-11-29", "2026-11-30"],
+  "candidates": {
+    "total": 243, "development_images": 413, "preliminary": 18,
+    "withheld_direct_development_relation": 12, "pending": 213,
+    "blind_review_unreviewed": 243, "individual_license_confirmed": 0, "frozen": 0
+  },
+  "overlap": {
+    "candidate_pairs": {"total": 29403, "screened": 15049},
+    "candidate_development_pairs": {"total": 100359, "screened": 50771},
+    "uncovered_size_or_shape": 63942, "suspected": 34,
+    "exact_shared_gray_region": 17, "near_gray_with_alignment": 3, "unresolved": 14,
+    "mixed_size_preflight": {"status": "failed", "reason": "OpenCV unavailable", "tested": 0, "retries": 0}
+  },
+  "provenance": {
+    "sardet_validation_images": 10492, "sardet_training_images": 94493,
+    "candidates_in_validation": 243, "exact_candidate_training_name_matches": 0,
+    "hrsid_candidate_images_with_coordinate_clues": 8, "hrsid_training_coordinate_pairs": 33,
+    "verified_model_training_membership": 0
+  },
+  "offline_execution": {
+    "checks": {"completed": true, "failed": true, "timed_out": true, "manually_stopped": true},
+    "archived_answers_checked": 48, "historical_perturbed_inputs_checked": 18,
+    "historical_images": 6, "new_model_calls": 0
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "status": "method_locked_cohort_pending",
+  "input": "One unboxed grayscale SAR display image per model call.",
+  "question": "What target category is shown in this SAR image? Choose one of: ship, aircraft, car, oil storage tank, bridge, harbor. Answer in a clear natural sentence.",
+  "models": {
+    "source": "SARChat mPLUG-Owl3-1B",
+    "transfer": "SARChat InternVL2.5-2B"
+  },
+  "decoding": {"strategy": "greedy", "max_new_tokens": 32},
+  "conditions": {
+    "baseline": {"purpose": "Measure clean whole-image classification."},
+    "full": {"purpose": "Measure source target hits and cross-model transfer.", "method": "TI-SI-MI", "steps": 8, "linf_8bit": 8, "visual_cosine_weight": 10},
+    "ablation": {"purpose": "Isolate the effect of the visual cosine term.", "method": "TI-SI-MI", "steps": 8, "linf_8bit": 8, "visual_cosine_weight": 0},
+    "random": {"purpose": "Control for untargeted pixel changes.", "distribution": "uniform bounded integer noise", "linf_8bit": 8}
+  },
+  "capacity": {"baseline_images": 36, "paired_images": 18},
+  "admission": "Resolve reference category, whole-image task fit, scene relationships and applicable usage terms before freezing. Eligibility for the paired phase also requires a jointly correct clean answer and source generation format compatibility. Keep preview candidates out of tuning and model-based selection.",
+  "reporting": "Separate planned, completed, failed, timed-out, manually stopped and unexecuted items. Report correct, designated target, other incorrect and indeterminate answers separately. Retain original answers locally. In the separate image-text study, transcription establishes readability for its own prompt. Absence of a targeted answer alone leaves defense effectiveness undetermined."
+}
