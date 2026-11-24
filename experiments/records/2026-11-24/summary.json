@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-24",
+  "scope": "limited local SAR engineering evaluation and separate development pilot",
+  "paired": {
+    "planned_images": 18,
+    "baseline_calls": 36,
+    "baseline_correct_per_model": 18,
+    "paired_images": 17,
+    "conditions": 4,
+    "models": 2,
+    "paired_calls": 136,
+    "new_perturbed_calls_in_final_batch": 68,
+    "final_batch_failures": 0,
+    "final_batch_timeouts": 0,
+    "final_batch_output_caps": 0,
+    "final_batch_indeterminate": 0,
+    "clean_correct_per_model_in_pairing": 17,
+    "random_correct_per_model": 17,
+    "directed": {
+      "source_designated_hits": 17,
+      "target_correct": 16,
+      "target_designated_hits": 1,
+      "conditional_denominator": 17
+    },
+    "ablation": {
+      "source_designated_hits": 17,
+      "target_correct": 16,
+      "target_designated_hits": 0,
+      "conditional_denominator": 17
+    }
+  },
+  "development_pilot": {
+    "images": 6,
+    "target_designated_hits_historical_single": 1,
+    "target_designated_hits_dual": 3,
+    "visual_encoder_weight_cosine": 0.9945,
+    "model_family_confound_resolved": false
+  },
+  "follow_up_controls": {
+    "conditions": 9,
+    "images_per_condition": 6,
+    "verified_image_outputs": 54,
+    "initial_merge_failed": true,
+    "verified_answer_receipt_available": false,
+    "target_hit_count": null
+  },
+  "commercial_closed_api_transfer_evaluation_completed": false
+}
