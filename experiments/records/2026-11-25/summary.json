@@ -1,0 +1,98 @@
+{
+  "date": "2026-11-25",
+  "scope": "Sanitized aggregate summary of SAR multi-source transfer ablation controls (6-image dev, 14-image frozen subset) and Route 1 target-class visual prototype matching (6-image dev, 17-image frozen cohort). No raw images, sample filenames, model weights, credentials, or local absolute paths.",
+  "local_families_with_weights": [
+    "mplug (SARChat-mPLUG-Owl3-1B)",
+    "internvl (SARChat-InternVL2.5-1B, SARChat-InternVL2.5-2B)",
+    "glm (SARChat-GLM-edge-v-2B)"
+  ],
+  "unavailable_local_weights": [
+    "SARChat-Qwen2VL-2B (config/tokenizer only, no safetensors weights on disk)",
+    "SARChat-DeepSeekVL-1.3B (config/tokenizer only, no safetensors weights on disk)"
+  ],
+  "dev6_multisource_ablation_8bit": {
+    "n_samples": 6,
+    "linf_budget_8bit": 8,
+    "steps": 8,
+    "total_model_calls": 360,
+    "failures": 0,
+    "indeterminate": 0,
+    "conditions": {
+      "random8": {"mplug": {"wrong": 0, "hit": 0}, "internvl1b": {"wrong": 0, "hit": 0}, "glm": {"wrong": 0, "hit": 0}, "internvl2b": {"wrong": 0, "hit": 0}},
+      "mplug_single8": {"mplug": {"wrong": 6, "hit": 6}, "internvl1b": {"wrong": 0, "hit": 0}, "glm": {"wrong": 1, "hit": 1}, "internvl2b": {"wrong": 1, "hit": 1}},
+      "iv1b_single8": {"mplug": {"wrong": 0, "hit": 0}, "internvl1b": {"wrong": 6, "hit": 6}, "glm": {"wrong": 1, "hit": 0}, "internvl2b": {"wrong": 4, "hit": 3}},
+      "glm_single8": {"mplug": {"wrong": 0, "hit": 0}, "internvl1b": {"wrong": 0, "hit": 0}, "glm": {"wrong": 6, "hit": 6}, "internvl2b": {"wrong": 1, "hit": 1}},
+      "mm_iv1b_relay8": {"mplug": {"wrong": 3, "hit": 2}, "internvl1b": {"wrong": 6, "hit": 4}, "glm": {"wrong": 1, "hit": 0}, "internvl2b": {"wrong": 4, "hit": 3}},
+      "mm_iv1b_sync8": {"mplug": {"wrong": 6, "hit": 6}, "internvl1b": {"wrong": 6, "hit": 5}, "glm": {"wrong": 3, "hit": 2}, "internvl2b": {"wrong": 3, "hit": 2}},
+      "cross_relay8": {"mplug": {"wrong": 3, "hit": 2}, "internvl1b": {"wrong": 1, "hit": 1}, "glm": {"wrong": 5, "hit": 4}, "internvl2b": {"wrong": 1, "hit": 1}},
+      "cross_sync8": {"mplug": {"wrong": 6, "hit": 6}, "internvl1b": {"wrong": 1, "hit": 1}, "glm": {"wrong": 6, "hit": 5}, "internvl2b": {"wrong": 1, "hit": 1}},
+      "triple_sync8": {"mplug": {"wrong": 6, "hit": 6}, "internvl1b": {"wrong": 6, "hit": 4}, "glm": {"wrong": 6, "hit": 5}, "internvl2b": {"wrong": 3, "hit": 3}},
+      "iv1b_glm_relay8": {"mplug": {"wrong": 0, "hit": 0}, "internvl1b": {"wrong": 4, "hit": 3}, "glm": {"wrong": 5, "hit": 4}, "internvl2b": {"wrong": 2, "hit": 2}},
+      "iv1b_glm_sync8": {"mplug": {"wrong": 0, "hit": 0}, "internvl1b": {"wrong": 5, "hit": 5}, "glm": {"wrong": 5, "hit": 4}, "internvl2b": {"wrong": 4, "hit": 3}}
+    }
+  },
+  "cohort14_lofo_glm_target_8bit": {
+    "n_samples": 14,
+    "linf_budget_8bit": 8,
+    "steps": 8,
+    "zero_overlap_target": "glm",
+    "conditions": {
+      "random8": {"mplug": {"wrong": 0, "hit": 0, "indeterminate": 0}, "internvl1b": {"wrong": 0, "hit": 0, "indeterminate": 0}, "glm": {"wrong": 0, "hit": 0, "indeterminate": 0}, "internvl2b": {"wrong": 0, "hit": 0, "indeterminate": 0}},
+      "mplug_single8": {"mplug": {"wrong": 14, "hit": 14, "indeterminate": 0}, "internvl1b": {"wrong": 3, "hit": 1, "indeterminate": 0}, "glm": {"wrong": 0, "hit": 0, "indeterminate": 0}, "internvl2b": {"wrong": 0, "hit": 0, "indeterminate": 0}},
+      "iv1b_single8": {"mplug": {"wrong": 0, "hit": 0, "indeterminate": 0}, "internvl1b": {"wrong": 13, "hit": 11, "indeterminate": 1}, "glm": {"wrong": 1, "hit": 1, "indeterminate": 0}, "internvl2b": {"wrong": 6, "hit": 6, "indeterminate": 0}},
+      "mm_iv1b_sync8": {"mplug": {"wrong": 14, "hit": 14, "indeterminate": 0}, "internvl1b": {"wrong": 13, "hit": 12, "indeterminate": 1}, "glm": {"wrong": 0, "hit": 0, "indeterminate": 0}, "internvl2b": {"wrong": 4, "hit": 3, "indeterminate": 0}}
+    }
+  },
+  "route1_visual_prototype_matching_16bit": {
+    "method": "Target-Class Visual Prototype Matching (DI-TI-MI, pure vision-encoder loss, zero LLM logits, 8 disjoint clean prototypes per class)",
+    "surrogates_zero_internvl": ["mplug", "glm"],
+    "zero_overlap_targets": ["internvl2b", "internvl1b"],
+    "linf_budget_8bit": 16,
+    "steps": 16,
+    "step_size_8bit": 2,
+    "dev6_pilot": {
+      "n_samples": 6,
+      "random16": {"mplug": {"wrong": 0, "hit": 0}, "internvl1b": {"wrong": 0, "hit": 0}, "glm": {"wrong": 1, "hit": 0}, "internvl2b": {"wrong": 0, "hit": 0}},
+      "avlm_mm_glm16": {"mplug": {"wrong": 3, "hit": 2}, "internvl1b": {"wrong": 2, "hit": 1}, "glm": {"wrong": 4, "hit": 2}, "internvl2b": {"wrong": 3, "hit": 2}},
+      "avlm_mm_iv1b16": {"mplug": {"wrong": 2, "hit": 2}, "internvl1b": {"wrong": 2, "hit": 1}, "glm": {"wrong": 1, "hit": 0}, "internvl2b": {"wrong": 4, "hit": 3}}
+    },
+    "cohort17_scaling": {
+      "n_samples": 17,
+      "clean_denominators": {"mplug": 17, "glm": 14, "internvl1b": 16, "internvl2b": 17},
+      "mad_8bit_mean": {"random16": 6.97, "avlm_mm_glm16": 10.96},
+      "mad_8bit_range": {"random16": [4.636, 8.113], "avlm_mm_glm16": [7.558, 12.998]},
+      "full17_counts": {
+        "random16": {"mplug": {"wrong": 0, "hit": 0}, "glm": {"wrong": 3, "hit": 0}, "internvl1b": {"wrong": 2, "hit": 0}, "internvl2b": {"wrong": 0, "hit": 0}},
+        "avlm_mm_glm16": {"mplug": {"wrong": 8, "hit": 4}, "glm": {"wrong": 12, "hit": 6}, "internvl1b": {"wrong": 11, "hit": 2}, "internvl2b": {"wrong": 9, "hit": 5}}
+      },
+      "clean_correct_subset_counts": {
+        "random16": {"mplug": {"denom": 17, "wrong": 0, "hit": 0}, "glm": {"denom": 14, "wrong": 0, "hit": 0}, "internvl1b": {"denom": 16, "wrong": 1, "hit": 0}, "internvl2b": {"denom": 17, "wrong": 0, "hit": 0}},
+        "avlm_mm_glm16": {"mplug": {"denom": 17, "wrong": 8, "hit": 4}, "glm": {"denom": 14, "wrong": 9, "hit": 6}, "internvl1b": {"denom": 16, "wrong": 10, "hit": 2}, "internvl2b": {"denom": 17, "wrong": 9, "hit": 5}}
+      },
+      "internvl2b_by_reference_class": {
+        "ship": {"planned": 1, "wrong": 0, "hit": 0},
+        "aircraft": {"planned": 3, "wrong": 1, "hit": 1},
+        "car": {"planned": 2, "wrong": 1, "hit": 0},
+        "tank": {"planned": 5, "wrong": 5, "hit": 2},
+        "bridge": {"planned": 4, "wrong": 0, "hit": 0},
+        "harbor": {"planned": 2, "wrong": 2, "hit": 2}
+      }
+    }
+  },
+  "pending_controls": [
+    "Same-budget (16/255, 16-step) single-source mPLUG and single-source GLM controls on the 17-image cohort",
+    "Same-budget (16/255, 16-step) LLM-logits baseline control on the 17-image cohort",
+    "Magnitude-matched random-sign control matching the ~10.96/255 MAD distribution of avlm_mm_glm16",
+    "Per-call truncation flag logging and prototype-vs-evaluation scene overlap audit",
+    "Commercial closed-source API evaluation"
+  ],
+  "published_scripts": [
+    "scripts/sar_multisource_ablation_controls_20261124.py",
+    "scripts/eval_multisource_ablation_controls_20261124.py",
+    "scripts/sar_lofo_direction3_and_17clean_20261125.py",
+    "scripts/sar_lofo_cohort14_glm_target_20261125.py",
+    "scripts/sar_route1_attackvlm_16_20261125.py",
+    "scripts/sar_route1_cohort17_avlm_mm_glm16_20261125.py",
+    "scripts/validate_sar_20261125_release.py"
+  ]
+}
