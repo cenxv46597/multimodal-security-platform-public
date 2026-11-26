@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>多模态安全分析平台</title><link rel="stylesheet" href="/style.css"></head>
+<body><header><div class="wrap head"><div><span class="brand">M / S</span><strong>多模态安全分析平台</strong><span class="tag">研究原型</span></div><span class="headnote">SAR · HRRP · 领域文本</span></div></header>
+<main class="wrap"><section class="intro"><div><p class="eyebrow">MULTIMODAL SECURITY LAB</p><h1>让安全评估<br><span>有据可查</span></h1><p class="lead">围绕领域数据，逐步配置测试，查看可追溯的模型表现与安全分析。</p></div><div class="notice"><b>当前阶段</b><p>可查看历史结果，也可对一张开发图及其已有变化图执行本地复评。</p></div></section>
+<section class="workspace dataset-section" aria-labelledby="dataset-browser-title"><div class="section-heading"><div><p class="eyebrow">DATASET EXPLORER</p><h2 id="dataset-browser-title">数据集浏览</h2></div><span class="pill">本地开发数据</span></div>
+<p class="dataset-intro">了解当前研究使用的数据，并按类别浏览 SAR 图像。以下仅展示已用于开发的样本。</p>
+<div class="dataset-controls"><div><label for="browse-dataset">选择数据集</label><select id="browse-dataset" disabled><option value="">正在读取数据集</option></select></div><div><label for="browse-category">筛选类别</label><select id="browse-category" disabled><option value="">全部类别</option></select></div></div>
+<div id="dataset-info" class="dataset-info" hidden><div><span class="dataset-kicker">数据来源</span><strong id="dataset-source"></strong></div><div><span class="dataset-kicker">使用阶段</span><strong id="dataset-stage"></strong></div><div><span class="dataset-kicker">样本数量</span><strong id="dataset-total"></strong></div></div>
+<p id="dataset-description" class="dataset-description"></p><p id="dataset-limit" class="report-scope" hidden></p><div id="dataset-counts" class="dataset-counts" aria-label="各类别数量"></div>
+<p id="dataset-status" class="subtle" aria-live="polite">正在读取本地数据集信息…</p><div id="dataset-gallery" class="dataset-gallery"></div>
+<div class="dataset-pagination"><button id="dataset-prev" type="button" class="secondary-button" disabled>上一页</button><span id="dataset-page" class="subtle"></span><button id="dataset-next" type="button" class="secondary-button" disabled>下一页</button></div>
+<p class="footnote">243 张候选尚未作为正式独立测试集冻结，其中部分已用于受限工程探索；候选图不在此浏览。类别为既有参考标签，不能保证图中不存在其他目标。数据仅在本机展示。</p></section>
+<section class="workspace" aria-labelledby="workspace-title"><div class="section-heading"><div><p class="eyebrow">ASSESSMENT WORKSPACE</p><h2 id="workspace-title">配置评测</h2></div><span class="subtle">按顺序选择，平台将检查适用条件</span></div>
+<p class="selection-note">当前可运行一张已使用开发图的本地复评，或查看既有的12图实验报告。<button id="baseline-view" type="button" class="inline-action">查看四模型 81 图开发评估</button></p>
+<details class="selection-note"><summary>查看平台当前支持的功能</summary><p><strong>可真实运行：</strong>一张已有开发图的本地 InternVL2B 复评，复用原图、已有变化图和随机对照。</p><p><strong>只读历史结果：</strong>多源迁移、闭源模型和提示开发等成果，可查看记录但不能在网页重新发起。</p><p><strong>模拟验证：</strong>批量任务及失败路径仅在测试环境使用模拟执行；不代表已完成真实批量推理。</p></details>
+<p class="selection-note">历史实验书面报告 <button id="example-perturbation" type="button" class="inline-action">12 图扰动</button> <button id="example-injection" type="button" class="inline-action">查看 DeepSeek 草稿（6 图图片文字注入）</button> <button id="two-stage-view" type="button" class="inline-action">合成图文与模拟两阶段观察</button> <button id="recent-sar-view" type="button" class="inline-action">SAR 安全实验与工程快照（11/19–11/23）</button> <button id="latest-results-view" type="button" class="inline-action">多源迁移与闭源评测（11/24–11/26）</button><span id="example-status" role="status"></span></p>
+<div class="steps"><div class="step"><span>01</span><label for="goal">研究目标</label><select id="goal" disabled><option value="">正在读取后端选项</option></select></div><div class="step"><span>02</span><label for="method">评价方式</label><select id="method" disabled><option value="">请先选择研究目标</option></select></div><div class="step"><span>03</span><label for="dataset">数据范围</label><select id="dataset" disabled><option value="">请先选择评价方式</option></select></div><div class="step"><span>04</span><label for="models">模型</label><select id="models" disabled><option value="">请先选择数据范围</option></select></div></div>
+<div id="selection-note" class="selection-note" aria-live="polite">选择研究目标后，后续选项会按支持情况开放。</div>
+<div class="actions"><button id="run-job" type="button" hidden disabled>开始测试 <span>→</span></button><button id="view" type="button" hidden disabled>查看已有实验报告 <span>→</span></button></div></section>
+<section id="job-progress" class="report job-progress" hidden aria-labelledby="progress-title"><div class="section-heading"><div><p class="eyebrow">ASSESSMENT PROGRESS</p><h2 id="progress-title">任务进度</h2></div><button id="stop-job" type="button" disabled>停止任务</button></div><p id="job-status" class="selection-note" aria-live="polite">尚未启动</p><details id="job-partial" hidden><summary>查看已记录的结果</summary><div id="job-partial-results" class="rows"></div></details></section>
+<section id="job-report-section" class="report" hidden aria-labelledby="job-report-title"><div class="section-heading"><div><p class="eyebrow">SAFETY ASSESSMENT REPORT</p><h2 id="job-report-title">安全分析报告</h2></div><span id="job-report-badge" class="pill">开发实验</span></div><p id="job-report-scope" class="report-scope"></p><h3 class="report-heading">结果分析</h3><p id="job-report" class="report-prose"></p><div class="interpretation"><strong>如何理解</strong><p>本报告由固定模板根据本次结果生成。样本均已用于开发，参考标签仍待复核；结果不能说明模型整体安全或证明稳定迁移。</p></div><details><summary>查看测试详情与原始回答</summary><div id="job-results" class="rows"></div></details><p class="footnote">每次任务的结果单独保存。当前尚未接入 DeepSeek 书面报告。</p></section>
+<section id="two-stage-report" class="report" hidden aria-labelledby="two-stage-title"><div class="section-heading"><div><p class="eyebrow">SYNTHETIC DEVELOPMENT OBSERVATION</p><h2 id="two-stage-title"></h2></div><span class="pill">合成图 · 非 SAR</span></div><p id="two-stage-scope" class="report-scope"></p><p id="two-stage-counts"></p><div id="two-stage-limits" class="interpretation"></div><details open><summary>查看各条件的实际问题与原答</summary><div id="two-stage-records" class="rows"></div></details></section>
+<section id="recent-sar-report" class="report" hidden aria-labelledby="recent-sar-title"><div class="section-heading"><div><p class="eyebrow">RECENT SAR SECURITY SUITES · 2026.11.19–23</p><h2 id="recent-sar-title">近期 SAR 安全实验与受限工程快照</h2></div><span class="pill">本地只读哈希核验</span></div><p id="recent-sar-scope" class="report-scope">汇总 6 图 TI-SI-MI 定向迁移、视觉损失消融与保幅随机符号对照、6 图硬标签黑盒查询、Qwen2-VL-2B SAR 对照及 18 张受限工程评测快照 v1；每次读取均核验本地协议与产物 SHA-256 哈希，不启动 GPU。</p><div id="recent-sar-cards" class="cards"></div><div id="recent-sar-limits" class="interpretation"></div><details><summary>查看实验逐样本原答与受限工程快照清单</summary><div id="recent-sar-rows" class="rows"></div></details><p class="footnote">以上为本地只读证据与开发阶段观察；快照的后续评测另见最新成果，不代表独立无偏测试集。</p></section>
+<section id="latest-results" class="report" hidden aria-labelledby="latest-results-title"><div class="section-heading"><div><p class="eyebrow">RECORDED EXPERIMENTS · 2026.11.24–26</p><h2 id="latest-results-title">多源迁移与闭源评测</h2></div><span class="pill">历史记录 · 本地只读</span></div><p class="report-scope">按各批自己的样本和条件展示；错分、命中预设类别及未完成调用分别计数。</p><div id="latest-results-cards" class="cards"></div><div id="latest-results-limitations" class="interpretation"></div></section>
+<section id="report-example" class="report" hidden>
+  <h2 id="example-title"></h2>
+  <p class="subtle">评估对象：被测模型在 SAR 图像问答任务中的行为</p>
+  <p id="example-scope" class="report-scope"></p>
+  <div id="injection-risk" class="interpretation historical-analysis" hidden>
+    <h3>对 SAR 应用的潜在风险</h3>
+    <p><strong>场景。</strong>如果应用接收第三方图片，图片里的文字也会进入模型输入。如果模型按其中的指令改变输出，而下游又直接采纳分类结果，错误类别或不符合约定的回答可能进入后续判断。</p>
+    <p><strong>本轮结论。</strong>指令文字在独立转写中完整输出 6/6，但注入分类和可信用户正向对照均为 0/6 出现标记。当前对照无法判断防护是否有效，也无法判断模型在分类时有没有读取文字。</p>
+    <p><strong>应用设计建议。</strong>把图片文字视为待分析的数据，限制模型输出可用的类别和格式。高影响决策应由其他证据或人工复核支持。验证防护时，先确认模型能完成受信任的同类输出要求。</p>
+  </div>
+  <details>
+    <summary>评测平台自身的部署边界</summary>
+    <p>本地平台只监听本机，当前没有用户认证。报告接口会返回逐条实验记录，因此部署到共享环境前，应先验证身份认证、报告与原答授权、任务隔离和密钥管理。平台自身的安全评估需要单独检查这些功能。</p>
+  </details>
+  <p id="saved-report-notice" role="status" hidden></p>
+  <div id="saved-report" class="interpretation historical-analysis" hidden></div>
+  <details id="example-template" open>
+    <summary>查看本地规则模板</summary>
+    <div id="example-analysis" class="interpretation historical-analysis"></div>
+  </details>
+  <p id="example-counts"></p>
+  <details><summary>查看各条件的执行与判读记录</summary><div id="example-conditions"></div></details>
+  <details id="example-evidence-details"><summary>按证据编号查看原答</summary><div id="example-evidence"></div></details>
+</section>
+<section id="baseline" class="report" hidden><div class="section-heading"><div><p class="eyebrow">CLEAN EVALUATION · 2026.11.12</p><h2>四模型干净问答</h2></div><span class="pill">81 张开发图 · 非正式测试集</span></div><p id="baseline-scope" class="report-scope"></p><p class="subtle">六类分母：船、飞机、汽车、储油罐、桥梁各 15；港口 6。保留此前人工语义判读。</p><div id="baseline-cards" class="cards"></div><details><summary>查看逐样本原始回答</summary><div id="baseline-rows" class="rows"></div></details></section>
+<section id="report" class="report" hidden><div class="section-heading"><div><p class="eyebrow">DEVELOPMENT RUN · 2026.11.13</p><h2>12 图扰动历史报告</h2></div><span class="pill">开发探索 · 非正式评测</span></div><p><a href="/?report=injection">查看 DeepSeek 草稿（6 图图片文字注入）</a></p><p id="scope" class="report-scope"></p><p id="description" class="subtle"></p><div class="interpretation historical-analysis"><h3>安全分析报告</h3><p class="subtle">依据已有实验记录自动撰写 · 规则模板</p><div id="historical-analysis"></div></div><div id="cards" class="cards"></div><details><summary>查看逐样本原始回答</summary><div id="rows" class="rows"></div></details><p class="footnote">本报告基于本地已有记录自动汇总；未使用闭源目标、测试候选或新调用。</p></section>
+<footer>面向 SAR、HRRP 与领域文本的安全分析 · 本地研究原型</footer></main><script src="/app.js"></script></body></html>
